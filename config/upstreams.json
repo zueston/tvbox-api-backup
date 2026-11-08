@@ -1,0 +1,25 @@
+{
+  "description": "四路上游资源清单：lubin776/tvbox-api-backup、Lightconer/tvbox-ysc-config、25175/tvyuan、juwanhezi jsonlist（本地抓取产物）",
+  "upstreams": {
+    "lubin776": {
+      "repo": "lubin776/tvbox-api-backup",
+      "branch": "main",
+      "api_list": "https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/api_list.json",
+      "livelist": "https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/livelist.txt"
+    },
+    "lightconer": {
+      "repo": "Lightconer/tvbox-ysc-config",
+      "branch": "main",
+      "sources": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/config/sources.json"
+    },
+    "tvyuan": {
+      "repo": "25175/tvyuan",
+      "branch": "master",
+      "sources_txt": "https://raw.githubusercontent.com/25175/tvyuan/master/sources.txt",
+      "multi": "https://raw.githubusercontent.com/25175/tvyuan/master/tvbox_multi.json"
+    },
+    "juwanhezi": {
+      "all_sources": "output/juwan/all_sources.json"
+    }
+  }
+}

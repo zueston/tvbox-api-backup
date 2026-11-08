@@ -1,0 +1,899 @@
+{
+  "source_site": "https://www.juwanhezi.com/jsonlist",
+  "updated": "2026-11-08 12:55:01",
+  "total": 101,
+  "alive": 35,
+  "items": [
+    {
+      "name": "软件小哥",
+      "url": "http://47.96.82.41:5188/svip/svip.json",
+      "speed": 63,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 172
+    },
+    {
+      "name": "幸福年年",
+      "url": "http://150.158.52.248/tgyg/bbm.json",
+      "speed": 64,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 171
+    },
+    {
+      "name": "刺桐娱乐",
+      "url": "https://www.cttv.vip/ys/json/ctys.json",
+      "speed": 66,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 257
+    },
+    {
+      "name": "俊佬在线",
+      "url": "http://home.jundie.top:81/top98.json",
+      "speed": 106,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 161
+    },
+    {
+      "name": "机缘巧盒凯弟1",
+      "url": "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
+      "speed": 133,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 322
+    },
+    {
+      "name": "动漫专属",
+      "url": "https://www.yingm.cc/dm/dm.json",
+      "speed": 151,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 213
+    },
+    {
+      "name": "嗷呜2线",
+      "url": "https://9763.kstore.vip/aowu.json",
+      "speed": 154,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 176
+    },
+    {
+      "name": "宝盒线路2026",
+      "url": "https://3043.kstore.space/bhvip/bh/bh2.json",
+      "speed": 172,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 188
+    },
+    {
+      "name": "牛二线路",
+      "url": "https://9280.kstore.space/wex.json",
+      "speed": 175,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 293
+    },
+    {
+      "name": "短剧频道",
+      "url": "http://box.ufuzi.com/tv/qq/短剧频道/api.json",
+      "speed": 179,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "挺好分享",
+      "url": "https://ztha.top/TVBox/thdjk.json",
+      "speed": 195,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 193
+    },
+    {
+      "name": "凯弟3线",
+      "url": "https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json",
+      "speed": 220,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 306
+    },
+    {
+      "name": "月光宝盒源",
+      "url": "https://3043.kstore.space/bhvip/bh/box.json",
+      "speed": 239,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 129
+    },
+    {
+      "name": "王二小备用",
+      "url": "https://9280.kstore.vip/aiwex.json",
+      "speed": 254,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 162
+    },
+    {
+      "name": "王二小（新）",
+      "url": "https://9280.kstore.vip/newwex.json",
+      "speed": 264,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 186
+    },
+    {
+      "name": "小马线路",
+      "url": "https://szyyds.cn/tv/x.json",
+      "speed": 265,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 12180
+    },
+    {
+      "name": "少儿频道",
+      "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+      "speed": 298,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 273
+    },
+    {
+      "name": "分享者",
+      "url": "http://hucongrong.web3v.work/风水/fxz/fxz.json",
+      "speed": 335,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "夏夏影视",
+      "url": "https://11405.kstore.space/xiaye/qk4k.json",
+      "speed": 443,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 321
+    },
+    {
+      "name": "嗷呜备用",
+      "url": "https://9763.kstore.vip/aowu.json",
+      "speed": 482,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 111
+    },
+    {
+      "name": "小盒子4K",
+      "url": "http://xhztv.top/4k.json",
+      "speed": 485,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 2470
+    },
+    {
+      "name": "拾光趣乐屋",
+      "url": "https://jiekou.netlify.app/svip.json",
+      "speed": 486,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 854
+    },
+    {
+      "name": "FongMI线路",
+      "url": "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
+      "speed": 667,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1837
+    },
+    {
+      "name": "高天流云",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "speed": 691,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1155
+    },
+    {
+      "name": "健康家用",
+      "url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json",
+      "speed": 693,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 586
+    },
+    {
+      "name": "CandyMu",
+      "url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json",
+      "speed": 699,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 571
+    },
+    {
+      "name": "小盒子单仓",
+      "url": "http://xhztv.top/xhz",
+      "speed": 717,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1243
+    },
+    {
+      "name": "周J线路",
+      "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/box",
+      "speed": 725,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 7315
+    },
+    {
+      "name": "心魔在线",
+      "url": "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
+      "speed": 756,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "饭太硬4",
+      "url": "http://fty.888484.xyz/tv",
+      "speed": 775,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 876
+    },
+    {
+      "name": "嗨哥魔改",
+      "url": "https://api.hgyx.vip/hgyx.json",
+      "speed": 790,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 787
+    },
+    {
+      "name": "南风线路",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
+      "speed": 796,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 5756
+    },
+    {
+      "name": "月光宝盒1",
+      "url": "https://raw.githubusercontent.com/guot55/yg/refs/heads/main/ygbox.json",
+      "speed": 816,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 574
+    },
+    {
+      "name": "宝盒备用",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+      "speed": 818,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 760
+    },
+    {
+      "name": "ray",
+      "url": "https://raw.githubusercontent.com/dxawi/0/main/0.json",
+      "speed": 826,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 533
+    },
+    {
+      "name": "X4菠菜园",
+      "url": "https://0.wudaozhe.net/5/x4.json",
+      "speed": 835,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 862
+    },
+    {
+      "name": "香雅晴线",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+      "speed": 838,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 714
+    },
+    {
+      "name": "zhangqun1818",
+      "url": "http://zhangqun1818.serv00.net/zq/api.json",
+      "speed": 844,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 629
+    },
+    {
+      "name": "雷蒙影视",
+      "url": "https://raw.githubusercontent.com/n3rddd/N3RD/master/JN/lemj.json",
+      "speed": 849,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 715
+    },
+    {
+      "name": "黄金在线",
+      "url": "https://gitlab.com/lzc1021lzc/hjfggzs.hjys/-/raw/main/hjys.free.json",
+      "speed": 931,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 749
+    },
+    {
+      "name": "分享在线",
+      "url": "http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json",
+      "speed": 971,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": 1005
+    },
+    {
+      "name": "X4菠菜园全量",
+      "url": "https://0.wudaozhe.net/5/x4all.json",
+      "speed": 1057,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1224
+    },
+    {
+      "name": "X4菠菜园增强",
+      "url": "https://0.wudaozhe.net/5/x4pro.json",
+      "speed": 1103,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1178
+    },
+    {
+      "name": "金鱼box接口",
+      "url": "http://mzrjk.top/VIP",
+      "speed": 1219,
+      "status": "0",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "Clun在线",
+      "url": "https://clun.top/box.json",
+      "speed": 1239,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 824
+    },
+    {
+      "name": "东篱在线",
+      "url": "https://chigua.eu.org",
+      "speed": 1307,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 1132
+    },
+    {
+      "name": "老张线路",
+      "url": "https://zhangqun1818.serv00.net/zq/api.json",
+      "speed": 1346,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 862
+    },
+    {
+      "name": "传说线路",
+      "url": "http://tjf1100.serv00.net",
+      "speed": 2050,
+      "status": "0",
+      "type": "one",
+      "alive": true,
+      "probe_ms": 2334
+    },
+    {
+      "name": "玄珠4K",
+      "url": "https://jihulab.com/xuanzhuapp/xzys/-/raw/main/xzvip.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "小虎斑",
+      "url": "http://hb.小虎斑.site:25252/仅供测试",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "机缘巧盒凯弟",
+      "url": "https://jihulab.com/jyqhkd1/kai/-/raw/main/机缘巧盒凯弟.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "星微Vip",
+      "url": "https://7337.kstore.vip/xw/测试勿传",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "英格里希嗷呜",
+      "url": "http://www.英格里希嗷呜.top/tv",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "X4菠菜园少儿",
+      "url": "https://0.wudaozhe.net/5/tv少儿.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "小虎斑",
+      "url": "http://hb.小虎斑.site:25252/仅供测试",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "肥猫.net",
+      "url": "http://肥猫.net/",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "英格里希嗷呜",
+      "url": "http://www.英格里希嗷呜.top/tv",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "宝盒接口",
+      "url": "http://宝盒接口.top",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "多多内置",
+      "url": "https://iduo.us.ci/gt/leevi0709/one/main/config.bin",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "多多在线",
+      "url": "https://gh-proxy.com/raw.githubusercontent.com/leevi0709/one/main/jsm.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "多多影音",
+      "url": "https://gitlab.com/duomv/dzhipy/-/raw/main/index.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "真心在线",
+      "url": "https://cnb.cool/fish2018/zx/-/git/raw/master/FongMi.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "乐哥在线",
+      "url": "https://乐哥.xyz/dj.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "影视仓单线",
+      "url": "http://影视仓.com/",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "饭太硬3",
+      "url": "http://www.饭太硬.art/tv",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "饭太硬2",
+      "url": "http://www.饭太硬.net/tv",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "装歌线路",
+      "url": "https://欧歌.v.nxog.top/m/",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "环宇轩线",
+      "url": "https://6492.kstore.space/xnf/xnf.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "真心线路",
+      "url": "https://cnb.cool/fish2018/zx/-/git/raw/master/FongMi.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "D佬线路",
+      "url": "http://rihou.cc:555/nzk/nzk0722.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "七星影仓",
+      "url": "https://7337.kstore.space/qxys/%E7%A6%81%E6%AD%A2%E4%BC%A0%E6%92%AD.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "菜妮丝",
+      "url": "https://tv.菜妮丝.top",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "无意云",
+      "url": "https://ym.wya6.cn/",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "王二小（网盘4K）",
+      "url": "http://tvbox.王二小放牛娃.top",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "盒子迷2026",
+      "url": "https://盒子迷.top/禁止贩卖",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "巧记Box",
+      "url": "http://cdn.qiaoji8.com/tvbox.json",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "欧歌免费",
+      "url": "https://tv.nxog.top/m",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "饭太硬",
+      "url": "http://fty.xxooo.cf/tv",
+      "speed": 0,
+      "status": "1",
+      "type": "one",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "挺好分享多仓",
+      "url": "http://ztha.top/TVBox/GYCK.json",
+      "speed": 469,
+      "status": "0",
+      "type": "many",
+      "alive": true,
+      "probe_ms": 289
+    },
+    {
+      "name": "小盒子多仓（备）",
+      "url": "http://xhztv.top/DC.txt",
+      "speed": 510,
+      "status": "0",
+      "type": "many",
+      "alive": true,
+      "probe_ms": 477
+    },
+    {
+      "name": "小盒子多仓",
+      "url": "http://xhztv.top/dc",
+      "speed": 648,
+      "status": "0",
+      "type": "many",
+      "alive": true,
+      "probe_ms": 1920
+    },
+    {
+      "name": "拾光多仓",
+      "url": "http://xmbjm.fh4u.org/dc.txt",
+      "speed": 953,
+      "status": "0",
+      "type": "many",
+      "alive": true,
+      "probe_ms": 649
+    },
+    {
+      "name": "测试多线",
+      "url": "http://qxyc.cc/自用测试",
+      "speed": 0,
+      "status": "1",
+      "type": "many",
+      "alive": false,
+      "probe_ms": null
+    },
+    {
+      "name": "202608合集",
+      "url": "https://pan.xunlei.com/s/VP1Prw3d0SJW7ixOupY_gLWOA1?pwd=bped",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202607合集",
+      "url": "https://pan.xunlei.com/s/VP1Prpo5S2TgVfgCm_RWzKeQA1?pwd=p9jm",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202604合集",
+      "url": "https://pan.xunlei.com/s/VP1Pri_s2dQ3welfWUeh2YEyA1?pwd=iz5j",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202603合集",
+      "url": "https://pan.xunlei.com/s/VOq8wzTRvqhu7mr72WwIMqUiA1?pwd=grux",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202601合集",
+      "url": "https://pan.xunlei.com/s/VOjK7DZlWGWcQp871XiFJn80A1?pwd=u6rt",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202512合集",
+      "url": "https://pan.xunlei.com/s/VOjK65haDr9NtpjDfz3s-JLxA1?pwd=8p8x",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202511合集",
+      "url": "https://pan.xunlei.com/s/VOjK5yKps_VERFmyF7RWmuHlA1?pwd=kvw5",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202510合集",
+      "url": "https://pan.xunlei.com/s/VOcA5AuJMHKU8t6QJ-Tq2n9eA1?pwd=99hz",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202509合集",
+      "url": "https://pan.xunlei.com/s/VO_vpmLgZ7slC-pB1eB26xSdA1?pwd=fw6p",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202508合集",
+      "url": "https://pan.xunlei.com/s/VO_vpfHY1S66GROXMUAJ_cduA1?pwd=85n9",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202507合集",
+      "url": "https://pan.xunlei.com/s/VO_vpbulwvt3PUlYu6HRc80WA1?pwd=8pqk",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202506合集",
+      "url": "https://pan.xunlei.com/s/VO_vpZCCeAComuPUUifTBlSxA1?pwd=4jfi",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202505合集",
+      "url": "https://pan.xunlei.com/s/VO_vpVZDAGOQuhyVKgc6Ggg_A1?pwd=8t8b",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202504合集",
+      "url": "https://pan.xunlei.com/s/VO_vpRyDIhSMe19LQF0gCUHhA1?pwd=rbg9",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202503合集",
+      "url": "https://pan.xunlei.com/s/VO_vpONt4i_QM-PjwlDeqR6AA1?pwd=azu2",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202502合集",
+      "url": "https://pan.xunlei.com/s/VO_vpJWpDGDVCeyK1SWWPp_OA1?pwd=j2ce",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "202501合集",
+      "url": "https://pan.xunlei.com/s/VO_vpCIqhl1W3ZSzZHegetrFA1?pwd=xsrq",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    },
+    {
+      "name": "2024年合集",
+      "url": "https://pan.xunlei.com/s/VO_voyoSZ7slC-pB1eB26RCsA1?pwd=s49b",
+      "speed": null,
+      "status": "0",
+      "type": "local",
+      "alive": null
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+# -*- coding: utf-8 -*-
+"""四源聚合：lubin776/tvbox-api-backup + Lightconer/tvbox-ysc-config + 25175/tvyuan + juwanhezi jsonlist
+→ 规范化去重 → 并发测活 → 分安卓4 / 安卓5+ 两套产物
+
+输出:
+  output/android5/multi.json   安卓5+ TVBox 多仓订阅
+  output/android5/single.json  安卓5+ 聚合单仓(含csp爬虫)
+  output/android4/multi.json   安卓4 兼容多仓(优先http镜像)
+  output/android4/single.json  安卓4 兼容聚合单仓(剔除csp/jar/type3)
+  output/live_sources.txt      直播源清单(去重)
+  output/report.json           去重/测活/分池明细
+用法: python collect_merge.py [--top 12] [--offline-juwan]
+"""
+import json, re, sys, time, html as htmllib, urllib.request, urllib.parse
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+
+BASE = Path(__file__).parent          # scripts/
+ROOT = BASE.parent                    # repo root
+OUT = ROOT / "output"
+(OUT / "android5").mkdir(parents=True, exist_ok=True)
+(OUT / "android4").mkdir(parents=True, exist_ok=True)
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+TOP_SINGLE = 12
+for a in sys.argv:
+    if a.startswith("--top"):
+        pass
+if "--top" in sys.argv:
+    TOP_SINGLE = int(sys.argv[sys.argv.index("--top") + 1])
+
+# ---------- 工具 ----------
+def http_get(url, timeout=15, max_bytes=400_000):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.status, r.read(max_bytes)
+
+def norm_url(u):
+    """URL 规范化用于去重：剥代理前缀、统一 host、小写 host"""
+    if not isinstance(u, str):
+        return ""
+    u = u.strip().strip('"').strip("'")
+    # 剥 gh-proxy 系列前缀（含 /raw.githubusercontent.com 与 /https:// 两种形态）
+    m = re.match(r'^https?://(?:gh[-]?proxy[.\w]*\.(?:org|com|net|top|cc)/)(.+)$', u, re.I)
+    if m:
+        inner = m.group(1)
+        if inner.startswith(("http://", "https://")):
+            u = inner
+        else:
+            u = "https://" + inner.lstrip("/")
+    # jsDelivr → raw
+    u = re.sub(r'^https?://cdn\.jsdelivr\.net/gh/([^/]+)/([^/@]+)@?([^/]*)/',
+               lambda m: f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3) or 'main'}/",
+               u, flags=re.I)
+    u = re.sub(r'^https?://cdn\.jsdelivr\.net/npm/([^/]+)/',
+               lambda m: f"https://cdn.jsdelivr.net/npm/{m.group(1)}/", u, flags=re.I)
+    # raw.github.com → raw.githubusercontent.com
+    u = u.replace("raw.github.com", "raw.githubusercontent.com")
+    p = urllib.parse.urlsplit(u)
+    host = p.netloc.lower()
+    if host == "raw.githubusercontent.com":
+        scheme = "https"
+    else:
+        scheme = p.scheme.lower()
+    path = p.path.rstrip("/")
+    u2 = urllib.parse.urlunsplit((scheme, host, path, "", ""))
+    return u2
+
+def clean_name(n):
+    n = re.sub(r'[\[(（][^\]）)】]*?(?:ms|KB|速度|线)[^\]）)】]*[\])）]', '', str(n))
+    n = re.sub(r'\s+', ' ', n).strip(" -—|·")
+    return n or str(n)
+
+def is_http_prefer(u):
+    return u.startswith("http://")
+
+# ---------- 上游采集 ----------
+def load_lubin776(pool, lives):
+    """api_list.json: API_LIST [[name,url...]]; livelist.txt: file|date|size|url|src|UA|"""
+    st, body = http_get("https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/api_list.json")
+    d = json.loads(body.decode("utf-8", "replace"))
+    for row in d.get("API_LIST", []):
+        if not isinstance(row, list) or len(row) < 2:
+            continue
+        name, urls = clean_name(row[0]), [u for u in row[1:] if isinstance(u, str) and u.startswith("http")]
+        for u in urls:
+            pool.append({"name": name, "url": u, "origin": "lubin776", "mirrors": len(urls)})
+    st, body = http_get("https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/livelist.txt")
+    for ln in body.decode("utf-8", "replace").splitlines():
+        parts = ln.split("|")
+        if len(parts) >= 4 and parts[3].startswith("http"):
+            lives.append({"name": clean_name(parts[0].rsplit(".", 1)[0]), "url": parts[3], "origin": "lubin776"})
+
+def load_lightconer(pool):
+    st, body = http_get("https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/config/sources.json")
+    d = json.loads(body.decode("utf-8", "replace"))
+    for s in d.get("sources", []):
+        name = clean_name(s.get("name", s.get("id", "?")))
+        urls = [u for u in s.get("urls", []) if u.startswith("http")]
+        for u in urls:
+            pool.append({"name": name, "url": u, "origin": "lightconer", "mirrors": len(urls)})
+
+def load_tvyuan(pool, lives):
+    st, body = http_get("https://raw.githubusercontent.com/25175/tvyuan/master/sources.txt")
+    text = body.decode("utf-8", "replace")
+    # 形如 "[66ms] apple\nhttps://...\n\n"
+    for m in re.finditer(r'^\[(\d+)ms\]\s*(.+?)\s*\n(https?://\S+)\s*$', text, re.M):
+        pool.append({"name": clean_name(m.group(2)), "url": m.group(3), "origin": "tvyuan", "speed": int(m.group(1))})
+    st, body = http_get("https://raw.githubusercontent.com/25175/tvyuan/master/tvbox_multi.json")
+    d = json.loads(body.decode("utf-8", "replace"))
+    for s in d.get("storeHouse", []):
+        u = s.get("sourceUrl", "")
+        if u.startswith("http"):
+            pool.append({"name": clean_name(s.get("sourceName", "?")), "url": u, "origin": "tvyuan-multi"})
+    _ = lives
+
+def load_juwan(pool):
+    p = OUT / "juwan" / "all_sources.json"
+    if not p.exists():
+        p = ROOT / "refs_juwan" / "all_sources.json"
+    d = json.loads(p.read_text(encoding="utf-8"))
+    for r in d["items"]:
+        if r["type"] in ("one", "many") and r.get("status", 0) == 0:
+            pool.append({"name": clean_name(r["name"]), "url": r["url"], "origin": "juwanhezi",
+                         "speed": r.get("speed"), "site_alive": r.get("alive"), "site_status": r.get("status")})
+
+# ---------- 去重 ----------
+def dedup(pool):
+    by_url = {}
+    for e in pool:
+        k = norm_url(e["url"])
+        if not k:
+            continue
+        e["_k"] = k
+        old = by_url.get(k)
+        if old is None:
+            by_url[k] = e
+        else:
+            # 合并 origins；优先保留有速度数据/多镜像信息的一条
+            old["origin"] = old.get("origin", "")
+            if e.get("speed") is not None and old.get("speed") is None:
+                e["origin"] = f'{old["origin"]}+{e["origin"]}'
+                by_url[k] = e
+            elif e["origin"] not in old.get("origin", ""):
+                old["origin"] = f'{old["origin"]}+{e["origin"]}'
+    return list(by_url.values())
+
+# ---------- 测活 ----------
+def probe(e):
+    if e.get("site_alive") is True:      # juwan 刚测过，直接信任
+        e["alive"], e["probe_ms"] = True, e.get("probe_ms")
+        return e
+    u = e["url"]
+    try:
+        t0 = time.time()
+        code, body = http_get(u, timeout=12)
+        ms = int((time.time() - t0) * 1000)
+        ok = code == 200 and len(body) > 50
+        if ok and norm_url(u).endswith(".json"):
+            try:
+                json.loads(body.decode("utf-8", "replace"))
+            except Exception:
+                ok = False
+        e["alive"], e["probe_ms"] = ok, ms
+    except Exception:
+        e["alive"], e["probe_ms"] = False, None
+    return e
+
+# ---------- 多仓配置 ----------
+def build_multi(alive_items):
+    items = sorted(alive_items, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))
+    profiles = []
+    seen_name = set()
+    for r in items:
+        nm = r["name"]
+        if nm in seen_name:
+            continue
+        seen_name.add(nm)
+        profiles.append({"url": r["url"], "name": nm, "desc": r["origin"]})
+    return {
+        "storeHouse": [{"sourceName": p["name"], "sourceUrl": p["url"]} for p in profiles],
+        "profiles": [{"url": p["url"], "name": p["name"]} for p in profiles],
+        "urls": [{"url": p["url"], "name": p["name"]} for p in profiles],
+        "sp": "", "logo": "", "warning": "",
+        "home": {"name": "TVBox 四源聚合(安卓5+)", "type": 0, "click": 0},
+    }
+
+def build_multi_a4(alive_items):
+    cfg = build_multi(alive_items)
+    cfg["home"]["name"] = "TVBox 四源聚合(安卓4兼容)"
+    return cfg
+
+# ---------- 单仓合并 ----------
+def abs_url(base, ref):
+    if not isinstance(ref, str) or not ref:
+        return ref
+    if ref.startswith(("js:", "csp:", "Shell:", "py:", "file:", "assets://")) or not ref.startswith(("./", "../")):
+        return ref
+    return urllib.parse.urljoin(base, urllib.parse.quote(ref, safe="/:@&=?$-_.+!*'%,~#[]"))
+
+def a4_site_ok(s):
+    api = str(s.get("api", ""))
+    if s.get("type") == 3 or api.startswith(("csp:", "assets:", "jar:")) or "csp_" in api:
+        return False
+    sp = str(s.get("spider", ""))
+    if sp.startswith(("csp:", "assets:", "jar:")) or "csp_" in sp:
+        return False
+    return True
+
+def merge_single(alive_items, a4: bool, top: int = None):
+    """按速度取前 top 个有效单仓源合并；空源(0站点0解析0直播)不占名额，总抓取上限60"""
+    top = top or TOP_SINGLE
+    cands = [e for e in alive_items if norm_url(e["url"]).endswith((".json", ".webp", ".txt")) or "json" in e["url"]]
+    cands = sorted(cands, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))
+    MAX_FETCH = 60
+    merged = {"sites": [], "lives": [], "parses": [], "rules": [], "flags": [], "hosts": []}
+    if not a4:
+        merged["ijk"] = [
+            {"group": "软解码", "options": [
+                {"category": 4, "name": "opensles", "value": "0"},
+                {"category": 4, "name": "overlay-format", "value": "842225234"},
+                {"category": 4, "name": "framedrop", "value": "1"},
+                {"category": 4, "name": "soundtouch", "value": "1"},
+                {"category": 4, "name": "start-on-prepared", "value": "1"},
+                {"category": 1, "name": "http-detect-range-support", "value": "0"},
+                {"category": 1, "name": "fflags", "value": "fastseek"},
+                {"category": 2, "name": "skip_loop_filter", "value": "48"},
+                {"category": 4, "name": "reconnect", "value": "1"},
+                {"category": 4, "name": "enable-accurate-seek", "value": "0"},
+                {"category": 4, "name": "mediaseek", "value": "1"}], "player": "ijk"}]
+    site_keys, parse_names, live_groups, src_map = set(), set(), set(), []
+    used = fetched = 0
+    for e in cands:
+        if used >= top or fetched >= MAX_FETCH:
+            break
+        fetched += 1
+        try:
+            code, body = http_get(e["url"], timeout=20)
+            cfg = json.loads(body.decode("utf-8", "replace"))
+            if not isinstance(cfg, dict) or not (cfg.get("sites") or cfg.get("lives")):
+                continue
+        except Exception:
+            continue
+        n_s = n_p = n_l = 0
+        for s in cfg.get("sites", []) or []:
+            k = s.get("key") or s.get("name")
+            if not k or k in site_keys:
+                continue
+            if a4 and not a4_site_ok(s):
+                continue
+            s = dict(s)
+            if s.get("spider"):
+                s["spider"] = abs_url(e["url"], s["spider"])
+            site_keys.add(k)
+            merged["sites"].append(s)
+            n_s += 1
+        for p in cfg.get("parses", []) or []:
+            if a4 and p.get("type") == 2:
+                continue
+            nm = p.get("name")
+            if not nm or nm in parse_names:
+                continue
+            parse_names.add(nm)
+            merged["parses"].append(p)
+            n_p += 1
+        for l in cfg.get("lives", []) or []:
+            lu = l.get("url")
+            if (not lu) and not (isinstance(l.get("api"), str) and l.get("api")):
+                continue
+            if a4 and not lu:
+                continue
+            if isinstance(lu, str) and lu.startswith(("./", "../")):
+                l = dict(l)
+                l["url"] = abs_url(e["url"], lu)
+            g = l.get("name") or l.get("group")
+            if g and g in live_groups:
+                continue
+            if g:
+                live_groups.add(g)
+            merged["lives"].append(l)
+            n_l += 1
+        for ru in cfg.get("rules", []) or []:
+            merged["rules"].append(ru)
+        if n_s or n_p or n_l:
+            used += 1
+        for f in cfg.get("flags", []) or []:
+            if f not in merged["flags"]:
+                merged["flags"].append(f)
+        if not a4:
+            jar = cfg.get("jar")
+            if isinstance(jar, str) and jar and not merged.get("jar"):
+                merged["jar"] = abs_url(e["url"], jar)
+            sp = cfg.get("spider")
+            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider"):
+                merged["spider"] = abs_url(e["url"], sp)
+        src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l})
+        print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")
+    merged["sp"] = ""
+    out = {**merged, "//": f"四源聚合单仓({'安卓4兼容' if a4 else '安卓5+'}) | 合并{used}源 | {time.strftime('%F %T')}"}
+    return out, src_map
+
+# ---------- 主流程 ----------
+def main():
+    pool, lives = [], []
+    for fn, args in ((load_lubin776, (pool, lives)), (load_lightconer, (pool,)),
+                     (load_tvyuan, (pool, lives)), (load_juwan, (pool,))):
+        try:
+            fn(*args)
+            print(f"[upstream] {fn.__name__}: pool={len(pool)}")
+        except Exception as ex:
+            print(f"[upstream FAIL] {fn.__name__}: {ex}")
+    print(f"raw pool: {len(pool)}, live rows: {len(lives)}")
+
+    uniq = dedup(pool)
+    print(f"after dedup: {len(uniq)}")
+
+    with ThreadPoolExecutor(max_workers=16) as ex:
+        uniq = list(ex.map(probe, uniq))
+    alive = [e for e in uniq if e.get("alive")]
+    print(f"alive: {len(alive)}")
+
+    # 直播源去重
+    lseen, luniq = set(), []
+    for l in lives:
+        k = norm_url(l["url"])
+        if k and k not in lseen:
+            lseen.add(k)
+            luniq.append(l)
+    luniq.sort(key=lambda x: x["name"])
+
+    # 安卓4 池：同 norm_key 若有 http 镜像优先 http（安卓4 TLS 栈老）
+    a4_items = []
+    for e in alive:
+        ee = dict(e)
+        if not is_http_prefer(ee["url"]):
+            pass  # 保留，4.4 大多可 TLS1.2；仅优先排序
+        a4_items.append(ee)
+
+    m5 = build_multi(alive)
+    m4 = build_multi_a4(a4_items)
+    (OUT / "android5" / "multi.json").write_text(json.dumps(m5, ensure_ascii=False, indent=1), encoding="utf-8")
+    (OUT / "android4" / "multi.json").write_text(json.dumps(m4, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"multi: profiles={len(m5['profiles'])}")
+
+    s5, rep5 = merge_single(alive, a4=False)
+    (OUT / "android5" / "single.json").write_text(json.dumps(s5, ensure_ascii=False, indent=1), encoding="utf-8")
+    s4, rep4 = merge_single(alive, a4=True, top=max(TOP_SINGLE * 3, 30))
+    (OUT / "android4" / "single.json").write_text(json.dumps(s4, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    lines = [f"# 直播源清单 {time.strftime('%F %T')}  共{len(luniq)}"]
+    for l in luniq:
+        lines.append(f'{l["name"]}\t{l["url"]}\t{l["origin"]}')
+    (OUT / "live_sources.txt").write_text("\n".join(lines), encoding="utf-8")
+
+    report = {
+        "updated": time.strftime("%F %T"),
+        "pool_raw": len(pool), "pool_dedup": len(uniq), "alive": len(alive),
+        "by_origin_alive": {},
+        "android5": {"multi": len(m5["profiles"]), "single_sites": len(s5["sites"]),
+                      "single_parses": len(s5["parses"]), "single_lives": len(s5["lives"]), "sources": rep5},
+        "android4": {"multi": len(m4["profiles"]), "single_sites": len(s4["sites"]),
+                      "single_parses": len(s4["parses"]), "single_lives": len(s4["lives"]), "sources": rep4},
+        "lives_dedup": len(luniq),
+        "dead": [{"name": e["name"], "url": e["url"], "origin": e["origin"]} for e in uniq if not e.get("alive")][:200],
+    }
+    for e in alive:
+        for o in str(e["origin"]).split("+"):
+            report["by_origin_alive"][o] = report["by_origin_alive"].get(o, 0) + 1
+    (OUT / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"DONE a5: sites={len(s5['sites'])} a4: sites={len(s4['sites'])} lives={len(luniq)}")
+
+if __name__ == "__main__":
+    main()
