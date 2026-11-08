@@ -21,32 +21,100 @@
 直播源清单    https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_sources.txt
 ```
 
-## 直播源地址
-
-**直播源本身不分安卓4 / 安卓5+**——`live_sources.txt` 是两套版本共用的一份去重清单（78 条，格式 `名称<TAB>URL<TAB>来源`，m3u/txt 都有）。版本差异只体现在 `single.json` 内嵌的 `lives` 字段：安卓4 版合并了 36 个源、带 103 条直播；安卓5+ 版取速度前 12 个源、带 17 条直播（快源多为爬虫站，直播条目少）。填直播订阅时直接用清单或任一 single.json 均可。
-
-独立直播订阅（测活通过，可填 IPTV 播放器或 TVBox `lives`）：
-
-```
-https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u      # 聚合台标全量 396KB
-https://iptv.445569.xyz/live.m3u                                            # 裤佬IPTV 578KB
-https://sub.ottiptv.cc/bililive.m3u                                         # B站直播
-https://sub.ottiptv.cc/yylunbo.m3u                                          # YY轮播
-https://sub.ottiptv.cc/douyuyqk.m3u                                         # 斗鱼一起看
-https://sub.ottiptv.cc/huyayqk.m3u                                          # 虎牙一起看
-https://ztha.top/TVBox/tv/thtv.txt                                          # 挺好直播
-https://develop202.github.io/migu_video/interface.txt                       # 咪咕
-```
-
-完整 78 条见 [output/live_sources.txt](output/live_sources.txt)，每日 Actions 自动重测活更新。
-
 | 用途 | 安卓5+ | 安卓4 |
 |---|---|---|
 | 多仓订阅（影视仓类填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
 | 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
-| 直播源清单 | `output/live_sources.txt` | 同左 |
+| 直播源清单 | `output/live_sources.txt` | 同左（不分版本） |
 
-`@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，把前缀换成 `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（同路径，实测四文件全 200）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
+`@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，把前缀换成 `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（同路径，实测全 200）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
+
+## 直播源地址（完整 78 条，独立直播订阅）
+
+**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。
+
+```
+APTV          https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u
+B站直播          https://sub.ottiptv.cc/bililive.m3u
+B站直播1线        https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u
+B站直播2线        https://ztha.top/TVBox/lib/bililive.m3u
+EPG直播         http://gh-proxy.org/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt
+FMMIPV6       https://m3u.ibert.me/txt/fmml_ipv6.txt
+Guovin        https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
+Kimentanm     https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+Kimentanm3线   https://ztha.top/TVBox/lib/iptv.m3u
+Kimentanm4线   https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+MV            https://ztha.top/TVBox/tv/MV.txt
+PPV体育赛事直播     https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php
+YY轮播          https://sub.ottiptv.cc/yylunbo.m3u
+YY轮播1线        https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u
+YY轮播2线        https://ztha.top/TVBox/lib/yylunbo.m3u
+YanG1线        https://gh-proxy.org/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
+cluntop       https://clun.top/lib/iptv.m3u
+cluntoptest   https://clun.top/lib/iptv_test.m3u
+develop202    https://gh-proxy.org/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt
+develop2021线  https://ztha.top/TVBox/lib/interface.txt
+gambiarras    https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/main/playlist.m3u
+live1线        http://xhztv.top/xhz/live.txt
+mlzlzj        https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u
+suxuang       https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
+yuan          http://wangziduoqing.com/yuan/zb.txt
+世界杯           https://ztha.top/TVBox/lib/fwc.m3u
+乌拉TV直播        https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2
+优选            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt
+全球            http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg
+全球TV直播        https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u
+初秋语           https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt
+华视TV直播        https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv
+南风直播源         https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt
+咪咕            https://develop202.github.io/migu_video/interface.txt
+咪咕TV直播        https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA
+夜空1           https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt
+央视频           https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt
+尘墨            https://52xiaobai.cn/ceshi/zb.php
+应该能看          https://gh-proxy.org/raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt
+很少            https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt
+手动不知何时更新      https://szyyds.cn/tv/live/x.txt
+挺好直播          https://ztha.top/TVBox/tv/thtv.txt
+斗鱼一起看         https://sub.ottiptv.cc/douyuyqk.m3u
+斗鱼一起看1线       https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B3252352FBE5CD00F1.m3u
+斗鱼一起看2线       https://ztha.top/TVBox/lib/douyuyqk.m3u
+易发TV直播        https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+有效期27年7月      http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512
+歌手直播          https://mgtv.ottiptv.cc/mglist.m3u
+没4K           https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db
+游魂            https://www.iyouhun.com/tv/zb
+电视直播          http://gh-proxy.org/raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt
+移动            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动
+线路            http://www.52top.com.cn:678/downloads/migu.txt
+经典电视剧         https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt
+综合直播1线        http://193.123.86.190:14888/TV/iptv.php
+综合直播2线        https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt
+联通            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通
+范明明           https://live.fanmingming.cn/tv/m3u/ipv6.m3u
+范明明需开启V6网络    https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u
+范明明需开启V6网络1线  https://ztha.top/TVBox/lib/3d75a78a0fc7ede372c03598d6d10367.m3u
+虎牙一起看         https://sub.ottiptv.cc/huyayqk.m3u
+虎牙一起看1线       https://file.icve.com.cn/file_doc/946/41/ECB0A5FBED1D8C4D4E049E95DB9F756F.m3u
+虎牙一起看2线       https://ztha.top/TVBox/lib/huyayqk.m3u
+裤佬IPTV直播      https://iptv.445569.xyz/live.m3u
+裤佬TikTok直播    https://tiktok.445569.xyz/live.m3u
+裤佬Twitch直播    https://twitch.445569.xyz/live.m3u
+裤佬YY直播        https://yy.445569.xyz/live.m3u
+裤佬体育直播主       https://jsnzkpg.de5.net/all.m3u
+裤佬体育直播备       https://stymei.pages.dev/live.m3u
+裤佬快手直播        https://kuaishou.445569.xyz/list.m3u
+裤佬抖音直播        https://douyin.445569.xyz/live.m3u
+裤佬斗鱼直播        https://douyu.445569.xyz/live.m3u
+裤佬来疯直播        https://laifeng.445569.xyz/live.m3u
+裤佬百战直播        https://baizhan.445569.xyz/live.m3u
+裤佬虎牙直播        https://huya.445569.xyz/live.m3u
+裤佬酷狗直播        https://kugou.445569.xyz/live.m3u
+韩国Panda直播     https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u
+音乐所           https://szyyds.cn/tv/live/yy.txt
+```
+
+同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每日 Actions 自动重测活更新。
 
 ## 哪些软件支持多仓、哪些支持单仓
 
