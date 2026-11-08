@@ -1,0 +1,6 @@
+{
+ "http:__www.xn--sss604efuw.net_tv_Mozilla_5.0": 19951,
+ "http:__www.xn--sss604efuw.net_tv_okhttp_3.11": 19951,
+ "http:__fty.888484.xyz_tv_Mozilla_5.0": 12486,
+ "http:__fty.888484.xyz_tv_okhttp_3.11": 19951
+}

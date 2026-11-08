@@ -29,10 +29,59 @@ if "--top" in sys.argv:
     TOP_SINGLE = int(sys.argv[sys.argv.index("--top") + 1])
 
 # ---------- 工具 ----------
-def http_get(url, timeout=15, max_bytes=400_000):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+def idna_url(url):
+    """中文域名转 punycode，否则 urllib 直接抛 UnicodeError（饭太硬.net 等）"""
+    try:
+        m = re.match(r"^(https?://)([^/]+)(.*)$", url, re.S)
+        if not m:
+            return url
+        host = m.group(2)
+        if any(ord(c) > 127 for c in host):
+            parts = host.split(":")
+            parts[0] = parts[0].encode("idna").decode("ascii")
+            host = ":".join(parts)
+        return m.group(1) + host + m.group(3)
+    except Exception:
+        return url
+
+def http_get(url, timeout=15, max_bytes=400_000, ua=None):
+    req = urllib.request.Request(idna_url(url), headers={"User-Agent": ua or UA})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.status, r.read(max_bytes)
+
+import base64 as _b64
+def parse_cfg(body):
+    """返回 (cfg_dict|None, how)。how: json / obf64(饭太硬式 JPEG+base64) / None
+    兼容：明文 JSON、//注释行、JPEG 头后 ew0K base64 配置（需剔除 // 注释）"""
+    if not isinstance(body, bytes):
+        return None, None
+    s = body.decode("utf-8", "replace").lstrip("\ufeff")
+    st = s.strip()
+    if st[:1] in "{[":
+        try:
+            d = json.loads(st)
+            return (d, "json") if isinstance(d, dict) else (None, None)
+        except Exception:
+            pass
+    i = s.find("ew0K")
+    if i >= 0:
+        cand = re.sub(r"[^A-Za-z0-9+/=]", "", s[i:])
+        cand = cand[:len(cand) // 4 * 4]
+        try:
+            dec = _b64.b64decode(cand).decode("utf-8", "replace")
+            lines = [l for l in dec.splitlines() if not l.strip().startswith("//")]
+            d = json.loads("\n".join(lines))
+            if isinstance(d, dict):
+                return d, "obf64"
+        except Exception:
+            pass
+    return None, None
+
+def looks_html(body):
+    head = body[:200].lstrip().lower()
+    return head.startswith((b"<!doctype", b"<html", b"<script"))
+
+BOX_UA = "okhttp/3.11"   # 部分源(饭太硬等)只对盒子 UA 返回真配置，浏览器 UA 返回导航页
 
 def norm_url(u):
     """URL 规范化用于去重：剥代理前缀、统一 host、小写 host"""
@@ -146,23 +195,36 @@ def dedup(pool):
 
 # ---------- 测活 ----------
 def probe(e):
-    if e.get("site_alive") is True:      # juwan 刚测过，直接信任
-        e["alive"], e["probe_ms"] = True, e.get("probe_ms")
-        return e
+    trusted = e.get("site_alive") is True   # juwan 刚测过：兜底算活，但仍探内容量
     u = e["url"]
     try:
         t0 = time.time()
         code, body = http_get(u, timeout=12)
         ms = int((time.time() - t0) * 1000)
         ok = code == 200 and len(body) > 50
-        if ok and norm_url(u).endswith(".json"):
-            try:
-                json.loads(body.decode("utf-8", "replace"))
-            except Exception:
-                ok = False
-        e["alive"], e["probe_ms"] = ok, ms
+        if ok:
+            cfg, how = parse_cfg(body)
+            if cfg is None:
+                # 浏览器 UA 拿到导航页/乱码 → 盒子 UA 重试（饭太硬式反代）
+                try:
+                    code2, body2 = http_get(u, timeout=12, ua=BOX_UA)
+                    cfg2, how2 = parse_cfg(body2)
+                    if cfg2 is not None:
+                        cfg, how = cfg2, how2
+                        e["box_ua"] = True
+                except Exception:
+                    pass
+            if how == "obf64":
+                e["obf"] = True
+            if cfg is not None:
+                e["cfg_sites"] = len(cfg.get("sites") or [])
+                e["cfg_lives"] = len(cfg.get("lives") or [])
+                e["cfg_parses"] = len(cfg.get("parses") or [])
+            if cfg is None and not looks_html(body):
+                ok = False        # 非 JSON 又非 HTML 的垃圾响应判死
+        e["alive"], e["probe_ms"] = (ok or trusted), ms
     except Exception:
-        e["alive"], e["probe_ms"] = False, None
+        e["alive"], e["probe_ms"] = trusted, None
     return e
 
 # ---------- 多仓配置 ----------
@@ -209,8 +271,12 @@ def a4_site_ok(s):
 def merge_single(alive_items, a4: bool, top: int = None):
     """按速度取前 top 个有效单仓源合并；空源(0站点0解析0直播)不占名额，总抓取上限60"""
     top = top or TOP_SINGLE
-    cands = [e for e in alive_items if norm_url(e["url"]).endswith((".json", ".webp", ".txt")) or "json" in e["url"]]
-    cands = sorted(cands, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))
+    cands = [e for e in alive_items if norm_url(e["url"]).endswith((".json", ".webp", ".txt")) or "json" in e["url"] or e.get("box_ua")]
+    def _content(e):
+        if "cfg_sites" in e:
+            return (e.get("cfg_sites") or 0) + (e.get("cfg_parses") or 0) + (e.get("cfg_lives") or 0)
+        return 50  # juwan 信任源未探内容，按中等排
+    cands = sorted(cands, key=lambda x: (-_content(x), x.get("probe_ms") or x.get("speed") or 99999))
     MAX_FETCH = 60
     merged = {"sites": [], "lives": [], "parses": [], "rules": [], "flags": [], "hosts": []}
     if not a4:
@@ -235,7 +301,10 @@ def merge_single(alive_items, a4: bool, top: int = None):
         fetched += 1
         try:
             code, body = http_get(e["url"], timeout=20)
-            cfg = json.loads(body.decode("utf-8", "replace"))
+            cfg, how = parse_cfg(body)
+            if cfg is None and e.get("box_ua"):
+                code, body = http_get(e["url"], timeout=20, ua=BOX_UA)
+                cfg, how = parse_cfg(body)
             if not isinstance(cfg, dict) or not (cfg.get("sites") or cfg.get("lives")):
                 continue
         except Exception:

@@ -1,0 +1,6 @@
+code=200 len=19951
+parse_cfg -> how=obf64 cfg=['spider', 'wallpaper', 'sites', 'rules', 'logo', 'hosts', 'lives']
+ew0K at 2299
+cand len=17540 tail='YSI6Im9rSHR0cC9Nb2QtMS41LjAuMCJ9DQpdDQp9'
+dec len=12245 head='{\r\n"spider":"https://xiuxiu-pro-new.meitudata.com/posters/937f5abf1c7c4ff2f170d8' tail='ptv.cc/yylunbo.m3u","playerType":2,"timeout":10,"ua":"okHttp/Mod-1.5.0.0"}\r\n]\r\n}'
+OK keys=['spider', 'wallpaper', 'sites', 'rules', 'logo', 'hosts', 'lives'] sites=48 lives=6

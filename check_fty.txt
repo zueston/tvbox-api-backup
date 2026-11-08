@@ -1,0 +1,3 @@
+android4 https://qist.wyfc.qzz.io/fty.json {'name': '饭太硬', 'url': 'https://qist.wyfc.qzz.io/fty.json', 'origin': 'tvyuan+tvyuan-multi', 'sites': 0, 'parses': 0, 'lives': 2}
+multi: {"url": "http://www.xn--sss604efuw.net/tv", "name": "http://www.xn--sss604efuw.net/tv"}
+multi: {"url": "https://qist.wyfc.qzz.io/fty.json", "name": "饭太硬"}

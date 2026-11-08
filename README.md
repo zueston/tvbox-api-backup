@@ -29,6 +29,9 @@
 
 `@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，把前缀换成 `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（同路径，实测全 200）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
 
+
+
+
 ## 直播源地址（完整 78 条，独立直播订阅）
 
 **不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。
@@ -116,6 +119,31 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每日 Actions 自动重测活更新。
 
+## 需看广告/验证的线路（单独列出）
+
+下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。
+
+以下 14 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 64 条可直连。
+
+| 名称 | 类型 | 判定 | 完整地址 |
+|---|---|---|---|
+| 乌拉TV直播 | HTML | 网页/验证页 | `https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2` |
+| 全球 | HTML | 网页/验证页（SPA空壳） | `http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg` |
+| 咪咕TV直播 | HTML | 网页/验证页 | `https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA` |
+| 尘墨 | HTML | 网页/验证页（授权/注册公告/JS跳转/倒计时） | `https://52xiaobai.cn/ceshi/zb.php` |
+| Kimentanm4线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u` |
+| yuan | FAIL | 拉取失败 | `http://wangziduoqing.com/yuan/zb.txt` |
+| 咪咕 | FAIL | 拉取失败 | `https://develop202.github.io/migu_video/interface.txt` |
+| 综合直播2线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt` |
+| 范明明 | FAIL | 拉取失败 | `https://live.fanmingming.cn/tv/m3u/ipv6.m3u` |
+| 夜空1 | TXT | 源可直连，网页打开是网盘下载页/网盘域 | `https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt` |
+| 央视频 | M3U | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt` |
+| 很少 | TXT | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt` |
+| 有效期27年7月 | M3U | 源可直连，网页打开是带token参数 | `http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512` |
+| 没4K | TXT | 源可直连，网页打开是图床哈希页 | `https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db` |
+
+判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每日随 Actions 更新。
+
 ## 哪些软件支持多仓、哪些支持单仓
 
 按 TVBox 系壳子的实际能力（多仓 / 多线路 / 单接口三者关系参考恩山论坛 [TVBox多仓接口分享](https://www.right.com.cn/forum/archiver/tid-8352531.html)：多仓=多个单仓，多线路=一个仓库内含多条线路，单接口=单线路全软件通用）：
@@ -128,12 +156,14 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 - **安卓5+ single**：保留全部站点（含 `csp:` Jar 爬虫）、解析 type2、全局 jar/spider/ijk 配置。
 - **安卓4 single**：剔除 `type==3`、`api/spider` 以 `csp:`/`assets:`/`jar:` 开头的站点（旧内核跑不了 Jar 爬虫）、剔除 `type==2` 解析、剔除无 url 直播行、不写全局 jar/spider；选源名额扩大到 3 倍并用"空源不占名额"策略补足有效站点。
-- **multi**：两套同为去重测活后的全量存活源清单（78 条），仅名称标注不同。
+- **multi**：两套同为去重测活后的全量存活源清单（70 条），仅名称标注不同。
 
 ## 去重与测活
 
 - URL 规范化：剥 `gh-proxy.*` 前缀、jsDelivr→raw、`raw.github.com`→`raw.githubusercontent.com`、host 小写、去尾斜杠，同一规范化键只保留一条并合并来源标记。
-- 16 线程并发测活：HTTP 200 + 体积 >50B，`.json` 结尾额外校验可解析；聚玩盒子当日已测活的直接信任。
+- 16 线程并发测活：HTTP 200 + 体积 >50B，`.json` 结尾额外校验可解析；聚玩盒子当日已测活的仍照常探内容量（兜底算活）。
+- **盒子反爬适配**（饭太硬类源站）：浏览器 UA 拿到导航页/HTML 时自动用 `okhttp/3.11` 盒子 UA 重试；支持 JPEG+尾部 base64 混淆配置解码（`ew0K` 起解）；中文域名自动 punycode（IDNA）转换后探测。
+- **单仓选源按内容量优先**（站点+解析+直播数降序、同量比响应速度），空源不占 TOP 名额，避免聚合出"快但空"的配置。
 
 ## 手动更新
 

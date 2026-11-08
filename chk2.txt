@@ -1,0 +1,12 @@
+ee.com/fuleishu/fulei/raw/master/fuleixyx.json",     "origin": "tvyuan+tvyuan-multi",     "sites": 8,     "parses": 14,     "lives": 13    },    {     "name": "饭太硬",     "url": "https://qist.wyfc.qzz.io/fty.json",     "origin": "tvyuan+tvyuan-multi",     "sites": 0,     "parses": 0,     "lives": 2    },    {     "name": "
+---
+"uuccc",     "url": "http://xn--5mqx81b535a.com/",     "origin": "tvyuan+tvyuan-multi",     "sites": 0,     "parses": 0,     "lives": 0    },    {     "name": "饭太硬",     "url": "http://fty.333232.xyz/tv",     "origin": "lubin776+tvyuan+tvyuan-multi",     "sites": 0,     "parses": 0,     "lives": 0    },    {     "name": "
+---
+bin1site1.github.io/refs/heads/main/OS.json",     "origin": "tvyuan+tvyuan-multi",     "sites": 34,     "parses": 6,     "lives": 0    },    {     "name": "xn--6orr3pi6g9uu",     "url": "http://xn--6orr3pi6g9uu.top/",     "origin": "tvyuan+tvyuan-multi",     "sites": 0,     "parses": 4,     "lives": 0    },    {     "name"
+---
+on",     "origin": "tvyuan+tvyuan-multi",     "sites": 14,     "parses": 9,     "lives": 0    },    {     "name": "hhh",     "url": "https://www.iyouhun.com/tv/fty",     "origin": "tvyuan+tvyuan-multi",     "sites": 0,     "parses": 0,     "lives": 0    },    {     "name": "我的",     "url": "https://gh-proxy.org/https://ra
+---
+  }   ]  },  "lives_dedup": 78,  "dead": [   {    "name": "宝盒接口",    "url": "http://宝盒接口.top",    "origin": "lubin776+tvyuan+tvyuan-multi"   },   {    "name": "饭太硬",    "url": "http://www.饭太硬.net/tv",    "origin": "lubin776+lightconer"   },   {    "name": "饭太硬",    "url": "http://www.饭太硬.art/tv",    "origin": "lubin776"  
+---
+://肥猫.com/",    "origin": "lightconer"   },   {    "name": "肥猫",    "url": "https://6296.kstore.vip/facat.json",    "origin": "lightconer"   },   {    "name": "饭太硬",    "url": "http://www.饭太硬.xyz/tv",    "origin": "lightconer"   },   {    "name": "王二小",    "url": "https://d.kstore.dev/download/9280/wex.json",    "origin":
+---

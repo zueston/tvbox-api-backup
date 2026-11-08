@@ -1,0 +1,2 @@
+android4: sites=252 parses=224 lives=111 rules=484 bad4=0 badp=0 nolives=0 relspider=0 jar=False multiP=70 store=70
+android5: sites=1186 parses=91 lives=83 rules=155 bad4=0 badp=0 nolives=0 relspider=0 jar=False multiP=70 store=70

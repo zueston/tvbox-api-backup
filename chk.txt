@@ -1,0 +1,12 @@
+fty: 5
+饭太硬: 12
+xn--6orr3pi6g9uu: 2
+xxooo: 1
+888484: 1
+report keys: ['updated', 'pool_raw', 'pool_dedup', 'alive', 'by_origin_alive', 'android5', 'android4', 'lives_dedup', 'dead']
+multi5 profiles=75
+HIT multi5: 饭太硬
+HIT multi5: xn--6orr3pi6g9uu
+multi5 urls=75
+single5 sites=517 parses=56 lives=17
+--- juwan seed urls with fty/6orr/xxooo/888484 ---

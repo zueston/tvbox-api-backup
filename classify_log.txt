@@ -1,0 +1,15 @@
+need_verify=14 direct=64 total=78
+  FAIL Kimentanm4线 | <urlopen error _ssl.c:1064: The handshake operation timed out>
+  FAIL yuan | [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+  HTML 乌拉TV直播 | 返回网页而非源数据
+  HTML 全球 | SPA空壳
+  FAIL 咪咕 | Remote end closed connection without response
+  HTML 咪咕TV直播 | 返回网页而非源数据
+  TXT 夜空1 | 网盘下载页,网盘域
+  M3U 央视频 | 网盘下载页
+  HTML 尘墨 | 授权/注册公告,JS跳转/倒计时
+  TXT 很少 | 网盘下载页
+  M3U 有效期27年7月 | 带token参数
+  TXT 没4K | 图床哈希页
+  FAIL 综合直播2线 | <urlopen error _ssl.c:1064: The handshake operation timed out>
+  FAIL 范明明 | <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>

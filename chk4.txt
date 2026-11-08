@@ -1,0 +1,16 @@
+{"name": "饭太硬", "url": "https://qist.wyfc.qzz.io/fty.json", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 2}
+{"name": "饭太硬", "url": "http://fty.333232.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+{"name": "饭太硬", "url": "http://fty.888484.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+{"name": "饭太硬2线", "url": "http://www.饭太硬.cc/tv", "origin": "lubin776+lightconer", "sites": 0, "parses": 0, "lives": 0}
+{"name": "hhh", "url": "https://www.iyouhun.com/tv/fty", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+{"name": "饭太硬", "url": "http://fty.xxooo.cf/tv", "origin": "lubin776"}
+{"name": "饭太硬", "url": "http://www.饭太硬.xyz/tv", "origin": "lightconer"}
+=== direct probe test ===
+http://www.xn--6orr3pi6g9uu.net/tv | Mozilla/5.0 | ERR URLError(gaierror(11001, 'getaddrinfo failed'))
+http://www.xn--6orr3pi6g9uu.net/tv | okhttp/3.11 | ERR URLError(gaierror(11001, 'getaddrinfo failed'))
+http://fty.888484.xyz/tv | Mozilla/5.0 | 200 | 951ms | head=b'<!DOCTYPE html>\n<html lang="en">\n <head>'
+http://fty.888484.xyz/tv | okhttp/3.11 | 200 | 885ms | head=b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00\x84\x00\x06\x06\x06\x06\x06\x06\x06\x07\x07\x06\t\n\t\n\t'
+http://xn--6orr3pi6g9uu.top/ | Mozilla/5.0 | 200 | 2408ms | head=b'{\r\n    "spider": "https://raw.giteeuserc'
+http://xn--6orr3pi6g9uu.top/ | okhttp/3.11 | 200 | 9059ms | head=b'{\r\n    "spider": "https://raw.giteeuserc'
+http://fty.333232.xyz/tv | Mozilla/5.0 | 200 | 1192ms | head=b'<!DOCTYPE html>\n<html lang="en">\n <head>'
+http://fty.333232.xyz/tv | okhttp/3.11 | 200 | 706ms | head=b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00\x84\x00\x06\x06\x06\x06\x06\x06\x06\x07\x07\x06\t\n\t\n\t'

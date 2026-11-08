@@ -41,11 +41,27 @@ def main():
         "同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每日 Actions 自动重测活更新。\n"
     ) % (len(rows), list_block)
 
+    # 广告/验证线路表（classify_live.py 产物）
+    verify_section = ""
+    try:
+        with io.open("output/live_verify_table.md", encoding="utf-8") as f:
+            vtxt = f.read().strip()
+        if vtxt:
+            verify_section = (
+                "## 需看广告/验证的线路（单独列出）\n\n"
+                "下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，"
+                "需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。\n\n%s\n\n"
+                "判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每日随 Actions 更新。\n"
+            ) % vtxt
+    except IOError:
+        pass
+    text = re.sub(r"## 需看广告/验证的线路.*?(?=\n## |\Z)", "", text, flags=re.S)
+
     anchor = "## 哪些软件支持多仓、哪些支持单仓"
     if anchor in text:
-        text = text.replace(anchor, live_section + "\n" + anchor, 1)
+        text = text.replace(anchor, live_section + ("\n" + verify_section if verify_section else "") + "\n" + anchor, 1)
     else:
-        text = text.rstrip("\n") + "\n\n" + live_section
+        text = text.rstrip("\n") + "\n\n" + live_section + ("\n\n" + verify_section if verify_section else "")
 
     # 3) 表格+备注放回「订阅地址」代码块之后
     if table_note:

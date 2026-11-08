@@ -1,0 +1,548 @@
+[
+ {
+  "name": "APTV",
+  "url": "https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://epg.aptv.app/pp.xml.gz,https://epg.aptv.app/xml\" catc"
+ },
+ {
+  "name": "B站直播",
+  "url": "https://sub.ottiptv.cc/bililive.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-11-08 11:38:25\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "B站直播1线",
+  "url": "https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-07-24 21:20:55\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "B站直播2线",
+  "url": "https://ztha.top/TVBox/lib/bililive.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-06-27 06:58:54\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "EPG直播",
+  "url": "http://gh-proxy.org/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "央视频道,#genre# CCTV1综合,http://tvbox6.icu/tv/migu.php?id=cctv1$LR•6•IPV4『线路1』 CCTV1"
+ },
+ {
+  "name": "FMMIPV6",
+  "url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "央视频道,#genre# CCTV-1综合,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/"
+ },
+ {
+  "name": "Guovin",
+  "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://gh-proxy.com/https://raw.githubusercontent.com/Guovin"
+ },
+ {
+  "name": "Kimentanm",
+  "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://epg.aptv.app/pp.xml.gz,https://epg.aptv.app/xml\" catc"
+ },
+ {
+  "name": "Kimentanm3线",
+  "url": "https://ztha.top/TVBox/lib/iptv.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U x-tvg-url=\"https://epg.aptv.app/pp.xml.gz,https://epg.aptv.app/xml\" catc"
+ },
+ {
+  "name": "Kimentanm4线",
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+  "kind": "FAIL",
+  "ctype": "",
+  "head": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+ },
+ {
+  "name": "MV",
+  "url": "https://ztha.top/TVBox/tv/MV.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "美女赏析,#genre#\r 十二大美女,http://jsmov2.a.yximgs.com/bs3/video-hls/5207287104753371853"
+ },
+ {
+  "name": "PPV体育赛事直播",
+  "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-logo=\"https://static.ppvservices.st/assets/thumb/5ed7ea60"
+ },
+ {
+  "name": "YY轮播",
+  "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-11-08 11:38:14\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "YY轮播1线",
+  "url": "https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-04-17 20:59:47\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "YY轮播2线",
+  "url": "https://ztha.top/TVBox/lib/yylunbo.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-04-17 20:59:47\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "YanG1线",
+  "url": "https://gh-proxy.org/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://iptv.yang-1989.xyz/epg.xml.gz\"  #EXTINF:-1 tvg-id=\"睛彩"
+ },
+ {
+  "name": "cluntop",
+  "url": "https://clun.top/lib/iptv.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"东方卫视4K\" tvg-name=\"东方卫视4K\" group-title=\"4K\",东方卫视4K htt"
+ },
+ {
+  "name": "cluntoptest",
+  "url": "https://clun.top/lib/iptv_test.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"CCTV8K\" tvg-name=\"CCTV8K\" group-title=\"默认分类\",CCTV-8K "
+ },
+ {
+  "name": "develop202",
+  "url": "https://gh-proxy.org/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://gh-proxy.com/https://raw.githubusercontent.com/develo"
+ },
+ {
+  "name": "develop2021线",
+  "url": "https://ztha.top/TVBox/lib/interface.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "#EXTM3U x-tvg-url=\"https://gh-proxy.com/https://raw.githubusercontent.com/develo"
+ },
+ {
+  "name": "gambiarras",
+  "url": "https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/main/playlist.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U refresh=\"3600\" x-tvg-url=\"https://bit.ly/legal-epg,https://raw.githubuse"
+ },
+ {
+  "name": "live1线",
+  "url": "http://xhztv.top/xhz/live.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "央视,#genre# CCTV1,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888888/22"
+ },
+ {
+  "name": "mlzlzj",
+  "url": "https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://ghproxy.cc/https://raw.githubusercontent.com/fanmingm"
+ },
+ {
+  "name": "suxuang",
+  "url": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"http://epg.51zmt.top:8000/e.xml\" #4K频道 #EXTINF:-1 tvg-name=\"北"
+ },
+ {
+  "name": "yuan",
+  "url": "http://wangziduoqing.com/yuan/zb.txt",
+  "kind": "FAIL",
+  "ctype": "",
+  "head": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+ },
+ {
+  "name": "世界杯",
+  "url": "https://ztha.top/TVBox/lib/fwc.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U x-tvg-url=\"https://epg.zsdc.eu.org/t.xml\" #EXTINF:-1 tvg-name=\"注意事项\" tvg"
+ },
+ {
+  "name": "乌拉TV直播",
+  "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
+  "kind": "M3U",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "#EXTM3U x-tvg-url=\"http://epg.one/epg.xml.gz\"\r #EXTINF:0 group-title=\"Общие\" tvg"
+ },
+ {
+  "name": "优选",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "央视频道,#genre# CCTV1,http://ott.mobaibox.com/PLTV/3/224/3221228732/index.m3u8 CCTV"
+ },
+ {
+  "name": "全球",
+  "url": "http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg",
+  "kind": "HTML",
+  "ctype": "text/html",
+  "head": "<!doctype html> <html> <head>     <meta charset=\"utf-8\">     <meta name=\"viewport\" content=\"width=device-width,initial-s"
+ },
+ {
+  "name": "全球TV直播",
+  "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U\r #EXTINF:-1 tvg-id=\"00sReplay.us@SD\" tvg-logo=\"https://images.pluto.tv/c"
+ },
+ {
+  "name": "初秋语",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "CCTV,#genre#\r CCTV1,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/322122601"
+ },
+ {
+  "name": "华视TV直播",
+  "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv",
+  "kind": "TXT",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "SW-華哥TV ,#genre#  Global News,https://live.corusdigitaldev.com/groupd/live/49a91e7f-1023-430f-8d66-561055f3d0f7/live.ism"
+ },
+ {
+  "name": "南风直播源",
+  "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "央视,#genre# CCTV1,http://120.76.248.139/live/bfgd/4200000489.m3u8 CCTV1,http://12"
+ },
+ {
+  "name": "咪咕",
+  "url": "https://develop202.github.io/migu_video/interface.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://gh-proxy.com/https://raw.githubusercontent.com/develo"
+ },
+ {
+  "name": "咪咕TV直播",
+  "url": "https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA",
+  "kind": "M3U",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "#EXTM3U x-tvg-url=\"http://8.137.121.66:20241/playback.xml\" catchup=\"append\" catc"
+ },
+ {
+  "name": "夜空1",
+  "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
+  "kind": "M3U",
+  "ctype": "application/force-download",
+  "head": "央视频道,#genre# CCTV1-综合,http://139.227.221.179:9901/tsfile/live/0001_1.m3u8?key=tx"
+ },
+ {
+  "name": "央视频",
+  "url": "https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt",
+  "kind": "M3U",
+  "ctype": "application/force-download",
+  "head": "#EXTM3U\r #EXTINF:-1 tvg-id=\"600001859\" tvg-name=\"CCTV1\" group-title=\"央视\",CCTV1\r "
+ },
+ {
+  "name": "尘墨",
+  "url": "https://52xiaobai.cn/ceshi/zb.php",
+  "kind": "HTML",
+  "ctype": "text/html",
+  "head": "<!DOCTYPE html> <html lang=\"zh-CN\"> <head>     <meta charset=\"UTF-8\">     <meta name=\"viewport\" content=\"width=device-wi"
+ },
+ {
+  "name": "应该能看",
+  "url": "https://gh-proxy.org/raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "汕头频道,#genre#\r 汕头,http://183.10.180.171:202/tsfile/live/1000_1.m3u8?key=txiptv&pl"
+ },
+ {
+  "name": "很少",
+  "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
+  "kind": "M3U",
+  "ctype": "application/force-download",
+  "head": "🌟馬來頻道🌟,#genre#\r 马来TVB星河,https://o11.163189.xyz/stream/live/tvbxh/\r 香港翡翠台,https:/"
+ },
+ {
+  "name": "手动不知何时更新",
+  "url": "https://szyyds.cn/tv/live/x.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "߇谟糯휧싧봦⭨ﴦ莬#genre# 公众号【小马网络科技园】,https://cloud.video.taobao.com//play/u/709608496/p"
+ },
+ {
+  "name": "挺好直播",
+  "url": "https://ztha.top/TVBox/tv/thtv.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "📛公众号：挺好仓库,#genre# 公众号：挺好仓库,https://raw.giteeusercontent.com/ztha001/th/raw/maste"
+ },
+ {
+  "name": "斗鱼一起看",
+  "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-11-08 11:38:22\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "斗鱼一起看1线",
+  "url": "https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B3252352FBE5CD00F1.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-07-24 21:19:58\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "斗鱼一起看2线",
+  "url": "https://ztha.top/TVBox/lib/douyuyqk.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-06-27 06:58:51\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "易发TV直播",
+  "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "抖音K歌,#genre#,DE=3 小米澎程N90,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo"
+ },
+ {
+  "name": "有效期27年7月",
+  "url": "http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512",
+  "kind": "M3U",
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"东南卫视\" group-title=\"卫视\",东南卫视 http://139.227.21.22:99"
+ },
+ {
+  "name": "歌手直播",
+  "url": "https://mgtv.ottiptv.cc/mglist.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #PLAYLIST:歌手2026 & 乘风2026 — 直播+回放 4K  #EXTINF:-1 tvg-name=\"4K60PSDR-H264"
+ },
+ {
+  "name": "没4K",
+  "url": "https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=UTF-8",
+  "head": "世界杯没4K,#genre#\r cctv5,http://82.156.243.185:36888/av3a/cctv5n.m3u8\r cctv5p,http:"
+ },
+ {
+  "name": "游魂",
+  "url": "https://www.iyouhun.com/tv/zb",
+  "kind": "M3U",
+  "ctype": "text/plain;charset=UTF-8",
+  "head": "更新时间,#genre# 20261108 10:45:55,https://gitlab.com/youhun/TVAPP/-/raw/main/abput1"
+ },
+ {
+  "name": "电视直播",
+  "url": "http://gh-proxy.org/raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "🇨🇳河南地方,#genre# 河南卫视,http://tvcdn.stream3.hndt.com/tv/65c4a6d5017e1000b2b6ea25000"
+ },
+ {
+  "name": "移动",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动",
+  "kind": "TXT",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "💓体育,#genre#\r CCTV5,http://ott.mobaibox.com/PLTV/3/224/3221228502/index.m3u8\r CCTV5+,http://ott.mobaibox.com/PLTV/3/224/3"
+ },
+ {
+  "name": "线路",
+  "url": "http://www.52top.com.cn:678/downloads/migu.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "#EXTM3U x-tvg-url=\"https://develop202.github.io/migu_video/playback.xml,https://"
+ },
+ {
+  "name": "经典电视剧",
+  "url": "https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "香港奇案实录,#genre# 第01-04集,https://vip.ffzy-play10.com/20230603/38052_3402bf16/2000k"
+ },
+ {
+  "name": "综合直播1线",
+  "url": "http://193.123.86.190:14888/TV/iptv.php",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U x-tvg-url=\"https://gitee.com/taksssss/tv/raw/main/epg/112114.xml.gz\"\r \r "
+ },
+ {
+  "name": "综合直播2线",
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "kind": "FAIL",
+  "ctype": "",
+  "head": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
+ },
+ {
+  "name": "联通",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通",
+  "kind": "TXT",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "苏州频道,#genre# 苏州新闻综合,https://live-auth.51kandianshi.com/szgd/csztv1.m3u8 苏州社会经济,https://live-auth.51kandianshi.com/szgd/c"
+ },
+ {
+  "name": "范明明",
+  "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
+  "kind": "FAIL",
+  "ctype": "",
+  "head": "<urlopen error timed out>"
+ },
+ {
+  "name": "范明明需开启V6网络",
+  "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl;charset=UTF-8",
+  "head": "#EXTM3U x-tvg-url=\"https://live.fanmingming.cn/e.xml\" catchup=\"append\" catchup-s"
+ },
+ {
+  "name": "范明明需开启V6网络1线",
+  "url": "https://ztha.top/TVBox/lib/3d75a78a0fc7ede372c03598d6d10367.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U x-tvg-url=\"https://live.fanmingming.cn/e.xml\" catchup=\"append\" catchup-s"
+ },
+ {
+  "name": "虎牙一起看",
+  "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-11-08 11:38:18\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "虎牙一起看1线",
+  "url": "https://file.icve.com.cn/file_doc/946/41/ECB0A5FBED1D8C4D4E049E95DB9F756F.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-07-24 21:19:53\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "虎牙一起看2线",
+  "url": "https://ztha.top/TVBox/lib/huyayqk.m3u",
+  "kind": "M3U",
+  "ctype": "application/octet-stream",
+  "head": "#EXTM3U #EXTINF:-1 tvg-name=\"2026-06-27 06:58:45\" tvg-logo=\"https://cdn.jsdelivr"
+ },
+ {
+  "name": "裤佬IPTV直播",
+  "url": "https://iptv.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-logo=\"https://jsnz.pages.dev/f/5ab7e916.gif\" group-title="
+ },
+ {
+  "name": "裤佬TikTok直播",
+  "url": "https://tiktok.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U # 更新时间: 2026/11/8 13:44:57 # 频道总数: 276 # 分组数: 12  # 分组: 综合 (182个频道) #EXT"
+ },
+ {
+  "name": "裤佬Twitch直播",
+  "url": "https://twitch.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U # Twitch Live Channels Count: 686 #EXTINF:-1 tvg-logo=\"https://static-cd"
+ },
+ {
+  "name": "裤佬YY直播",
+  "url": "https://yy.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 group-title=\"提示\",未抓取到在播房间 http://nas.jqcykj.com:88/yy?id=5488"
+ },
+ {
+  "name": "裤佬体育直播主",
+  "url": "https://jsnzkpg.de5.net/all.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-logo=\"https://jsnz.pages.dev/f/5ab7e916.gif\" group-title="
+ },
+ {
+  "name": "裤佬体育直播备",
+  "url": "https://stymei.pages.dev/live.m3u",
+  "kind": "M3U",
+  "ctype": "application/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U # 大米直播 - 实时全线路源 # 北京时间: 2026/11/8 13:45:13 # 当前直播场次: 41 场  #EXTINF:-1 tv"
+ },
+ {
+  "name": "裤佬快手直播",
+  "url": "https://kuaishou.445569.xyz/list.m3u",
+  "kind": "M3U",
+  "ctype": "application/x-mpegurl;charset=UTF-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-logo=\"https://p22.a.yximgs.com/uhead/AB/2026/05/18/11/BMj"
+ },
+ {
+  "name": "裤佬抖音直播",
+  "url": "https://douyin.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-logo=\"https://p11.douyinpic.com/aweme/100x100/aweme-avata"
+ },
+ {
+  "name": "裤佬斗鱼直播",
+  "url": "https://douyu.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U # 斗鱼在线频道数: 1200 #EXTINF:-1 tvg-logo=\"https://rpic.douyucdn.cn/live-cover"
+ },
+ {
+  "name": "裤佬来疯直播",
+  "url": "https://laifeng.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"9418861\" tvg-name=\"冰冰.\" tvg-logo=\"https://yimage.laif"
+ },
+ {
+  "name": "裤佬百战直播",
+  "url": "https://baizhan.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"1538408786\" tvg-name=\"[百花哥] 最全面的英雄教学，局局不一样 · 蓝光\" tvg-logo=\"https://lpfm2-cover-static.myzhini"
+ },
+ {
+  "name": "裤佬虎牙直播",
+  "url": "https://huya.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "#EXTM3U # 虎牙在线频道数: 1745 #EXTINF:-1 tvg-logo=\"https://anchorpost.msstatic.com/cdn"
+ },
+ {
+  "name": "裤佬酷狗直播",
+  "url": "https://kugou.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "ctype": "application/x-mpegurl; charset=utf-8",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"50682078\" tvg-name=\"闪闪shining\" tvg-logo=\"http://p3.fx"
+ },
+ {
+  "name": "韩国Panda直播",
+  "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
+  "kind": "M3U",
+  "ctype": "audio/x-mpegurl",
+  "head": "#EXTM3U #EXTINF:-1 tvg-id=\"mickey94\" tvg-logo=\"https://cdn.pandalive.co.kr/thumb"
+ },
+ {
+  "name": "音乐所",
+  "url": "https://szyyds.cn/tv/live/yy.txt",
+  "kind": "M3U",
+  "ctype": "text/plain",
+  "head": "🇨🇳｜看直播说明,#genre# 小程序【小马网络】,https://15799848.s21v.faiusr.com/58/ABUIABA6GAAg6uyj4"
+ }
+]

@@ -1,0 +1,9 @@
+alive=85
+pool_dedup=158
+lives_dedup=78
+dead urls with fty:
+  DEAD {"name": "饭太硬", "url": "http://fty.xxooo.cf/tv", "origin": "lubin776"}
+android4 SRC {"name": "饭太硬", "url": "https://qist.wyfc.qzz.io/fty.json", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 2}
+android4 SRC {"name": "饭太硬", "url": "http://fty.333232.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+android4 SRC {"name": "饭太硬", "url": "http://fty.888484.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+android4 SRC {"name": "hhh", "url": "https://www.iyouhun.com/tv/fty", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}

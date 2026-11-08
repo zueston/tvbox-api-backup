@@ -1,0 +1,20 @@
+==== Kimentanm4线 | https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u | ERR <urlopen error _ssl.c:1064: The handshake operation timed out>
+==== yuan | http://wangziduoqing.com/yuan/zb.txt | ERR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+==== 全球 | http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg | len=1435
+  TEXT:  
+  MARK: []
+==== 夜空1 | https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt | len=28188
+  DATA: 央视频道,#genre# CCTV1-综合,http://139.227.221.179:9901/tsfile/live/0001_1.m3u8?key=tx
+==== 央视频 | https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt | len=8028
+  DATA: #EXTM3U #EXTINF:-1 tvg-id="600001859" tvg-name="CCTV1" group-title="央视",CCTV1 
+==== 尘墨 | https://52xiaobai.cn/ceshi/zb.php | len=11367
+  TEXT:  尘墨影视接口调用 尘墨影视接口 欢迎使用尘墨影视接口Api 本站接口将于5月5日暂停使用 新接口已测试开启请点击下方个人主页前往注册 授权联系微信：My_lingserendipity 接口交流群 &nbsp;&nbsp;&nbsp; 个人主页 (点击网址可复制) 欢迎使用尘墨影视接口Api 本站接口将于5月5日暂停使用 新接口已测试开启请点击下方个人主页前往注册 授权联系微信：My_lingserendipity 接口交流群 &nbsp;&nbsp;&nbsp; 个人主页 (点击网址可复制) 已复制到剪贴板 
+  MARK: ['setTimeout']
+==== 很少 | https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt | len=1913
+  DATA: 馬來頻道,#genre# 马来TVB星河,https://o11.163189.xyz/stream/live/tvbxh/ 香港翡翠台,https:/
+==== 没4K | https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db | len=570
+  DATA: 世界杯没4K,#genre# cctv5,http://82.156.243.185:36888/av3a/cctv5n.m3u8 cctv5p,http:
+==== 游魂 | https://www.iyouhun.com/tv/zb | len=26723
+  DATA: 更新时间,#genre# 20261108 10:45:55,https://gitlab.com/youhun/TVAPP/-/raw/main/abput1
+==== 综合直播2线 | https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt | ERR <urlopen error _ssl.c:1064: The handshake operation timed out>
+==== 范明明 | https://live.fanmingming.cn/tv/m3u/ipv6.m3u | ERR <urlopen error timed out>

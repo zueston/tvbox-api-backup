@@ -1,0 +1,3 @@
+alive=85 pool=285 dedup=158
+a5={"multi": 70, "single_sites": 587, "single_parses": 54, "single_lives": 17, "sources": [{"name": "1", "url": "http://8.138.7.223/tv.txt", "origin": "tvyuan+tvyuan-multi", "sites": 51, "parses": 0, "li
+a4={"multi": 70, "single_sites": 227, "single_parses": 180, "single_lives": 101, "sources": [{"name": "1", "url": "http://8.138.7.223/tv.txt", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "l

@@ -1,0 +1,4 @@
+JSON OK keys=['spider', 'wallpaper', 'sites', 'rules', 'logo', 'hosts', 'lives']
+sites=48 parses=0 lives=6 rules=1
+spider=https://xiuxiu-pro-new.meitudata.com/posters/937f5abf1c7c4ff2f170d835c5c46c21.jpg;md5;9d5f341aa5f3353b50cc3bc16b4f3e8a
+lives heads: ["综合", "牛播一", "Kimentanm", "虎牙一起看", "斗鱼一起看", "YY轮播"]

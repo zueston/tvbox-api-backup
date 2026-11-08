@@ -1,0 +1,798 @@
+[
+ {
+  "name": "APTV",
+  "url": "https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 21971,
+  "origin": "lubin776"
+ },
+ {
+  "name": "B站直播",
+  "url": "https://sub.ottiptv.cc/bililive.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 91178,
+  "origin": "lubin776"
+ },
+ {
+  "name": "B站直播1线",
+  "url": "https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "B站直播2线",
+  "url": "https://ztha.top/TVBox/lib/bililive.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 28261,
+  "origin": "lubin776"
+ },
+ {
+  "name": "EPG直播",
+  "url": "http://gh-proxy.org/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 68792,
+  "origin": "lubin776"
+ },
+ {
+  "name": "FMMIPV6",
+  "url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 15219,
+  "origin": "lubin776"
+ },
+ {
+  "name": "Guovin",
+  "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "Kimentanm",
+  "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 21971,
+  "origin": "lubin776"
+ },
+ {
+  "name": "Kimentanm3线",
+  "url": "https://ztha.top/TVBox/lib/iptv.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 21946,
+  "origin": "lubin776"
+ },
+ {
+  "name": "Kimentanm4线",
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+  "kind": "FAIL",
+  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
+  "origin": "lubin776"
+ },
+ {
+  "name": "MV",
+  "url": "https://ztha.top/TVBox/tv/MV.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "PPV体育赛事直播",
+  "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 25556,
+  "origin": "lubin776"
+ },
+ {
+  "name": "YY轮播",
+  "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 109980,
+  "origin": "lubin776"
+ },
+ {
+  "name": "YY轮播1线",
+  "url": "https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 124359,
+  "origin": "lubin776"
+ },
+ {
+  "name": "YY轮播2线",
+  "url": "https://ztha.top/TVBox/lib/yylunbo.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 125541,
+  "origin": "lubin776"
+ },
+ {
+  "name": "YanG1线",
+  "url": "https://gh-proxy.org/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 26227,
+  "origin": "lubin776"
+ },
+ {
+  "name": "cluntop",
+  "url": "https://clun.top/lib/iptv.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "cluntoptest",
+  "url": "https://clun.top/lib/iptv_test.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "develop202",
+  "url": "https://gh-proxy.org/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 469,
+  "origin": "lubin776"
+ },
+ {
+  "name": "develop2021线",
+  "url": "https://ztha.top/TVBox/lib/interface.txt",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 94481,
+  "origin": "lubin776"
+ },
+ {
+  "name": "gambiarras",
+  "url": "https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/main/playlist.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "live1线",
+  "url": "http://xhztv.top/xhz/live.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "mlzlzj",
+  "url": "https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "suxuang",
+  "url": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "yuan",
+  "url": "http://wangziduoqing.com/yuan/zb.txt",
+  "kind": "FAIL",
+  "reason": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
+  "origin": "lubin776"
+ },
+ {
+  "name": "世界杯",
+  "url": "https://ztha.top/TVBox/lib/fwc.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 23881,
+  "origin": "lubin776"
+ },
+ {
+  "name": "乌拉TV直播",
+  "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
+  "kind": "HTML",
+  "reason": "返回网页而非源数据",
+  "marks": [],
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "优选",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 22297,
+  "origin": "lubin776"
+ },
+ {
+  "name": "全球",
+  "url": "http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg",
+  "kind": "HTML",
+  "reason": "返回网页而非源数据（SPA空壳）",
+  "marks": [
+   "SPA空壳"
+  ],
+  "ctype": "text/html",
+  "bytes": 1537,
+  "origin": "lubin776"
+ },
+ {
+  "name": "全球TV直播",
+  "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "初秋语",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 16038,
+  "origin": "lubin776"
+ },
+ {
+  "name": "华视TV直播",
+  "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 61324,
+  "origin": "lubin776"
+ },
+ {
+  "name": "南风直播源",
+  "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 115633,
+  "origin": "lubin776"
+ },
+ {
+  "name": "咪咕",
+  "url": "https://develop202.github.io/migu_video/interface.txt",
+  "kind": "FAIL",
+  "reason": "Remote end closed connection without response",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
+  "origin": "lubin776"
+ },
+ {
+  "name": "咪咕TV直播",
+  "url": "https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA",
+  "kind": "HTML",
+  "reason": "返回网页而非源数据",
+  "marks": [],
+  "ctype": "text/html; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "夜空1",
+  "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [
+   "网盘下载页",
+   "网盘域"
+  ],
+  "ctype": "application/force-download",
+  "bytes": 122942,
+  "origin": "lubin776"
+ },
+ {
+  "name": "央视频",
+  "url": "https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [
+   "网盘下载页"
+  ],
+  "ctype": "application/force-download",
+  "bytes": 8888,
+  "origin": "lubin776"
+ },
+ {
+  "name": "尘墨",
+  "url": "https://52xiaobai.cn/ceshi/zb.php",
+  "kind": "HTML",
+  "reason": "返回网页而非源数据（授权/注册公告/JS跳转/倒计时）",
+  "marks": [
+   "授权/注册公告",
+   "JS跳转/倒计时"
+  ],
+  "ctype": "text/html",
+  "bytes": 11961,
+  "origin": "lubin776"
+ },
+ {
+  "name": "应该能看",
+  "url": "https://gh-proxy.org/raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 195831,
+  "origin": "lubin776"
+ },
+ {
+  "name": "很少",
+  "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [
+   "网盘下载页"
+  ],
+  "ctype": "application/force-download",
+  "bytes": 2221,
+  "origin": "lubin776"
+ },
+ {
+  "name": "手动不知何时更新",
+  "url": "https://szyyds.cn/tv/live/x.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "挺好直播",
+  "url": "https://ztha.top/TVBox/tv/thtv.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 4711,
+  "origin": "lubin776"
+ },
+ {
+  "name": "斗鱼一起看",
+  "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 172129,
+  "origin": "lubin776"
+ },
+ {
+  "name": "斗鱼一起看1线",
+  "url": "https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B3252352FBE5CD00F1.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 176479,
+  "origin": "lubin776"
+ },
+ {
+  "name": "斗鱼一起看2线",
+  "url": "https://ztha.top/TVBox/lib/douyuyqk.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 178443,
+  "origin": "lubin776"
+ },
+ {
+  "name": "易发TV直播",
+  "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "有效期27年7月",
+  "url": "http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [
+   "带token参数"
+  ],
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "bytes": 6947,
+  "origin": "lubin776"
+ },
+ {
+  "name": "歌手直播",
+  "url": "https://mgtv.ottiptv.cc/mglist.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 75498,
+  "origin": "lubin776"
+ },
+ {
+  "name": "没4K",
+  "url": "https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [
+   "图床哈希页"
+  ],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 578,
+  "origin": "lubin776"
+ },
+ {
+  "name": "游魂",
+  "url": "https://www.iyouhun.com/tv/zb",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain;charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "电视直播",
+  "url": "http://gh-proxy.org/raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 111262,
+  "origin": "lubin776"
+ },
+ {
+  "name": "移动",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 22892,
+  "origin": "lubin776"
+ },
+ {
+  "name": "线路",
+  "url": "http://www.52top.com.cn:678/downloads/migu.txt",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 105505,
+  "origin": "lubin776"
+ },
+ {
+  "name": "经典电视剧",
+  "url": "https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "综合直播1线",
+  "url": "http://193.123.86.190:14888/TV/iptv.php",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 42900,
+  "origin": "lubin776"
+ },
+ {
+  "name": "综合直播2线",
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "kind": "FAIL",
+  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
+  "origin": "lubin776"
+ },
+ {
+  "name": "联通",
+  "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 15567,
+  "origin": "lubin776"
+ },
+ {
+  "name": "范明明",
+  "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
+  "kind": "FAIL",
+  "reason": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
+  "origin": "lubin776"
+ },
+ {
+  "name": "范明明需开启V6网络",
+  "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl;charset=utf-8",
+  "bytes": 12786,
+  "origin": "lubin776"
+ },
+ {
+  "name": "范明明需开启V6网络1线",
+  "url": "https://ztha.top/TVBox/lib/3d75a78a0fc7ede372c03598d6d10367.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 12786,
+  "origin": "lubin776"
+ },
+ {
+  "name": "虎牙一起看",
+  "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "虎牙一起看1线",
+  "url": "https://file.icve.com.cn/file_doc/946/41/ECB0A5FBED1D8C4D4E049E95DB9F756F.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "虎牙一起看2线",
+  "url": "https://ztha.top/TVBox/lib/huyayqk.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/octet-stream",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬IPTV直播",
+  "url": "https://iptv.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬TikTok直播",
+  "url": "https://tiktok.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 148310,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬Twitch直播",
+  "url": "https://twitch.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 198663,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬YY直播",
+  "url": "https://yy.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 105,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬体育直播主",
+  "url": "https://jsnzkpg.de5.net/all.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 52410,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬体育直播备",
+  "url": "https://stymei.pages.dev/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/x-mpegurl; charset=utf-8",
+  "bytes": 23797,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬快手直播",
+  "url": "https://kuaishou.445569.xyz/list.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/x-mpegurl;charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬抖音直播",
+  "url": "https://douyin.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 116108,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬斗鱼直播",
+  "url": "https://douyu.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬来疯直播",
+  "url": "https://laifeng.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl; charset=utf-8",
+  "bytes": 13811,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬百战直播",
+  "url": "https://baizhan.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "bytes": 8781,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬虎牙直播",
+  "url": "https://huya.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬酷狗直播",
+  "url": "https://kugou.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "application/x-mpegurl; charset=utf-8",
+  "bytes": 62786,
+  "origin": "lubin776"
+ },
+ {
+  "name": "韩国Panda直播",
+  "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "audio/x-mpegurl",
+  "bytes": 11445,
+  "origin": "lubin776"
+ },
+ {
+  "name": "音乐所",
+  "url": "https://szyyds.cn/tv/live/yy.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
+  "origin": "lubin776"
+ }
+]
