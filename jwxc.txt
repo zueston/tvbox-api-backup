@@ -1,0 +1,1 @@
+南风线路 | https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json | alive=False status=0 speed=796

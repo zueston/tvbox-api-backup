@@ -1,0 +1,3 @@
+report hits: [('android4', '南风', 'https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json', 0)]
+juwan: ['https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json', 'https://raw.githubusercontent.com/guot55/yg/refs/heads/main/ygbox.json', 'https://gh-proxy.com/https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json']
+dead has XC: ['https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json']

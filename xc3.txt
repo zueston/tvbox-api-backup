@@ -1,0 +1,6 @@
+android4: {"name": "南风TV(XC加密)", "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json", "origin": "extra", "sites": 0, "parses": 2, "lives": 1}
+android4: {"name": "南风", "url": "https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json", "origin": "lubin776", "sites": 0, "parses": 0, "lives": 0}
+android4: {"name": "宝盒", "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json", "origin": "extra", "sites": 0, "parses": 2, "lives": 0}
+a5 Yoursmile.jar sites: 0
+a5 sample: []
+alive=105 pool_dedup=159

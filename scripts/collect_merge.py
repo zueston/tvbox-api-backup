@@ -11,7 +11,7 @@
   output/report.json           去重/测活/分池明细
 用法: python collect_merge.py [--top 12] [--offline-juwan]
 """
-import json, re, sys, time, html as htmllib, urllib.request, urllib.parse
+import json, os, re, sys, time, html as htmllib, urllib.request, urllib.parse
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
@@ -50,32 +50,15 @@ def http_get(url, timeout=15, max_bytes=400_000, ua=None):
         return r.status, r.read(max_bytes)
 
 import base64 as _b64
-def parse_cfg(body):
-    """返回 (cfg_dict|None, how)。how: json / obf64(饭太硬式 JPEG+base64) / None
-    兼容：明文 JSON、//注释行、JPEG 头后 ew0K base64 配置（需剔除 // 注释）"""
-    if not isinstance(body, bytes):
-        return None, None
-    s = body.decode("utf-8", "replace").lstrip("\ufeff")
-    st = s.strip()
-    if st[:1] in "{[":
-        try:
-            d = json.loads(st)
-            return (d, "json") if isinstance(d, dict) else (None, None)
-        except Exception:
-            pass
-    i = s.find("ew0K")
-    if i >= 0:
-        cand = re.sub(r"[^A-Za-z0-9+/=]", "", s[i:])
-        cand = cand[:len(cand) // 4 * 4]
-        try:
-            dec = _b64.b64decode(cand).decode("utf-8", "replace")
-            lines = [l for l in dec.splitlines() if not l.strip().startswith("//")]
-            d = json.loads("\n".join(lines))
-            if isinstance(d, dict):
-                return d, "obf64"
-        except Exception:
-            pass
-    return None, None
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tvbox_decode import decode_body  # noqa: E402
+
+PK_RE = re.compile(r";pk;([A-Za-z0-9]+)")
+
+def parse_cfg(body, url=""):
+    """TVBox 全格式解码：明文JSON / 图片伪装base64 / AES-CBC($#k#$) / AES-ECB(;pk;) / 饭太硬 obf64"""
+    pk = PK_RE.search(url or "").group(1) if PK_RE.search(url or "") else None
+    return decode_body(body, pk)
 
 def looks_html(body):
     head = body[:200].lstrip().lower()
@@ -198,6 +181,8 @@ def dedup(pool):
         else:
             # 合并 origins；优先保留有速度数据/多镜像信息的一条
             old["origin"] = old.get("origin", "")
+            if e.get("pinned") and not old.get("pinned"):
+                old["pinned"] = True             # 点名标记不能因去重丢失
             if e.get("speed") is not None and old.get("speed") is None:
                 e["origin"] = f'{old["origin"]}+{e["origin"]}'
                 by_url[k] = e
@@ -219,18 +204,18 @@ def probe(e):
         ms = int((time.time() - t0) * 1000)
         ok = code == 200 and len(body) > 50
         if ok:
-            cfg, how = parse_cfg(body)
+            cfg, how = parse_cfg(body, u)
             if cfg is None:
                 # 浏览器 UA 拿到导航页/乱码 → 盒子 UA 重试（饭太硬式反代）
                 try:
                     code2, body2 = http_get(u, timeout=12, ua=BOX_UA)
-                    cfg2, how2 = parse_cfg(body2)
+                    cfg2, how2 = parse_cfg(body2, u)
                     if cfg2 is not None:
                         cfg, how = cfg2, how2
                         e["box_ua"] = True
                 except Exception:
                     pass
-            if how == "obf64":
+            if how in ("obf64", "img64"):
                 e["obf"] = True
             if cfg is not None:
                 e["cfg_sites"] = len(cfg.get("sites") or [])
@@ -289,6 +274,8 @@ def merge_single(alive_items, a4: bool, top: int = None):
     top = top or TOP_SINGLE
     cands = [e for e in alive_items if norm_url(e["url"]).endswith((".json", ".webp", ".txt")) or "json" in e["url"] or e.get("box_ua")]
     def _content(e):
+        if e.get("pinned"):
+            return 10 ** 6                       # 用户点名源永远排最前，不被 TOP 名额挤掉
         if "cfg_sites" in e:
             return (e.get("cfg_sites") or 0) + (e.get("cfg_parses") or 0) + (e.get("cfg_lives") or 0)
         return 50  # juwan 信任源未探内容，按中等排
@@ -317,10 +304,10 @@ def merge_single(alive_items, a4: bool, top: int = None):
         fetched += 1
         try:
             code, body = http_get(e["url"], timeout=20)
-            cfg, how = parse_cfg(body)
+            cfg, how = parse_cfg(body, e["url"])
             if cfg is None and e.get("box_ua"):
                 code, body = http_get(e["url"], timeout=20, ua=BOX_UA)
-                cfg, how = parse_cfg(body)
+                cfg, how = parse_cfg(body, e["url"])
             if not isinstance(cfg, dict) or not (cfg.get("sites") or cfg.get("lives")):
                 continue
         except Exception:
@@ -335,8 +322,13 @@ def merge_single(alive_items, a4: bool, top: int = None):
             if a4 and not a4_site_ok(s):
                 continue
             s = dict(s)
-            if s.get("spider"):
-                s["spider"] = abs_url(e["url"], s["spider"])
+            # 相对路径必须转绝对：./lib/drpy2.min.js 这类在聚合站里指向不到原仓库
+            for f in ("api", "jar", "spider"):
+                if isinstance(s.get(f), str) and s[f].startswith(("./", "../")):
+                    s[f] = abs_url(e["url"], s[f])
+            ex = s.get("ext")
+            if isinstance(ex, str) and ex.startswith(("./", "../")):
+                s["ext"] = abs_url(e["url"], ex)
             site_keys.add(k)
             merged["sites"].append(s)
             n_s += 1
@@ -346,6 +338,10 @@ def merge_single(alive_items, a4: bool, top: int = None):
             nm = p.get("name")
             if not nm or nm in parse_names:
                 continue
+            p = dict(p)
+            for f in ("url", "ext"):
+                if isinstance(p.get(f), str) and p[f].startswith(("./", "../")):
+                    p[f] = abs_url(e["url"], p[f])
             parse_names.add(nm)
             merged["parses"].append(p)
             n_p += 1
@@ -353,6 +349,8 @@ def merge_single(alive_items, a4: bool, top: int = None):
             lu = l.get("url")
             if (not lu) and not (isinstance(l.get("api"), str) and l.get("api")):
                 continue
+            if isinstance(lu, str) and "://" not in lu and not lu.startswith(("./", "../")):
+                continue                       # 剔除"直播名字自定义"这类占位假行
             if a4 and not lu:
                 continue
             if isinstance(lu, str) and lu.startswith(("./", "../")):
@@ -395,6 +393,10 @@ def main():
             print(f"[upstream] {fn.__name__}: pool={len(pool)}")
         except Exception as ex:
             print(f"[upstream FAIL] {fn.__name__}: {ex}")
+    # 用户点名固定源（格式参考站）：yoursmile66 XC.json(AES-CBC加密) / guot55 宝盒 bh.json
+    for name, u in (("南风TV(XC加密)", "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json"),
+                    ("宝盒", "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json")):
+        pool.append({"name": name, "url": u, "origin": "extra", "pinned": True})
     print(f"raw pool: {len(pool)}, live rows: {len(lives)}")
 
     uniq = dedup(pool)

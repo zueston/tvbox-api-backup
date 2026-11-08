@@ -1,0 +1,5 @@
+encoding=utf-8
+keys=['spider', 'wallpaper', 'logo', 'danmaku', 'sites', 'parses', 'lives', 'proxy', 'rules', 'doh', 'ijk', 'ads']
+sites=91 parses=7 lives=1 rules=13
+spider='https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4'
+comment='//本人无公众号、无盈利、无引流、免费分享给小白使用，请勿轻信他人，谨防上当受骗。[所有内容仅供学习使用，请勿用于违法用途]\n\n{\n\t"spider": "https://jihulab.com/yoursmile77/TVBox/-/ra'

@@ -1,0 +1,11 @@
+android5: 南风TV(XC加密) sites=91 parses=7 lives=1
+android5: 宝盒 sites=73 parses=3 lives=0
+android4: 南风TV(XC加密) sites=0 parses=7 lives=1
+android4: 宝盒 sites=6 parses=3 lives=0
+android4: 南风 sites=0 parses=0 lives=0
+a5 Yoursmile.jar sites=0
+a5 vox.jar sites=0
+output/android5/single.json sites=1271 parses=128 lives=87 rel=0 noapi=0 nolive=0 bad4=0
+output/android4/single.json sites=316 parses=269 lives=157 rel=0 noapi=0 nolive=0 bad4=0
+output/android5/singlead.json sites=390 parses=22 lives=18 rel=0 noapi=0 nolive=0 bad4=0
+output/android4/singlead.json sites=2 parses=22 lives=18 rel=0 noapi=0 nolive=0 bad4=0

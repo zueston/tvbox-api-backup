@@ -1,0 +1,5 @@
+a5 has Tg豆瓣: False
+ad5 has Tg豆瓣: False
+a5 sources XC: []
+ad5 sources XC: []
+ad keys in report: ['updated', 'pool_raw', 'pool_dedup', 'alive', 'by_origin_alive', 'android5', 'android4', 'lives_dedup', 'dead']

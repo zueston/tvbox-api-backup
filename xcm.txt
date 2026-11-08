@@ -1,0 +1,2 @@
+multi XC: [{"url": "https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json", "name": "南风"}]
+alive=106 pool_dedup=157

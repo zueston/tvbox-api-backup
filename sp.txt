@@ -1,0 +1,2 @@
+spider=https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4
+jar=None

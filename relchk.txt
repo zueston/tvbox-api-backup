@@ -1,0 +1,8 @@
+output/android5/single.json: sites=1178 rel_api=337 rel_ext=434 rel_spider=0 keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+   samples: ['drpy_js_豆瓣 -> ./lib/drpy2.min.js', 'drpy_js_磁力熊搜索 -> ./lib/drpy2.min.js', 'lf_js_search -> ./lib/lf_search3_min.js']
+output/android5/singlead.json: sites=360 rel_api=0 rel_ext=0 rel_spider=0 keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+   samples: []
+output/android4/single.json: sites=303 rel_api=12 rel_ext=0 rel_spider=0 keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules', 'sites', 'sp']
+   samples: ['爱瓜TV -> ../aigua1.php', '旺旺短剧 -> ../ww.php', 'js集合 -> ../js.php']
+output/android4/singlead.json: sites=2 rel_api=0 rel_ext=0 rel_spider=0 keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules', 'sites', 'sp']
+   samples: []

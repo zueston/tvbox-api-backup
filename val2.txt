@@ -1,0 +1,8 @@
+output/android5/single.json sites=1317 parses=127 lives=89 rel=0 noapi=0 bad4=0 pct3B=0 keys=-
+output/android5/multi.json sites=0 parses=0 lives=0 rel=0 noapi=0 bad4=0 pct3B=0 keys=70
+output/android4/single.json sites=317 parses=268 lives=158 rel=0 noapi=0 bad4=0 pct3B=0 keys=-
+output/android4/multi.json sites=0 parses=0 lives=0 rel=0 noapi=0 bad4=0 pct3B=0 keys=70
+output/android5/singlead.json sites=390 parses=22 lives=18 rel=0 noapi=0 bad4=0 pct3B=0 keys=-
+output/android5/multiad.json sites=0 parses=0 lives=0 rel=0 noapi=0 bad4=0 pct3B=0 keys=20
+output/android4/singlead.json sites=2 parses=22 lives=18 rel=0 noapi=0 bad4=0 pct3B=0 keys=-
+output/android4/multiad.json sites=0 parses=0 lives=0 rel=0 noapi=0 bad4=0 pct3B=0 keys=20

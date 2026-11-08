@@ -1,0 +1,35 @@
+== XC ==
+top keys: ['ads', 'danmaku', 'doh', 'ijk', 'lives', 'logo', 'parses', 'proxy', 'rules', 'sites', 'spider', 'wallpaper']
+sites[0] keys: ['api', 'changeable', 'ext', 'key', 'name', 'searchable', 'type']
+sites[0] sample: {"key": "Tg豆瓣", "name": "🔍Tg豆瓣┃本接口免费-🈲贩卖", "type": 3, "api": "csp_TgYunDouBanPan", "searchable": 1, "changeable": 0, "ext": {"siteUrl": "http://127.0.0.1:9999", "count": 4, "channelUsername": "Tgsearchers6,peccxinpd,yunp
+parses[0] keys: ['name', 'type', 'url']
+parses[0] sample: {"name": "Web聚合", "type": 3, "url": "Web"}
+lives[0] keys: ['epg', 'logo', 'name', 'type', 'ua', 'url']
+lives[0] sample: {"name": "Yoursmile", "type": 0, "url": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt", "ua": "okhttp/3.15", "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}", "
+rules[0] keys: ['hosts', 'name', 'regex']
+rules[0] sample: {"name": "cl", "hosts": ["magnet"], "regex": ["最 新", "直 播", "更 新"]}
+spider: 'https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4'
+
+== BH ==
+top keys: ['ads', 'doh', 'headers', 'hosts', 'lives', 'logo', 'parses', 'proxy', 'rules', 'sites', 'spider', 'wallpaper', 'warningText']
+sites[0] keys: ['api', 'changeable', 'ext', 'jar', 'key', 'name', 'searchable', 'timeout', 'type']
+sites[0] sample: {"key": "csp_Douban", "name": "🌈公众号【宝盒资源】", "type": 3, "api": "csp_Douban", "jar": "http://vip.bhh.indevs.in/pmdvox.jar", "searchable": 0, "changeable": 1, "timeout": 60, "ext": "https://3043.kstore.space/douban.json"}
+parses[0] keys: ['name', 'type', 'url']
+parses[0] sample: {"name": "Json聚合", "type": 3, "url": "Demo"}
+lives[0] keys: ['name', 'url']
+lives[0] sample: {"name": "直播名字自定义", "url": "直播链接自定义"}
+rules[0] keys: ['hosts', 'name', 'regex']
+rules[0] sample: {"name": "火山嗅探", "hosts": ["huoshan.com"], "regex": ["item_id="]}
+spider: 'https://bitbucket.org/guot55/ygbh/raw/main/pro/jar/vox.jar'
+
+== OURS ==
+top keys: ['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+sites[0] keys: ['api', 'changeable', 'ext', 'key', 'name', 'quickSearch', 'searchable', 'type']
+sites[0] sample: {"key": "drpy_js_豆瓣", "name": "搜索 | 豆瓣[js]", "type": 3, "api": "./lib/drpy2.min.js", "ext": "./js/drpy.js", "searchable": 1, "quickSearch": 0, "changeable": 0}
+parses[0] keys: ['name', 'type', 'url']
+parses[0] sample: {"name": "Json聚合", "type": 3, "url": "Demo"}
+lives[0] keys: ['epg', 'logo', 'name', 'playerType', 'type', 'url']
+lives[0] sample: {"name": "初秋语", "type": 0, "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt", "playerType": 2, "epg": "http://epg.112114.xyz/?ch={name}&date={date}", "logo": "https://epg.112114.xy
+rules[0] keys: ['hosts', 'name']
+rules[0] sample: {"name": "proxy", "hosts": ["mypikpak.com", ".*workers.dev", "www.cilixiong.com", "*.t4tv.hz.cz", "kuba222.com", "mp4us.com", "dydhhy.com", "magicalsearch.top", "api123.adys.app", "raw.githubusercontent.com", "googlevide
+spider: 'https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9'

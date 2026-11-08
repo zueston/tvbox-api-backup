@@ -1,0 +1,5 @@
+norm XC = https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json
+URL=https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json
+ origin=lubin776 alive=True cfg_sites=91 cfg_parses=7 cfg_lives=1 box=None obf=None ad=False
+URL=https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json
+ origin=extra alive=True cfg_sites=91 cfg_parses=7 cfg_lives=1 box=None obf=None ad=False

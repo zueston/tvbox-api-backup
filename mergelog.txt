@@ -1,0 +1,39 @@
+alive: 106
+vod split: ad=23 clean=83
+[merge] ��������js: sites=297 parses=11 lives=2
+[merge] 11: sites=226 parses=24 lives=3
+[merge] ok: sites=0 parses=0 lives=0
+[merge] vv: sites=130 parses=21 lives=3
+[merge] ��ħ: sites=124 parses=19 lives=1
+[merge] clun: sites=85 parses=8 lives=16
+[merge] �Ҹ�����: sites=25 parses=1 lives=0
+[merge] https://clun.top/fun.json: sites=83 parses=1 lives=39
+[merge] 2: sites=39 parses=14 lives=13
+[merge] ����: sites=0 parses=0 lives=0
+[merge] С��: sites=40 parses=24 lives=10
+[merge] ��ӥ: sites=80 parses=0 lives=0
+[merge] ����С: sites=93 parses=4 lives=1
+[merge] 1: sites=0 parses=0 lives=0
+[merge] ����С: sites=0 parses=0 lives=0
+[merge] ţ��: sites=0 parses=0 lives=0
+[merge] �����: sites=95 parses=0 lives=1
+[merge] ����С: sites=100 parses=4 lives=2
+[merge] �������ö�: sites=98 parses=0 lives=1
+[merge] ����5��: sites=0 parses=0 lives=0
+[merge] ����6��: sites=0 parses=0 lives=0
+[merge] �½ӿ�: sites=51 parses=0 lives=0
+[merge] ����С��ţ��: sites=0 parses=0 lives=0
+[merge] ����С�ӿ�: sites=0 parses=0 lives=0
+[merge] ����С3��: sites=0 parses=0 lives=0
+[merge] xn--6orr3pi6g9uu: sites=47 parses=13 lives=5
+[merge] ���нӿ�: sites=0 parses=0 lives=0
+[merge] ��̫Ӳ: sites=44 parses=0 lives=5
+[merge] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge] http://www.xn--sss604efuw.net/tv: sites=0 parses=0 lives=0
+[merge] ��̫Ӳ2��: sites=0 parses=0 lives=0
+[merge] hhh: sites=21 parses=0 lives=2
+[merge] ����˿: sites=8 parses=4 lives=0
+[merge] https://700sjro44343.vicp.fun/eggp/0615/tv.php: sites=21 parses=1 lives=3
+[merge] uuccc: sites=0 parses=0 lives=0
+DONE a5: sites=1317 a4: sites=317 ad5: sites=390 ad4: sites=2 lives=78

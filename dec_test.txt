@@ -1,0 +1,1 @@
+how=aescbc keys=['ads', 'danmaku', 'doh', 'ijk', 'lives', 'logo', 'parses', 'proxy', 'rules', 'sites', 'spider', 'wallpaper'] sites=91 parses=7 lives=1

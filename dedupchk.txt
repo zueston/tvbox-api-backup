@@ -1,0 +1,3 @@
+pool=284 uniq=157
+NORM=https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json
+  origins=lubin776 alive=True cfg_sites=91 obf=None box=None ad=False

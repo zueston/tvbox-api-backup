@@ -1,0 +1,2 @@
+android5 ad_sources count=19
+android4 ad_sources count=17
