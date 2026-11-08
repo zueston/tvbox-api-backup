@@ -1,0 +1,4 @@
+cdn.jsdelivr.net: issuer=None/Sectigo Public Server Authentication CA DV R36 notAfter=May  2 23:59:59 2027 GMT
+fastly.jsdelivr.net: issuer=None/GlobalSign Atlas R46 DV TLS CA 2026 Q4 notAfter=May  8 13:50:25 2027 GMT
+gcore.jsdelivr.net: issuer=None/Sectigo Public Server Authentication CA DV R36 notAfter=May  2 23:59:59 2027 GMT
+raw.githubusercontent.com: issuer=None/YR1 notAfter=Dec 29 23:44:45 2026 GMT

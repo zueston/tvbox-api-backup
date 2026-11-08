@@ -1,0 +1,4 @@
+android5/single: sites=1178 noapi=0 %3B=0
+android4/single: sites=303 noapi=0 %3B=0
+android5/singlead: sites=360 noapi=0 %3B=0
+android4/singlead: sites=2 noapi=0 %3B=0

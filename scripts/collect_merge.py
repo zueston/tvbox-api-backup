@@ -273,7 +273,7 @@ def abs_url(base, ref):
         return ref
     if ref.startswith(("js:", "csp:", "Shell:", "py:", "file:", "assets://")) or not ref.startswith(("./", "../")):
         return ref
-    return urllib.parse.urljoin(base, urllib.parse.quote(ref, safe="/:@&=?$-_.+!*'%,~#[]"))
+    return urllib.parse.urljoin(base, urllib.parse.quote(ref, safe="/:@&=?$-_.+!*'%,~#[];"))
 
 def a4_site_ok(s):
     api = str(s.get("api", ""))
@@ -329,6 +329,8 @@ def merge_single(alive_items, a4: bool, top: int = None):
         for s in cfg.get("sites", []) or []:
             k = s.get("key") or s.get("name")
             if not k or k in site_keys:
+                continue
+            if not s.get("api"):          # 无 api 的分隔伪行，盒子解析易炸
                 continue
             if a4 and not a4_site_ok(s):
                 continue

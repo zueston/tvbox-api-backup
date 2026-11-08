@@ -1,0 +1,5 @@
+android5/multi: first4=b'{\r\n ' bom=False bytes=17727 nul=0 crlf=711
+android5/single: first4=b'{\r\n ' bom=False bytes=383785 nul=0 crlf=16561
+android4/single: first4=b'{\r\n ' bom=False bytes=229677 nul=0 crlf=11442
+android5/multiad: first4=b'{\r\n ' bom=False bytes=5678 nul=0 crlf=255
+android5/singlead: first4=b'{\r\n ' bom=False bytes=122796 nul=0 crlf=5571

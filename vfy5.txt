@@ -1,0 +1,8 @@
+android5/single: %3B=0 spider=https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd
+android5/singlead: %3B=0 spider=http://oss4liview.moji.com/thd_file/2026/11/06/99191348af7606ed51e66a4f13a85d8e.jpg;md5;53e039fb19875d5cfec02a
+android4/single: %3B=0 spider=
+android4/singlead: %3B=0 spider=
+android5/multi: %3B=0 spider=
+android4/multi: %3B=0 spider=
+android5/multiad: %3B=0 spider=
+android4/multiad: %3B=0 spider=

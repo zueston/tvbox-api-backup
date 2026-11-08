@@ -1,0 +1,16 @@
+lb total=81 github-related=10
+  https://gh-proxy.org/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg
+  https://ghproxy.monkeyray.net/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json
+  https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json
+  https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/box
+  https://gh-proxy.org/raw.githubusercontent.com/ggrrttyyiii/CatVodSpider/refs/heads/main/json/demo.json
+  https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json
+  https://gh-proxy.com/raw.githubusercontent.com/IY-CPU/IY/main/天神IY.png
+  https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json
+our multi5 github-hosted profiles=10
+  https://gh-proxy.com/https://raw.githubusercontent.com/noimank/tvbox/master/tvboxmuti.json
+  https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/box
+  https://gh-proxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/tvbox.txt
+  https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json
+  https://gh-proxy.org/https://raw.githubusercontent.com/ggrrttyyiii/CatVodSpider/refs/heads/main/json
+  https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json

@@ -6384,10 +6384,6 @@
    "changeable": 1
   },
   {
-   "key": "1",
-   "name": "--- 1 ---"
-  },
-  {
    "key": "金牌影院",
    "name": "金牌[js]",
    "type": 3,
@@ -6411,19 +6407,11 @@
    "changeable": 1
   },
   {
-   "key": "2",
-   "name": "--- 2 ---"
-  },
-  {
    "key": "py_fqdm",
    "name": "番茄动漫[py]",
    "type": 3,
    "api": "./py/fqdm.py",
    "playerType": 2
-  },
-  {
-   "key": "3",
-   "name": "--- 3 ---"
   },
   {
    "key": "py_高清电影",
@@ -6563,10 +6551,6 @@
    "filterable": 1
   },
   {
-   "key": "4",
-   "name": "--- 4 ---"
-  },
-  {
    "key": "飞快影视",
    "name": "飞快影视",
    "type": 3,
@@ -6677,10 +6661,6 @@
    "type": 3,
    "api": "csp_XBPQ",
    "ext": "./js/s/奇迹.json"
-  },
-  {
-   "key": "5",
-   "name": "--- 5 ---"
   },
   {
    "key": "360",
@@ -6805,10 +6785,6 @@
    "changeable": 1
   },
   {
-   "key": "6",
-   "name": "--- 6 ---"
-  },
-  {
    "key": "py_YYMP3",
    "name": "YYMP3[py]",
    "type": 3,
@@ -6834,10 +6810,6 @@
    "ext": "./lib/feimaolive.json"
   },
   {
-   "key": "7",
-   "name": "--- 7 ---"
-  },
-  {
    "key": "py_mifun",
    "name": "MiFun｜动漫",
    "type": 3,
@@ -6853,10 +6825,6 @@
    "api": "./py/yinhuaone.py",
    "quickSearch": 1,
    "filterable": 1
-  },
-  {
-   "key": "8",
-   "name": "--- 8 ---"
   },
   {
    "key": "小镇",
@@ -16556,7 +16524,7 @@
    "player": "ijk"
   }
  ],
- "spider": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar%3Bmd5%3Bdffec63fb83a2b31b8606bd4bf6bead9",
+ "spider": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-08 17:24:01"
+ "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-08 19:32:37"
 }

@@ -1,0 +1,10 @@
+android5/multi: JSON OK keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls']
+android5/single: JSON OK keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses']
+android5/multiad: JSON OK keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls']
+android5/singlead: JSON OK keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses']
+android4/multi: JSON OK keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls']
+android4/single: JSON OK keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules']
+android4/multiad: JSON OK keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls']
+android4/singlead: JSON OK keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules']
+multi5 hosts top: gh-proxy.com(6), qist.wyfc.qzz.io(3), 700sjro44343.vicp.fun(2), jihulab.com(2), 47.96.82.41(2), ztha.top(2), 9280.kstore.space(2), 124.223.214.31(2), tv.nxog.top(2), gh-proxy.org(2), clun.top(2), raw.githubusercontent.com(2)
+non-http profile urls: 0 []

@@ -1,0 +1,7 @@
+urls: 9
+   {'name': '肥猫', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/fe
+   {'name': '王二小', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/w
+   {'name': '老刘备', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/l
+   {'name': '小马', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/xi
+   {'name': '讴歌', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ou
+   {'name': '4K小盒子', 'url': 'https://gh-proxy.org/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output

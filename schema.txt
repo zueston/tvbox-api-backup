@@ -1,0 +1,8 @@
+android5/single: keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+   sites=1186 prob=8 ["site581 {'key': '1', 'name': '--- 1 ---'}", "site585 {'key': '2', 'name': '--- 2 ---'}", "site587 {'key': '3', 'name': '--- 3 ---'}", "site602 {'key': '4', 'name': '--- 4 ---'}"]
+android5/singlead: keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+   sites=360 prob=0 []
+android4/single: keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules', 'sites', 'sp']
+   sites=313 prob=10 ["site34 {'key': '1', 'name': '--- 1 ---'}", "site35 {'key': '2', 'name': '--- 2 ---'}", "site36 {'key': '3', 'name': '--- 3 ---'}", "site37 {'key': '4', 'name': '--- 4 ---'}"]
+android4/singlead: keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules', 'sites', 'sp']
+   sites=2 prob=0 []

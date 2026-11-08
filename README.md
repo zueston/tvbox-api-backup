@@ -12,6 +12,7 @@
 | [聚玩盒子 jsonlist](https://www.juwanhezi.com/jsonlist) | 单仓/多仓全量线路（ajax 分页抓取） |
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@main` 必带）
 
 点播·干净版（无广告验证线路）
@@ -48,7 +49,13 @@
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，把前缀换成 `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（同路径，实测全 200）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
+`@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。
+
+**盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
+1. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（实测国内多数运营商可达，推荐）
+2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（GitHub 直连被墙时用，大文件略慢）
+3. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
+`cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败，此时上面 1/2 任选其一即可。
 
 ## 直播源地址（完整 78 条，独立直播订阅）
 
