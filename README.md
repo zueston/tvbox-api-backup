@@ -11,16 +11,28 @@
 | [25175/tvyuan](https://github.com/25175/tvyuan) | sources.txt 带测速 93 条 + tvbox_multi.json |
 | [聚玩盒子 jsonlist](https://www.juwanhezi.com/jsonlist) | 单仓/多仓全量线路（ajax 分页抓取） |
 
-## 订阅地址（本仓库 raw）
+## 订阅地址（CDN 加速，推荐）
 
 | 用途 | 安卓5+ | 安卓4 |
 |---|---|---|
-| 多仓订阅（设置里填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
-| 聚合单仓（一个接口吃全部） | `output/android5/single.json` | `output/android4/single.json` |
+| 多仓订阅（影视仓类填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
+| 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
 | 直播源清单 | `output/live_sources.txt` | 同左 |
 
-完整 URL：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multi.json`
-国内网络可加 jsDelivr 前缀：`https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`
+前缀任选（`@main` 必带，jsDelivr 无 release tag 时缺它会 404）：
+
+```
+https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multi.json
+https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multi.json
+```
+
+`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，换 `fastly.jsdelivr.net`（同路径）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
+
+## 哪些软件填哪个
+
+- **单仓（single.json）——所有 TVBox 系软件通用**：TVBox 原版及衍生（oq0tv、黑盒等）、影视仓、OK影视/FM影视/521影视、Catbox、巧盒、月光宝盒、手机盒子端等，配置地址直接填。
+- **多仓（multi.json，storeHouse 形态）——支持多仓订阅的壳**：影视仓及其修改版（Player、讴歌仓等）、Catbox、MBox 竖屏开源版、影音壳子、影迷、easybox、巧盒、月光宝盒等（设置里有"订阅仓库/多仓地址"入口的都可以）。原版 TVBox、黑盒等**不能在配置地址直接填多仓**，请用 single.json。
+- **多线路**：OK影视/FM影视/521影视 还支持"多线路"形态，multi.json 里已同时带 `urls` 数组字段兼容。
 
 ## 安卓4 / 安卓5+ 区分规则
 
