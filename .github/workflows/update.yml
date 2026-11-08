@@ -18,13 +18,17 @@ jobs:
           python-version: "3.11"
       - name: Refresh juwanhezi seed
         run: python scripts/scrape_juwanhezi.py || echo "juwan scrape failed, keep seed"
-      - name: Collect & merge four upstreams
+      - name: Collect & merge four upstreams (clean/ad split)
         run: python scripts/collect_merge.py --top 12
+      - name: Classify live sources
+        run: python scripts/classify_live.py || echo "classify failed, keep table"
+      - name: Regenerate README sections + live lists
+        run: python scripts/gen_readme_live.py
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/
+          git add output/ README.md
           if git diff --cached --quiet; then
             echo "no changes"
           else

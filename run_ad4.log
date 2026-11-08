@@ -1,0 +1,110 @@
+[upstream] load_lubin776: pool=82
+[upstream] load_lightconer: pool=100
+[upstream] load_tvyuan: pool=284
+[upstream] load_juwan: pool=284
+raw pool: 284, live rows: 109
+after dedup: 157
+alive: 91
+vod split: ad=23 clean=68
+multi: profiles=57
+[merge] 高天流云js: sites=297 parses=11 lives=2
+[merge] vv: sites=130 parses=21 lives=3
+[merge] 心魔: sites=125 parses=19 lives=1
+[merge] clun: sites=93 parses=8 lives=16
+[merge] 幸福年年: sites=25 parses=1 lives=0
+[merge] https://clun.top/fun.json: sites=83 parses=1 lives=39
+[merge] 2: sites=39 parses=14 lives=13
+[merge] 潇洒: sites=0 parses=0 lives=0
+[merge] 小马: sites=41 parses=11 lives=6
+[merge] 金鹰: sites=93 parses=0 lives=0
+[merge] 1: sites=93 parses=4 lives=1
+[merge] 牛二: sites=0 parses=0 lives=0
+[merge] 王二小: sites=0 parses=0 lives=0
+[merge] 王二小: sites=0 parses=0 lives=0
+[merge] 摸鱼儿: sites=95 parses=0 lives=1
+[merge] 大嗷呜: sites=72 parses=1 lives=1
+[merge/a4] 高天流云js: sites=0 parses=11 lives=2
+[merge/a4] vv: sites=15 parses=21 lives=3
+[merge/a4] 心魔: sites=19 parses=19 lives=1
+[merge/a4] clun: sites=23 parses=8 lives=16
+[merge/a4] 幸福年年: sites=0 parses=1 lives=0
+[merge/a4] https://clun.top/fun.json: sites=37 parses=1 lives=39
+[merge/a4] 2: sites=8 parses=14 lives=13
+[merge/a4] 潇洒: sites=0 parses=0 lives=0
+[merge/a4] 小马: sites=4 parses=11 lives=6
+[merge/a4] 金鹰: sites=17 parses=0 lives=0
+[merge/a4] 1: sites=0 parses=4 lives=1
+[merge/a4] 牛二: sites=0 parses=0 lives=0
+[merge/a4] 王二小: sites=0 parses=0 lives=0
+[merge/a4] 王二小: sites=0 parses=0 lives=0
+[merge/a4] 摸鱼儿: sites=0 parses=0 lives=1
+[merge/a4] 大嗷呜: sites=0 parses=1 lives=0
+[merge/a4] 软件: sites=0 parses=0 lives=0
+[merge/a4] 00000: sites=59 parses=9 lives=8
+[merge/a4] noimank: sites=0 parses=16 lives=1
+[merge/a4] 接口: sites=0 parses=31 lives=3
+[merge/a4] apple: sites=42 parses=0 lives=4
+[merge/a4] 5: sites=15 parses=8 lives=0
+[merge/a4] https://9280.kstore.space/wex.json: sites=0 parses=0 lives=0
+[merge/a4] 王二小: sites=0 parses=0 lives=0
+[merge/a4] 1: sites=0 parses=0 lives=2
+[merge/a4] 挺好: sites=0 parses=0 lives=4
+[merge/a4] 饭太硬: sites=0 parses=0 lives=2
+[merge/a4] 我的: sites=32 parses=6 lives=0
+[merge/a4] https://www.ls660.com/TV/feimao.json: sites=0 parses=3 lives=1
+[merge/a4] 我: sites=3 parses=0 lives=4
+[merge/a4] 我的: sites=0 parses=2 lives=1
+[merge/a4] 动漫: sites=0 parses=16 lives=0
+[merge/a4] 荐片: sites=0 parses=0 lives=4
+[merge/a4] 111: sites=6 parses=27 lives=1
+[merge/a4] 夏夏影视: sites=6 parses=1 lives=0
+[merge/a4] 123: sites=12 parses=0 lives=0
+[merge/a4] 俊哥接口: sites=0 parses=5 lives=0
+[merge/a4] 二月红接口: sites=1 parses=8 lives=2
+[merge/a4] 1: sites=0 parses=0 lives=0
+[merge/a4] 凯弟3线: sites=0 parses=2 lives=1
+[merge/a4] FongMI线路: sites=1 parses=0 lives=0
+[merge/a4] 老张: sites=13 parses=1 lives=2
+[merge/a4] my interface: sites=0 parses=0 lives=0
+[merge/a4] ok: sites=0 parses=0 lives=0
+[merge] 王二小: sites=100 parses=4 lives=2
+[merge] 摸鱼5线: sites=98 parses=0 lives=1
+[merge] 摸鱼6线: sites=0 parses=0 lives=0
+[merge] 摸鱼主用二: sites=0 parses=0 lives=0
+[merge] 新接口: sites=51 parses=0 lives=0
+[merge] 王二小3线: sites=0 parses=0 lives=0
+[merge] 王二小接口: sites=0 parses=0 lives=0
+[merge] 王二小放牛娃: sites=0 parses=0 lives=0
+[merge] 宝盒接口: sites=47 parses=13 lives=5
+[merge] xn--6orr3pi6g9uu: sites=0 parses=0 lives=0
+[merge] 饭太硬: sites=35 parses=0 lives=2
+[merge] 饭太硬: sites=0 parses=0 lives=0
+[merge] 饭太硬2线: sites=0 parses=0 lives=0
+[merge] http://www.xn--sss604efuw.net/tv: sites=0 parses=0 lives=0
+[merge] hhh: sites=0 parses=0 lives=0
+[merge] 饭太硬: sites=0 parses=0 lives=0
+[merge] 菜妮丝: sites=8 parses=4 lives=0
+[merge] 影视仓: sites=21 parses=1 lives=3
+[merge] uuccc: sites=0 parses=0 lives=0
+[merge] https://700sjro44343.vicp.fun/eggp/0615/tv.php: sites=0 parses=0 lives=0
+[merge/a4] 王二小: sites=0 parses=4 lives=2
+[merge/a4] 摸鱼5线: sites=0 parses=0 lives=1
+[merge/a4] 摸鱼6线: sites=0 parses=0 lives=0
+[merge/a4] 摸鱼主用二: sites=0 parses=0 lives=0
+[merge/a4] 新接口: sites=0 parses=0 lives=0
+[merge/a4] 王二小3线: sites=0 parses=0 lives=0
+[merge/a4] 王二小接口: sites=0 parses=0 lives=0
+[merge/a4] 王二小放牛娃: sites=0 parses=0 lives=0
+[merge/a4] 宝盒接口: sites=0 parses=13 lives=5
+[merge/a4] xn--6orr3pi6g9uu: sites=0 parses=0 lives=0
+[merge/a4] 饭太硬: sites=0 parses=0 lives=2
+[merge/a4] 饭太硬: sites=0 parses=0 lives=0
+[merge/a4] 饭太硬2线: sites=0 parses=0 lives=0
+[merge/a4] http://www.xn--sss604efuw.net/tv: sites=0 parses=0 lives=0
+[merge/a4] hhh: sites=0 parses=0 lives=0
+[merge/a4] 饭太硬: sites=0 parses=0 lives=0
+[merge/a4] 菜妮丝: sites=1 parses=4 lives=0
+[merge/a4] 影视仓: sites=1 parses=1 lives=3
+[merge/a4] uuccc: sites=0 parses=0 lives=0
+[merge/a4] https://700sjro44343.vicp.fun/eggp/0615/tv.php: sites=0 parses=0 lives=0
+DONE a5: sites=1186 a4: sites=313 ad5: sites=360 ad4: sites=2 lives=78

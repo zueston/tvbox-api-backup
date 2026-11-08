@@ -11,30 +11,48 @@
 | [25175/tvyuan](https://github.com/25175/tvyuan) | sources.txt 带测速 93 条 + tvbox_multi.json |
 | [聚玩盒子 jsonlist](https://www.juwanhezi.com/jsonlist) | 单仓/多仓全量线路（ajax 分页抓取） |
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@main` 必带）
 
+点播·干净版（无广告验证线路）
 ```
 安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multi.json
-安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multi.json
 安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json
+安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multi.json
 安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json
-直播源清单    https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_sources.txt
+```
+
+点播·要验证版（源站反爬/导航页/落地页线路，独立一档）
+```
+安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multiad.json
+安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/singlead.json
+安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multiad.json
+安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/singlead.json
+```
+
+直播源
+```
+可直连(64条)      https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_direct.txt
+```
+要验证
+```
+需广告/验证(14条)   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_ad.txt
 ```
 
 | 用途 | 安卓5+ | 安卓4 |
 |---|---|---|
 | 多仓订阅（影视仓类填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
 | 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
-| 直播源清单 | `output/live_sources.txt` | 同左（不分版本） |
+| 多仓·要验证版 | `output/android5/multiad.json` | `output/android4/multiad.json` |
+| 单仓·要验证版 | `output/android5/singlead.json` | `output/android4/singlead.json` |
+| 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
+| 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
 `@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。`cdn.jsdelivr.net` 在部分运营商线路被污染解析失败时，把前缀换成 `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（同路径，实测全 200）。原始地址：`https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`
 
-
-
-
 ## 直播源地址（完整 78 条，独立直播订阅）
 
-**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。
+**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 14 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 64 条可直连（`output/live_direct.txt`）。
 
 ```
 APTV          https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u

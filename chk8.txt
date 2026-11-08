@@ -1,8 +1,11 @@
-alive=85
-android5 sites=1186 parses=91 lives=83
-android4 sites=252 parses=224 lives=111
-  {"name": "xn--6orr3pi6g9uu", "url": "http://xn--6orr3pi6g9uu.top/", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 12, "lives": 1}
-  {"name": "饭太硬", "url": "http://fty.333232.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 2}
-  {"name": "饭太硬", "url": "http://fty.888484.xyz/tv", "origin": "lubin776+tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
-  {"name": "hhh", "url": "https://www.iyouhun.com/tv/fty", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
-  {"name": "饭太硬", "url": "https://qist.wyfc.qzz.io/fty.json", "origin": "tvyuan+tvyuan-multi", "sites": 0, "parses": 0, "lives": 0}
+android5/multi: profiles=57 store=57
+android5/single: sites=1186 parses=91 lives=83
+android4/multi: profiles=57 store=57
+android4/single: sites=313 parses=226 lives=122
+android5/multiad: profiles=20 store=20
+android5/singlead: sites=360 parses=22 lives=13
+android4/multiad: profiles=20 store=20
+android4/singlead: sites=2 parses=22 lives=13
+a4 clean bad=0 a4ad bad=0
+live_direct.txt: 64
+live_ad.txt: 14

@@ -1,0 +1,10 @@
+[upstream] load_lubin776: pool=82
+[upstream] load_lightconer: pool=100
+[upstream] load_tvyuan: pool=284
+[upstream] load_juwan: pool=284
+raw pool: 284, live rows: 109
+after dedup: 157
+alive: 9
+vod split: ad=3 clean=6
+multi: profiles=6
+DONE a5: sites=0 a4: sites=0 ad5: sites=0 ad4: sites=0 lives=78

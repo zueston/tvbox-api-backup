@@ -83,6 +83,18 @@ def looks_html(body):
 
 BOX_UA = "okhttp/3.11"   # 部分源(饭太硬等)只对盒子 UA 返回真配置，浏览器 UA 返回导航页
 
+# ---------- 广告/验证源判定（点播+直播共用口径） ----------
+URL_AD_PATS = [
+    (r"/down\.php/", "网盘/图床落地页"),
+    (r"/text\.php\?hash=", "图床哈希页"),
+    (r"[?&]token=", "带token参数"),
+    (r"://pan\.", "网盘域"),
+]
+CFG_AD_PATS = [r"adsbygoogle", r"安全检测", r"点击继续", r"关闭广告", r"请稍后", r"插播广告"]
+
+def url_ad_marks(u):
+    return [lab for pat, lab in URL_AD_PATS if re.search(pat, u, re.I)]
+
 def norm_url(u):
     """URL 规范化用于去重：剥代理前缀、统一 host、小写 host"""
     if not isinstance(u, str):
@@ -199,7 +211,11 @@ def probe(e):
     u = e["url"]
     try:
         t0 = time.time()
-        code, body = http_get(u, timeout=12)
+        try:
+            code, body = http_get(u, timeout=12)
+        except Exception:
+            time.sleep(1.5)                      # 本机 TLS 抖动重试一次
+            code, body = http_get(u, timeout=12)
         ms = int((time.time() - t0) * 1000)
         ok = code == 200 and len(body) > 50
         if ok:
@@ -404,16 +420,36 @@ def main():
             pass  # 保留，4.4 大多可 TLS1.2；仅优先排序
         a4_items.append(ee)
 
-    m5 = build_multi(alive)
-    m4 = build_multi_a4(a4_items)
+    # 点播源分池：要验证/广告版 = 盒子UA反爬(浏览器打开是导航页)、base64混淆配置、网盘/图床/token落地页URL
+    for e in alive + a4_items:
+        e["ad"] = bool(e.get("box_ua") or e.get("obf") or url_ad_marks(e["url"]))
+    v5 = [e for e in alive if e["ad"]]
+    v4 = [e for e in a4_items if e["ad"]]
+    clean5 = [e for e in alive if not e["ad"]]
+    clean4 = [e for e in a4_items if not e["ad"]]
+    print(f"vod split: ad={len(v5)} clean={len(clean5)}")
+
+    m5 = build_multi(clean5)
+    m4 = build_multi_a4(clean4)
     (OUT / "android5" / "multi.json").write_text(json.dumps(m5, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "android4" / "multi.json").write_text(json.dumps(m4, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"multi: profiles={len(m5['profiles'])}")
 
-    s5, rep5 = merge_single(alive, a4=False)
+    ma5 = build_multi(v5)
+    ma4 = build_multi_a4(v4)
+    for cfg, nm in ((ma5, "安卓5+"), (ma4, "安卓4兼容")):
+        cfg["home"]["name"] = f"TVBox 四源聚合({nm}·需验证版)"
+    (OUT / "android5" / "multiad.json").write_text(json.dumps(ma5, ensure_ascii=False, indent=1), encoding="utf-8")
+    (OUT / "android4" / "multiad.json").write_text(json.dumps(ma4, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    s5, rep5 = merge_single(clean5, a4=False)
     (OUT / "android5" / "single.json").write_text(json.dumps(s5, ensure_ascii=False, indent=1), encoding="utf-8")
-    s4, rep4 = merge_single(alive, a4=True, top=max(TOP_SINGLE * 3, 30))
+    s4, rep4 = merge_single(clean4, a4=True, top=max(TOP_SINGLE * 3, 30))
     (OUT / "android4" / "single.json").write_text(json.dumps(s4, ensure_ascii=False, indent=1), encoding="utf-8")
+    sa5, repa5 = merge_single(v5, a4=False)
+    (OUT / "android5" / "singlead.json").write_text(json.dumps(sa5, ensure_ascii=False, indent=1), encoding="utf-8")
+    sa4, repa4 = merge_single(v4, a4=True, top=max(TOP_SINGLE * 3, 30))
+    (OUT / "android4" / "singlead.json").write_text(json.dumps(sa4, ensure_ascii=False, indent=1), encoding="utf-8")
 
     lines = [f"# 直播源清单 {time.strftime('%F %T')}  共{len(luniq)}"]
     for l in luniq:
@@ -425,9 +461,13 @@ def main():
         "pool_raw": len(pool), "pool_dedup": len(uniq), "alive": len(alive),
         "by_origin_alive": {},
         "android5": {"multi": len(m5["profiles"]), "single_sites": len(s5["sites"]),
-                      "single_parses": len(s5["parses"]), "single_lives": len(s5["lives"]), "sources": rep5},
+                      "single_parses": len(s5["parses"]), "single_lives": len(s5["lives"]), "sources": rep5,
+                      "ad_multi": len(ma5["profiles"]), "ad_single_sites": len(sa5["sites"]),
+                      "ad_single_parses": len(sa5["parses"]), "ad_single_lives": len(sa5["lives"]), "ad_sources": repa5},
         "android4": {"multi": len(m4["profiles"]), "single_sites": len(s4["sites"]),
-                      "single_parses": len(s4["parses"]), "single_lives": len(s4["lives"]), "sources": rep4},
+                      "single_parses": len(s4["parses"]), "single_lives": len(s4["lives"]), "sources": rep4,
+                      "ad_multi": len(ma4["profiles"]), "ad_single_sites": len(sa4["sites"]),
+                      "ad_single_parses": len(sa4["parses"]), "ad_single_lives": len(sa4["lives"]), "ad_sources": repa4},
         "lives_dedup": len(luniq),
         "dead": [{"name": e["name"], "url": e["url"], "origin": e["origin"]} for e in uniq if not e.get("alive")][:200],
     }
@@ -435,7 +475,8 @@ def main():
         for o in str(e["origin"]).split("+"):
             report["by_origin_alive"][o] = report["by_origin_alive"].get(o, 0) + 1
     (OUT / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"DONE a5: sites={len(s5['sites'])} a4: sites={len(s4['sites'])} lives={len(luniq)}")
+    print(f"DONE a5: sites={len(s5['sites'])} a4: sites={len(s4['sites'])} "
+          f"ad5: sites={len(sa5['sites'])} ad4: sites={len(sa4['sites'])} lives={len(luniq)}")
 
 if __name__ == "__main__":
     main()
