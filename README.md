@@ -18,7 +18,27 @@
 安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multi.json
 安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json
 安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json
+直播源清单    https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_sources.txt
 ```
+
+## 直播源地址
+
+**直播源本身不分安卓4 / 安卓5+**——`live_sources.txt` 是两套版本共用的一份去重清单（78 条，格式 `名称<TAB>URL<TAB>来源`，m3u/txt 都有）。版本差异只体现在 `single.json` 内嵌的 `lives` 字段：安卓4 版合并了 36 个源、带 103 条直播；安卓5+ 版取速度前 12 个源、带 17 条直播（快源多为爬虫站，直播条目少）。填直播订阅时直接用清单或任一 single.json 均可。
+
+独立直播订阅（测活通过，可填 IPTV 播放器或 TVBox `lives`）：
+
+```
+https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u      # 聚合台标全量 396KB
+https://iptv.445569.xyz/live.m3u                                            # 裤佬IPTV 578KB
+https://sub.ottiptv.cc/bililive.m3u                                         # B站直播
+https://sub.ottiptv.cc/yylunbo.m3u                                          # YY轮播
+https://sub.ottiptv.cc/douyuyqk.m3u                                         # 斗鱼一起看
+https://sub.ottiptv.cc/huyayqk.m3u                                          # 虎牙一起看
+https://ztha.top/TVBox/tv/thtv.txt                                          # 挺好直播
+https://develop202.github.io/migu_video/interface.txt                       # 咪咕
+```
+
+完整 78 条见 [output/live_sources.txt](output/live_sources.txt)，每日 Actions 自动重测活更新。
 
 | 用途 | 安卓5+ | 安卓4 |
 |---|---|---|
