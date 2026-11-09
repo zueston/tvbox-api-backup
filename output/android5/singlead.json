@@ -2,14 +2,1216 @@
  "sites": [
   {
    "key": "Douban",
-   "name": "ð®ãåè´¹åäº«ãð®",
+   "name": "ðï¸âçåâç²¾é",
    "type": 3,
-   "api": "csp_NewDouBanGuard",
+   "api": "csp_PianDan",
+   "searchable": 1,
    "indexs": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": {
+    "home": {
+     "douban": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/r68R/douban.json",
+     "tmdb": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/yAKC/tmdb.json"
+    }
+   }
+  },
+  {
+   "key": "YGP",
+   "name": "ðâæ°çâé¢å",
+   "type": 3,
+   "api": "csp_YGP",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "FishConfig",
+   "name": "ð¼âè®¾ç½®âä¸­å¿",
+   "type": 3,
+   "api": "csp_FishConfig"
+  },
+  {
+   "key": "Local",
+   "name": "ðâæä»¶âæµè§",
+   "type": 3,
+   "api": "csp_Local",
    "searchable": 0,
+   "changeable": 0,
+   "indexs": 0,
+   "style": {
+    "type": "list"
+   },
+   "ext": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/VbeD/share.json"
+  },
+  {
+   "key": "ALLLive",
+   "name": "ðâææ²³âå±å½±",
+   "type": 3,
+   "api": "csp_ALLLive",
+   "searchable": 1
+  },
+  {
+   "key": "bili",
+   "name": "ð¨âç¬è§¦âçç",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 1,
+   "quickSearch": 1,
+   "ext": {
+    "cookie": ""
+   }
+  },
+  {
+   "key": "FishPs",
+   "name": "ðâé±¼é±¼âçæ",
+   "type": 3,
+   "api": "csp_FishPs",
+   "searchable": 1,
+   "filterable": 0
+  },
+  {
+   "key": "Wogg",
+   "name": "ð½ï¸âç©å¶â4K",
+   "type": 3,
+   "api": "csp_Wogg",
+   "searchable": 1,
+   "changeable": 1,
+   "filterable": 1,
+   "ext": {
+    "site": [
+     "https://wogg.xxooo.cf",
+     "https://woggpan.888484.xyz",
+     "https://www.wogg.live",
+     "http://woggpan.xxooo.cf"
+    ],
+    "filter": "https://tc-new.z.wiki/autoupload/iYHTWVx6T8RrCmqdGD6MOdiO_OyvX7mIgxFBfDMDErs/20260320/oOf4/wogg.json"
+   }
+  },
+  {
+   "key": "FishMuou",
+   "name": "ðªµâæ¨å¶â4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://www.muoua.top",
+     "https://333.333291.xyz",
+     "https://666.666291.xyz"
+    ]
+   }
+  },
+  {
+   "key": "bl",
+   "name": "ð¤ªâæçâ4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "Acf4n+FgSJlps29HFqyt+ECG19M+iLto9fxzwikME3YOnRFfaIWR3C9CZF+/o2jh4T6D4bOxYn8j775k1TLOsSHsG7tlKBqeENs8VhcKgZS5u7Gb8/LXYDutl7a21jsXLw=="
+  },
+  {
+   "key": "jz",
+   "name": "ðµâç®éªâ4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AUeoWDxT/Sza6llGoZlPCelc2ZgSZNx8QBoJAONichQm4mIf8nslnxOIU1wrq2vvzWouK156R9sXK/CRGs6G6fc="
+  },
+  {
+   "key": "hy",
+   "name": "ð¼âæ£ æ¢¨â4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "Ae8DpdkJGH5s9XIrvlLd8DvpiYdkSSaoIDmmvofda4Gpr9yX8k0a4w1wNmnu4CZ4Nnh03XkYIwooJ+psbf6P8ZY="
+  },
+  {
+   "key": "FourK",
+   "name": "ðâæèâ4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AV3cDzESDsTIWJ1e0GZQUmOQKfNDMpFhWqSa4cvJKZlVZDKPOBzRbNq+YsDIeVJfxJIlcvy9/9MMJLQR9Yn4P+ABIUU4LXEL+WXhRFcPEDBpGlxkMDqSvKpFJvmPoKC/IA=="
+  },
+  {
+   "key": "SanJiaoZhou",
+   "name": "ð¥ï¸âäºå½â4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0,
+   "ext": "AYw+57aVirMpHulq+pwyxEX1UGkmWBETcX32Yp6ZkkvTAnu06xitsJuZdymTwZ70YgSiX+Ga4XisFPKK2Pv4ERJ/y0iGIy9FkpAAVFLF8ltrlb/FEg6CdBcfjWgMUXsibWacZGVzOWczRslQaFUHS2M="
+  },
+  {
+   "key": "Luck",
+   "name": "ðâéç¦¾â4K",
+   "type": 3,
+   "api": "csp_Luck",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AU/L2JHZ0SsU94LbxPA3emscXG7f5FFdKYn8MSdt/5Uktri/nmW4Z3nNYavRogzuAlOkPfPVG27z4OAdO+fyFhc="
+  },
+  {
+   "key": "KaiFan",
+   "name": "ðâå¼é¥­â4K",
+   "type": 3,
+   "api": "csp_KaiFan",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AfLGR2SW/7tjQA3K8Qgg5u7AG1NNWsCVAVxfMv/V44kP5aqzon5weT9IvX2w2KtBeMpAxc+Y0yRLN0eXf6oiuLw="
+  },
+  {
+   "key": "XieHui",
+   "name": "ð«âæ­ä¼â4K",
+   "type": 3,
+   "api": "csp_XieHui",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AWevGJ+A/nEjquOh7v58lbo8oaOgHdJkEu7/lzGApb2ngqWSO16XNPqrmqkozIxiLHvjDaaxs61fWZUIYBZBGgQ="
+  },
+  {
+   "key": "shangtou",
+   "name": "ð« âä¸å¤´â4K",
+   "type": 3,
+   "api": "csp_ShangTou",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "Ab723PUSGcnjpXT6567J5El7ZP+7lqBKJnQzkeqdAaVU29VedG35Y36vvAZWXOyL7tUL38RB0IWmvwZj4wWtuwyEOmAg2Nbpi1z46QBiBTmY"
+  },
+  {
+   "key": "FaDai",
+   "name": "ð¶âååâ4K",
+   "type": 3,
+   "api": "csp_FaDai",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AbjGNiFc0jaPCvOXj2edU7/DIRsvVxb1/2tyMFgaoT8L4eZNchAll5NXn7xBXvEwQvvJ55Odg+IugUeNvfYtPT0="
+  },
+  {
+   "key": "HuangYou",
+   "name": "ð¶âææ â4K",
+   "type": 3,
+   "api": "csp_HuangYou",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AVVlrRajtr+i42Q1MBwsMRSoNuckBLnPEocZVkZik+88465w0JZsKWJodTFxYL+RSsAVU8X8lJ4M8E2Xfw0GLYA="
+  },
+  {
+   "key": "SuiYuan",
+   "name": "ðâéç¼â4K",
+   "type": 3,
+   "api": "csp_SuiYuan",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AVjYSEtEaHF+eS3NOrCubcE3f755psW6EFCg2THWgHt0uWkH1CXlE/UJ2zqohcEULrn/AlZOVuzN4V4Wt0EY3bY="
+  },
+  {
+   "key": "TangPing",
+   "name": "ðï¸âèººå¹³â4K",
+   "type": 3,
+   "api": "csp_TangPing",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AUVdS2Q3l8yS7JhOkMXYE1ntTJ/61k8MzQmaQMqSZBbUKDBy/udxVLxvXhNDvifvbkVTEawL3m2p9hhwbTibxnA="
+  },
+  {
+   "key": "LaiChuang",
+   "name": "ðï¸âèµåºâ4K",
+   "type": 3,
+   "api": "csp_LaiChuang",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AVlJ4J+D/3DMzdKAQnig/9ckDSQU7H+PyPyOE/q+m7eGkaZ9YjDkVXgq17TjYCHuvJa0UinsvgwPiAVd51fKuA0="
+  },
+  {
+   "key": "bandeng",
+   "name": "ðªâæ¿å³â4K",
+   "type": 3,
+   "api": "csp_BanDeng",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "ASH3HkV5cxNhNR9+uQe0sWYxUWHzEywHT3rcYOx+wsK4Jx+sBd0qMO9kFic1Rc1osAMsAsTlMgabd1Ky2kmzQ/Y="
+  },
+  {
+   "key": "mandian",
+   "name": "ð¢âæ¢ç¹â4K",
+   "type": 3,
+   "api": "csp_ManDian",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AU08qHcswQQ9GUNUYMdLgyq8HzPCy1gUxku0nrQgOwfSJrT0LgwdrXoWPVK+x4n+QQ8KbuVPdzA5/U2YL7fQmH8="
+  },
+  {
+   "key": "ZhiWo",
+   "name": "ðâç¥æâ4K",
+   "type": 3,
+   "api": "csp_ZhiWo",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AX1Vvf8Pdib7pGaiG52YtJfoH7J54wUt+/pfCo7QJrhIKMK6XXxVbbJG3pw3yHdOUVcBrTyo1EmM8M91pY30AUE="
+  },
+  {
+   "key": "xiaozuo",
+   "name": "ðâç­é£â4K",
+   "type": 3,
+   "api": "csp_DengFeng",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "ARRavWPOi7W2Usqhe54R+NW2sQ6CCBOYajU9bIz/WVyF75mrlP6UsAbts+o//eKOpDWbngYFUGIJGTa56hr3Hk0="
+  },
+  {
+   "key": "KanJu",
+   "name": "ð¬âæµæ â4K",
+   "type": 3,
+   "api": "csp_KanJu",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "ext": {
+    "site": "https://kanju.ai",
+    "playname": "ly"
+   }
+  },
+  {
+   "key": "åå§",
+   "name": "ð¿âåå§â4K",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "Ab6RU4ow2BTC3y169gXHkoGyOzagKI89ksf5hxcm0/J5a7/pusSapfK8Oy6MtmlqAq8DsECmgbQ377MzwhHsU61D51ptVLqXXNu87y1TOl17"
+  },
+  {
+   "key": "åå",
+   "name": "â¨âååâ4K",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "AbHckdJkP3IQGfQAetQhutxB3VjOrW67VMoOo8mAdc9grkAgbVv7bUgWbHKHHabksz8nJklfQrFKo56OYXkhQ936PGDo/33ZU4cnkGGALgUlbfxoJoT/TJ/KZwRlYHiajg=="
+  },
+  {
+   "key": "ç´ ç¬º",
+   "name": "ðâç´ ç¬ºâ4K",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "Aaf7w5/rzYE9yZfGXQS8eAKVq3W9pLaxvlvi6ZGZLpR8O3YSm7sXFS22QD04sh5rKbTiwymnUVmJuU564xlueIWO8sp8Q1lhlLJThJy5Yert"
+  },
+  {
+   "key": "é¿æ³½",
+   "name": "ðï¸âé¿æ³½â4K",
+   "type": 3,
+   "api": "csp_App88",
+   "ext": "AbUqYzi9KxmcqEBrph2PStNUDPxq/XlzxDHJ/Ho29gXr8NgMOEJGFKBsrdYb5xNb+w+Xaj3203DI9YWo5wBv6zGULMNZneW1yESyfC1/S1BM"
+  },
+  {
+   "key": "äºå²«",
+   "name": "â°ï¸âäºå²«â4K",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "Af9dBxsQCjGtIKQ47cJEAnzHtmsGI04C7DCRpNBZk7hshaMWsb76puB4aGapQk4JgYpBV2BKnAQ6GRcUI+/vzYduXc8ItUUvkHR/+LR3Y+NT"
+  },
+  {
+   "key": "zhiqiu",
+   "name": "âï¸âå¬é£âç¥ç§",
+   "type": 3,
+   "api": "csp_zhiqiu",
+   "searchable": 1,
+   "ext": "ATuDzsbtXNA1mpnRWIpcUB8B2+hY3LMP/3Z1xXurADboE8cAKUOjUN6TXimsApauJg/X7yLotzgNXhCsjAn5wuQ="
+  },
+  {
+   "key": "fishhxq",
+   "name": "ðâé©åâå½±è§",
+   "type": 3,
+   "api": "csp_FishHxq",
+   "searchable": 1,
+   "ext": "AfEuiKVYhFJoZfX14qKZ6B/GuVuuG1J+2u0TrTgQMlT+T6fw+zkIdP0NTr6BT3Oa5aQs8EIbxPwjpG7UH/U75WM="
+  },
+  {
+   "key": "Kan360",
+   "name": "ð«âä¸å­âå½±è§",
+   "type": 3,
+   "api": "csp_Kan360",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": {
+    "filter": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/8aF9/360.json",
+    "fishjx": [
+     "https://jx.xmflv.com/?url="
+    ]
+   }
+  },
+  {
+   "key": "Rebo",
+   "name": "ðâç­æ­âAPP",
+   "type": 3,
+   "api": "csp_AppRJ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0,
+   "ext": {
+    "url": "http://v.rbotv.cn"
+   }
+  },
+  {
+   "key": "ç«¹é",
+   "name": "ðâç«¹éâAPP",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "ASOaI+0HH0pDfWQ9VwPhMaOaO+WarJ6umTa/qwrJ+cbO4qRPAyjfTVh51M3iYZq/nEN+givTp7FLvjhWgQh8WCdjm82k8bbHm80C9j41tlvo"
+  },
+  {
+   "key": "çé¶",
+   "name": "ðï¸âçé¶âAPP",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "AR1skS0Mq97cRrUjisQHhwxFfgXFonkw2eX4zfToon+DcScGRXGViBnNIsG5DYOtYkAp0CTia3vGvMluKl75/eMH49CGi2ZWYJa1wyldHjNH"
+  },
+  {
+   "key": "é¦ç¯",
+   "name": "ðªâé¦ç¯âAPP",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "AYVQFckfgSMV740pmmoXzEeC6ljk5SNI/vhWnsIgCUWttSOCyil7DK8MLbeYpwWSgUvM0jcGIDuwi43iiO0FSFX1ofrxXH3IU944OtJbNlpMo9hvLoJTJ2RQVjWu3HU58w=="
+  },
+  {
+   "key": "å°è·",
+   "name": "ð·âå°è·âAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AZd2zeWnJd10mMjpA2gpKlWDq7ggxf6XDxDuTaoinynvJ3eEi1bZPxC2qgkkAiACxISnMdRC37ODaT/tTEd9foyUox+SNWIsGzujicg5VFm7"
+  },
+  {
+   "key": "çå½±",
+   "name": "ðºâçå½±âAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AcWh+ygRkvJAOf11TNsY/RqlWx9GJlpo3j4tzpUl+u3fVki/utnqUPm2SGUaMOiuwO9ab8dc4NOr/Kone+3t4Pvvqo19sUMAcLVWyXq8gKIr"
+  },
+  {
+   "key": "æé",
+   "name": "âï¸âæéâAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "Ae6vu7b7i5h70Oy94HyVp82ZDRF6HrMNdCYNTQ442xkG4kY88mkG1x34awtkrrUdk56x2qehUzy3YCLubZhewqD5a5lQeSsfcnYh8z8+qVVL"
+  },
+  {
+   "key": "è§æ¾",
+   "name": "ðâè§æ¾âAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AVV1qWzQBjKvN7CKup9rpdodlSeTxhlrSJPwshkidi4LdlbDt81YkaxBlOnImlhpaCXFZ3rlaVHkoA57wMFZIEUb0eGUhm8upw9Vw/Qq5sdr"
+  },
+  {
+   "key": "å­è­",
+   "name": "ð¿âå­è­âAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AUGjHXVq+vxRJ+qgE4Hsi3sV94g5u8cFfUgjY4diiOxY3cUhBhbqUlPOKbfo6yzjh2BrmyNZGnV3r5j/VfAvnDP1bmLlrwPQ1H2o6cF9VjrH"
+  },
+  {
+   "key": "åæ",
+   "name": "ð³âåæâAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AUj9LzI2v0nALIaWIMvrw0mqpqAfYqjLEaEdBg2Kpjpynjba5tcMRsocodhKWXuxaxWXNQhmHVm/5ch0t87+Ck3kUcf8gS3HStDFKx/zWH77"
+  },
+  {
+   "key": "æ²è¾",
+   "name": "ð§âæ²è¾âAPP",
+   "api": "csp_AppUn",
+   "type": 3,
+   "ext": "AYdXH70UMM8plqsXPmZuN9zEJQV/2vpn2nM5OAeVwvV966SO86n0qc/65IvyNOY7I8FscuN2i4tnXSoa2eVVhCbvIzsK+OAWQcMwpKHy1zZg"
+  },
+  {
+   "key": "Libvio",
+   "name": "ðºâç«æ­â4K",
+   "type": 3,
+   "api": "csp_Libvio",
+   "searchable": 1,
+   "changeable": 1,
+   "ext": {
+    "site": [
+     "https://libviofabu.com",
+     "https://libvio.app",
+     "https://libfabu.com",
+     "https://libviogroup.github.io"
+    ]
+   }
+  },
+  {
+   "key": "KZN",
+   "name": "ðâæåâ4K",
+   "type": 3,
+   "api": "csp_KZN",
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "SeedHub",
+   "name": "ð±âSeedâ4K",
+   "type": 3,
+   "api": "csp_SeedHub",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://sidhub.cc",
+     "https://seeduck.cc",
+     "https://hubdog.cc"
+    ]
+   }
+  },
+  {
+   "key": "PanWebShare123",
+   "name": "ðâ123â4K",
+   "type": 3,
+   "api": "csp_PanWebShare123",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "style": {
+    "type": "list",
+    "ratio": 1.433
+   },
+   "ext": {
+    "site": [
+     "https://123panfx.com",
+     "https://pan1.me"
+    ],
+    "cookie": ""
+   }
+  },
+  {
+   "key": "PanWebShareGuangYa",
+   "name": "ðâåé¸­â4K",
+   "type": 3,
+   "api": "csp_PanWebShareGuangYa",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "style": {
+    "type": "list",
+    "ratio": 1.433
+   },
+   "ext": {
+    "site": [
+     "https://www.guangya.net"
+    ],
+    "cookie": ""
+   }
+  },
+  {
+   "key": "Yidong4K",
+   "name": "ð¶âç§»å¨â4K",
+   "type": 3,
+   "api": "csp_Yidong4K",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0,
+   "changeable": 1
+  },
+  {
+   "key": "WoNiu",
+   "name": "ðâèçâ4K",
+   "type": 3,
+   "api": "csp_WoNiu",
+   "searchable": 1,
+   "changeable": 1,
+   "ext": {
+    "site": "https://wn4k.com/"
+   }
+  },
+  {
+   "key": "Qiwei",
+   "name": "ðâä¸å³â4K",
+   "type": 3,
+   "api": "csp_Qiwei",
+   "searchable": 1,
+   "filterable": 0,
+   "ext": {
+    "site": [
+     "https://www.qwnull.com",
+     "https://www.qwmkv.com",
+     "https://www.qwfilm.com",
+     "https://www.qnmp4.com",
+     "https://www.qnnull.com",
+     "https://www.qnhot.com",
+     "https://www.qncool.com"
+    ]
+   }
+  },
+  {
+   "key": "gying",
+   "name": "ðâè§å½±â4K",
+   "type": 3,
+   "api": "csp_Gying",
+   "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://cdn.waimaimingtang.com/file/images/bwc/20260414181247-ae51abfbfe.txt"
+   "ext": {
+    "cookie": "",
+    "site": [
+     "https://www.æç¶.com",
+     "https://www.æéç©¿è¶.com",
+     "https://www.æ¥é¨çä¸ç.com",
+     "https://www.æ³°å¦å°¼åå·.com",
+     "https://www.çæ¢¦ç©ºé´.com",
+     "https://www.èç³åçæèµ.com",
+     "https://www.é¿çæ­£ä¼ .com",
+     "https://www.é»å®¢å¸å½.com"
+    ]
+   }
+  },
+  {
+   "key": "FishDuoduo",
+   "name": "ðâå¤å¤â4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://tv.yydsys.top",
+     "https://tv.yydsys.cc",
+     "https://tv.214521.xyz"
+    ]
+   }
+  },
+  {
+   "key": "Fishhuajuan",
+   "name": "ð¸âè±å·â4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://www.hjzhencai.top",
+     "https://www.huanjuanwp.shop"
+    ]
+   }
+  },
+  {
+   "key": "FishHuban",
+   "name": "ðâèæâ4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "http://xhban.xyz",
+     "http://38.76.197.172:16969"
+    ]
+   }
+  },
+  {
+   "key": "Fishshayang",
+   "name": "ð¤­âå»æ ·â4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "http://xsayang.fun",
+     "http://38.76.197.172:12521"
+    ]
+   }
+  },
+  {
+   "key": "Fishgege",
+   "name": "ð«âå«é¶â4K",
+   "type": 3,
+   "api": "csp_FishCloud",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://woog.nxog.eu.org",
+     "https://ogkk.nxog.eu.org",
+     "https://woog.430520.xyz"
+    ]
+   }
+  },
+  {
+   "key": "ShuangXing",
+   "name": "ðâåæâ4K",
+   "type": 3,
+   "api": "csp_ShuangXing",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "style": {
+    "type": "list",
+    "ratio": 1.433
+   }
+  },
+  {
+   "key": "DianYingYunJi",
+   "name": "âï¸âäºéâ4K",
+   "type": 3,
+   "api": "csp_DianYingYunJi",
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "VideoX",
+   "name": "ðºâå°åâäºè§",
+   "type": 3,
+   "api": "csp_VideoX",
+   "searchable": 1,
+   "changeable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "Wwys",
+   "name": "ðâç³¯ç±³âå½±è§",
+   "type": 3,
+   "api": "csp_Wwys",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "ext": "https://vip.wwgz.cn:5200"
+  },
+  {
+   "key": "CZ",
+   "name": "ð­âåé¿âå½±è§",
+   "type": 3,
+   "api": "csp_CZ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0,
+   "ext": {
+    "cookie": "",
+    "username": "",
+    "password": "",
+    "site": [
+     "https://www.4kcz.com",
+     "https://www.cz4k.com",
+     "https://cz01.tv",
+     "https://cz01.vip",
+     "https://www.czzy.site",
+     "https://czzy.top"
+    ]
+   }
+  },
+  {
+   "key": "wencai",
+   "name": "âï¸âææâå½±è§",
+   "type": 3,
+   "api": "csp_WenCai",
+   "searchable": 1,
+   "ext": "https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"
+  },
+  {
+   "key": "Guazi",
+   "name": "ðâçå­âå½±è§",
+   "type": 3,
+   "api": "csp_Guazi",
+   "searchable": 1
+  },
+  {
+   "key": "TvDy",
+   "name": "ð¼âå¤©å âå½±è§",
+   "type": 3,
+   "api": "csp_TvDy",
+   "searchable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "SaoHuo",
+   "name": "ð¶ï¸âéªç«âå½±è§",
+   "type": 3,
+   "api": "csp_SaoHuo",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "ext": "https://shdy5.us"
+  },
+  {
+   "key": "Duboku",
+   "name": "ð¯âç¬æ­âå½±è§",
+   "type": 3,
+   "api": "csp_Duboku",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "HonHon",
+   "name": "ðâçº¢çº¢âç­å§",
+   "type": 3,
+   "api": "csp_HonHon",
+   "searchable": 1,
+   "quickSearch": 1,
+   "genre": "shortdrama",
+   "filterable": 1,
+   "ext": {
+    "host": "https://honhon.wya6.com",
+    "quality": "1080p"
+   }
+  },
+  {
+   "key": "DJHub",
+   "name": "ð­âç­å§âèå",
+   "type": 3,
+   "api": "csp_DJHub",
+   "searchable": 1,
+   "quickSearch": 1,
+   "genre": "shortdrama",
+   "filterable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "dadun",
+   "name": "ð´âæç¹âå¨æ¼«",
+   "type": 3,
+   "api": "csp_DaDun",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AfCX4sFyDgfHnSLJWpjt1MhGM5IXEedNZfnttre6SML2iKsHtTs9bImgNSCyhOVdiFfFQEtkTtLKBE1jHKB54K5If+HC5ogqbIKmQp/pC3aY"
+  },
+  {
+   "key": "XingHui",
+   "name": "ð âæç»âå¨æ¼«",
+   "type": 3,
+   "api": "csp_XingHui",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "filterable": 1,
+   "ext": "Add8krwC68v61DP+FKD6Jfku9NAYotb5APLK7YesWQ1matF4zi2Prh/3AY6D3ZeBGuxJg4SEuXY9n/vMa+B4fC0="
+  },
+  {
+   "key": "FanShu",
+   "name": "ð âçªè¯âå¨æ¼«",
+   "type": 3,
+   "api": "csp_FanShu",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 1,
+   "ext": "AfcrWiL6kOmzXnbqzxhVVO34r1aA/e0g4grwfsFA8V5EPAVy9WtRO4yVFf3aC5LmzKENIEFO9aA2BMklc+wOUy4="
+  },
+  {
+   "key": "XgAnime",
+   "name": "ðâè¥¿çâå¨æ¼«",
+   "type": 3,
+   "api": "csp_XgAnime",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "Manbo",
+   "name": "ðºâæ¼æ³¢âå¨æ¼«",
+   "type": 3,
+   "api": "csp_AppGet",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "AUzH3yIWvgQkyhQw17uONTsfuN8PupZ/LJdr5C31Y/CWlzSNmarYI5kaJYN5c0p6+Oq0tXuTutQo9MHHytxulL5kmapDuAK5+2NTlpsUgBnr0tOamm69Fwb+jFDQ7VW46qf5EFY+Ea3PHzkpfeObKPM="
+  },
+  {
+   "key": "Gugu",
+   "name": "ð¤âååâå¨æ¼«",
+   "type": 3,
+   "api": "csp_AppGet",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "ARKK6LQnl4dB2QciLugEzZ8QD2WdbeK23tPAre1QOEbbL5BfB8cV39JNfSd2+Xhcqr/z+V5To0krLYHUX7NtRtwYBC44/9ayncZMomdbv4ZCBNOUsBEedUQx7SWf1J0pE0BsLG9QlR8tURwRwx/sqT0="
+  },
+  {
+   "key": "Jianpian",
+   "name": "ð§²âèçâç£å",
+   "type": 3,
+   "api": "csp_Jianpian",
+   "searchable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "Xb6v",
+   "name": "ðâ6Vâç£å",
+   "type": 3,
+   "api": "csp_Xb6v",
+   "searchable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "JSo",
+   "name": "ð¾âççâæç´¢",
+   "type": 3,
+   "api": "csp_JSo",
+   "searchable": 1,
+   "ext": {
+    "site": [
+     "https://j-so.com"
+    ]
+   }
+  },
+  {
+   "key": "Tiu6",
+   "name": "ð­âTiu6âæç´¢",
+   "type": 3,
+   "api": "csp_Tiu6",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": {
+    "site": [
+     "https://www.tiu6.cn"
+    ]
+   }
+  },
+  {
+   "key": "Buguyy",
+   "name": "ð¦âå¸è°·âé³ä¹",
+   "type": 3,
+   "api": "csp_Buguyy",
+   "searchable": 1,
+   "filterable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "ChuXin",
+   "name": "ðâåå¿âé³ä¹",
+   "type": 3,
+   "api": "csp_ChuXin",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0
+  },
+  {
+   "key": "aiting",
+   "name": "ð§âç±å¬âé³ä¹",
+   "type": 3,
+   "api": "csp_AiTingMusic",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0
+  },
+  {
+   "key": "Music24bit",
+   "name": "ð¼âæ æâé³ä¹",
+   "type": 3,
+   "api": "csp_Music24bit",
+   "searchable": 1,
+   "changeable": 1,
+   "ext": {
+    "categories": [
+     "å¨æ°ä¼¦",
+     "æä¿æ°",
+     "éå¥è¿",
+     "éç´«æ£",
+     "èä¹è°¦"
+    ]
+   }
+  },
+  {
+   "key": "TuXiaoBei",
+   "name": "ð°âå°åâå°å¿",
+   "type": 3,
+   "api": "csp_TuXiaoBei",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0
+  },
+  {
+   "key": "BeiLeHu",
+   "name": "ð¯âå°èâå°å¿",
+   "type": 3,
+   "api": "csp_BeiLeHu",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0
+  },
+  {
+   "key": "å°å¿æè²",
+   "name": "ð§âå°å¿âæè²",
+   "type": 3,
+   "api": "csp_Bili",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"
+   }
+  },
+  {
+   "key": "å°å­¦è¯¾å ",
+   "name": "ðâå°å­¦âè¯¾å ",
+   "type": 3,
+   "api": "csp_Bili",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"
+   }
+  },
+  {
+   "key": "åä¸­è¯¾å ",
+   "name": "ðâåä¸­âè¯¾å ",
+   "type": 3,
+   "api": "csp_Bili",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"
+   }
+  },
+  {
+   "key": "é«ä¸­æè²",
+   "name": "ðâé«ä¸­âè¯¾å ",
+   "type": 3,
+   "api": "csp_Bili",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt"
+   }
+  },
+  {
+   "key": "BiliHeji",
+   "name": "ðâç¬çâåé",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/0075389dca9afadd4614e9713765ff17.txt"
+   },
+   "style": {
+    "type": "rect",
+    "ratio": 1.433
+   }
+  },
+  {
+   "name": "ðâç¬çâæ­æ²",
+   "key": "BiliGequ",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": {
+    "json": "https://nos.netease.com/ysf/6496356286589c68f52c2f99c0c674c7.txt"
+   },
+   "style": {
+    "type": "rect",
+    "ratio": 1.433
+   }
+  },
+  {
+   "key": "Kanqiu",
+   "name": "â½âççâä½è²",
+   "type": 3,
+   "api": "csp_Kanqiu",
+   "searchable": 0,
+   "filterable": 1,
+   "indexs": 0,
+   "ext": "http://www.88kanqiu.one",
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "Sir88",
+   "name": "ðï¸âè¶å¨âä½è²",
+   "type": 3,
+   "api": "csp_Sir88",
+   "searchable": 0,
+   "filterable": 1,
+   "indexs": 0,
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "QiutongTY",
+   "name": "ðâçéâä½è²",
+   "type": 3,
+   "api": "csp_QiutongTY",
+   "searchable": 0,
+   "filterable": 0,
+   "changeable": 1
+  },
+  {
+   "key": "GuaziTY",
+   "name": "ð¥âçå­âä½è²",
+   "type": 3,
+   "api": "csp_GuaziTY",
+   "searchable": 0,
+   "filterable": 0,
+   "changeable": 1
+  },
+  {
+   "key": "919TY",
+   "name": "ðâ919âä½è²",
+   "type": 3,
+   "api": "csp_C919TY",
+   "searchable": 0,
+   "filterable": 0,
+   "changeable": 1
+  },
+  {
+   "key": "TingBook",
+   "name": "ð»âå­æâæå£°",
+   "type": 3,
+   "api": "csp_TingBook",
+   "searchable": 1,
+   "indexs": 0,
+   "ext": "https://app.365ting.com",
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "TingBookJinXia",
+   "name": "ðï¸âå å¤âæå£°",
+   "type": 3,
+   "api": "csp_TingBookJinXia",
+   "searchable": 1,
+   "filterable": 1,
+   "indexs": 0,
+   "ext": "https://m.ting15.com",
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "TingYou",
+   "name": "ð§âå¬åâæå£°",
+   "type": 3,
+   "api": "csp_TingYou",
+   "searchable": 1,
+   "indexs": 0,
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "Market",
+   "name": "ðâç½çâå¸åº",
+   "type": 3,
+   "api": "csp_Market",
+   "searchable": 0,
+   "indexs": 0,
+   "style": {
+    "type": "list"
+   },
+   "ext": {
+    "categories": [
+     {
+      "name": "æ½æ´èµæºä¸",
+      "url": "https://pan.quark.cn/s/969cc97687d3"
+     },
+     {
+      "name": "æ½æ´èµæºäº",
+      "url": "https://drive.uc.cn/s/ba531661b3eb4"
+     },
+     {
+      "name": "å¥å¥æ´æ°ä¸",
+      "url": "https://pan.quark.cn/s/ab00f85da8ea"
+     },
+     {
+      "name": "å¥å¥æ´æ°äº",
+      "url": "https://drive.uc.cn/s/ef22fcbfdd934"
+     }
+    ]
+   }
+  },
+  {
+   "key": "push_agent",
+   "name": "ðâæ¨éâæ¥æ¶",
+   "type": 3,
+   "api": "csp_Push",
+   "searchable": 0,
+   "changeable": 0,
+   "indexs": 0,
+   "timeout": 60
+  },
+  {
+   "key": "Fishdrive",
+   "name": "ð âæ¸é±¼âåªä½åº",
+   "type": 3,
+   "api": "csp_FishDrive",
+   "indexs": 0,
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "https://tc-new.z.wiki/autoupload/iYHTWVx6T8RrCmqdGD6MOdiO_OyvX7mIgxFBfDMDErs/20260715/bf45/fishdrive.json"
+  },
+  {
+   "key": "Wallpaper",
+   "name": "ð¼ï¸âæ¸é±¼âå£çº¸åº",
+   "type": 3,
+   "api": "csp_Wallpaper",
+   "searchable": 0,
+   "indexs": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "style": {
+    "type": "rect",
+    "ratio": 0.56
+   }
   },
   {
    "key": "Doubanaaaa",
@@ -899,70 +2101,6 @@
    }
   },
   {
-   "key": "å°å¿æè²",
-   "name": "ðå°å¿âæè²ð",
-   "type": 3,
-   "api": "csp_BiliGuard",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "ext": {
-    "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
-   }
-  },
-  {
-   "key": "å°å­¦è¯¾å ",
-   "name": "ðå°å­¦âè¯¾å ð",
-   "type": 3,
-   "api": "csp_BiliGuard",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "ext": {
-    "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt"
-   }
-  },
-  {
-   "key": "åä¸­è¯¾å ",
-   "name": "ðåä¸­âè¯¾å ð",
-   "type": 3,
-   "api": "csp_BiliGuard",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "ext": {
-    "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/19B1839_773_chuzhong_20250828171521929newMediaImage.txt"
-   }
-  },
-  {
-   "key": "é«ä¸­æè²",
-   "name": "ðé«ä¸­âè¯¾å ð",
-   "type": 3,
-   "api": "csp_BiliGuard",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "ext": {
-    "json": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/345A587_773_gaozhong_20250828171449997newMediaImage.txt"
-   }
-  },
-  {
    "key": "SoAiHaiYin",
    "name": "ð çæâç»¼åð ",
    "type": 3,
@@ -1001,1107 +2139,6 @@
    "api": "csp_SoAiQuanPanGuard",
    "searchable": 1,
    "changeable": 0
-  },
-  {
-   "key": "push_agent",
-   "name": "æ¨é",
-   "type": 3,
-   "api": "csp_PushGuard",
-   "searchable": 1,
-   "changeable": 0
-  },
-  {
-   "key": "YGP",
-   "name": "ðâæ°çâé¢å",
-   "type": 3,
-   "api": "csp_YGP",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "FishConfig",
-   "name": "ð¼âè®¾ç½®âä¸­å¿",
-   "type": 3,
-   "api": "csp_FishConfig"
-  },
-  {
-   "key": "Local",
-   "name": "ðâæä»¶âæµè§",
-   "type": 3,
-   "api": "csp_Local",
-   "searchable": 0,
-   "changeable": 0,
-   "indexs": 0,
-   "style": {
-    "type": "list"
-   },
-   "ext": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/VbeD/share.json"
-  },
-  {
-   "key": "ALLLive",
-   "name": "ðâææ²³âå±å½±",
-   "type": 3,
-   "api": "csp_ALLLive",
-   "searchable": 1
-  },
-  {
-   "key": "bili",
-   "name": "ð¨âç¬è§¦âçç",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 1,
-   "quickSearch": 1,
-   "ext": {
-    "cookie": ""
-   }
-  },
-  {
-   "key": "FishPs",
-   "name": "ðâé±¼é±¼âçæ",
-   "type": 3,
-   "api": "csp_FishPs",
-   "searchable": 1,
-   "filterable": 0
-  },
-  {
-   "key": "Wogg",
-   "name": "ð½ï¸âç©å¶â4K",
-   "type": 3,
-   "api": "csp_Wogg",
-   "searchable": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "ext": {
-    "site": [
-     "https://wogg.xxooo.cf",
-     "https://woggpan.888484.xyz",
-     "https://www.wogg.live",
-     "http://woggpan.xxooo.cf"
-    ],
-    "filter": "https://tc-new.z.wiki/autoupload/iYHTWVx6T8RrCmqdGD6MOdiO_OyvX7mIgxFBfDMDErs/20260320/oOf4/wogg.json"
-   }
-  },
-  {
-   "key": "FishMuou",
-   "name": "ðªµâæ¨å¶â4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://www.muoua.top",
-     "https://333.333291.xyz",
-     "https://666.666291.xyz"
-    ]
-   }
-  },
-  {
-   "key": "bl",
-   "name": "ð¤ªâæçâ4K",
-   "type": 3,
-   "api": "csp_App88",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "Acf4n+FgSJlps29HFqyt+ECG19M+iLto9fxzwikME3YOnRFfaIWR3C9CZF+/o2jh4T6D4bOxYn8j775k1TLOsSHsG7tlKBqeENs8VhcKgZS5u7Gb8/LXYDutl7a21jsXLw=="
-  },
-  {
-   "key": "jz",
-   "name": "ðµâç®éªâ4K",
-   "type": 3,
-   "api": "csp_App88",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AUeoWDxT/Sza6llGoZlPCelc2ZgSZNx8QBoJAONichQm4mIf8nslnxOIU1wrq2vvzWouK156R9sXK/CRGs6G6fc="
-  },
-  {
-   "key": "hy",
-   "name": "ð¸âæ£ æ¢¨â4K",
-   "type": 3,
-   "api": "csp_App88",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "Ae8DpdkJGH5s9XIrvlLd8DvpiYdkSSaoIDmmvofda4Gpr9yX8k0a4w1wNmnu4CZ4Nnh03XkYIwooJ+psbf6P8ZY="
-  },
-  {
-   "key": "KaiFan",
-   "name": "ðâå¼é¥­â4K",
-   "type": 3,
-   "api": "csp_KaiFan",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AfLGR2SW/7tjQA3K8Qgg5u7AG1NNWsCVAVxfMv/V44kP5aqzon5weT9IvX2w2KtBeMpAxc+Y0yRLN0eXf6oiuLw="
-  },
-  {
-   "key": "shangtou",
-   "name": "ð« âä¸å¤´â4K",
-   "type": 3,
-   "api": "csp_ShangTou",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "Ab723PUSGcnjpXT6567J5El7ZP+7lqBKJnQzkeqdAaVU29VedG35Y36vvAZWXOyL7tUL38RB0IWmvwZj4wWtuwyEOmAg2Nbpi1z46QBiBTmY"
-  },
-  {
-   "key": "XieHui",
-   "name": "ð«âæ­ä¼â4K",
-   "type": 3,
-   "api": "csp_XieHui",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AWevGJ+A/nEjquOh7v58lbo8oaOgHdJkEu7/lzGApb2ngqWSO16XNPqrmqkozIxiLHvjDaaxs61fWZUIYBZBGgQ="
-  },
-  {
-   "key": "FaDai",
-   "name": "âï¸âååâ4K",
-   "type": 3,
-   "api": "csp_FaDai",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AbjGNiFc0jaPCvOXj2edU7/DIRsvVxb1/2tyMFgaoT8L4eZNchAll5NXn7xBXvEwQvvJ55Odg+IugUeNvfYtPT0="
-  },
-  {
-   "key": "HuangYou",
-   "name": "ðâææ â4K",
-   "type": 3,
-   "api": "csp_HuangYou",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AVVlrRajtr+i42Q1MBwsMRSoNuckBLnPEocZVkZik+88465w0JZsKWJodTFxYL+RSsAVU8X8lJ4M8E2Xfw0GLYA="
-  },
-  {
-   "key": "SuiYuan",
-   "name": "ðâéç¼â4K",
-   "type": 3,
-   "api": "csp_SuiYuan",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AVjYSEtEaHF+eS3NOrCubcE3f755psW6EFCg2THWgHt0uWkH1CXlE/UJ2zqohcEULrn/AlZOVuzN4V4Wt0EY3bY="
-  },
-  {
-   "key": "TangPing",
-   "name": "ðï¸âèººå¹³â4K",
-   "type": 3,
-   "api": "csp_TangPing",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AUVdS2Q3l8yS7JhOkMXYE1ntTJ/61k8MzQmaQMqSZBbUKDBy/udxVLxvXhNDvifvbkVTEawL3m2p9hhwbTibxnA="
-  },
-  {
-   "key": "LaiChuang",
-   "name": "ðï¸âèµåºâ4K",
-   "type": 3,
-   "api": "csp_LaiChuang",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AVlJ4J+D/3DMzdKAQnig/9ckDSQU7H+PyPyOE/q+m7eGkaZ9YjDkVXgq17TjYCHuvJa0UinsvgwPiAVd51fKuA0="
-  },
-  {
-   "key": "bandeng",
-   "name": "ð¾âæ¿å³â4K",
-   "type": 3,
-   "api": "csp_BanDeng",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "ASH3HkV5cxNhNR9+uQe0sWYxUWHzEywHT3rcYOx+wsK4Jx+sBd0qMO9kFic1Rc1osAMsAsTlMgabd1Ky2kmzQ/Y="
-  },
-  {
-   "key": "mandian",
-   "name": "ð¢âæ¢ç¹â4K",
-   "type": 3,
-   "api": "csp_ManDian",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AU08qHcswQQ9GUNUYMdLgyq8HzPCy1gUxku0nrQgOwfSJrT0LgwdrXoWPVK+x4n+QQ8KbuVPdzA5/U2YL7fQmH8="
-  },
-  {
-   "key": "ZhiWo",
-   "name": "ðâç¥æâ4K",
-   "type": 3,
-   "api": "csp_ZhiWo",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AX1Vvf8Pdib7pGaiG52YtJfoH7J54wUt+/pfCo7QJrhIKMK6XXxVbbJG3pw3yHdOUVcBrTyo1EmM8M91pY30AUE="
-  },
-  {
-   "key": "xiaozuo",
-   "name": "ðâç­é£â4K",
-   "type": 3,
-   "api": "csp_DengFeng",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "ARRavWPOi7W2Usqhe54R+NW2sQ6CCBOYajU9bIz/WVyF75mrlP6UsAbts+o//eKOpDWbngYFUGIJGTa56hr3Hk0="
-  },
-  {
-   "key": "KanJu",
-   "name": "ð¬âæµæ â4K",
-   "type": 3,
-   "api": "csp_KanJu",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "ext": {
-    "site": "https://kanju.ai",
-    "playname": "ly"
-   }
-  },
-  {
-   "key": "åå§",
-   "name": "ð¿âåå§â4K",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "Ab6RU4ow2BTC3y169gXHkoGyOzagKI89ksf5hxcm0/J5a7/pusSapfK8Oy6MtmlqAq8DsECmgbQ377MzwhHsU61D51ptVLqXXNu87y1TOl17"
-  },
-  {
-   "key": "åå",
-   "name": "â¨âååâ4K",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "AbHckdJkP3IQGfQAetQhutxB3VjOrW67VMoOo8mAdc9grkAgbVv7bUgWbHKHHabksz8nJklfQrFKo56OYXkhQ936PGDo/33ZU4cnkGGALgUlbfxoJoT/TJ/KZwRlYHiajg=="
-  },
-  {
-   "key": "ç´ ç¬º",
-   "name": "ðâç´ ç¬ºâ4K",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "Aaf7w5/rzYE9yZfGXQS8eAKVq3W9pLaxvlvi6ZGZLpR8O3YSm7sXFS22QD04sh5rKbTiwymnUVmJuU564xlueIWO8sp8Q1lhlLJThJy5Yert"
-  },
-  {
-   "key": "é¿æ³½",
-   "name": "ðâé¿æ³½â4K",
-   "type": 3,
-   "api": "csp_App88",
-   "ext": "AbUqYzi9KxmcqEBrph2PStNUDPxq/XlzxDHJ/Ho29gXr8NgMOEJGFKBsrdYb5xNb+w+Xaj3203DI9YWo5wBv6zGULMNZneW1yESyfC1/S1BM"
-  },
-  {
-   "key": "äºå²«",
-   "name": "âï¸âäºå²«â4K",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "Af9dBxsQCjGtIKQ47cJEAnzHtmsGI04C7DCRpNBZk7hshaMWsb76puB4aGapQk4JgYpBV2BKnAQ6GRcUI+/vzYduXc8ItUUvkHR/+LR3Y+NT"
-  },
-  {
-   "key": "zhiqiu",
-   "name": "âï¸âå¬é£âç¥ç§",
-   "type": 3,
-   "api": "csp_zhiqiu",
-   "searchable": 1,
-   "ext": "ATuDzsbtXNA1mpnRWIpcUB8B2+hY3LMP/3Z1xXurADboE8cAKUOjUN6TXimsApauJg/X7yLotzgNXhCsjAn5wuQ="
-  },
-  {
-   "key": "fishhxq",
-   "name": "ðâé©åâå½±è§",
-   "type": 3,
-   "api": "csp_FishHxq",
-   "searchable": 1,
-   "ext": "AfEuiKVYhFJoZfX14qKZ6B/GuVuuG1J+2u0TrTgQMlT+T6fw+zkIdP0NTr6BT3Oa5aQs8EIbxPwjpG7UH/U75WM="
-  },
-  {
-   "key": "Kan360",
-   "name": "ð«âä¸å­âå½±è§",
-   "type": 3,
-   "api": "csp_Kan360",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": {
-    "filter": "https://tc-new.z.wiki/autoupload/k2fxc/20260918/8aF9/360.json",
-    "fishjx": [
-     "https://jx.xmflv.com/?url="
-    ]
-   }
-  },
-  {
-   "key": "Rebo",
-   "name": "ðâç­æ­âAPP",
-   "type": 3,
-   "api": "csp_AppRJ",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": {
-    "url": "http://v.rbotv.cn"
-   }
-  },
-  {
-   "key": "ç«¹é",
-   "name": "ðâç«¹éâAPP",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "ASOaI+0HH0pDfWQ9VwPhMaOaO+WarJ6umTa/qwrJ+cbO4qRPAyjfTVh51M3iYZq/nEN+givTp7FLvjhWgQh8WCdjm82k8bbHm80C9j41tlvo"
-  },
-  {
-   "key": "çé¶",
-   "name": "ðï¸âçé¶âAPP",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "AR1skS0Mq97cRrUjisQHhwxFfgXFonkw2eX4zfToon+DcScGRXGViBnNIsG5DYOtYkAp0CTia3vGvMluKl75/eMH49CGi2ZWYJa1wyldHjNH"
-  },
-  {
-   "key": "é¦ç¯",
-   "name": "ðªâé¦ç¯âAPP",
-   "type": 3,
-   "api": "csp_NiuLai",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 0,
-   "ext": "AYVQFckfgSMV740pmmoXzEeC6ljk5SNI/vhWnsIgCUWttSOCyil7DK8MLbeYpwWSgUvM0jcGIDuwi43iiO0FSFX1ofrxXH3IU944OtJbNlpMo9hvLoJTJ2RQVjWu3HU58w=="
-  },
-  {
-   "key": "å°è·",
-   "name": "ð¸âå°è·âAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AZd2zeWnJd10mMjpA2gpKlWDq7ggxf6XDxDuTaoinynvJ3eEi1bZPxC2qgkkAiACxISnMdRC37ODaT/tTEd9foyUox+SNWIsGzujicg5VFm7"
-  },
-  {
-   "key": "çå½±",
-   "name": "ðºâçå½±âAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AcWh+ygRkvJAOf11TNsY/RqlWx9GJlpo3j4tzpUl+u3fVki/utnqUPm2SGUaMOiuwO9ab8dc4NOr/Kone+3t4Pvvqo19sUMAcLVWyXq8gKIr"
-  },
-  {
-   "key": "æé",
-   "name": "âï¸âæéâAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "Ae6vu7b7i5h70Oy94HyVp82ZDRF6HrMNdCYNTQ442xkG4kY88mkG1x34awtkrrUdk56x2qehUzy3YCLubZhewqD5a5lQeSsfcnYh8z8+qVVL"
-  },
-  {
-   "key": "è§æ¾",
-   "name": "ðï¸âè§æ¾âAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AVV1qWzQBjKvN7CKup9rpdodlSeTxhlrSJPwshkidi4LdlbDt81YkaxBlOnImlhpaCXFZ3rlaVHkoA57wMFZIEUb0eGUhm8upw9Vw/Qq5sdr"
-  },
-  {
-   "key": "å­è­",
-   "name": "ð¿âå­è­âAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AUGjHXVq+vxRJ+qgE4Hsi3sV94g5u8cFfUgjY4diiOxY3cUhBhbqUlPOKbfo6yzjh2BrmyNZGnV3r5j/VfAvnDP1bmLlrwPQ1H2o6cF9VjrH"
-  },
-  {
-   "key": "åæ",
-   "name": "ð±âåæâAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AUj9LzI2v0nALIaWIMvrw0mqpqAfYqjLEaEdBg2Kpjpynjba5tcMRsocodhKWXuxaxWXNQhmHVm/5ch0t87+Ck3kUcf8gS3HStDFKx/zWH77"
-  },
-  {
-   "key": "æ²è¾",
-   "name": "ðâæ²è¾âAPP",
-   "api": "csp_AppUn",
-   "type": 3,
-   "ext": "AYdXH70UMM8plqsXPmZuN9zEJQV/2vpn2nM5OAeVwvV966SO86n0qc/65IvyNOY7I8FscuN2i4tnXSoa2eVVhCbvIzsK+OAWQcMwpKHy1zZg"
-  },
-  {
-   "key": "Libvio",
-   "name": "ðºâç«æ­â4K",
-   "type": 3,
-   "api": "csp_Libvio",
-   "searchable": 1,
-   "changeable": 1,
-   "ext": {
-    "site": [
-     "https://libviofabu.com",
-     "https://libvio.app",
-     "https://libfabu.com",
-     "https://libviogroup.github.io"
-    ]
-   }
-  },
-  {
-   "key": "KZN",
-   "name": "ðâæåâ4K",
-   "type": 3,
-   "api": "csp_KZN",
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "SeedHub",
-   "name": "ð±âSeedâ4K",
-   "type": 3,
-   "api": "csp_SeedHub",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://sidhub.cc",
-     "https://seeduck.cc",
-     "https://hubdog.cc"
-    ]
-   }
-  },
-  {
-   "key": "PanWebShare123",
-   "name": "ðâ123â4K",
-   "type": 3,
-   "api": "csp_PanWebShare123",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "style": {
-    "type": "list",
-    "ratio": 1.433
-   },
-   "ext": {
-    "site": [
-     "https://123panfx.com",
-     "https://pan1.me"
-    ],
-    "cookie": ""
-   }
-  },
-  {
-   "key": "PanWebShareGuangYa",
-   "name": "ðâåé¸­â4K",
-   "type": 3,
-   "api": "csp_PanWebShareGuangYa",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "style": {
-    "type": "list",
-    "ratio": 1.433
-   },
-   "ext": {
-    "site": [
-     "https://www.guangya.net"
-    ],
-    "cookie": ""
-   }
-  },
-  {
-   "key": "Yidong4K",
-   "name": "ð¶âç§»å¨â4K",
-   "type": 3,
-   "api": "csp_Yidong4K",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "changeable": 1
-  },
-  {
-   "key": "WoNiu",
-   "name": "ðâèçâ4K",
-   "type": 3,
-   "api": "csp_WoNiu",
-   "searchable": 1,
-   "changeable": 1,
-   "ext": {
-    "site": "https://wn4k.com/"
-   }
-  },
-  {
-   "key": "Qiwei",
-   "name": "ðâä¸å³â4K",
-   "type": 3,
-   "api": "csp_Qiwei",
-   "searchable": 1,
-   "filterable": 0,
-   "ext": {
-    "site": [
-     "https://www.qwnull.com",
-     "https://www.qwmkv.com",
-     "https://www.qwfilm.com",
-     "https://www.qnmp4.com",
-     "https://www.qnnull.com",
-     "https://www.qnhot.com",
-     "https://www.qncool.com"
-    ]
-   }
-  },
-  {
-   "key": "gying",
-   "name": "ðâè§å½±â4K",
-   "type": 3,
-   "api": "csp_Gying",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": {
-    "cookie": "",
-    "site": [
-     "https://www.æç¶.com",
-     "https://www.æéç©¿è¶.com",
-     "https://www.æ¥é¨çä¸ç.com",
-     "https://www.æ³°å¦å°¼åå·.com",
-     "https://www.çæ¢¦ç©ºé´.com",
-     "https://www.èç³åçæèµ.com",
-     "https://www.é¿çæ­£ä¼ .com",
-     "https://www.é»å®¢å¸å½.com"
-    ]
-   }
-  },
-  {
-   "key": "FishDuoduo",
-   "name": "ðâå¤å¤â4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://tv.yydsys.top",
-     "https://tv.yydsys.cc",
-     "https://tv.214521.xyz"
-    ]
-   }
-  },
-  {
-   "key": "Fishhuajuan",
-   "name": "ð¸âè±å·â4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://www.hjzhencai.top",
-     "https://www.huanjuanwp.shop"
-    ]
-   }
-  },
-  {
-   "key": "FishHuban",
-   "name": "ðâèæâ4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "http://xhban.xyz",
-     "http://38.76.197.172:16969"
-    ]
-   }
-  },
-  {
-   "key": "Fishshayang",
-   "name": "ð¤­âå»æ ·â4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "http://xsayang.fun",
-     "http://38.76.197.172:12521"
-    ]
-   }
-  },
-  {
-   "key": "Fishgege",
-   "name": "ð«âå«é¶â4K",
-   "type": 3,
-   "api": "csp_FishCloud",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://woog.nxog.eu.org",
-     "https://ogkk.nxog.eu.org",
-     "https://woog.430520.xyz"
-    ]
-   }
-  },
-  {
-   "key": "ShuangXing",
-   "name": "ðâåæâ4K",
-   "type": 3,
-   "api": "csp_ShuangXing",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "style": {
-    "type": "list",
-    "ratio": 1.433
-   }
-  },
-  {
-   "key": "DianYingYunJi",
-   "name": "âï¸âäºéâ4K",
-   "type": 3,
-   "api": "csp_DianYingYunJi",
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "VideoX",
-   "name": "ðºâå°åâäºè§",
-   "type": 3,
-   "api": "csp_VideoX",
-   "searchable": 1,
-   "changeable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "Wwys",
-   "name": "ðâç³¯ç±³âå½±è§",
-   "type": 3,
-   "api": "csp_Wwys",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "ext": "https://vip.wwgz.cn:5200"
-  },
-  {
-   "key": "CZ",
-   "name": "ð­âåé¿âå½±è§",
-   "type": 3,
-   "api": "csp_CZ",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": {
-    "cookie": "",
-    "username": "",
-    "password": "",
-    "site": [
-     "https://www.4kcz.com",
-     "https://www.cz4k.com",
-     "https://cz01.tv",
-     "https://cz01.vip",
-     "https://www.czzy.site",
-     "https://czzy.top"
-    ]
-   }
-  },
-  {
-   "key": "wencai",
-   "name": "âï¸âææâå½±è§",
-   "type": 3,
-   "api": "csp_WenCai",
-   "searchable": 1,
-   "ext": "https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"
-  },
-  {
-   "key": "Guazi",
-   "name": "ðâçå­âå½±è§",
-   "type": 3,
-   "api": "csp_Guazi",
-   "searchable": 1
-  },
-  {
-   "key": "TvDy",
-   "name": "ð¼âå¤©å âå½±è§",
-   "type": 3,
-   "api": "csp_TvDy",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "SaoHuo",
-   "name": "ð¶ï¸âéªç«âå½±è§",
-   "type": 3,
-   "api": "csp_SaoHuo",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "ext": "https://shdy5.us"
-  },
-  {
-   "key": "Duboku",
-   "name": "ð¯âç¬æ­âå½±è§",
-   "type": 3,
-   "api": "csp_Duboku",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "HonHon",
-   "name": "ðâçº¢çº¢âç­å§",
-   "type": 3,
-   "api": "csp_HonHon",
-   "searchable": 1,
-   "quickSearch": 1,
-   "genre": "shortdrama",
-   "filterable": 1,
-   "ext": {
-    "host": "https://honhon.wya6.com",
-    "quality": "1080p"
-   }
-  },
-  {
-   "key": "DJHub",
-   "name": "ð­âç­å§âèå",
-   "type": 3,
-   "api": "csp_DJHub",
-   "searchable": 1,
-   "quickSearch": 1,
-   "genre": "shortdrama",
-   "filterable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "dadun",
-   "name": "ð´âæç¹âå¨æ¼«",
-   "type": 3,
-   "api": "csp_DaDun",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AfCX4sFyDgfHnSLJWpjt1MhGM5IXEedNZfnttre6SML2iKsHtTs9bImgNSCyhOVdiFfFQEtkTtLKBE1jHKB54K5If+HC5ogqbIKmQp/pC3aY"
-  },
-  {
-   "key": "XingHui",
-   "name": "â¨âæç»âå¨æ¼«",
-   "type": 3,
-   "api": "csp_XingHui",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "ext": "Add8krwC68v61DP+FKD6Jfku9NAYotb5APLK7YesWQ1matF4zi2Prh/3AY6D3ZeBGuxJg4SEuXY9n/vMa+B4fC0="
-  },
-  {
-   "key": "FanShu",
-   "name": "ð âçªè¯âå¨æ¼«",
-   "type": 3,
-   "api": "csp_FanShu",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 1,
-   "ext": "AfcrWiL6kOmzXnbqzxhVVO34r1aA/e0g4grwfsFA8V5EPAVy9WtRO4yVFf3aC5LmzKENIEFO9aA2BMklc+wOUy4="
-  },
-  {
-   "key": "XgAnime",
-   "name": "ðâè¥¿çâå¨æ¼«",
-   "type": 3,
-   "api": "csp_XgAnime",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "Manbo",
-   "name": "ðºâæ¼æ³¢âå¨æ¼«",
-   "type": 3,
-   "api": "csp_AppGet",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AUzH3yIWvgQkyhQw17uONTsfuN8PupZ/LJdr5C31Y/CWlzSNmarYI5kaJYN5c0p6+Oq0tXuTutQo9MHHytxulL5kmapDuAK5+2NTlpsUgBnr0tOamm69Fwb+jFDQ7VW46qf5EFY+Ea3PHzkpfeObKPM="
-  },
-  {
-   "key": "Gugu",
-   "name": "ð¤âååâå¨æ¼«",
-   "type": 3,
-   "api": "csp_AppGet",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "ARKK6LQnl4dB2QciLugEzZ8QD2WdbeK23tPAre1QOEbbL5BfB8cV39JNfSd2+Xhcqr/z+V5To0krLYHUX7NtRtwYBC44/9ayncZMomdbv4ZCBNOUsBEedUQx7SWf1J0pE0BsLG9QlR8tURwRwx/sqT0="
-  },
-  {
-   "key": "Jianpian",
-   "name": "ð§²âèçâç£å",
-   "type": 3,
-   "api": "csp_Jianpian",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "Xb6v",
-   "name": "ðâ6Vâç£å",
-   "type": 3,
-   "api": "csp_Xb6v",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "JSo",
-   "name": "ð¾âççâæç´¢",
-   "type": 3,
-   "api": "csp_JSo",
-   "searchable": 1,
-   "ext": {
-    "site": [
-     "https://j-so.com"
-    ]
-   }
-  },
-  {
-   "key": "Tiu6",
-   "name": "ð­âTiu6âæç´¢",
-   "type": 3,
-   "api": "csp_Tiu6",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": {
-    "site": [
-     "https://www.tiu6.cn"
-    ]
-   }
-  },
-  {
-   "key": "Buguyy",
-   "name": "ð¦âå¸è°·âé³ä¹",
-   "type": 3,
-   "api": "csp_Buguyy",
-   "searchable": 1,
-   "filterable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "ChuXin",
-   "name": "ðâåå¿âé³ä¹",
-   "type": 3,
-   "api": "csp_ChuXin",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0
-  },
-  {
-   "key": "aiting",
-   "name": "ð§âç±å¬âé³ä¹",
-   "type": 3,
-   "api": "csp_AiTingMusic",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0
-  },
-  {
-   "key": "Music24bit",
-   "name": "ð¼âæ æâé³ä¹",
-   "type": 3,
-   "api": "csp_Music24bit",
-   "searchable": 1,
-   "changeable": 1,
-   "ext": {
-    "categories": [
-     "å¨æ°ä¼¦",
-     "æä¿æ°",
-     "éå¥è¿",
-     "éç´«æ£",
-     "èä¹è°¦"
-    ]
-   }
-  },
-  {
-   "key": "TuXiaoBei",
-   "name": "ð°âå°åâå°å¿",
-   "type": 3,
-   "api": "csp_TuXiaoBei",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0
-  },
-  {
-   "key": "BeiLeHu",
-   "name": "ð¯âå°èâå°å¿",
-   "type": 3,
-   "api": "csp_BeiLeHu",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0
-  },
-  {
-   "key": "BiliHeji",
-   "name": "ðâç¬çâåé",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 0,
-   "ext": {
-    "json": "https://nos.netease.com/ysf/0075389dca9afadd4614e9713765ff17.txt"
-   },
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   }
-  },
-  {
-   "name": "ðâç¬çâæ­æ²",
-   "key": "BiliGequ",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "ext": {
-    "json": "https://nos.netease.com/ysf/6496356286589c68f52c2f99c0c674c7.txt"
-   },
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   }
-  },
-  {
-   "key": "Kanqiu",
-   "name": "â½âççâä½è²",
-   "type": 3,
-   "api": "csp_Kanqiu",
-   "searchable": 0,
-   "filterable": 1,
-   "indexs": 0,
-   "ext": "http://www.88kanqiu.one",
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "Sir88",
-   "name": "ðï¸âè¶å¨âä½è²",
-   "type": 3,
-   "api": "csp_Sir88",
-   "searchable": 0,
-   "filterable": 1,
-   "indexs": 0,
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "QiutongTY",
-   "name": "ðâçéâä½è²",
-   "type": 3,
-   "api": "csp_QiutongTY",
-   "searchable": 0,
-   "filterable": 0,
-   "changeable": 1
-  },
-  {
-   "key": "GuaziTY",
-   "name": "ð¥âçå­âä½è²",
-   "type": 3,
-   "api": "csp_GuaziTY",
-   "searchable": 0,
-   "filterable": 0,
-   "changeable": 1
-  },
-  {
-   "key": "919TY",
-   "name": "ðâ919âä½è²",
-   "type": 3,
-   "api": "csp_C919TY",
-   "searchable": 0,
-   "filterable": 0,
-   "changeable": 1
-  },
-  {
-   "key": "TingBook",
-   "name": "ð»âå­æâæå£°",
-   "type": 3,
-   "api": "csp_TingBook",
-   "searchable": 1,
-   "indexs": 0,
-   "ext": "https://app.365ting.com",
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "TingBookJinXia",
-   "name": "ðï¸âå å¤âæå£°",
-   "type": 3,
-   "api": "csp_TingBookJinXia",
-   "searchable": 1,
-   "filterable": 1,
-   "indexs": 0,
-   "ext": "https://m.ting15.com",
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "TingYou",
-   "name": "ð§âå¬åâæå£°",
-   "type": 3,
-   "api": "csp_TingYou",
-   "searchable": 1,
-   "indexs": 0,
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "Market",
-   "name": "ðâç½çâå¸åº",
-   "type": 3,
-   "api": "csp_Market",
-   "searchable": 0,
-   "indexs": 0,
-   "style": {
-    "type": "list"
-   },
-   "ext": {
-    "categories": [
-     {
-      "name": "æ½æ´èµæºä¸",
-      "url": "https://pan.quark.cn/s/969cc97687d3"
-     },
-     {
-      "name": "æ½æ´èµæºäº",
-      "url": "https://drive.uc.cn/s/ba531661b3eb4"
-     },
-     {
-      "name": "å¥å¥æ´æ°ä¸",
-      "url": "https://pan.quark.cn/s/ab00f85da8ea"
-     },
-     {
-      "name": "å¥å¥æ´æ°äº",
-      "url": "https://drive.uc.cn/s/ef22fcbfdd934"
-     }
-    ]
-   }
-  },
-  {
-   "key": "Fishdrive",
-   "name": "ð âæ¸é±¼âåªä½åº",
-   "type": 3,
-   "api": "csp_FishDrive",
-   "indexs": 0,
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "https://tc-new.z.wiki/autoupload/iYHTWVx6T8RrCmqdGD6MOdiO_OyvX7mIgxFBfDMDErs/20260715/bf45/fishdrive.json"
-  },
-  {
-   "key": "Wallpaper",
-   "name": "ð¼ï¸âæ¸é±¼âå£çº¸åº",
-   "type": 3,
-   "api": "csp_Wallpaper",
-   "searchable": 0,
-   "indexs": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "style": {
-    "type": "rect",
-    "ratio": 0.56
-   }
   },
   {
    "key": "Doubana",
@@ -3749,257 +3786,26 @@
    }
   },
   {
-   "key": "ç¹æåæº",
-   "name": "è±è±âçå",
-   "type": 3,
-   "api": "csp_DouDouGuard",
-   "indexs": 1,
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "åå½±",
-   "name": "ðåå½±âä¸å¡",
-   "type": 3,
-   "api": "csp_T4Guard",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 0,
-   "ext": "rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="
-  },
-  {
-   "key": "åé¿",
-   "name": "ðåé¿âä¸å¡",
-   "type": 3,
-   "api": "csp_NewCzGuard",
-   "timeout": 10,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "æµ·ç»µ",
-   "name": "ð¬æµ·ç»µâä¸å¡",
-   "type": 3,
-   "api": "csp_HmysGuard",
-   "timeout": 10,
-   "playerType": "2",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": {
-    "v2": "1",
-    "deviceId": "6dc66339e1314f88"
-   }
-  },
-  {
-   "key": "ç«æ­",
-   "name": "ðç«æ­âä¸å¡",
-   "type": 3,
-   "api": "csp_LibvioGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": {
-    "Cloud-drive": "tvfan/Cloud-drive.txt",
-    "siteUrl": "https://www.libvio.pw/"
-   }
-  },
-  {
-   "key": "æ¯ç¹",
-   "name": "ðæ¯ç¹âä¸å¡",
-   "type": 3,
-   "api": "csp_BttwooGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "ç³¯ç±³",
-   "name": "ðç³¯ç±³âç§æ­",
-   "type": 3,
-   "api": "csp_NmyswvGuard",
-   "timeout": 15,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "æé",
-   "name": "ð®æéâç§æ­",
-   "type": 3,
-   "api": "csp_JpysGuard",
-   "timeout": 10,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "å¥¶éª",
-   "name": "ð§å¥¶éªâç§æ­",
-   "type": 3,
-   "api": "csp_T4Guard",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 0,
-   "ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
-  },
-  {
-   "key": "ç­æ­",
-   "name": "ðºç­æ­âå¤çº¿",
-   "type": 3,
-   "api": "csp_AppTTGuard",
-   "timeout": 10,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "uqGL1bNENExT7/hGxpSE5qU="
-  },
-  {
-   "key": "é£äº",
-   "name": "âï¸é£äºâå¤çº¿",
-   "type": 3,
-   "api": "csp_FyGuard",
-   "ext": {
-    "type": "video",
-    "name": "Fy"
-   },
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "è§ç",
-   "name": "ð¸èèâå¤çº¿",
-   "type": 3,
-   "api": "csp_App99Guard",
-   "timeout": 10,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "rfOX1voDIQhH8epBwtCFsuby/mmdmIu8kGlnJc+7VkMRLQ1K+jMy+KN1MKQe0MZ6tmGSO5oFzD8/vWwiSqEpFczDqLrdGT3iH6fZmryrFzKijwYkJUMctdztE0O4CsgYZdBu8XhZSwuhSqqllQz4AZMa1l0sT+1NrbhNIxHkrY0upiYSTLNqEaledgZikMCviOXWr3cPBP4COOeoGUyJSJrrybmUppnWGeDAOHhHOVUSXjwSb+QQvcJIT2lmrf1Bk68myGs7qOqc19tD/rnzf2WOb2MzJZqtURBmUFgaW6ea2dL8OPSpSeVAvaGCAnqwuUNGE9hHpK8jfOs0bLJRdkFLnijAn5Q+ofVM5hgGb8c="
-  },
-  {
-   "key": "å§å",
-   "name": "ð»å§åâå¤çº¿",
-   "type": 3,
-   "api": "csp_AppSxGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "rfOX1voDIQhH8epBwpmIsuSluiuZl4+/lm1iJsy3HwNWMxpf9CY77fshI+kByoxy7DyPatUZ1jk0ty1p"
-  },
-  {
-   "key": "å¥¥ç¹",
-   "name": "ðå¥¥ç¹âå¤çº¿",
-   "type": 3,
-   "api": "csp_AueteGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "å¤å¤",
-   "name": "ðå¤å¤âåæ¾",
-   "type": 3,
-   "api": "csp_DoubaoGuard",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "åç",
-   "name": "ðåçâçç",
-   "type": 3,
-   "api": "csp_LiveGzGuard",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0,
-   "style": {
-    "type": "list"
-   }
-  },
-  {
-   "key": "æå£°å°è¯´",
-   "name": "ð§æå£°âå°è¯´",
-   "type": 3,
-   "api": "csp_YueTingGuard",
-   "style": {
-    "type": "rect",
-    "ratio": 1
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "èçjs",
-   "name": "ð¯èçâç´æ­",
-   "type": 3,
-   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/èç.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.755
-   },
-   "timeout": 10,
-   "playerType": "2",
-   "searchable": 1,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "æé±¼js",
-   "name": "ðæé±¼âç´æ­",
-   "type": 3,
-   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/æé±¼ç´æ­.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.755
-   },
-   "timeout": 10,
-   "playerType": "2",
-   "searchable": 1,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
    "key": "æ æ",
-   "name": "ð¶ï¸æ æ âææ",
+   "name": "æ æ âææ",
    "type": 3,
    "api": "csp_KkSsGuard",
    "searchable": 1,
-   "quickSearch": 1,
    "changeable": 0,
+   "quickSearch": 1,
    "ext": {
     "Cloud-drive": "tvfan/Cloud-drive.txt"
    }
   },
   {
-   "key": "dr_åå°è´",
-   "name": "ðå¿ç«¥âå¯è",
+   "key": "åå½±",
+   "name": "åå½±âä¸å¡",
    "type": 3,
-   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
+   "api": "csp_T4Guard",
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": "rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="
   },
   {
    "key": "åå",
@@ -4010,6 +3816,103 @@
    "searchable": 1,
    "changeable": 1,
    "quickSearch": 1
+  },
+  {
+   "key": "åé¿",
+   "name": "åé¿âä¸å¡",
+   "type": 3,
+   "api": "csp_NewCzGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1
+  },
+  {
+   "key": "ç«æ­",
+   "name": "ç«æ­âä¸å¡",
+   "type": 3,
+   "api": "csp_LibvioGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": {
+    "Cloud-drive": "tvfan/Cloud-drive.txt",
+    "siteUrl": "https://www.libvio.pw/"
+   }
+  },
+  {
+   "key": "æ¯ç¹",
+   "name": "æ¯ç¹âä¸å¡",
+   "type": 3,
+   "api": "csp_BttwooGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1
+  },
+  {
+   "key": "ç³¯ç±³",
+   "name": "ç³¯ç±³âå¤çº¿",
+   "type": 3,
+   "api": "csp_NmyswvGuard",
+   "timeout": 15,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1
+  },
+  {
+   "key": "æé",
+   "name": "æéâç§æ­",
+   "type": 3,
+   "api": "csp_JpysGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1
+  },
+  {
+   "key": "å¥¶éª",
+   "name": "å¥¶éªâç§æ­",
+   "type": 3,
+   "api": "csp_T4Guard",
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
+  },
+  {
+   "key": "ç­æ­",
+   "name": "ç­æ­âå¤çº¿",
+   "type": 3,
+   "api": "csp_AppTTGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": "uqGL1bNENExT7/hGxpSE5qU="
+  },
+  {
+   "key": "è§ç",
+   "name": "èèâå¤çº¿",
+   "type": 3,
+   "api": "csp_App99Guard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": "rfOX1voDIQhH8epBwtCFsuby/mmdmIu8kGlnJc+7VkMRLQ1K+jMy+KN1MKQe0MZ6tmGSO5oFzD8/vWwiSqEpFczDqLrdGT3iH6fZmryrFzKijwYkJUMctdztE0O4CsgYZdBu8XhZSwuhSqqllQz4AZMa1l0sT+1NrbhNIxHkrY0upiYSTLNqEaledgZikMCviOXWr3cPBP4COOeoGUyJSJrrybmUppnWGeDAOHhHOVUSXjwSb+QQvcJIT2lmrf1Bk68myGs7qOqc19tD/rnzf2WOb2MzJZqtURBmUFgaW6ea2dL8OPSpSeVAvaGCAnqwuUNGE9hHpK8jfOs0bLJRdkFLnijAn5Q+ofVM5hgGb8c="
+  },
+  {
+   "key": "å§å",
+   "name": "å§åâå¤çº¿",
+   "type": 3,
+   "api": "csp_AppSxGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "changeable": 1,
+   "quickSearch": 1,
+   "ext": "rfOX1voDIQhH8epBwpmIsuSluiuZl4+/lm1iJsy3HwNWMxpf9CY77fshI+kByoxy7DyPatUZ1jk0ty1p"
   },
   {
    "key": "åå",
@@ -4070,247 +3973,15 @@
    "api": "csp_XPath",
    "searchable": 0,
    "changeable": 0
-  },
-  {
-   "key": "drpy_js_è±ç£",
-   "name": "ð¥ææ°è½¯ä»¶æ¥å£â¤Link3.cc/uucccâ¤ð¥",
-   "type": 3,
-   "api": "csp_Douban",
-   "ext": "https://gitee.com/jiandan1232/BabyOS/raw/master/test/douban.json"
-  },
-  {
-   "key": "éç½®ä¸­å¿",
-   "name": "âï¸âéç½®âä¸­å¿âï¸",
-   "type": 3,
-   "api": "csp_Config",
-   "searchable": 0,
-   "changeable": 0,
-   "indexs": 0,
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "jar": "http://118.89.172.248:8025/jar/lubin.php"
-  },
-  {
-   "key": "JianSou",
-   "name": "ðâç®æâ4Kð",
-   "type": 3,
-   "api": "csp_JianSou",
-   "searchable": 1,
-   "filterable": 0,
-   "ext": {
-    "site": "http://118.89.172.248:8000",
-    "type": 0,
-    "name": " ç®æ"
-   }
-  },
-  {
-   "key": "ZhiZhenPanCms",
-   "name": "ðâè³è»â4Kð",
-   "type": 3,
-   "api": "csp_PanCms",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "{\"site\":[\"http://118.89.172.248:22776\"],\"name\":\"ç½çCMS\"}"
-  },
-  {
-   "key": "MuouPanCms",
-   "name": "ðâæ¨å¶â4Kð",
-   "type": 3,
-   "api": "csp_PanCms",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "{\"site\":[\"https://www.muoua.top\",\"https://666.666291.xyz\",\"https://333.333291.xyz\",\"https://www.muou.asia\"],\"name\":\"ç½çCMS\"}"
-  },
-  {
-   "key": "DuoPanCms",
-   "name": "ðâå¤å¤â4Kð",
-   "type": 3,
-   "api": "csp_PanCms",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "{\"site\":[\"https://tv.yydsys.top\",\"https://tv.yydsys.cc\",\"https://tv.214521.xyz\"],\"name\":\"ç½çCMS\"}"
-  },
-  {
-   "key": "KuaiYPanCms",
-   "name": "ðâå¿«æ â4Kð",
-   "type": 3,
-   "api": "csp_PanCms",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "{\"site\":[\"http://38.76.197.172:12521\"],\"name\":\"ç½çCMS\"}"
-  },
-  {
-   "key": "HuBanYPanCms",
-   "name": "ðâèæâ4Kð",
-   "type": 3,
-   "api": "csp_PanCms",
-   "searchable": 1,
-   "filterable": 1,
-   "ext": "{\"site\":[\"http://38.76.197.172:16969\"],\"name\":\"ç½çCMS\"}"
-  },
-  {
-   "key": "Star2",
-   "name": "ðâå§éâ4Kð",
-   "type": 3,
-   "api": "csp_Star2",
-   "searchable": 1,
-   "filterable": 0,
-   "ext": "{\"site\":[\"https://1.star2.cn\"],\"name\":\"å§éç¤¾\"}"
-  },
-  {
-   "key": "Gz360",
-   "name": "ðâçå­âç§æ­",
-   "type": 3,
-   "api": "csp_Gz360",
-   "searchable": 1,
-   "filterable": 1
-  },
-  {
-   "key": "AppDramaPingguo",
-   "name": "ðâè¹æâ1080P",
-   "type": 3,
-   "api": "csp_AppDrama",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": {
-    "appName": "å°è¹æ",
-    "commonKey": "ed5fdsgucxumegqa",
-    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-    "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
-    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-    "pkg": "com.juechufsh.android.xpg1",
-    "host": "",
-    "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
-    "version": "1.0.0.3",
-    "decrypt": "1",
-    "danmu": true,
-    "danmu_api": "https://dm.211.li/nonay"
-   }
-  },
-  {
-   "key": "AppRJ",
-   "name": "ðâç­æ­âé«æ¸",
-   "type": 3,
-   "api": "csp_AppRJ",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": {
-    "url": "http://v.rbotv.cn",
-    "block": [
-     "çº¿è·¯äº(ç¹å»åæ¢)",
-     "CO4K"
-    ]
-   }
-  },
-  {
-   "key": "YunDuo",
-   "name": "ðâå¤§é¹â1080P",
-   "type": 3,
-   "api": "csp_YunDuo",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": {
-    "host": "https://323433ssdfd.top",
-    "block": [
-     "POèå",
-     "CO4K",
-     "ZJ4k",
-     "NBèå"
-    ]
-   }
-  },
-  {
-   "key": "DongPian",
-   "name": "ðâæçâç§æ­",
-   "type": 3,
-   "api": "csp_DongPian",
-   "searchable": 1,
-   "filterable": 0
-  },
-  {
-   "key": "DyXia",
-   "name": "ðâå½±ä¾ âå½±è§",
-   "type": 3,
-   "api": "csp_DyXia",
-   "searchable": 1,
-   "filterable": 0,
-   "ext": "{\"blockedFroms\":[\"4K\"]}"
-  },
-  {
-   "name": "ðâæ©æ±âå¿«é",
-   "key": "çº¿è·¯14",
-   "type": 3,
-   "jar": "https://zl.wpscdn.cn/2026/09/11/space_img/0f5c235d-ee40-42a0-a19a-b7f29986c51c.png;md5;7a2cb30dc4937d27e57288b5c381e19c",
-   "api": "csp_Woshinidie",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "key": "feifan",
-   "name": "ðâéå¡âèµæº",
-   "type": 1,
-   "api": "http://ffzy5.tv/api.php/provide/vod",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "categories": [
-    "é©å½å§",
-    "æ¬§ç¾å§",
-    "å°æ¹¾å§",
-    "æäºç",
-    "å½äº§å§",
-    "å¤§éç»¼èº"
-   ],
-   "hide": 1
-  },
-  {
-   "key": "æ æ²",
-   "name": "ðâå½ç²¹âææ²",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://z.qiqiv.cn/666/json/Blixq.json"
-  },
-  {
-   "key": "ç¸å£°å°å",
-   "name": "ð®âç¸å£°âå°å",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://z.qiqiv.cn/666/json/Blixs.json"
-  },
-  {
-   "key": "æ¼å±ä¼",
-   "name": "ð¸âæ¼å±ä¼âMV",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://z.qiqiv.cn/666/json/æ¼å±ä¼.json"
-  },
-  {
-   "key": "åå©åå©",
-   "name": "ð±âï¸åå©âå¤§å¨",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://z.qiqiv.cn/666/json/Bili.json"
   }
  ],
  "lives": [
+  {
+   "name": "superiptv",
+   "type": 0,
+   "url": "http://127.0.0.1:5266/iptv.m3u",
+   "playerType": 2
+  },
   {
    "name": "Kimentanm",
    "type": 0,
@@ -4323,12 +3994,6 @@
    "playerType": 2,
    "url": "http://193.123.86.190:14888/TV/iptv.php",
    "ua": "bingcha/1.1 (mianfeifenxiang) "
-  },
-  {
-   "name": "superiptv",
-   "type": 0,
-   "url": "http://127.0.0.1:5266/iptv.m3u",
-   "playerType": 2
   },
   {
    "name": "èææï¼éå¼å¯V6ç½ç»ï¼",
@@ -4403,35 +4068,6 @@
    "playerType": 2,
    "timeout": 10,
    "ua": "okHttp/Mod-1.5.0.0"
-  },
-  {
-   "name": "ç»¼å",
-   "type": 0,
-   "url": "http://193.123.86.190:14888/TV/iptv.php",
-   "ua": "bingcha/1.1 (mianfeifenxiang)",
-   "playerType": 2
-  },
-  {
-   "name": "çæ­ä¸",
-   "url": "http://127.0.0.1:9978/proxy?do=cctva",
-   "timeZone": "Asia/Shanghai"
-  },
-  {
-   "name": "å¹³å°ç´æ­",
-   "type": 0,
-   "url": "http://118.89.172.248:8025/jar/zb.php",
-   "playerType": 1
-  },
-  {
-   "name": "Guovin",
-   "type": 0,
-   "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
-  },
-  {
-   "name": "æ¸¯æ¾³å°",
-   "type": 0,
-   "url": "http://rihou.cc:567/gggg.nzk",
-   "playerType": 1
   }
  ],
  "parses": [
@@ -4589,16 +4225,6 @@
    "name": "è¾ç±³2",
    "type": 0,
    "url": "https://jx.xmflv.cc/?url="
-  },
-  {
-   "name": "-zui-",
-   "type": 0,
-   "url": "https://jx.zui.cm/?url=",
-   "ext": {
-    "header": {
-     "user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
-    }
-   }
   }
  ],
  "rules": [
@@ -4801,328 +4427,6 @@
    ]
   },
   {
-   "name": "proxy",
-   "hosts": [
-    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
-    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
-    "iptv.huuc.edu.cn=huucv6.188766.xyz",
-    "raw.githubusercontent.com",
-    "googlevideo.com",
-    "cdn.v82u1l.com",
-    "cdn.iz8qkg.com",
-    "cdn.kin6c1.com",
-    "c.biggggg.com",
-    "c.olddddd.com",
-    "haiwaikan.com",
-    "www.histar.tv",
-    "youtube.com",
-    "uhibo.com",
-    ".*boku.*",
-    ".*nivod.*",
-    ".*ulivetv.*"
-   ]
-  },
-  {
-   "name": "æµ·å¤ç",
-   "hosts": [
-    "haiwaikan"
-   ],
-   "regex": [
-    "10.0099",
-    "10.3333",
-    "16.0599",
-    "8.1748",
-    "12.33",
-    "10.85"
-   ]
-  },
-  {
-   "name": "ç«å±±åæ¢",
-   "hosts": [
-    "huoshan.com"
-   ],
-   "regex": [
-    "item_id="
-   ]
-  },
-  {
-   "name": "æé³åæ¢",
-   "hosts": [
-    "douyin.com"
-   ],
-   "regex": [
-    "is_play_url="
-   ]
-  },
-  {
-   "name": "è¾²æ°åæ¢",
-   "hosts": [
-    "toutiaovod.com"
-   ],
-   "regex": [
-    "video/tos/cn"
-   ]
-  },
-  {
-   "name": "æ°è§è§åæ¢",
-   "hosts": [
-    "muzhi-video.bj.bcebos.com"
-   ],
-   "regex": [
-    "202403/"
-   ]
-  },
-  {
-   "name": "ä¸æ°åæ¢",
-   "hosts": [
-    "api.52wyb.com"
-   ],
-   "regex": [
-    "m3u8?pt=m3u8"
-   ]
-  },
-  {
-   "name": "å¤å¸é»æ",
-   "hosts": [
-    "yeslivetv.com"
-   ],
-   "script": [
-    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
-   ]
-  },
-  {
-   "name": "æ¯é©¢é»æ",
-   "hosts": [
-    "www.maolvys.com"
-   ],
-   "script": [
-    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
-   ]
-  },
-  {
-   "host": "www.iesdouyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "www.ysgc.vip",
-   "rule": [
-    "getm3u8?url=http"
-   ]
-  },
-  {
-   "host": "v.douyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "dyxs20.com",
-   "rule": [
-    ".m3u8"
-   ]
-  },
-  {
-   "host": "www.agemys.cc",
-   "rule": [
-    "cdn-tos",
-    "obj/tos-cn"
-   ]
-  },
-  {
-   "host": "www.sharenice.net",
-   "rule": [
-    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
-    "qianpailive.com",
-    "vid="
-   ]
-  },
-  {
-   "name": "æ´é£",
-   "hosts": [
-    "bfzy",
-    "bfbfvip",
-    "bfengbf"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-   ]
-  },
-  {
-   "name": "éå­",
-   "hosts": [
-    "vip.lz",
-    "hd.lz",
-    ".cdnlz"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "17.19",
-    "19.63"
-   ]
-  },
-  {
-   "name": "éå¡",
-   "hosts": [
-    "vip.ffzy",
-    "hd.ffzy",
-    "super.ffzy",
-    "cachem3u8.2s0"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
-    "17.99",
-    "14.45"
-   ]
-  },
-  {
-   "name": "ç´¢å°¼",
-   "hosts": [
-    "suonizy"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
-    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
-   ]
-  },
-  {
-   "name": "å¿«ç",
-   "hosts": [
-    "kuaikan"
-   ],
-   "regex": [
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "leshiyun",
-   "hosts": [
-    "leshiyuncdn"
-   ],
-   "regex": [
-    "15.92"
-   ]
-  },
-  {
-   "name": "çå½±ç½",
-   "hosts": [
-    "fentvoss"
-   ],
-   "regex": [
-    "38.68",
-    "38.12",
-    "38.80",
-    "30.08",
-    "44.00",
-    "36.80",
-    "40.68",
-    "29.08",
-    "29.28",
-    "24.88"
-   ]
-  },
-  {
-   "name": "1080zyk",
-   "hosts": [
-    "high24-playback",
-    "high20-playback",
-    "yzzy.play",
-    "yzzy-dy"
-   ],
-   "regex": [
-    "16.63",
-    "17.66"
-   ]
-  },
-  {
-   "name": "ikun",
-   "hosts": [
-    "bfikuncdn"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
-    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
-   ]
-  },
-  {
-   "name": "é»æ¨è³hmr",
-   "hosts": [
-    "hmrvideo"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
-    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
-   ]
-  },
-  {
-   "name": "555DM",
-   "hosts": [
-    "cqxfjz"
-   ],
-   "regex": [
-    "10.56"
-   ]
-  },
-  {
-   "name": "æµ·å¤ç",
-   "hosts": [
-    "haiwaikan"
-   ],
-   "regex": [
-    "10.0099",
-    "10.3333",
-    "16.0599",
-    "8.1748",
-    "10.85"
-   ]
-  },
-  {
-   "name": "ç£åå¹¿å",
-   "hosts": [
-    "magnet"
-   ],
-   "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
-    "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
-    "UUE29"
-   ]
-  },
-  {
    "host": "www.iesdouyin.com",
    "rule": [
     "playwm/?video_id="
@@ -5395,773 +4699,6 @@
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
-   ]
-  },
-  {
-   "name": "cdn.ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "5.480000",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
-   ]
-  },
-  {
-   "name": "cdn.ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "5.480000",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
-   ]
-  },
-  {
-   "host": "www.iesdouyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "www.ysgc.vip",
-   "rule": [
-    "getm3u8?url=http"
-   ]
-  },
-  {
-   "host": "v.douyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "dyxs20.com",
-   "rule": [
-    ".m3u8"
-   ]
-  },
-  {
-   "host": "www.agemys.cc",
-   "rule": [
-    "cdn-tos",
-    "obj/tos-cn"
-   ]
-  },
-  {
-   "host": "www.sharenice.net",
-   "rule": [
-    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
-    "qianpailive.com",
-    "vid="
-   ]
-  },
-  {
-   "name": "æ´é£",
-   "hosts": [
-    "bfzy",
-    "bfbfvip",
-    "bfengbf"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-   ]
-  },
-  {
-   "name": "éå­",
-   "hosts": [
-    "vip.lz",
-    "hd.lz",
-    ".cdnlz"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "17.19",
-    "19.63"
-   ]
-  },
-  {
-   "name": "éå¡",
-   "hosts": [
-    "vip.ffzy",
-    "hd.ffzy",
-    "super.ffzy",
-    "cachem3u8.2s0"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
-    "17.99",
-    "14.45"
-   ]
-  },
-  {
-   "name": "ç´¢å°¼",
-   "hosts": [
-    "suonizy"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
-    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
-   ]
-  },
-  {
-   "name": "å¿«ç",
-   "hosts": [
-    "kuaikan"
-   ],
-   "regex": [
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "leshiyun",
-   "hosts": [
-    "leshiyuncdn"
-   ],
-   "regex": [
-    "15.92"
-   ]
-  },
-  {
-   "name": "çå½±ç½",
-   "hosts": [
-    "fentvoss"
-   ],
-   "regex": [
-    "38.68",
-    "38.12",
-    "38.80",
-    "30.08",
-    "44.00",
-    "36.80",
-    "40.68",
-    "29.08",
-    "29.28",
-    "24.88"
-   ]
-  },
-  {
-   "name": "1080zyk",
-   "hosts": [
-    "high24-playback",
-    "high20-playback",
-    "yzzy.play",
-    "yzzy-dy"
-   ],
-   "regex": [
-    "16.63",
-    "17.66"
-   ]
-  },
-  {
-   "name": "ikun",
-   "hosts": [
-    "bfikuncdn"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
-    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
-   ]
-  },
-  {
-   "name": "é»æ¨è³hmr",
-   "hosts": [
-    "hmrvideo"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
-    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
-   ]
-  },
-  {
-   "name": "555DM",
-   "hosts": [
-    "cqxfjz"
-   ],
-   "regex": [
-    "10.56"
-   ]
-  },
-  {
-   "name": "æµ·å¤ç",
-   "hosts": [
-    "haiwaikan"
-   ],
-   "regex": [
-    "10.0099",
-    "10.3333",
-    "16.0599",
-    "8.1748",
-    "10.85"
-   ]
-  },
-  {
-   "name": "ç£åå¹¿å",
-   "hosts": [
-    "magnet"
-   ],
-   "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
-    "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
-    "UUE29"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
-    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
-    ".*popads\\.net.*",
-    ".*doubleclick\\.net.*"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åååæ¦æª",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    ".*googlesyndication\\.com.*",
-    ".*propellerads\\.com.*",
-    ".*adnxs\\.com.*",
-    ".*ae01\\.alicdn\\.com.*"
-   ]
-  },
-  {
-   "host": "www.iesdouyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "www.ysgc.vip",
-   "rule": [
-    "getm3u8?url=http"
-   ]
-  },
-  {
-   "host": "v.douyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "dyxs20.com",
-   "rule": [
-    ".m3u8"
-   ]
-  },
-  {
-   "host": "www.agemys.cc",
-   "rule": [
-    "cdn-tos",
-    "obj/tos-cn"
-   ]
-  },
-  {
-   "host": "www.sharenice.net",
-   "rule": [
-    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
-    "qianpailive.com",
-    "vid="
-   ]
-  },
-  {
-   "name": "æ´é£",
-   "hosts": [
-    "bfzy",
-    "bfbfvip",
-    "bfengbf"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-   ]
-  },
-  {
-   "name": "éå­",
-   "hosts": [
-    "vip.lz",
-    "hd.lz",
-    ".cdnlz"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "17.19",
-    "19.63"
-   ]
-  },
-  {
-   "name": "éå¡",
-   "hosts": [
-    "vip.ffzy",
-    "hd.ffzy",
-    "super.ffzy",
-    "cachem3u8.2s0"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
-    "17.99",
-    "14.45"
-   ]
-  },
-  {
-   "name": "ç´¢å°¼",
-   "hosts": [
-    "suonizy"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
-    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
-   ]
-  },
-  {
-   "name": "å¿«ç",
-   "hosts": [
-    "kuaikan"
-   ],
-   "regex": [
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "leshiyun",
-   "hosts": [
-    "leshiyuncdn"
-   ],
-   "regex": [
-    "15.92"
-   ]
-  },
-  {
-   "name": "çå½±ç½",
-   "hosts": [
-    "fentvoss"
-   ],
-   "regex": [
-    "38.68",
-    "38.12",
-    "38.80",
-    "30.08",
-    "44.00",
-    "36.80",
-    "40.68",
-    "29.08",
-    "29.28",
-    "24.88"
-   ]
-  },
-  {
-   "name": "1080zyk",
-   "hosts": [
-    "high24-playback",
-    "high20-playback",
-    "yzzy.play",
-    "yzzy-dy"
-   ],
-   "regex": [
-    "16.63",
-    "17.66"
-   ]
-  },
-  {
-   "name": "ikun",
-   "hosts": [
-    "bfikuncdn"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
-    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
-   ]
-  },
-  {
-   "name": "é»æ¨è³hmr",
-   "hosts": [
-    "hmrvideo"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
-    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
-   ]
-  },
-  {
-   "name": "555DM",
-   "hosts": [
-    "cqxfjz"
-   ],
-   "regex": [
-    "10.56"
-   ]
-  },
-  {
-   "name": "æµ·å¤ç",
-   "hosts": [
-    "haiwaikan"
-   ],
-   "regex": [
-    "10.0099",
-    "10.3333",
-    "16.0599",
-    "8.1748",
-    "10.85"
-   ]
-  },
-  {
-   "name": "ç£åå¹¿å",
-   "hosts": [
-    "magnet"
-   ],
-   "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
-    "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
-    "UUE29"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
-    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
-    ".*popads\\.net.*",
-    ".*doubleclick\\.net.*"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åååæ¦æª",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    ".*googlesyndication\\.com.*",
-    ".*propellerads\\.com.*",
-    ".*adnxs\\.com.*",
-    ".*ae01\\.alicdn\\.com.*"
-   ]
-  },
-  {
-   "host": "www.iesdouyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "www.ysgc.vip",
-   "rule": [
-    "getm3u8?url=http"
-   ]
-  },
-  {
-   "host": "v.douyin.com",
-   "rule": [
-    "playwm/?video_id="
-   ]
-  },
-  {
-   "host": "dyxs20.com",
-   "rule": [
-    ".m3u8"
-   ]
-  },
-  {
-   "host": "www.agemys.cc",
-   "rule": [
-    "cdn-tos",
-    "obj/tos-cn"
-   ]
-  },
-  {
-   "host": "www.sharenice.net",
-   "rule": [
-    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
-    "qianpailive.com",
-    "vid="
-   ]
-  },
-  {
-   "name": "æ´é£",
-   "hosts": [
-    "bfzy",
-    "bfbfvip",
-    "bfengbf"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
-   ]
-  },
-  {
-   "name": "éå­",
-   "hosts": [
-    "vip.lz",
-    "hd.lz",
-    ".cdnlz"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "17.19",
-    "19.63"
-   ]
-  },
-  {
-   "name": "éå¡",
-   "hosts": [
-    "vip.ffzy",
-    "hd.ffzy",
-    "super.ffzy",
-    "cachem3u8.2s0"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
-    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
-    "17.99",
-    "14.45"
-   ]
-  },
-  {
-   "name": "ç´¢å°¼",
-   "hosts": [
-    "suonizy"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
-    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
-   ]
-  },
-  {
-   "name": "å¿«ç",
-   "hosts": [
-    "kuaikan"
-   ],
-   "regex": [
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "leshiyun",
-   "hosts": [
-    "leshiyuncdn"
-   ],
-   "regex": [
-    "15.92"
-   ]
-  },
-  {
-   "name": "çå½±ç½",
-   "hosts": [
-    "fentvoss"
-   ],
-   "regex": [
-    "38.68",
-    "38.12",
-    "38.80",
-    "30.08",
-    "44.00",
-    "36.80",
-    "40.68",
-    "29.08",
-    "29.28",
-    "24.88"
-   ]
-  },
-  {
-   "name": "1080zyk",
-   "hosts": [
-    "high24-playback",
-    "high20-playback",
-    "yzzy.play",
-    "yzzy-dy"
-   ],
-   "regex": [
-    "16.63",
-    "17.66"
-   ]
-  },
-  {
-   "name": "ikun",
-   "hosts": [
-    "bfikuncdn"
-   ],
-   "regex": [
-    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
-    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
-   ]
-  },
-  {
-   "name": "é»æ¨è³hmr",
-   "hosts": [
-    "hmrvideo"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
-   ]
-  },
-  {
-   "name": "ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
-    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
-   ]
-  },
-  {
-   "name": "555DM",
-   "hosts": [
-    "cqxfjz"
-   ],
-   "regex": [
-    "10.56"
-   ]
-  },
-  {
-   "name": "æµ·å¤ç",
-   "hosts": [
-    "haiwaikan"
-   ],
-   "regex": [
-    "10.0099",
-    "10.3333",
-    "16.0599",
-    "8.1748",
-    "10.85"
-   ]
-  },
-  {
-   "name": "ç£åå¹¿å",
-   "hosts": [
-    "magnet"
-   ],
-   "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
-    "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
-    "UUE29"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
-    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
-    ".*popads\\.net.*",
-    ".*doubleclick\\.net.*"
-   ]
-  },
-  {
-   "name": "éç¨-å¹¿åååæ¦æª",
-   "hosts": [
-    "*"
-   ],
-   "regex": [
-    ".*googlesyndication\\.com.*",
-    ".*propellerads\\.com.*",
-    ".*adnxs\\.com.*",
-    ".*ae01\\.alicdn\\.com.*"
    ]
   }
  ],
@@ -6247,7 +4784,7 @@
    "player": "ijk"
   }
  ],
- "spider": "http://oss4liview.moji.com/thd_file/2026/11/06/99191348af7606ed51e66a4f13a85d8e.jpg;md5;53e039fb19875d5cfec02a0910399ffd",
+ "spider": "https://qiniu.gongxueyun.com/upload/2624916/2026-11-09/training_record/654477805_4_1794197377422.jar;md5;c91563ada7c35b4f33bd81c50c96eab5",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并8源 | 2026-11-08 20:37:05"
+ "//": "四源聚合单仓(安卓5+) | 合并6源 | 2026-11-09 13:16:55"
 }

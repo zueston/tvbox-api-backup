@@ -16,7 +16,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 91178,
+  "bytes": 141169,
   "origin": "lubin776"
  },
  {
@@ -46,7 +46,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 68792,
+  "bytes": 69113,
   "origin": "lubin776"
  },
  {
@@ -92,11 +92,11 @@
  {
   "name": "Kimentanm4线",
   "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-  "kind": "FAIL",
-  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 21971,
   "origin": "lubin776"
  },
  {
@@ -116,7 +116,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 25556,
+  "bytes": 22380,
   "origin": "lubin776"
  },
  {
@@ -126,7 +126,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 109980,
+  "bytes": 113498,
   "origin": "lubin776"
  },
  {
@@ -242,11 +242,11 @@
  {
   "name": "yuan",
   "url": "http://wangziduoqing.com/yuan/zb.txt",
-  "kind": "FAIL",
-  "reason": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain",
+  "bytes": 132577,
   "origin": "lubin776"
  },
  {
@@ -276,7 +276,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 22297,
+  "bytes": 22913,
   "origin": "lubin776"
  },
  {
@@ -334,11 +334,11 @@
  {
   "name": "咪咕",
   "url": "https://develop202.github.io/migu_video/interface.txt",
-  "kind": "FAIL",
-  "reason": "Remote end closed connection without response",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 469,
   "origin": "lubin776"
  },
  {
@@ -348,7 +348,7 @@
   "reason": "返回网页而非源数据",
   "marks": [],
   "ctype": "text/html; charset=utf-8",
-  "bytes": 200000,
+  "bytes": 146349,
   "origin": "lubin776"
  },
  {
@@ -396,7 +396,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 195831,
+  "bytes": 143081,
   "origin": "lubin776"
  },
  {
@@ -438,7 +438,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 172129,
+  "bytes": 173443,
   "origin": "lubin776"
  },
  {
@@ -522,7 +522,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 111262,
+  "bytes": 114107,
   "origin": "lubin776"
  },
  {
@@ -542,7 +542,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 105505,
+  "bytes": 106362,
   "origin": "lubin776"
  },
  {
@@ -568,11 +568,11 @@
  {
   "name": "综合直播2线",
   "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-  "kind": "FAIL",
-  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 469,
   "origin": "lubin776"
  },
  {
@@ -588,11 +588,11 @@
  {
   "name": "范明明",
   "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
-  "kind": "FAIL",
-  "reason": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "audio/x-mpegurl",
+  "bytes": 25215,
   "origin": "lubin776"
  },
  {
@@ -662,7 +662,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 148310,
+  "bytes": 138973,
   "origin": "lubin776"
  },
  {
@@ -672,7 +672,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 198663,
+  "bytes": 200000,
   "origin": "lubin776"
  },
  {
@@ -692,7 +692,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 52410,
+  "bytes": 29296,
   "origin": "lubin776"
  },
  {
@@ -702,7 +702,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 23797,
+  "bytes": 3050,
   "origin": "lubin776"
  },
  {
@@ -722,7 +722,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 116108,
+  "bytes": 106342,
   "origin": "lubin776"
  },
  {
@@ -742,7 +742,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 13811,
+  "bytes": 17907,
   "origin": "lubin776"
  },
  {
@@ -752,7 +752,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
-  "bytes": 8781,
+  "bytes": 10545,
   "origin": "lubin776"
  },
  {
@@ -772,7 +772,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 62786,
+  "bytes": 68118,
   "origin": "lubin776"
  },
  {
@@ -782,7 +782,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl",
-  "bytes": 11445,
+  "bytes": 21516,
   "origin": "lubin776"
  },
  {
