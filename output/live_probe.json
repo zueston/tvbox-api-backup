@@ -16,7 +16,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 141169,
+  "bytes": 182247,
   "origin": "lubin776"
  },
  {
@@ -46,7 +46,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 69113,
+  "bytes": 68876,
   "origin": "lubin776"
  },
  {
@@ -116,7 +116,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 22380,
+  "bytes": 24208,
   "origin": "lubin776"
  },
  {
@@ -126,7 +126,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 113498,
+  "bytes": 111658,
   "origin": "lubin776"
  },
  {
@@ -276,7 +276,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 22913,
+  "bytes": 23003,
   "origin": "lubin776"
  },
  {
@@ -348,7 +348,17 @@
   "reason": "返回网页而非源数据",
   "marks": [],
   "ctype": "text/html; charset=utf-8",
-  "bytes": 146349,
+  "bytes": 128236,
+  "origin": "lubin776"
+ },
+ {
+  "name": "地方台直播",
+  "url": "https://sd.shandong.bbroot.com/xk/zb.txt",
+  "kind": "TXT",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain",
+  "bytes": 200000,
   "origin": "lubin776"
  },
  {
@@ -396,7 +406,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 143081,
+  "bytes": 183683,
   "origin": "lubin776"
  },
  {
@@ -438,7 +448,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 173443,
+  "bytes": 175911,
   "origin": "lubin776"
  },
  {
@@ -522,7 +532,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 114107,
+  "bytes": 103937,
   "origin": "lubin776"
  },
  {
@@ -542,7 +552,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 106362,
+  "bytes": 106485,
   "origin": "lubin776"
  },
  {
@@ -662,7 +672,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 138973,
+  "bytes": 142534,
   "origin": "lubin776"
  },
  {
@@ -686,13 +696,13 @@
   "origin": "lubin776"
  },
  {
-  "name": "裤佬体育直播主",
+  "name": "裤佬体育直播",
   "url": "https://jsnzkpg.de5.net/all.m3u",
   "kind": "M3U",
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 29296,
+  "bytes": 29175,
   "origin": "lubin776"
  },
  {
@@ -702,7 +712,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 3050,
+  "bytes": 2467,
   "origin": "lubin776"
  },
  {
@@ -722,7 +732,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 106342,
+  "bytes": 109217,
   "origin": "lubin776"
  },
  {
@@ -742,7 +752,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 17907,
+  "bytes": 16010,
   "origin": "lubin776"
  },
  {
@@ -752,7 +762,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
-  "bytes": 10545,
+  "bytes": 10925,
   "origin": "lubin776"
  },
  {
@@ -772,7 +782,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 68118,
+  "bytes": 68828,
   "origin": "lubin776"
  },
  {
@@ -782,7 +792,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl",
-  "bytes": 21516,
+  "bytes": 18188,
   "origin": "lubin776"
  },
  {

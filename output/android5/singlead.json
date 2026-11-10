@@ -3786,26 +3786,527 @@
    }
   },
   {
+   "key": "ç¹æåæº",
+   "name": "è±è±âçå <å¼å®¹å®å4>",
+   "type": 3,
+   "api": "csp_DouDouGuard",
+   "indexs": 1,
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
+   "key": "åå½±",
+   "name": "ðåå½±âä¸å¡",
+   "type": 3,
+   "api": "csp_T4Guard",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 0,
+   "ext": "rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="
+  },
+  {
+   "key": "åé¿",
+   "name": "ðåé¿âä¸å¡",
+   "type": 3,
+   "api": "csp_NewCzGuard",
+   "timeout": 10,
+   "playerType": 2,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "æµ·ç»µ",
+   "name": "ð¬æµ·ç»µâä¸å¡",
+   "type": 3,
+   "api": "csp_HmysGuard",
+   "timeout": 10,
+   "playerType": "2",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "ç«æ­",
+   "name": "ðç«æ­âä¸å¡",
+   "type": 3,
+   "api": "csp_LibvioGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "ext": {
+    "Cloud-drive": "tvfan/Cloud-drive.txt",
+    "siteUrl": "https://www.libvio.pw/"
+   }
+  },
+  {
+   "key": "æ¯ç¹",
+   "name": "ðæ¯ç¹âä¸å¡",
+   "type": 3,
+   "api": "csp_BttwooGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "ç³¯ç±³",
+   "name": "ðç³¯ç±³âç§æ­",
+   "type": 3,
+   "api": "csp_NmyswvGuard",
+   "timeout": 15,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "æé",
+   "name": "ð®æéâç§æ­",
+   "type": 3,
+   "api": "csp_JpysGuard",
+   "timeout": 10,
+   "playerType": 2,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "å¥¶éª",
+   "name": "ð§å¥¶éªâç§æ­",
+   "type": 3,
+   "api": "csp_T4Guard",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 0,
+   "ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
+  },
+  {
+   "key": "ç­æ­",
+   "name": "ðºç­æ­âå¤çº¿",
+   "type": 3,
+   "api": "csp_AppTTGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "ext": "uqGL1bNENExT7/hGxpSE5qU="
+  },
+  {
+   "key": "é£äº",
+   "name": "âï¸é£äºâå¤çº¿",
+   "type": 3,
+   "api": "csp_FyGuard",
+   "ext": {
+    "type": "video",
+    "name": "Fy"
+   },
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "è§ç",
+   "name": "ð¸èèâå¤çº¿",
+   "type": 3,
+   "api": "csp_App99Guard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "ext": "rfOX1voDIQhH8epBwtCFsuby/mmdmIu8kGlnJc+7VkMRLQ1K+jMy+KN1MKQe0MZ6tmGSO5oFzD8/vWwiSqEpFczDqLrdGT3iH6fZmryrFzKijwYkJUMctdztE0O4CsgYZdBu8XhZSwuhSqqllQz4AZMa1l0sT+1NrbhNIxHkrY0upiYSTLNqEaledgZikMCviOXWr3cPBP4COOeoGUyJSJrrybmUppnWGeDAOHhHOVUSXjwSb+QQvcJIT2lmrf1Bk68myGs7qOqc19tD/rnzf2WOb2MzJZqtURBmUFgaW6ea2dL8OPSpSeVAvaGCAnqwuUNGE9hHpK8jfOs0bLJRdkFLnijAn5Q+ofVM5hgGb8c="
+  },
+  {
+   "key": "å§å",
+   "name": "ð»å§åâå¤çº¿",
+   "type": 3,
+   "api": "csp_AppSxGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "ext": "rfOX1voDIQhH8epBwpmIsuSluiuZl4+/lm1iJsy3HwNWMxpf9CY77fshI+kByoxy7DyPatUZ1jk0ty1p"
+  },
+  {
+   "key": "å¥¥ç¹",
+   "name": "ðå¥¥ç¹âå¤çº¿",
+   "type": 3,
+   "api": "csp_AueteGuard",
+   "timeout": 10,
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "å¤å¤",
+   "name": "ðå¤å¤âåæ¾",
+   "type": 3,
+   "api": "csp_DoubaoGuard",
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "åç",
+   "name": "ðåçâçç",
+   "type": 3,
+   "api": "csp_LiveGzGuard",
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "style": {
+    "type": "list"
+   }
+  },
+  {
+   "key": "æå£°å°è¯´",
+   "name": "ð§æå£°âå°è¯´",
+   "type": 3,
+   "api": "csp_YueTingGuard",
+   "style": {
+    "type": "rect",
+    "ratio": 1
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
+   "key": "èçjs",
+   "name": "ð¯èçâç´æ­",
+   "type": 3,
+   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/èç.js",
+   "style": {
+    "type": "rect",
+    "ratio": 1.755
+   },
+   "timeout": 10,
+   "playerType": "2",
+   "searchable": 1,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
+   "key": "æé±¼js",
+   "name": "ðæé±¼âç´æ­",
+   "type": 3,
+   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/æé±¼ç´æ­.js",
+   "style": {
+    "type": "rect",
+    "ratio": 1.755
+   },
+   "timeout": 10,
+   "playerType": "2",
+   "searchable": 1,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
    "key": "æ æ",
-   "name": "æ æ âææ",
+   "name": "ð¶ï¸æ æ âææ",
    "type": 3,
    "api": "csp_KkSsGuard",
    "searchable": 1,
-   "changeable": 0,
    "quickSearch": 1,
+   "changeable": 0,
    "ext": {
     "Cloud-drive": "tvfan/Cloud-drive.txt"
    }
   },
   {
-   "key": "åå½±",
-   "name": "åå½±âä¸å¡",
+   "key": "dr_åå°è´",
+   "name": "ðå¿ç«¥âå¯è",
    "type": 3,
-   "api": "csp_T4Guard",
+   "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+   "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
+   "key": "drpy_js_è±ç£",
+   "name": "ð¥ææ°è½¯ä»¶æ¥å£â¤Link3.cc/uucccâ¤ð¥",
+   "type": 3,
+   "api": "csp_Douban",
+   "ext": "https://gitee.com/jiandan1232/BabyOS/raw/master/test/douban.json",
+   "jar": "http://118.89.172.248:8025/jar/tan2.php"
+  },
+  {
+   "key": "éç½®ä¸­å¿",
+   "name": "âï¸âéç½®âä¸­å¿âï¸",
+   "type": 3,
+   "api": "csp_Config",
+   "searchable": 0,
+   "changeable": 0,
+   "indexs": 0,
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "jar": "http://118.89.172.248:8025/jar/lubin.php"
+  },
+  {
+   "key": "JianSou",
+   "name": "ðâç®æâ4Kð",
+   "type": 3,
+   "api": "csp_JianSou",
    "searchable": 1,
-   "changeable": 1,
+   "filterable": 0,
+   "ext": {
+    "site": "http://118.89.172.248:8000",
+    "type": 0,
+    "name": " ç®æ"
+   }
+  },
+  {
+   "key": "ZhiZhenPanCms",
+   "name": "ðâè³è»â4Kð",
+   "type": 3,
+   "api": "csp_PanCms",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "{\"site\":[\"http://118.89.172.248:22776\"],\"name\":\"ç½çCMS\"}"
+  },
+  {
+   "key": "MuouPanCms",
+   "name": "ðâæ¨å¶â4Kð",
+   "type": 3,
+   "api": "csp_PanCms",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "{\"site\":[\"https://www.muoua.top\",\"https://666.666291.xyz\",\"https://333.333291.xyz\",\"https://www.muou.asia\"],\"name\":\"ç½çCMS\"}"
+  },
+  {
+   "key": "DuoPanCms",
+   "name": "ðâå¤å¤â4Kð",
+   "type": 3,
+   "api": "csp_PanCms",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "{\"site\":[\"https://tv.yydsys.top\",\"https://tv.yydsys.cc\",\"https://tv.214521.xyz\"],\"name\":\"ç½çCMS\"}"
+  },
+  {
+   "key": "KuaiYPanCms",
+   "name": "ðâå¿«æ â4Kð",
+   "type": 3,
+   "api": "csp_PanCms",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "{\"site\":[\"http://38.76.197.172:12521\"],\"name\":\"ç½çCMS\"}"
+  },
+  {
+   "key": "HuBanYPanCms",
+   "name": "ðâèæâ4Kð",
+   "type": 3,
+   "api": "csp_PanCms",
+   "searchable": 1,
+   "filterable": 1,
+   "ext": "{\"site\":[\"http://38.76.197.172:16969\"],\"name\":\"ç½çCMS\"}"
+  },
+  {
+   "key": "Star2",
+   "name": "ðâå§éâ4Kð",
+   "type": 3,
+   "api": "csp_Star2",
+   "searchable": 1,
+   "filterable": 0,
+   "ext": "{\"site\":[\"https://1.star2.cn\"],\"name\":\"å§éç¤¾\"}"
+  },
+  {
+   "key": "Gz360",
+   "name": "ðâçå­âç§æ­",
+   "type": 3,
+   "api": "csp_Gz360",
+   "searchable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "mino",
+   "name": "ðâMiNOâç§æ­4K",
+   "type": 3,
+   "api": "csp_MiNO",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 1,
+   "ext": {
+    "rotate_device": 1,
+    "auto_fallback": 1
+   }
+  },
+  {
+   "key": "AppDramaPingguo",
+   "name": "ðâè¹æâ1080P",
+   "type": 3,
+   "api": "csp_AppDrama",
+   "searchable": 1,
    "quickSearch": 1,
-   "ext": "rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="
+   "filterable": 1,
+   "ext": {
+    "appName": "å°è¹æ",
+    "commonKey": "ed5fdsgucxumegqa",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+    "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
+    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+    "pkg": "com.juechufsh.android.xpg1",
+    "host": "",
+    "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
+    "version": "1.0.0.3",
+    "decrypt": "1",
+    "danmu": true,
+    "danmu_api": "https://dm.211.li/nonay"
+   }
+  },
+  {
+   "key": "AppRJ",
+   "name": "ðâç­æ­âé«æ¸",
+   "type": 3,
+   "api": "csp_AppRJ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": {
+    "url": "http://v.rbotv.cn",
+    "block": [
+     "çº¿è·¯äº(ç¹å»åæ¢)",
+     "CO4K"
+    ]
+   }
+  },
+  {
+   "key": "YunDuo",
+   "name": "ðâå¤§é¹â1080P",
+   "type": 3,
+   "api": "csp_YunDuo",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": {
+    "host": "https://323433ssdfd.top",
+    "block": [
+     "POèå",
+     "CO4K",
+     "ZJ4k",
+     "NBèå"
+    ]
+   }
+  },
+  {
+   "key": "DongPian",
+   "name": "ðâæçâç§æ­",
+   "type": 3,
+   "api": "csp_DongPian",
+   "searchable": 1,
+   "filterable": 0
+  },
+  {
+   "key": "DyXia",
+   "name": "ðâå½±ä¾ âå½±è§",
+   "type": 3,
+   "api": "csp_DyXia",
+   "searchable": 1,
+   "filterable": 0,
+   "ext": "{\"blockedFroms\":[\"4K\"]}"
+  },
+  {
+   "name": "ðâæ©æ±âå¿«é",
+   "key": "çº¿è·¯14",
+   "type": 3,
+   "jar": "https://zl.wpscdn.cn/2026/09/11/space_img/0f5c235d-ee40-42a0-a19a-b7f29986c51c.png;md5;7a2cb30dc4937d27e57288b5c381e19c",
+   "api": "csp_Woshinidie",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1
+  },
+  {
+   "key": "feifan",
+   "name": "ðâéå¡âèµæº",
+   "type": 1,
+   "api": "http://ffzy5.tv/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "categories": [
+    "é©å½å§",
+    "æ¬§ç¾å§",
+    "å°æ¹¾å§",
+    "æäºç",
+    "å½äº§å§",
+    "å¤§éç»¼èº"
+   ],
+   "hide": 1
+  },
+  {
+   "key": "KuKuMusic",
+   "name": "ðµâåºåºâé³ä¹",
+   "type": 3,
+   "api": "csp_KuKuMusic",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "changeable": 0,
+   "style": {
+    "type": "oval",
+    "ratio": 1
+   }
+  },
+  {
+   "key": "AppTd",
+   "name": "ðâç³è±âèè¹",
+   "type": 3,
+   "api": "csp_AppTd",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "æ æ²",
+   "name": "ðâå½ç²¹âææ²",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "https://z.qiqiv.cn/666/json/Blixq.json"
+  },
+  {
+   "key": "ç¸å£°å°å",
+   "name": "ð®âç¸å£°âå°å",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "https://z.qiqiv.cn/666/json/Blixs.json"
+  },
+  {
+   "key": "æ¼å±ä¼",
+   "name": "ð¸âæ¼å±ä¼âMV",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "https://z.qiqiv.cn/666/json/æ¼å±ä¼.json"
+  },
+  {
+   "key": "åå©åå©",
+   "name": "ð±âï¸åå©âå¤§å¨",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 0,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "https://z.qiqiv.cn/666/json/Bili.json"
   },
   {
    "key": "åå",
@@ -3816,103 +4317,6 @@
    "searchable": 1,
    "changeable": 1,
    "quickSearch": 1
-  },
-  {
-   "key": "åé¿",
-   "name": "åé¿âä¸å¡",
-   "type": 3,
-   "api": "csp_NewCzGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1
-  },
-  {
-   "key": "ç«æ­",
-   "name": "ç«æ­âä¸å¡",
-   "type": 3,
-   "api": "csp_LibvioGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1,
-   "ext": {
-    "Cloud-drive": "tvfan/Cloud-drive.txt",
-    "siteUrl": "https://www.libvio.pw/"
-   }
-  },
-  {
-   "key": "æ¯ç¹",
-   "name": "æ¯ç¹âä¸å¡",
-   "type": 3,
-   "api": "csp_BttwooGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1
-  },
-  {
-   "key": "ç³¯ç±³",
-   "name": "ç³¯ç±³âå¤çº¿",
-   "type": 3,
-   "api": "csp_NmyswvGuard",
-   "timeout": 15,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1
-  },
-  {
-   "key": "æé",
-   "name": "æéâç§æ­",
-   "type": 3,
-   "api": "csp_JpysGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1
-  },
-  {
-   "key": "å¥¶éª",
-   "name": "å¥¶éªâç§æ­",
-   "type": 3,
-   "api": "csp_T4Guard",
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1,
-   "ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
-  },
-  {
-   "key": "ç­æ­",
-   "name": "ç­æ­âå¤çº¿",
-   "type": 3,
-   "api": "csp_AppTTGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1,
-   "ext": "uqGL1bNENExT7/hGxpSE5qU="
-  },
-  {
-   "key": "è§ç",
-   "name": "èèâå¤çº¿",
-   "type": 3,
-   "api": "csp_App99Guard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1,
-   "ext": "rfOX1voDIQhH8epBwtCFsuby/mmdmIu8kGlnJc+7VkMRLQ1K+jMy+KN1MKQe0MZ6tmGSO5oFzD8/vWwiSqEpFczDqLrdGT3iH6fZmryrFzKijwYkJUMctdztE0O4CsgYZdBu8XhZSwuhSqqllQz4AZMa1l0sT+1NrbhNIxHkrY0upiYSTLNqEaledgZikMCviOXWr3cPBP4COOeoGUyJSJrrybmUppnWGeDAOHhHOVUSXjwSb+QQvcJIT2lmrf1Bk68myGs7qOqc19tD/rnzf2WOb2MzJZqtURBmUFgaW6ea2dL8OPSpSeVAvaGCAnqwuUNGE9hHpK8jfOs0bLJRdkFLnijAn5Q+ofVM5hgGb8c="
-  },
-  {
-   "key": "å§å",
-   "name": "å§åâå¤çº¿",
-   "type": 3,
-   "api": "csp_AppSxGuard",
-   "timeout": 10,
-   "searchable": 1,
-   "changeable": 1,
-   "quickSearch": 1,
-   "ext": "rfOX1voDIQhH8epBwpmIsuSluiuZl4+/lm1iJsy3HwNWMxpf9CY77fshI+kByoxy7DyPatUZ1jk0ty1p"
   },
   {
    "key": "åå",
@@ -4068,6 +4472,35 @@
    "playerType": 2,
    "timeout": 10,
    "ua": "okHttp/Mod-1.5.0.0"
+  },
+  {
+   "name": "ç»¼å",
+   "type": 0,
+   "url": "http://193.123.86.190:14888/TV/iptv.php",
+   "ua": "bingcha/1.1 (mianfeifenxiang)",
+   "playerType": 2
+  },
+  {
+   "name": "çæ­ä¸",
+   "url": "http://127.0.0.1:9978/proxy?do=cctva",
+   "timeZone": "Asia/Shanghai"
+  },
+  {
+   "name": "å¹³å°ç´æ­",
+   "type": 0,
+   "url": "http://118.89.172.248:8025/jar/zb.php",
+   "playerType": 1
+  },
+  {
+   "name": "Guovin",
+   "type": 0,
+   "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+  },
+  {
+   "name": "æ¸¯æ¾³å°",
+   "type": 0,
+   "url": "http://rihou.cc:567/gggg.nzk",
+   "playerType": 1
   }
  ],
  "parses": [
@@ -4207,6 +4640,16 @@
    }
   },
   {
+   "name": "-zui-",
+   "type": 0,
+   "url": "https://jx.zui.cm/?url=",
+   "ext": {
+    "header": {
+     "user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
+    }
+   }
+  },
+  {
    "name": "è§£æèå",
    "type": 3,
    "url": "Web"
@@ -4228,6 +4671,303 @@
   }
  ],
  "rules": [
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
   {
    "name": "proxy",
    "hosts": [
@@ -4650,6 +5390,255 @@
    ]
   },
   {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "cdn.ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "5.480000",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
+   "name": "cdn.ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "5.480000",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
    "name": "cdn.ryplay",
    "hosts": [
     "cdn.ryplay"
@@ -4699,6 +5688,747 @@
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
    ]
   }
  ],
@@ -4786,5 +6516,5 @@
  ],
  "spider": "https://qiniu.gongxueyun.com/upload/2624916/2026-11-09/training_record/654477805_4_1794197377422.jar;md5;c91563ada7c35b4f33bd81c50c96eab5",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并6源 | 2026-11-09 13:16:55"
+ "//": "四源聚合单仓(安卓5+) | 合并8源 | 2026-11-10 12:56:27"
 }

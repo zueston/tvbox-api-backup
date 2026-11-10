@@ -1,4 +1,4 @@
-# 直播源·可直接订阅 69 条
+# 直播源·可直接订阅 70 条
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
 B站直播1线	https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u	lubin776
@@ -31,6 +31,7 @@ yuan	http://wangziduoqing.com/yuan/zb.txt	lubin776
 华视TV直播	https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv	lubin776
 南风直播源	https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt	lubin776
 咪咕	https://develop202.github.io/migu_video/interface.txt	lubin776
+地方台直播	https://sd.shandong.bbroot.com/xk/zb.txt	lubin776
 应该能看	https://gh-proxy.org/raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt	lubin776
 手动不知何时更新	https://szyyds.cn/tv/live/x.txt	lubin776
 挺好直播	https://ztha.top/TVBox/tv/thtv.txt	lubin776
@@ -57,7 +58,7 @@ yuan	http://wangziduoqing.com/yuan/zb.txt	lubin776
 裤佬TikTok直播	https://tiktok.445569.xyz/live.m3u	lubin776
 裤佬Twitch直播	https://twitch.445569.xyz/live.m3u	lubin776
 裤佬YY直播	https://yy.445569.xyz/live.m3u	lubin776
-裤佬体育直播主	https://jsnzkpg.de5.net/all.m3u	lubin776
+裤佬体育直播	https://jsnzkpg.de5.net/all.m3u	lubin776
 裤佬体育直播备	https://stymei.pages.dev/live.m3u	lubin776
 裤佬快手直播	https://kuaishou.445569.xyz/list.m3u	lubin776
 裤佬抖音直播	https://douyin.445569.xyz/live.m3u	lubin776

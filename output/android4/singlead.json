@@ -1,6 +1,24 @@
 {
  "sites": [
   {
+   "key": "feifan",
+   "name": "ðâéå¡âèµæº",
+   "type": 1,
+   "api": "http://ffzy5.tv/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "categories": [
+    "é©å½å§",
+    "æ¬§ç¾å§",
+    "å°æ¹¾å§",
+    "æäºç",
+    "å½äº§å§",
+    "å¤§éç»¼èº"
+   ],
+   "hide": 1
+  },
+  {
    "key": "éå¡",
    "name": "éå¡âå½±è§",
    "type": 1,
@@ -102,6 +120,35 @@
    "playerType": 2,
    "timeout": 10,
    "ua": "okHttp/Mod-1.5.0.0"
+  },
+  {
+   "name": "ç»¼å",
+   "type": 0,
+   "url": "http://193.123.86.190:14888/TV/iptv.php",
+   "ua": "bingcha/1.1 (mianfeifenxiang)",
+   "playerType": 2
+  },
+  {
+   "name": "çæ­ä¸",
+   "url": "http://127.0.0.1:9978/proxy?do=cctva",
+   "timeZone": "Asia/Shanghai"
+  },
+  {
+   "name": "å¹³å°ç´æ­",
+   "type": 0,
+   "url": "http://118.89.172.248:8025/jar/zb.php",
+   "playerType": 1
+  },
+  {
+   "name": "Guovin",
+   "type": 0,
+   "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+  },
+  {
+   "name": "æ¸¯æ¾³å°",
+   "type": 0,
+   "url": "http://rihou.cc:567/gggg.nzk",
+   "playerType": 1
   }
  ],
  "parses": [
@@ -241,6 +288,16 @@
    }
   },
   {
+   "name": "-zui-",
+   "type": 0,
+   "url": "https://jx.zui.cm/?url=",
+   "ext": {
+    "header": {
+     "user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
+    }
+   }
+  },
+  {
    "name": "è§£æèå",
    "type": 3,
    "url": "Web"
@@ -262,6 +319,303 @@
   }
  ],
  "rules": [
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
+  {
+   "name": "proxy",
+   "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+    "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+    "iptv.huuc.edu.cn=huucv6.188766.xyz",
+    "raw.githubusercontent.com",
+    "googlevideo.com",
+    "cdn.v82u1l.com",
+    "cdn.iz8qkg.com",
+    "cdn.kin6c1.com",
+    "c.biggggg.com",
+    "c.olddddd.com",
+    "haiwaikan.com",
+    "www.histar.tv",
+    "youtube.com",
+    "uhibo.com",
+    ".*boku.*",
+    ".*nivod.*",
+    ".*ulivetv.*"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "12.33",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç«å±±åæ¢",
+   "hosts": [
+    "huoshan.com"
+   ],
+   "regex": [
+    "item_id="
+   ]
+  },
+  {
+   "name": "æé³åæ¢",
+   "hosts": [
+    "douyin.com"
+   ],
+   "regex": [
+    "is_play_url="
+   ]
+  },
+  {
+   "name": "è¾²æ°åæ¢",
+   "hosts": [
+    "toutiaovod.com"
+   ],
+   "regex": [
+    "video/tos/cn"
+   ]
+  },
+  {
+   "name": "æ°è§è§åæ¢",
+   "hosts": [
+    "muzhi-video.bj.bcebos.com"
+   ],
+   "regex": [
+    "202403/"
+   ]
+  },
+  {
+   "name": "ä¸æ°åæ¢",
+   "hosts": [
+    "api.52wyb.com"
+   ],
+   "regex": [
+    "m3u8?pt=m3u8"
+   ]
+  },
+  {
+   "name": "å¤å¸é»æ",
+   "hosts": [
+    "yeslivetv.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+   ]
+  },
+  {
+   "name": "æ¯é©¢é»æ",
+   "hosts": [
+    "www.maolvys.com"
+   ],
+   "script": [
+    "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+   ]
+  },
   {
    "name": "proxy",
    "hosts": [
@@ -684,6 +1038,255 @@
    ]
   },
   {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "cdn.ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "5.480000",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
+   "name": "cdn.ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "5.480000",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
    "name": "cdn.ryplay",
    "hosts": [
     "cdn.ryplay"
@@ -733,6 +1336,747 @@
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
     "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
+   ]
+  },
+  {
+   "host": "www.iesdouyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "www.ysgc.vip",
+   "rule": [
+    "getm3u8?url=http"
+   ]
+  },
+  {
+   "host": "v.douyin.com",
+   "rule": [
+    "playwm/?video_id="
+   ]
+  },
+  {
+   "host": "dyxs20.com",
+   "rule": [
+    ".m3u8"
+   ]
+  },
+  {
+   "host": "www.agemys.cc",
+   "rule": [
+    "cdn-tos",
+    "obj/tos-cn"
+   ]
+  },
+  {
+   "host": "www.sharenice.net",
+   "rule": [
+    "http.*?/play.{0,3}\\?[^url]{2,8}=.*",
+    "qianpailive.com",
+    "vid="
+   ]
+  },
+  {
+   "name": "æ´é£",
+   "hosts": [
+    "bfzy",
+    "bfbfvip",
+    "bfengbf"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+   ]
+  },
+  {
+   "name": "éå­",
+   "hosts": [
+    "vip.lz",
+    "hd.lz",
+    ".cdnlz"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "17.19",
+    "19.63"
+   ]
+  },
+  {
+   "name": "éå¡",
+   "hosts": [
+    "vip.ffzy",
+    "hd.ffzy",
+    "super.ffzy",
+    "cachem3u8.2s0"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+    "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
+    "17.99",
+    "14.45"
+   ]
+  },
+  {
+   "name": "ç´¢å°¼",
+   "hosts": [
+    "suonizy"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+    "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+   ]
+  },
+  {
+   "name": "å¿«ç",
+   "hosts": [
+    "kuaikan"
+   ],
+   "regex": [
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "leshiyun",
+   "hosts": [
+    "leshiyuncdn"
+   ],
+   "regex": [
+    "15.92"
+   ]
+  },
+  {
+   "name": "çå½±ç½",
+   "hosts": [
+    "fentvoss"
+   ],
+   "regex": [
+    "38.68",
+    "38.12",
+    "38.80",
+    "30.08",
+    "44.00",
+    "36.80",
+    "40.68",
+    "29.08",
+    "29.28",
+    "24.88"
+   ]
+  },
+  {
+   "name": "1080zyk",
+   "hosts": [
+    "high24-playback",
+    "high20-playback",
+    "yzzy.play",
+    "yzzy-dy"
+   ],
+   "regex": [
+    "16.63",
+    "17.66"
+   ]
+  },
+  {
+   "name": "ikun",
+   "hosts": [
+    "bfikuncdn"
+   ],
+   "regex": [
+    "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+    "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+   ]
+  },
+  {
+   "name": "é»æ¨è³hmr",
+   "hosts": [
+    "hmrvideo"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   ]
+  },
+  {
+   "name": "ryplay",
+   "hosts": [
+    "cdn.ryplay"
+   ],
+   "regex": [
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+    "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+   ]
+  },
+  {
+   "name": "555DM",
+   "hosts": [
+    "cqxfjz"
+   ],
+   "regex": [
+    "10.56"
+   ]
+  },
+  {
+   "name": "æµ·å¤ç",
+   "hosts": [
+    "haiwaikan"
+   ],
+   "regex": [
+    "10.0099",
+    "10.3333",
+    "16.0599",
+    "8.1748",
+    "10.85"
+   ]
+  },
+  {
+   "name": "ç£åå¹¿å",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "æ´å¤",
+    "ç¤¾ å",
+    "x u u",
+    "æ æ°",
+    "æ´ æ°",
+    "ç¤¾ åº",
+    "æè¶£",
+    "æ è¶£",
+    "è±çä½è²",
+    "å¨ä¸­æAVå¨çº¿",
+    "æ¾³é¨çå èµåº",
+    "å¥å¥å¿«æ¥",
+    "ç¾å¥³è·å®",
+    "è£¸è",
+    "æ°çé¦å",
+    "UUE29"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+    "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump",
+    ".*popads\\.net.*",
+    ".*doubleclick\\.net.*"
+   ]
+  },
+  {
+   "name": "éç¨-å¹¿åååæ¦æª",
+   "hosts": [
+    "*"
+   ],
+   "regex": [
+    ".*googlesyndication\\.com.*",
+    ".*propellerads\\.com.*",
+    ".*adnxs\\.com.*",
+    ".*ae01\\.alicdn\\.com.*"
    ]
   }
  ],
@@ -756,5 +2100,5 @@
  ],
  "hosts": [],
  "sp": "",
- "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-09 13:17:07"
+ "//": "四源聚合单仓(安卓4兼容) | 合并7源 | 2026-11-10 12:57:24"
 }
