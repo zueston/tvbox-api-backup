@@ -1,0 +1,20 @@
+{
+ "android5/single.json": {
+  "moji": 0
+ },
+ "android4/single.json": {
+  "moji": 0
+ },
+ "android5/singlead.json": {
+  "moji": 0
+ },
+ "android4/singlead.json": {
+  "moji": 0
+ },
+ "android5/multi.json": {
+  "moji": 0
+ },
+ "android4/multi.json": {
+  "moji": 0
+ }
+}

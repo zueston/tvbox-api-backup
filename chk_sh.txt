@@ -1,17 +1,46 @@
-STOREHOUSE0-2: [
- {
-  "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
-  "sourceUrl": "http://124.223.214.31:16/8888"
+{
+ "android5/multi.json": {
+  "keys": [
+   "storeHouse"
+  ],
+  "n": 66,
+  "badkey": [],
+  "first": {
+   "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
+   "sourceUrl": "http://124.223.214.31:16/8888"
+  }
  },
- {
-  "sourceName": "1",
-  "sourceUrl": "http://8.138.7.223/tv.txt"
+ "android4/multi.json": {
+  "keys": [
+   "storeHouse"
+  ],
+  "n": 66,
+  "badkey": [],
+  "first": {
+   "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
+   "sourceUrl": "http://124.223.214.31:16/8888"
+  }
  },
- {
-  "sourceName": "影视仓2",
-  "sourceUrl": "http://Link3.cc/uuccc"
+ "android5/multiad.json": {
+  "keys": [
+   "storeHouse"
+  ],
+  "n": 22,
+  "badkey": [],
+  "first": {
+   "sourceName": "hhh",
+   "sourceUrl": "https://www.iyouhun.com/tv/fty"
+  }
+ },
+ "android4/multiad.json": {
+  "keys": [
+   "storeHouse"
+  ],
+  "n": 22,
+  "badkey": [],
+  "first": {
+   "sourceName": "hhh",
+   "sourceUrl": "https://www.iyouhun.com/tv/fty"
+  }
  }
-]
-keys sh[0]= ['sourceName', 'sourceUrl']
-keys pr[0]= ['name', 'url']
-keys ur[0]= ['name', 'url']
+}

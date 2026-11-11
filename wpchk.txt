@@ -1,0 +1,4 @@
+output/android5/multi.json wallpaper=None logo=
+output/android5/single.json wallpaper=None logo=None
+output/android4/single.json wallpaper=None logo=None
+output/android5/singlead.json wallpaper=None logo=None

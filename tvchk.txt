@@ -1,0 +1,5 @@
+keys=['spider', 'wallpaper', 'sites', 'logo', 'lives']
+wallpaper=https://深色壁纸.xxooo.cf/
+logo=https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif
+spider=https://oss4liview.moji.com/thd_file/2026/01/15/6def70dc641374d1db3aefb74eee762c.jpg;md5;43e551123db0c41dd70ace45fc226add
+warningText=None

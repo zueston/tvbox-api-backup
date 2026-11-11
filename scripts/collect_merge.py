@@ -239,18 +239,15 @@ def build_multi(alive_items):
             continue
         seen_name.add(nm)
         profiles.append({"url": r["url"], "name": nm, "desc": r["origin"]})
+    # 纯 storeHouse 标准多仓格式：影视仓/FongMi 对带 home(无url)/profiles/urls 混排会
+    # 解析异常或自动激活第一条导致"出错"，只保留 storeHouse 时弹仓库选择器，行为正确
     return {
         "storeHouse": [{"sourceName": p["name"], "sourceUrl": p["url"]} for p in profiles],
-        "profiles": [{"url": p["url"], "name": p["name"]} for p in profiles],
-        "urls": [{"url": p["url"], "name": p["name"]} for p in profiles],
-        "sp": "", "logo": "", "warning": "",
-        "home": {"name": "TVBox 四源聚合(安卓5+)", "type": 0, "click": 0},
     }
 
 def build_multi_a4(alive_items):
-    cfg = build_multi(alive_items)
-    cfg["home"]["name"] = "TVBox 四源聚合(安卓4兼容)"
-    return cfg
+    # 纯 storeHouse，与 a5 同构（a4 版仓库名区分靠 storeHouse 条目本身可省略）
+    return build_multi(alive_items)
 
 # ---------- 单仓合并 ----------
 def abs_url(base, ref):
@@ -437,12 +434,10 @@ def main():
     m4 = build_multi_a4(clean4)
     (OUT / "android5" / "multi.json").write_text(json.dumps(m5, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "android4" / "multi.json").write_text(json.dumps(m4, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"multi: profiles={len(m5['profiles'])}")
+    print(f"multi: storeHouse={len(m5['storeHouse'])}")
 
     ma5 = build_multi(v5)
     ma4 = build_multi_a4(v4)
-    for cfg, nm in ((ma5, "安卓5+"), (ma4, "安卓4兼容")):
-        cfg["home"]["name"] = f"TVBox 四源聚合({nm}·需验证版)"
     (OUT / "android5" / "multiad.json").write_text(json.dumps(ma5, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "android4" / "multiad.json").write_text(json.dumps(ma4, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -464,13 +459,13 @@ def main():
         "updated": time.strftime("%F %T"),
         "pool_raw": len(pool), "pool_dedup": len(uniq), "alive": len(alive),
         "by_origin_alive": {},
-        "android5": {"multi": len(m5["profiles"]), "single_sites": len(s5["sites"]),
+        "android5": {"multi": len(m5["storeHouse"]), "single_sites": len(s5["sites"]),
                       "single_parses": len(s5["parses"]), "single_lives": len(s5["lives"]), "sources": rep5,
-                      "ad_multi": len(ma5["profiles"]), "ad_single_sites": len(sa5["sites"]),
+                      "ad_multi": len(ma5["storeHouse"]), "ad_single_sites": len(sa5["sites"]),
                       "ad_single_parses": len(sa5["parses"]), "ad_single_lives": len(sa5["lives"]), "ad_sources": repa5},
-        "android4": {"multi": len(m4["profiles"]), "single_sites": len(s4["sites"]),
+        "android4": {"multi": len(m4["storeHouse"]), "single_sites": len(s4["sites"]),
                       "single_parses": len(s4["parses"]), "single_lives": len(s4["lives"]), "sources": rep4,
-                      "ad_multi": len(ma4["profiles"]), "ad_single_sites": len(sa4["sites"]),
+                      "ad_multi": len(ma4["storeHouse"]), "ad_single_sites": len(sa4["sites"]),
                       "ad_single_parses": len(sa4["parses"]), "ad_single_lives": len(sa4["lives"]), "ad_sources": repa4},
         "lives_dedup": len(luniq),
         "dead": [{"name": e["name"], "url": e["url"], "origin": e["origin"]} for e in uniq if not e.get("alive")][:200],
