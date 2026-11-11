@@ -2,7 +2,7 @@
  "storeHouse": [
   {
    "sourceName": "四源聚合·主仓库(推荐)",
-   "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json"
+   "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json"
   },
   {
    "sourceName": "1",
@@ -263,7 +263,7 @@
  ],
  "profiles": [
   {
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json",
+   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json",
    "name": "四源聚合·主仓库(推荐)"
   },
   {
@@ -525,7 +525,7 @@
  ],
  "urls": [
   {
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json",
+   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json",
    "name": "四源聚合·主仓库(推荐)"
   },
   {

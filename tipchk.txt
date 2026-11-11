@@ -1,0 +1,6 @@
+android5/single keys=['//', 'flags', 'hosts', 'ijk', 'lives', 'parses', 'rules', 'sites', 'sp', 'spider']
+android4/single keys=['//', 'flags', 'hosts', 'lives', 'parses', 'rules', 'sites', 'sp']
+android5/multi keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls', 'warning']
+  storeHouse[0]={'sourceName': '四源聚合·主仓库(推荐)', 'sourceUrl': 'https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json'}
+android4/multi keys=['home', 'logo', 'profiles', 'sp', 'storeHouse', 'urls', 'warning']
+  storeHouse[0]={'sourceName': '四源聚合·主仓库(推荐)', 'sourceUrl': 'https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json'}

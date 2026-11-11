@@ -1,0 +1,7 @@
+single //='四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 01:02:39'
+single sp=''
+multi warning=''
+multi sp=''
+multi logo=''
+multi home={'name': '四源聚合·主仓库(推荐)', 'type': 0, 'click': 0}
+p0={'url': 'https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json', 'name': '四源聚合·主仓库(推荐)'}

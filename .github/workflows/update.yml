@@ -35,3 +35,7 @@ jobs:
             git commit -m "update: $(date -u '+%F %T') 四源聚合自动更新"
             git push
           fi
+      - name: Move rolling tag agg-latest (jsDelivr immutable cache)
+        run: |
+          git tag -f agg-latest HEAD
+          git push -f origin refs/tags/agg-latest

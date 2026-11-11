@@ -1,0 +1,11 @@
+{
+  "id": "7Pa1JHf42QOGDuUo",
+  "status": "finished",
+  "timestamp": "2026-11-11T17:47:11.643Z",
+  "paths": {
+    "/gh/zueston/tvbox-api-backup@main/output/android4/single.json": {
+      "throttled": true,
+      "throttlingReset": 1857
+    }
+  }
+}

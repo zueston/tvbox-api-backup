@@ -16,31 +16,32 @@
 
 
 
-## 订阅地址（jsDelivr CDN 优先，`@main` 必带）
+
+## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
 点播·干净版（无广告验证线路）
 ```
-安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multi.json
-安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json
-安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multi.json
-安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json
+安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multi.json
+安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single.json
+安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/multi.json
+安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json
 ```
 
 点播·要验证版（源站反爬/导航页/落地页线路，独立一档）
 ```
-安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/multiad.json
-安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/singlead.json
-安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/multiad.json
-安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/singlead.json
+安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multiad.json
+安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/singlead.json
+安卓4  多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/multiad.json
+安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json
 ```
 
 直播源
 ```
-可直连(68条)      https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_direct.txt
+可直连(68条)      https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_direct.txt
 ```
 要验证
 ```
-需广告/验证(11条)   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/live_ad.txt
+需广告/验证(11条)   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_ad.txt
 ```
 
 | 用途 | 安卓5+ | 安卓4 |
@@ -52,10 +53,10 @@
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@main` 不能省：仓库没打 release tag 时 jsDelivr 缺它会 404。
+`@agg-latest` 不能省：这是每日更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
 
 **盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
-1. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/...`（实测国内多数运营商可达，推荐）
+1. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（实测国内多数运营商可达，推荐）
 2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（GitHub 直连被墙时用，大文件略慢）
 3. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
 `cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败，此时上面 1/2 任选其一即可。

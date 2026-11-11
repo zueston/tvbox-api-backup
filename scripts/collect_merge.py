@@ -230,8 +230,9 @@ def probe(e):
 
 # ---------- 多仓配置 ----------
 REPO = "zueston/tvbox-api-backup"
+TAG = "agg-latest"  # 滚动 tag：jsDelivr 对 @tag 是不可变缓存，push 即新鲜；@main 边缘缓存会陈旧数小时。update.yml 每次产物提交后移动此 tag。
 def main_house(path):
-    return f"https://fastly.jsdelivr.net/gh/{REPO}@main/output/{path}"
+    return f"https://fastly.jsdelivr.net/gh/{REPO}@{TAG}/output/{path}"
 
 def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_path="android5/single.json"):
     items = sorted(alive_items, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))

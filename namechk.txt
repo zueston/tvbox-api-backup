@@ -1,0 +1,6 @@
+name=None
+logo=None
+sp=''
+warning=None
+wallpaper=None
+sites_moji=0 ex=[]
