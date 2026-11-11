@@ -1,0 +1,81 @@
+360             if isinstance(lu, str) and "://" not in lu and not lu.startswith(("./", "../")):
+361                 continue                       # 剔除"直播名字自定义"这类占位假行
+362             if a4 and not lu:
+363                 continue
+364             if isinstance(lu, str) and lu.startswith(("./", "../")):
+365                 l = dict(l)
+366                 l["url"] = abs_url(e["url"], lu)
+367             g = l.get("name") or l.get("group")
+368             if g and g in live_groups:
+369                 continue
+370             if g:
+371                 live_groups.add(g)
+372             merged["lives"].append(l)
+373             n_l += 1
+374         for ru in cfg.get("rules", []) or []:
+375             merged["rules"].append(ru)
+376         if n_s or n_p or n_l:
+377             used += 1
+378         for f in cfg.get("flags", []) or []:
+379             if f not in merged["flags"]:
+380                 merged["flags"].append(f)
+381         if not a4:
+382             jar = cfg.get("jar")
+383             if isinstance(jar, str) and jar and not merged.get("jar"):
+384                 merged["jar"] = abs_url(e["url"], jar)
+385             sp = cfg.get("spider")
+386             if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider"):
+387                 merged["spider"] = abs_url(e["url"], sp)
+388         src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l})
+389         print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")
+390     merged["sp"] = ""
+391     out = {**merged, "//": f"四源聚合单仓({'安卓4兼容' if a4 else '安卓5+'}) | 合并{used}源 | {time.strftime('%F %T')}"}
+392     return out, src_map
+393 
+394 # ---------- 主流程 ----------
+395 def main():
+396     pool, lives = [], []
+397     for fn, args in ((load_lubin776, (pool, lives)), (load_lightconer, (pool,)),
+398                      (load_tvyuan, (pool, lives)), (load_juwan, (pool,))):
+399         try:
+400             fn(*args)
+401             print(f"[upstream] {fn.__name__}: pool={len(pool)}")
+402         except Exception as ex:
+403             print(f"[upstream FAIL] {fn.__name__}: {ex}")
+404     # 用户点名固定源（格式参考站）：yoursmile66 XC.json(AES-CBC加密) / guot55 宝盒 bh.json
+405     for name, u in (("南风TV(XC加密)", "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json"),
+406                     ("宝盒", "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json")):
+407         pool.append({"name": name, "url": u, "origin": "extra", "pinned": True})
+408     print(f"raw pool: {len(pool)}, live rows: {len(lives)}")
+409 
+410     uniq = dedup(pool)
+411     print(f"after dedup: {len(uniq)}")
+412 
+413     with ThreadPoolExecutor(max_workers=16) as ex:
+414         uniq = list(ex.map(probe, uniq))
+415     alive = [e for e in uniq if e.get("alive")]
+416     print(f"alive: {len(alive)}")
+417 
+418     # 直播源去重
+419     lseen, luniq = set(), []
+420     for l in lives:
+421         k = norm_url(l["url"])
+422         if k and k not in lseen:
+423             lseen.add(k)
+424             luniq.append(l)
+425     luniq.sort(key=lambda x: x["name"])
+426 
+427     # 安卓4 池：同 norm_key 若有 http 镜像优先 http（安卓4 TLS 栈老）
+428     a4_items = []
+429     for e in alive:
+430         ee = dict(e)
+431         if not is_http_prefer(ee["url"]):
+432             pass  # 保留，4.4 大多可 TLS1.2；仅优先排序
+433         a4_items.append(ee)
+434 
+435     # 点播源分池：要验证/广告版 = 盒子UA反爬(浏览器打开是导航页)、base64混淆配置、网盘/图床/token落地页URL
+436     for e in alive + a4_items:
+437         e["ad"] = bool(e.get("box_ua") or e.get("obf") or url_ad_marks(e["url"]))
+438     v5 = [e for e in alive if e["ad"]]
+439     v4 = [e for e in a4_items if e["ad"]]
+440     clean5 = [e for e in alive if not e["ad"]]

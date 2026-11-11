@@ -1,36 +1,36 @@
 {
- "updated": "2026-11-12 00:47:56",
+ "updated": "2026-11-12 01:08:32",
  "pool_raw": 289,
  "pool_dedup": 160,
- "alive": 97,
+ "alive": 100,
  "by_origin_alive": {
-  "lubin776": 38,
-  "tvyuan": 64,
-  "tvyuan-multi": 64,
+  "lubin776": 39,
+  "tvyuan": 66,
+  "tvyuan-multi": 66,
   "lightconer": 8,
   "extra": 2
  },
  "android5": {
   "multi": 65,
-  "single_sites": 1258,
+  "single_sites": 1223,
   "single_parses": 104,
-  "single_lives": 84,
+  "single_lives": 81,
   "sources": [
-   {
-    "name": "宝盒",
-    "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
-    "origin": "extra",
-    "sites": 76,
-    "parses": 3,
-    "lives": 0
-   },
    {
     "name": "南风TV(XC加密)",
     "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
     "origin": "extra",
-    "sites": 88,
-    "parses": 5,
+    "sites": 91,
+    "parses": 7,
     "lives": 1
+   },
+   {
+    "name": "宝盒",
+    "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+    "origin": "extra",
+    "sites": 51,
+    "parses": 1,
+    "lives": 0
    },
    {
     "name": "高天流云js",
@@ -44,47 +44,39 @@
     "name": "ok",
     "url": "https://raw.liucn.cc/box/m.json",
     "origin": "lightconer+tvyuan+tvyuan-multi",
-    "sites": 215,
+    "sites": 216,
     "parses": 16,
-    "lives": 3
-   },
-   {
-    "name": "vv",
-    "url": "https://qist.wyfc.qzz.io/jsm.json",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 116,
-    "parses": 18,
     "lives": 3
    },
    {
     "name": "心魔",
     "url": "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
     "origin": "lubin776",
-    "sites": 122,
-    "parses": 19,
+    "sites": 124,
+    "parses": 22,
     "lives": 1
    },
    {
     "name": "clun",
     "url": "https://clun.top/box.json",
     "origin": "lubin776",
-    "sites": 83,
-    "parses": 8,
+    "sites": 88,
+    "parses": 12,
     "lives": 16
    },
    {
     "name": "幸福年年",
     "url": "http://150.158.52.248/tgyg/bbm.json",
     "origin": "lubin776",
-    "sites": 24,
-    "parses": 1,
+    "sites": 97,
+    "parses": 2,
     "lives": 0
    },
    {
     "name": "https://clun.top/fun.json",
     "url": "https://clun.top/fun.json",
     "origin": "tvyuan+tvyuan-multi",
-    "sites": 83,
+    "sites": 82,
     "parses": 1,
     "lives": 39
    },
@@ -92,7 +84,7 @@
     "name": "2",
     "url": "https://gitee.com/fuleishu/fulei/raw/master/fuleixyx.json",
     "origin": "tvyuan+tvyuan-multi",
-    "sites": 30,
+    "sites": 32,
     "parses": 14,
     "lives": 13
    },
@@ -100,7 +92,7 @@
     "name": "潇洒",
     "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
     "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
+    "sites": 17,
     "parses": 0,
     "lives": 0
    },
@@ -108,8 +100,8 @@
     "name": "小马",
     "url": "https://szyyds.cn/tv/x.json",
     "origin": "lubin776+lightconer",
-    "sites": 29,
-    "parses": 11,
+    "sites": 33,
+    "parses": 21,
     "lives": 5
    },
    {
@@ -121,9 +113,9 @@
     "lives": 1
    }
   ],
-  "ad_multi": 22,
-  "ad_single_sites": 443,
-  "ad_single_parses": 23,
+  "ad_multi": 19,
+  "ad_single_sites": 435,
+  "ad_single_parses": 19,
   "ad_single_lives": 18,
   "ad_sources": [
    {
@@ -135,25 +127,25 @@
     "lives": 9
    },
    {
-    "name": "摸鱼主用二",
-    "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
-    "origin": "tvyuan+tvyuan-multi",
+    "name": "摸鱼5线",
+    "url": "http://www.y456y.com",
+    "origin": "lubin776",
     "sites": 28,
     "parses": 0,
     "lives": 1
    },
    {
-    "name": "摸鱼5线",
-    "url": "http://www.y456y.com",
+    "name": "摸鱼6线",
+    "url": "http://fish.y456y.com",
     "origin": "lubin776",
     "sites": 0,
     "parses": 0,
     "lives": 0
    },
    {
-    "name": "摸鱼6线",
-    "url": "http://fish.y456y.com",
-    "origin": "lubin776",
+    "name": "摸鱼主用二",
+    "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
@@ -175,17 +167,17 @@
     "lives": 0
    },
    {
-    "name": "王二小接口",
-    "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-    "origin": "tvyuan+tvyuan-multi",
+    "name": "王二小3线",
+    "url": "http://tvbox.王二小放牛娃.top",
+    "origin": "lubin776",
     "sites": 0,
     "parses": 0,
     "lives": 0
    },
    {
-    "name": "王二小3线",
-    "url": "http://tvbox.王二小放牛娃.top",
-    "origin": "lubin776",
+    "name": "王二小接口",
+    "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
@@ -199,32 +191,16 @@
     "lives": 0
    },
    {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
-    "origin": "tvyuan+tvyuan-multi",
+    "name": "宝盒接口",
+    "url": "http://宝盒接口.top",
+    "origin": "lubin776+tvyuan+tvyuan-multi",
     "sites": 45,
     "parses": 13,
     "lives": 1
    },
    {
-    "name": "宝盒接口",
-    "url": "http://宝盒接口.top",
-    "origin": "lubin776+tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
-    "name": "饭太硬",
-    "url": "http://fty.888484.xyz/tv",
-    "origin": "lubin776+tvyuan+tvyuan-multi",
-    "sites": 35,
-    "parses": 0,
-    "lives": 2
-   },
-   {
-    "name": "hhh",
-    "url": "https://www.iyouhun.com/tv/fty",
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
     "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
@@ -234,14 +210,22 @@
     "name": "饭太硬",
     "url": "http://fty.333232.xyz/tv",
     "origin": "lubin776+tvyuan+tvyuan-multi",
-    "sites": 0,
+    "sites": 35,
     "parses": 0,
-    "lives": 0
+    "lives": 2
    },
    {
     "name": "饭太硬2线",
     "url": "http://www.饭太硬.cc/tv",
     "origin": "lubin776+lightconer",
+    "sites": 0,
+    "parses": 0,
+    "lives": 0
+   },
+   {
+    "name": "hhh",
+    "url": "https://www.iyouhun.com/tv/fty",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
@@ -255,14 +239,6 @@
     "lives": 3
    },
    {
-    "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-    "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
     "name": "影视仓",
     "url": "http://影视仓.com/",
     "origin": "tvyuan+tvyuan-multi",
@@ -271,67 +247,67 @@
     "lives": 0
    },
    {
-    "name": "菜妮丝",
-    "url": "https://tv.xn--yhqu5zs87a.top",
-    "origin": "lubin776",
-    "sites": 8,
-    "parses": 4,
+    "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
+    "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
+    "origin": "tvyuan+tvyuan-multi",
+    "sites": 0,
+    "parses": 0,
     "lives": 0
    }
   ]
  },
  "android4": {
   "multi": 65,
-  "single_sites": 252,
-  "single_parses": 239,
-  "single_lives": 140,
+  "single_sites": 237,
+  "single_parses": 238,
+  "single_lives": 137,
   "sources": [
-   {
-    "name": "宝盒",
-    "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
-    "origin": "extra",
-    "sites": 6,
-    "parses": 3,
-    "lives": 0
-   },
    {
     "name": "南风TV(XC加密)",
     "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
     "origin": "extra",
     "sites": 0,
-    "parses": 5,
+    "parses": 7,
     "lives": 1
+   },
+   {
+    "name": "宝盒",
+    "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+    "origin": "extra",
+    "sites": 6,
+    "parses": 1,
+    "lives": 0
+   },
+   {
+    "name": "高天流云js",
+    "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+    "origin": "lubin776",
+    "sites": 0,
+    "parses": 8,
+    "lives": 2
    },
    {
     "name": "ok",
     "url": "https://raw.liucn.cc/box/m.json",
     "origin": "lightconer+tvyuan+tvyuan-multi",
     "sites": 14,
-    "parses": 23,
-    "lives": 3
-   },
-   {
-    "name": "vv",
-    "url": "https://qist.wyfc.qzz.io/jsm.json",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 14,
-    "parses": 18,
+    "parses": 16,
     "lives": 3
    },
    {
     "name": "心魔",
     "url": "https://gh-proxy.com/raw.githubusercontent.com/yw88075/tvbox/main/yw.json",
     "origin": "lubin776",
-    "sites": 18,
-    "parses": 19,
+    "sites": 19,
+    "parses": 22,
     "lives": 1
    },
    {
     "name": "clun",
     "url": "https://clun.top/box.json",
     "origin": "lubin776",
-    "sites": 15,
-    "parses": 8,
+    "sites": 20,
+    "parses": 12,
     "lives": 16
    },
    {
@@ -339,7 +315,7 @@
     "url": "http://150.158.52.248/tgyg/bbm.json",
     "origin": "lubin776",
     "sites": 0,
-    "parses": 1,
+    "parses": 2,
     "lives": 0
    },
    {
@@ -359,19 +335,11 @@
     "lives": 13
    },
    {
-    "name": "潇洒",
-    "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
     "name": "小马",
     "url": "https://szyyds.cn/tv/x.json",
     "origin": "lubin776+lightconer",
-    "sites": 4,
-    "parses": 11,
+    "sites": 8,
+    "parses": 21,
     "lives": 5
    },
    {
@@ -391,9 +359,9 @@
     "lives": 0
    },
    {
-    "name": "王二小",
-    "url": "https://9280.kstore.vip/newwex.json",
-    "origin": "lightconer+tvyuan+tvyuan-multi",
+    "name": "牛二",
+    "url": "https://9280.kstore.space/newwex.json",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 4,
     "lives": 1
@@ -407,17 +375,17 @@
     "lives": 0
    },
    {
-    "name": "1",
-    "url": "https://9280.kstore.vip/aiwex.json",
-    "origin": "lubin776+tvyuan+tvyuan-multi",
+    "name": "王二小",
+    "url": "https://9280.kstore.vip/newwex.json",
+    "origin": "lightconer+tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
    },
    {
-    "name": "牛二",
-    "url": "https://9280.kstore.space/newwex.json",
-    "origin": "tvyuan+tvyuan-multi",
+    "name": "1",
+    "url": "https://9280.kstore.vip/aiwex.json",
+    "origin": "lubin776+tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
@@ -527,14 +495,6 @@
     "lives": 4
    },
    {
-    "name": "饭太硬",
-    "url": "https://qist.wyfc.qzz.io/fty.json",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 2
-   },
-   {
     "name": "我的",
     "url": "https://gh-proxy.org/raw.githubusercontent.com/bin1site1/bin1site1.github.io/refs/heads/main/OS.json",
     "origin": "tvyuan+tvyuan-multi",
@@ -551,12 +511,28 @@
     "lives": 1
    },
    {
+    "name": "饭太硬",
+    "url": "https://qist.wyfc.qzz.io/fty.json",
+    "origin": "tvyuan+tvyuan-multi",
+    "sites": 0,
+    "parses": 0,
+    "lives": 2
+   },
+   {
     "name": "我的",
     "url": "https://gh-proxy.org/https://raw.githubusercontent.com/ggrrttyyiii/CatVodSpider/refs/heads/main/json/demo.json",
     "origin": "lubin776+tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 2,
     "lives": 1
+   },
+   {
+    "name": "tvbox放飞",
+    "url": "https://jinenge.us.kg/app/tvbox/tvbox.json",
+    "origin": "tvyuan+tvyuan-multi",
+    "sites": 0,
+    "parses": 0,
+    "lives": 0
    },
    {
     "name": "动漫",
@@ -579,7 +555,7 @@
     "url": "https://tv.203511.xyz/0821.json",
     "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
-    "parses": 1,
+    "parses": 0,
     "lives": 4
    },
    {
@@ -597,6 +573,14 @@
     "sites": 1,
     "parses": 0,
     "lives": 2
+   },
+   {
+    "name": "二月红接口",
+    "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+    "origin": "tvyuan+tvyuan-multi",
+    "sites": 0,
+    "parses": 0,
+    "lives": 0
    },
    {
     "name": "123",
@@ -631,17 +615,17 @@
     "lives": 1
    },
    {
-    "name": "老张",
-    "url": "https://zhangqun1818.serv00.net/zq/api.json",
+    "name": "FongMI线路",
+    "url": "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
     "origin": "lubin776",
-    "sites": 13,
-    "parses": 1,
-    "lives": 2
+    "sites": 2,
+    "parses": 0,
+    "lives": 0
    }
   ],
-  "ad_multi": 22,
-  "ad_single_sites": 3,
-  "ad_single_parses": 23,
+  "ad_multi": 19,
+  "ad_single_sites": 2,
+  "ad_single_parses": 19,
   "ad_single_lives": 18,
   "ad_sources": [
    {
@@ -653,20 +637,12 @@
     "lives": 9
    },
    {
-    "name": "摸鱼主用二",
-    "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 1
-   },
-   {
     "name": "摸鱼5线",
     "url": "http://www.y456y.com",
     "origin": "lubin776",
     "sites": 0,
     "parses": 0,
-    "lives": 0
+    "lives": 1
    },
    {
     "name": "摸鱼6线",
@@ -677,20 +653,20 @@
     "lives": 0
    },
    {
-    "name": "王二小",
-    "url": "http://new.王二小放牛娃.top",
-    "origin": "lightconer",
+    "name": "摸鱼主用二",
+    "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
-    "parses": 4,
-    "lives": 2
+    "parses": 0,
+    "lives": 0
    },
    {
     "name": "新接口",
     "url": "https://www.iyouhun.com/tv/wex",
     "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
-    "parses": 0,
-    "lives": 0
+    "parses": 4,
+    "lives": 2
    },
    {
     "name": "王二小接口",
@@ -701,48 +677,16 @@
     "lives": 0
    },
    {
-    "name": "王二小3线",
-    "url": "http://tvbox.王二小放牛娃.top",
-    "origin": "lubin776",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
-    "name": "王二小放牛娃",
-    "url": "http://tv.999888987.xyz",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
-    "name": "xn--6orr3pi6g9uu",
-    "url": "http://xn--6orr3pi6g9uu.top/",
-    "origin": "tvyuan+tvyuan-multi",
+    "name": "宝盒接口",
+    "url": "http://宝盒接口.top",
+    "origin": "lubin776+tvyuan+tvyuan-multi",
     "sites": 1,
     "parses": 13,
     "lives": 1
    },
    {
-    "name": "宝盒接口",
-    "url": "http://宝盒接口.top",
-    "origin": "lubin776+tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
-    "name": "饭太硬",
-    "url": "http://fty.888484.xyz/tv",
-    "origin": "lubin776+tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 2
-   },
-   {
-    "name": "hhh",
-    "url": "https://www.iyouhun.com/tv/fty",
+    "name": "xn--6orr3pi6g9uu",
+    "url": "http://xn--6orr3pi6g9uu.top/",
     "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
@@ -754,12 +698,20 @@
     "origin": "lubin776+tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
-    "lives": 0
+    "lives": 2
    },
    {
     "name": "饭太硬2线",
     "url": "http://www.饭太硬.cc/tv",
     "origin": "lubin776+lightconer",
+    "sites": 0,
+    "parses": 0,
+    "lives": 0
+   },
+   {
+    "name": "hhh",
+    "url": "https://www.iyouhun.com/tv/fty",
+    "origin": "tvyuan+tvyuan-multi",
     "sites": 0,
     "parses": 0,
     "lives": 0
@@ -773,14 +725,6 @@
     "lives": 3
    },
    {
-    "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-    "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-    "origin": "tvyuan+tvyuan-multi",
-    "sites": 0,
-    "parses": 0,
-    "lives": 0
-   },
-   {
     "name": "影视仓",
     "url": "http://影视仓.com/",
     "origin": "tvyuan+tvyuan-multi",
@@ -789,11 +733,11 @@
     "lives": 0
    },
    {
-    "name": "菜妮丝",
-    "url": "https://tv.xn--yhqu5zs87a.top",
-    "origin": "lubin776",
-    "sites": 1,
-    "parses": 4,
+    "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
+    "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
+    "origin": "tvyuan+tvyuan-multi",
+    "sites": 0,
+    "parses": 0,
     "lives": 0
    }
   ]
@@ -931,11 +875,6 @@
    "origin": "lubin776"
   },
   {
-   "name": "FongMI线路",
-   "url": "https://gh-proxy.com/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
-   "origin": "lubin776"
-  },
-  {
    "name": "巧计线路",
    "url": "http://pandown.pro/tvbox/tvbox.json",
    "origin": "lubin776"
@@ -998,16 +937,6 @@
   {
    "name": "王二小放牛娃",
    "url": "https://www.xn--4kq62z5rby2qupq9ub.top/",
-   "origin": "tvyuan+tvyuan-multi"
-  },
-  {
-   "name": "TvBox 单仓",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/tvbox.json",
-   "origin": "tvyuan+tvyuan-multi"
-  },
-  {
-   "name": "我",
-   "url": "https://dxawi.github.io/0/0.json",
    "origin": "tvyuan+tvyuan-multi"
   },
   {

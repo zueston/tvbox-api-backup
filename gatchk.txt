@@ -1,0 +1,8 @@
+android5/single: sites=1223 spider=https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2 hits=22
+android4/single: sites=237 spider=None hits=0
+android5/singlead: sites=435 spider=https://yc.wya6.cn/pz/wyjk.php;md5;94e89335169603a013281a0e1ba77433 hits=0
+android4/singlead: sites=2 spider=None hits=0
+android5/multi: n=65 home=四源聚合·主仓库(推荐) p0=https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android gate_in_profiles=0
+android4/multi: n=65 home=四源聚合·主仓库(推荐) p0=https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android gate_in_profiles=0
+android5/multiad: n=19 home=四源聚合·主仓库(需验证) p0=https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android gate_in_profiles=0
+android4/multiad: n=19 home=四源聚合·主仓库(需验证) p0=https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android gate_in_profiles=0

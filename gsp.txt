@@ -1,0 +1,2 @@
+global spider=https://bitbucket.org/guot55/ygbh/raw/main/pro/jar/vox.jar
+jar=None

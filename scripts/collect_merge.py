@@ -239,6 +239,8 @@ def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_p
     seen_name = {main_name}
     for r in items:
         nm = r["name"]
+        if gate_repo(r["url"]):
+            continue
         if nm in seen_name:
             continue
         seen_name.add(nm)
@@ -267,6 +269,15 @@ def abs_url(base, ref):
     if ref.startswith(("js:", "csp:", "Shell:", "py:", "file:", "assets://")) or not ref.startswith(("./", "../")):
         return ref
     return urllib.parse.urljoin(base, urllib.parse.quote(ref, safe="/:@&=?$-_.+!*'%,~#[];"))
+
+# 验证门/引流 jar 黑名单：guot55 宝盒系(vox/xbpq jar 弹"接口验证/淘应用小程序")、
+# vip.bhh.indevs.in(pmdvox 同源门)、iyouhun 收费门。命中=整站剔除，全局 spider/jar 不采纳。
+GATE_JAR_PATS = re.compile(r"guot55|bhh\.indevs\.in|iyouhun", re.I)
+# 验证门/收费引流仓库主机：不进多仓列表（影视仓自动激活第一条，撞上就是扫码门）
+GATE_HOST_PATS = re.compile(r"124\.223\.214\.31|iyouhun|bhh\.indevs\.in|guot55", re.I)
+
+def gate_repo(url):
+    return bool(GATE_HOST_PATS.search(str(url)))
 
 def a4_site_ok(s):
     api = str(s.get("api", ""))
@@ -327,6 +338,8 @@ def merge_single(alive_items, a4: bool, top: int = None):
                 continue
             if not s.get("api"):          # 无 api 的分隔伪行，盒子解析易炸
                 continue
+            if GATE_JAR_PATS.search(str(s.get("jar", "")) + str(s.get("spider", "")) + str(s.get("api", ""))):
+                continue                  # 验证门 jar 站点整站剔除
             if a4 and not a4_site_ok(s):
                 continue
             s = dict(s)
@@ -380,10 +393,10 @@ def merge_single(alive_items, a4: bool, top: int = None):
                 merged["flags"].append(f)
         if not a4:
             jar = cfg.get("jar")
-            if isinstance(jar, str) and jar and not merged.get("jar"):
+            if isinstance(jar, str) and jar and not merged.get("jar") and not GATE_JAR_PATS.search(jar):
                 merged["jar"] = abs_url(e["url"], jar)
             sp = cfg.get("spider")
-            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider"):
+            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider") and not GATE_JAR_PATS.search(sp):
                 merged["spider"] = abs_url(e["url"], sp)
         src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l})
         print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")

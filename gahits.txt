@@ -1,0 +1,22 @@
+site[94] name=😊PG┃豆瓣 pats=['guot55'] {"key": "csp_PgDouban", "name": "😊PG┃豆瓣", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.or
+site[95] name=😏PG┃夸克 pats=['guot55'] {"key": "csp_Pg夸克", "name": "😏PG┃夸克", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[96] name=😉PG┃优熙 pats=['guot55'] {"key": "csp_Pg优熙", "name": "😉PG┃优熙", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[97] name=😌PG┃百度 pats=['guot55'] {"key": "csp_Pg百度", "name": "😌PG┃百度", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[98] name=🙃PG┃123 pats=['guot55'] {"key": "csp_Pg123", "name": "🙃PG┃123", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/
+site[99] name=🙂PG┃天翼 pats=['guot55'] {"key": "csp_Pg天翼", "name": "🙂PG┃天翼", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[100] name=🤕PG┃阿里 pats=['guot55'] {"key": "csp_Pg阿里", "name": "🤕PG┃阿里", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[101] name=😕PG┃移动 pats=['guot55'] {"key": "csp_Pg移动", "name": "😕PG┃移动", "type": 3, "api": "csp_PgDouban", "searchable": 1, "changeable": 1, "ext": {"filters": "https://bitbucket.org/gu
+site[108] name=🥰豆瓣┃VOX pats=['guot55'] {"key": "csp_Douban", "name": "🥰豆瓣┃VOX", "type": 3, "api": "csp_Douban", "searchable": 0, "changeable": 1, "ext": "https://bitbucket.org/guot55/ygbh/r
+site[109] name=🐹盘Ta┃YD pats=['guot55'] {"key": "csp_Panta91", "name": "🐹盘Ta┃YD", "type": 3, "api": "csp_Panta91", "searchable": 1, "quickSearch": 1, "changeable": 1, "style": {"type": "list
+site[110] name=😂观影┃4K pats=['guot55'] {"key": "csp_GuanYing", "name": "😂观影┃4K", "type": 3, "api": "csp_GuanYing", "searchable": 1, "changeable": 1, "ext": {"cookie": "", "filters": "https:
+site[111] name=😗彼心┃网盘 pats=['guot55'] {"key": "csp_BixBiy", "name": "😗彼心┃网盘", "type": 3, "api": "csp_BixBiy", "searchable": 1, "quickSearch": 1, "changeable": 1, "style": {"type": "list"},
+site[113] name=🤑4K┃指南 pats=['guot55'] {"key": "csp_Xxzn", "name": "🤑4K┃指南", "type": 3, "api": "csp_Xxzn", "filterable": 1, "searchable": 1, "changeable": 1, "ext": {"filters": "https://bit
+site[114] name=🐳雷鲸┃网盘 pats=['guot55'] {"key": "csp_Leijing", "name": "🐳雷鲸┃网盘", "type": 3, "api": "csp_Leijing", "searchable": 1, "quickSearch": 1, "changeable": 1, "style": {"type": "list"
+site[118] name=🤔短剧┃AI pats=['guot55'] {"key": "短剧AI", "name": "🤔短剧┃AI", "type": 3, "api": "csp_DuanJuCen", "searchable": 1, "quickSearch": 1, "changeable": 1, "ext": {"classes": "https://b
+site[133] name=🅱️哔哩┃合集 pats=['guot55'] {"key": "csp_Bili", "name": "🅱️哔哩┃合集", "type": 3, "api": "csp_Bili", "playerType": 2, "ext": {"json": "https://bitbucket.org/guot55/ygbh/raw/main/pro/
+site[134] name=🅱️哔哩┃音乐 pats=['guot55'] {"key": "csp_Biliyy", "name": "🅱️哔哩┃音乐", "type": 3, "api": "csp_Bili", "playerType": 2, "ext": {"json": "https://bitbucket.org/guot55/ygbh/raw/main/pr
+site[135] name=🅱️MV┃音乐 pats=['guot55'] {"key": "csp_mtv", "name": "🅱️MV┃音乐", "type": 3, "api": "csp_Bili", "playerType": 2, "ext": {"json": "https://bitbucket.org/guot55/ygbh/raw/main/pro/j
+site[136] name=🅱️儿童┃最爱 pats=['guot55'] {"key": "csp_bilirt", "name": "🅱️儿童┃最爱", "type": 3, "api": "csp_Bili", "playerType": 2, "ext": {"json": "https://bitbucket.org/guot55/ygbh/raw/main/pr
+site[137] name=🅱️最爱┃美食 pats=['guot55'] {"key": "csp_bilims", "name": "🅱️最爱┃美食", "type": 3, "api": "csp_Bili", "playerType": 2, "ext": {"json": "https://bitbucket.org/guot55/ygbh/raw/main/pr
+site[140] name=😇网盘┃Alist pats=['guot55'] {"key": "AList", "name": "😇网盘┃Alist", "type": 3, "api": "csp_AList", "searchable": 1, "filterable": 1, "changeable": 1, "timeout": 60, "playerType": 2
+site[141] name=🙃Web┃DAV pats=['guot55'] {"key": "WebDAV", "name": "🙃Web┃DAV", "type": 3, "api": "csp_WebDAV", "searchable": 1, "filterable": 1, "changeable": 1, "timeout": 60, "playerType": 

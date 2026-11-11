@@ -1,0 +1,3 @@
+sites[0] {"key": "csp_Douban", "name": "🌈公众号【宝盒资源】", "type": 3, "api": "csp_Douban", "jar": "http://vip.bhh.indevs.in/pmdvox.jar", "searchable": 0, "changeable": 1, "timeout": 60, "ext": "https://3043.kstore.s
+
+parses[16] {"name": "公众号：肥猫宝贝", "type": 1, "url": "http://json.84jia.com/home/api?type=ys&uid=335253&key=demprsyzBMQRVY0234&url=", "ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "tucheng", "soh
