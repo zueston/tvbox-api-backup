@@ -1,0 +1,20 @@
+android5/multi: keys=['storeHouse', 'profiles', 'urls', 'sp', 'logo', 'warning', 'home']
+  profiles0={"url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json", "name": "四源聚合·主仓库(推荐)"}
+  storeHouse0={"sourceName": "四源聚合·主仓库(推荐)", "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/single.json"}
+  urls0name=四源聚合·主仓库(推荐) home.name=四源聚合·主仓库(推荐) match=True
+  n sh/p/u=65/65/65
+android4/multi: keys=['storeHouse', 'profiles', 'urls', 'sp', 'logo', 'warning', 'home']
+  profiles0={"url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json", "name": "四源聚合·主仓库(推荐)"}
+  storeHouse0={"sourceName": "四源聚合·主仓库(推荐)", "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/single.json"}
+  urls0name=四源聚合·主仓库(推荐) home.name=四源聚合·主仓库(推荐) match=True
+  n sh/p/u=65/65/65
+android5/multiad: keys=['storeHouse', 'profiles', 'urls', 'sp', 'logo', 'warning', 'home']
+  profiles0={"url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/singlead.json", "name": "四源聚合·主仓库(需验证)"}
+  storeHouse0={"sourceName": "四源聚合·主仓库(需验证)", "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android5/singlead.json"}
+  urls0name=四源聚合·主仓库(需验证) home.name=四源聚合·主仓库(需验证) match=True
+  n sh/p/u=22/22/22
+android4/multiad: keys=['storeHouse', 'profiles', 'urls', 'sp', 'logo', 'warning', 'home']
+  profiles0={"url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/singlead.json", "name": "四源聚合·主仓库(推荐)"}
+  storeHouse0={"sourceName": "四源聚合·主仓库(推荐)", "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@main/output/android4/singlead.json"}
+  urls0name=四源聚合·主仓库(推荐) home.name=四源聚合·主仓库(推荐) match=True
+  n sh/p/u=22/22/22

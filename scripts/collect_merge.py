@@ -229,25 +229,36 @@ def probe(e):
     return e
 
 # ---------- 多仓配置 ----------
-def build_multi(alive_items):
+REPO = "zueston/tvbox-api-backup"
+def main_house(path):
+    return f"https://fastly.jsdelivr.net/gh/{REPO}@main/output/{path}"
+
+def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_path="android5/single.json"):
     items = sorted(alive_items, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))
-    profiles = []
-    seen_name = set()
+    profiles = [{"url": main_house(main_path), "name": main_name, "desc": "self"}]
+    seen_name = {main_name}
     for r in items:
         nm = r["name"]
         if nm in seen_name:
             continue
         seen_name.add(nm)
         profiles.append({"url": r["url"], "name": nm, "desc": r["origin"]})
-    # 纯 storeHouse 标准多仓格式：影视仓/FongMi 对带 home(无url)/profiles/urls 混排会
-    # 解析异常或自动激活第一条导致"出错"，只保留 storeHouse 时弹仓库选择器，行为正确
-    return {
+    # FongMi/影视仓语义实证：Config.home 是要激活的配置名（TEXT）。
+    # home.name 指向 profiles[0]=自家聚合单仓 → 添加多仓后点播页直接有内容，
+    # 上游 66 仓全部保留在 storeHouse 供手动切换。
+    cfg = {
         "storeHouse": [{"sourceName": p["name"], "sourceUrl": p["url"]} for p in profiles],
+        "profiles": [{"url": p["url"], "name": p["name"]} for p in profiles],
+        "urls": [{"url": p["url"], "name": p["name"]} for p in profiles],
+        "sp": "", "logo": "", "warning": "",
     }
+    cfg["home"] = {"name": profiles[0]["name"], "type": 0, "click": 0}
+    return cfg
 
-def build_multi_a4(alive_items):
-    # 纯 storeHouse，与 a5 同构（a4 版仓库名区分靠 storeHouse 条目本身可省略）
-    return build_multi(alive_items)
+def build_multi_a4(alive_items, ad=False):
+    return build_multi(alive_items,
+                       "四源聚合·主仓库(需验证)" if ad else "四源聚合·主仓库(推荐)",
+                       f"android4/{'singlead' if ad else 'single'}.json")
 
 # ---------- 单仓合并 ----------
 def abs_url(base, ref):
@@ -436,8 +447,8 @@ def main():
     (OUT / "android4" / "multi.json").write_text(json.dumps(m4, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"multi: storeHouse={len(m5['storeHouse'])}")
 
-    ma5 = build_multi(v5)
-    ma4 = build_multi_a4(v4)
+    ma5 = build_multi(v5, "四源聚合·主仓库(需验证)", "android5/singlead.json")
+    ma4 = build_multi_a4(v4, ad=True)
     (OUT / "android5" / "multiad.json").write_text(json.dumps(ma5, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "android4" / "multiad.json").write_text(json.dumps(ma4, ensure_ascii=False, indent=1), encoding="utf-8")
 
