@@ -2,7 +2,7 @@
  "sites": [
   {
    "key": "taiee96",
-   "name": "æéâé¶ä¸",
+   "name": "极速┃零一",
    "type": 1,
    "api": "https://ww96.taiee.xyz/api.php/provide/vod/",
    "searchable": 1,
@@ -11,25 +11,25 @@
   },
   {
    "key": "feifan",
-   "name": "ðâéå¡âèµæº",
+   "name": "🍀┃非凡┃资源",
    "type": 1,
    "api": "http://ffzy5.tv/api.php/provide/vod",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
    "categories": [
-    "é©å½å§",
-    "æ¬§ç¾å§",
-    "å°æ¹¾å§",
-    "æäºç",
-    "å½äº§å§",
-    "å¤§éç»¼èº"
+    "韩国剧",
+    "欧美剧",
+    "台湾剧",
+    "战争片",
+    "国产剧",
+    "大陆综艺"
    ],
    "hide": 1
   },
   {
-   "key": "éå¡",
-   "name": "éå¡âå½±è§",
+   "key": "非凡",
+   "name": "非凡┃影视",
    "type": 1,
    "api": "http://cj.ffzyapi.com/api.php/provide/vod",
    "searchable": 1,
@@ -50,20 +50,20 @@
    "playerType": 2
   },
   {
-   "name": "ç»¼åç´æ­",
+   "name": "综合直播",
    "type": 0,
    "playerType": 2,
    "url": "http://193.123.86.190:14888/TV/iptv.php",
    "ua": "bingcha/1.1 (mianfeifenxiang) "
   },
   {
-   "name": "èææï¼éå¼å¯V6ç½ç»ï¼",
+   "name": "范明明（需开启V6网络）",
    "type": 0,
    "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
    "playerType": 2
   },
   {
-   "name": "èçä¸èµ·ç",
+   "name": "虎牙一起看",
    "type": 0,
    "url": "https://file.icve.com.cn/file_doc/946/41/ECB0A5FBED1D8C4D4E049E95DB9F756F.m3u",
    "playerType": 2,
@@ -71,7 +71,7 @@
    "ua": "okHttp/Mod-1.5.0.0"
   },
   {
-   "name": "æé±¼ä¸èµ·ç",
+   "name": "斗鱼一起看",
    "type": 0,
    "url": "https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B3252352FBE5CD00F1.m3u",
    "playerType": 2,
@@ -79,7 +79,7 @@
    "ua": "okHttp/Mod-1.5.0.0"
   },
   {
-   "name": "Bç«ç´æ­",
+   "name": "B站直播",
    "type": 0,
    "url": "https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u",
    "playerType": 2,
@@ -87,7 +87,7 @@
    "ua": "okHttp/Mod-1.5.0.0"
   },
   {
-   "name": "YYè½®æ­",
+   "name": "YY轮播",
    "type": 0,
    "url": "https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u",
    "playerType": 2,
@@ -107,43 +107,7 @@
    "timeZone": "Asia/Shanghai"
   },
   {
-   "name": "虎牙一起看",
-   "type": 0,
-   "url": "https://sub.ottiptv.cc/huyayqk.m3u",
-   "playerType": 2,
-   "timeout": 10,
-   "ua": "okHttp/Mod-1.5.0.0"
-  },
-  {
-   "name": "斗鱼一起看",
-   "type": 0,
-   "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
-   "playerType": 2,
-   "timeout": 10,
-   "ua": "okHttp/Mod-1.5.0.0"
-  },
-  {
-   "name": "YY轮播",
-   "type": 0,
-   "url": "https://sub.ottiptv.cc/yylunbo.m3u",
-   "playerType": 2,
-   "timeout": 10,
-   "ua": "okHttp/Mod-1.5.0.0"
-  },
-  {
-   "name": "ç»¼å",
-   "type": 0,
-   "url": "http://193.123.86.190:14888/TV/iptv.php",
-   "ua": "bingcha/1.1 (mianfeifenxiang)",
-   "playerType": 2
-  },
-  {
-   "name": "çæ­ä¸",
-   "url": "http://127.0.0.1:9978/proxy?do=cctva",
-   "timeZone": "Asia/Shanghai"
-  },
-  {
-   "name": "å¹³å°ç´æ­",
+   "name": "平台直播",
    "type": 0,
    "url": "http://118.89.172.248:8025/jar/zb.php",
    "playerType": 1
@@ -154,7 +118,7 @@
    "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
   },
   {
-   "name": "æ¸¯æ¾³å°",
+   "name": "港澳台",
    "type": 0,
    "url": "http://rihou.cc:567/gggg.nzk",
    "playerType": 1
@@ -162,37 +126,37 @@
  ],
  "parses": [
   {
-   "name": "ç",
+   "name": "王",
    "type": 1,
    "url": "http://122.228.84.103:7777/api/?key=4Dk5tdayvY6NZufEMG&url="
   },
   {
-   "name": "äº",
+   "name": "二",
    "type": 1,
    "url": "http://110.42.7.182:880/api/?key=7e84f07dc78fbb3406d64a1ab7d966b3&url="
   },
   {
-   "name": "å°",
+   "name": "小",
    "type": 1,
    "url": "http://43.136.176.188:91/api/?key=4ef232e96172b0bda78d393c695fe7c4&url="
   },
   {
-   "name": "å¸",
+   "name": "帅",
    "type": 1,
    "url": "http://pan.qiaoji8.com/tvbox/neibu.php?url="
   },
   {
-   "name": "Webèå",
+   "name": "Web聚合",
    "type": 3,
    "url": "Web"
   },
   {
-   "name": "Jsonèå",
+   "name": "Json聚合",
    "type": 3,
    "url": "Demo"
   },
   {
-   "name": "-å¸é±¼-",
+   "name": "-咸鱼-",
    "type": 0,
    "url": "https://jx.xymp4.cc/?url=",
    "ext": {
@@ -202,7 +166,7 @@
    }
   },
   {
-   "name": "-è¾ç±³-",
+   "name": "-虾米-",
    "type": 0,
    "url": "https://jx.xmflv.com/?url=",
    "ext": {
@@ -212,7 +176,7 @@
    }
   },
   {
-   "name": "-æ·ç-",
+   "name": "-淘片-",
    "type": 0,
    "url": "https://jx.yparse.com/index.php?url=",
    "ext": {
@@ -222,7 +186,7 @@
    }
   },
   {
-   "name": "-å°è±-",
+   "name": "-冰豆-",
    "type": 0,
    "url": "https://bd.jx.cn/?url=",
    "ext": {
@@ -232,7 +196,7 @@
    }
   },
   {
-   "name": "-77è§£æ-",
+   "name": "-77解析-",
    "type": 0,
    "url": "https://jx.77flv.cc/?url=",
    "ext": {
@@ -242,7 +206,7 @@
    }
   },
   {
-   "name": "-çå¤-",
+   "name": "-盘古-",
    "type": 0,
    "url": "https://www.playm3u8.cn/jiexi.php?url=",
    "ext": {
@@ -252,17 +216,17 @@
    }
   },
   {
-   "name": "ð¦èåâJsonè§£æ",
+   "name": "📦聚合┃Json解析",
    "type": 3,
    "url": "Demo"
   },
   {
-   "name": "ð¬èåâå½±è§è§£æ",
+   "name": "🎬聚合┃影视解析",
    "type": 3,
-   "url": "å½±è§"
+   "url": "影视"
   },
   {
-   "name": "ð®è§£æâççä¸çº¿",
+   "name": "🐮解析┃牛牛专线",
    "type": 1,
    "url": "",
    "ext": {
@@ -282,12 +246,12 @@
    }
   },
   {
-   "name": "ðè§£æâå¤å¹ä¸çº¿",
+   "name": "🌃解析┃夜幕专线",
    "type": 0,
    "url": ""
   },
   {
-   "name": "-å¤å¹-",
+   "name": "-夜幕-",
    "type": 0,
    "url": "https://yemu.xyz/?url=",
    "ext": {
@@ -307,7 +271,7 @@
    }
   },
   {
-   "name": "è§£æèå",
+   "name": "解析聚合",
    "type": 3,
    "url": "Web"
   },
@@ -317,12 +281,12 @@
    "url": "https://jx.hls.one/?url="
   },
   {
-   "name": "è¾ç±³",
+   "name": "虾米",
    "type": 0,
    "url": "https://jx.xmflv.com/?url="
   },
   {
-   "name": "è¾ç±³2",
+   "name": "虾米2",
    "type": 0,
    "url": "https://jx.xmflv.cc/?url="
   }
@@ -351,7 +315,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -365,7 +329,7 @@
    ]
   },
   {
-   "name": "ç«å±±åæ¢",
+   "name": "火山嗅探",
    "hosts": [
     "huoshan.com"
    ],
@@ -374,7 +338,7 @@
    ]
   },
   {
-   "name": "æé³åæ¢",
+   "name": "抖音嗅探",
    "hosts": [
     "douyin.com"
    ],
@@ -383,7 +347,7 @@
    ]
   },
   {
-   "name": "è¾²æ°åæ¢",
+   "name": "農民嗅探",
    "hosts": [
     "toutiaovod.com"
    ],
@@ -392,7 +356,7 @@
    ]
   },
   {
-   "name": "æ°è§è§åæ¢",
+   "name": "新视觉嗅探",
    "hosts": [
     "muzhi-video.bj.bcebos.com"
    ],
@@ -401,7 +365,7 @@
    ]
   },
   {
-   "name": "ä¸æ°åæ¢",
+   "name": "七新嗅探",
    "hosts": [
     "api.52wyb.com"
    ],
@@ -410,7 +374,7 @@
    ]
   },
   {
-   "name": "å¤å¸é»æ",
+   "name": "夜市點擊",
    "hosts": [
     "yeslivetv.com"
    ],
@@ -419,7 +383,7 @@
    ]
   },
   {
-   "name": "æ¯é©¢é»æ",
+   "name": "毛驢點擊",
    "hosts": [
     "www.maolvys.com"
    ],
@@ -450,7 +414,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -464,7 +428,7 @@
    ]
   },
   {
-   "name": "ç«å±±åæ¢",
+   "name": "火山嗅探",
    "hosts": [
     "huoshan.com"
    ],
@@ -473,7 +437,7 @@
    ]
   },
   {
-   "name": "æé³åæ¢",
+   "name": "抖音嗅探",
    "hosts": [
     "douyin.com"
    ],
@@ -482,7 +446,7 @@
    ]
   },
   {
-   "name": "è¾²æ°åæ¢",
+   "name": "農民嗅探",
    "hosts": [
     "toutiaovod.com"
    ],
@@ -491,7 +455,7 @@
    ]
   },
   {
-   "name": "æ°è§è§åæ¢",
+   "name": "新视觉嗅探",
    "hosts": [
     "muzhi-video.bj.bcebos.com"
    ],
@@ -500,7 +464,7 @@
    ]
   },
   {
-   "name": "ä¸æ°åæ¢",
+   "name": "七新嗅探",
    "hosts": [
     "api.52wyb.com"
    ],
@@ -509,7 +473,7 @@
    ]
   },
   {
-   "name": "å¤å¸é»æ",
+   "name": "夜市點擊",
    "hosts": [
     "yeslivetv.com"
    ],
@@ -518,7 +482,7 @@
    ]
   },
   {
-   "name": "æ¯é©¢é»æ",
+   "name": "毛驢點擊",
    "hosts": [
     "www.maolvys.com"
    ],
@@ -549,7 +513,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -563,7 +527,7 @@
    ]
   },
   {
-   "name": "ç«å±±åæ¢",
+   "name": "火山嗅探",
    "hosts": [
     "huoshan.com"
    ],
@@ -572,7 +536,7 @@
    ]
   },
   {
-   "name": "æé³åæ¢",
+   "name": "抖音嗅探",
    "hosts": [
     "douyin.com"
    ],
@@ -581,7 +545,7 @@
    ]
   },
   {
-   "name": "è¾²æ°åæ¢",
+   "name": "農民嗅探",
    "hosts": [
     "toutiaovod.com"
    ],
@@ -590,7 +554,7 @@
    ]
   },
   {
-   "name": "æ°è§è§åæ¢",
+   "name": "新视觉嗅探",
    "hosts": [
     "muzhi-video.bj.bcebos.com"
    ],
@@ -599,7 +563,7 @@
    ]
   },
   {
-   "name": "ä¸æ°åæ¢",
+   "name": "七新嗅探",
    "hosts": [
     "api.52wyb.com"
    ],
@@ -608,7 +572,7 @@
    ]
   },
   {
-   "name": "å¤å¸é»æ",
+   "name": "夜市點擊",
    "hosts": [
     "yeslivetv.com"
    ],
@@ -617,7 +581,7 @@
    ]
   },
   {
-   "name": "æ¯é©¢é»æ",
+   "name": "毛驢點擊",
    "hosts": [
     "www.maolvys.com"
    ],
@@ -648,7 +612,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -662,7 +626,7 @@
    ]
   },
   {
-   "name": "ç«å±±åæ¢",
+   "name": "火山嗅探",
    "hosts": [
     "huoshan.com"
    ],
@@ -671,7 +635,7 @@
    ]
   },
   {
-   "name": "æé³åæ¢",
+   "name": "抖音嗅探",
    "hosts": [
     "douyin.com"
    ],
@@ -680,7 +644,7 @@
    ]
   },
   {
-   "name": "è¾²æ°åæ¢",
+   "name": "農民嗅探",
    "hosts": [
     "toutiaovod.com"
    ],
@@ -689,7 +653,7 @@
    ]
   },
   {
-   "name": "æ°è§è§åæ¢",
+   "name": "新视觉嗅探",
    "hosts": [
     "muzhi-video.bj.bcebos.com"
    ],
@@ -698,7 +662,7 @@
    ]
   },
   {
-   "name": "ä¸æ°åæ¢",
+   "name": "七新嗅探",
    "hosts": [
     "api.52wyb.com"
    ],
@@ -707,7 +671,7 @@
    ]
   },
   {
-   "name": "å¤å¸é»æ",
+   "name": "夜市點擊",
    "hosts": [
     "yeslivetv.com"
    ],
@@ -716,7 +680,7 @@
    ]
   },
   {
-   "name": "æ¯é©¢é»æ",
+   "name": "毛驢點擊",
    "hosts": [
     "www.maolvys.com"
    ],
@@ -747,7 +711,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -761,7 +725,7 @@
    ]
   },
   {
-   "name": "ç«å±±åæ¢",
+   "name": "火山嗅探",
    "hosts": [
     "huoshan.com"
    ],
@@ -770,7 +734,7 @@
    ]
   },
   {
-   "name": "æé³åæ¢",
+   "name": "抖音嗅探",
    "hosts": [
     "douyin.com"
    ],
@@ -779,7 +743,7 @@
    ]
   },
   {
-   "name": "è¾²æ°åæ¢",
+   "name": "農民嗅探",
    "hosts": [
     "toutiaovod.com"
    ],
@@ -788,7 +752,7 @@
    ]
   },
   {
-   "name": "æ°è§è§åæ¢",
+   "name": "新视觉嗅探",
    "hosts": [
     "muzhi-video.bj.bcebos.com"
    ],
@@ -797,7 +761,7 @@
    ]
   },
   {
-   "name": "ä¸æ°åæ¢",
+   "name": "七新嗅探",
    "hosts": [
     "api.52wyb.com"
    ],
@@ -806,7 +770,7 @@
    ]
   },
   {
-   "name": "å¤å¸é»æ",
+   "name": "夜市點擊",
    "hosts": [
     "yeslivetv.com"
    ],
@@ -815,7 +779,7 @@
    ]
   },
   {
-   "name": "æ¯é©¢é»æ",
+   "name": "毛驢點擊",
    "hosts": [
     "www.maolvys.com"
    ],
@@ -863,7 +827,7 @@
    ]
   },
   {
-   "name": "æ´é£",
+   "name": "暴风",
    "hosts": [
     "bfzy",
     "bfbfvip",
@@ -874,7 +838,7 @@
    ]
   },
   {
-   "name": "éå­",
+   "name": "量子",
    "hosts": [
     "vip.lz",
     "hd.lz",
@@ -891,7 +855,7 @@
    ]
   },
   {
-   "name": "éå¡",
+   "name": "非凡",
    "hosts": [
     "vip.ffzy",
     "hd.ffzy",
@@ -909,7 +873,7 @@
    ]
   },
   {
-   "name": "ç´¢å°¼",
+   "name": "索尼",
    "hosts": [
     "suonizy"
    ],
@@ -920,7 +884,7 @@
    ]
   },
   {
-   "name": "å¿«ç",
+   "name": "快看",
    "hosts": [
     "kuaikan"
    ],
@@ -940,7 +904,7 @@
    ]
   },
   {
-   "name": "çå½±ç½",
+   "name": "看影网",
    "hosts": [
     "fentvoss"
    ],
@@ -981,7 +945,7 @@
    ]
   },
   {
-   "name": "é»æ¨è³hmr",
+   "name": "黑木耳hmr",
    "hosts": [
     "hmrvideo"
    ],
@@ -1010,7 +974,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -1023,26 +987,26 @@
    ]
   },
   {
-   "name": "ç£åå¹¿å",
+   "name": "磁力广告",
    "hosts": [
     "magnet"
    ],
    "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
+    "更多",
+    "社 區",
     "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
+    "最 新",
+    "更 新",
+    "社 区",
+    "有趣",
+    "有 趣",
+    "英皇体育",
+    "全中文AV在线",
+    "澳门皇冠赌场",
+    "哥哥快来",
+    "美女荷官",
+    "裸聊",
+    "新片首发",
     "UUE29"
    ]
   },
@@ -1086,7 +1050,7 @@
    ]
   },
   {
-   "name": "æ´é£",
+   "name": "暴风",
    "hosts": [
     "bfzy",
     "bfbfvip",
@@ -1097,7 +1061,7 @@
    ]
   },
   {
-   "name": "éå­",
+   "name": "量子",
    "hosts": [
     "vip.lz",
     "hd.lz",
@@ -1114,7 +1078,7 @@
    ]
   },
   {
-   "name": "éå¡",
+   "name": "非凡",
    "hosts": [
     "vip.ffzy",
     "hd.ffzy",
@@ -1132,7 +1096,7 @@
    ]
   },
   {
-   "name": "ç´¢å°¼",
+   "name": "索尼",
    "hosts": [
     "suonizy"
    ],
@@ -1143,7 +1107,7 @@
    ]
   },
   {
-   "name": "å¿«ç",
+   "name": "快看",
    "hosts": [
     "kuaikan"
    ],
@@ -1163,7 +1127,7 @@
    ]
   },
   {
-   "name": "çå½±ç½",
+   "name": "看影网",
    "hosts": [
     "fentvoss"
    ],
@@ -1204,7 +1168,7 @@
    ]
   },
   {
-   "name": "é»æ¨è³hmr",
+   "name": "黑木耳hmr",
    "hosts": [
     "hmrvideo"
    ],
@@ -1233,7 +1197,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -1246,53 +1210,27 @@
    ]
   },
   {
-   "name": "ç£åå¹¿å",
+   "name": "磁力广告",
    "hosts": [
     "magnet"
    ],
    "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
+    "更多",
+    "社 區",
     "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
+    "最 新",
+    "更 新",
+    "社 区",
+    "有趣",
+    "有 趣",
+    "英皇体育",
+    "全中文AV在线",
+    "澳门皇冠赌场",
+    "哥哥快来",
+    "美女荷官",
+    "裸聊",
+    "新片首发",
     "UUE29"
-   ]
-  },
-  {
-   "name": "cdn.ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "5.480000",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
-   ]
-  },
-  {
-   "name": "cdn.ryplay",
-   "hosts": [
-    "cdn.ryplay"
-   ],
-   "regex": [
-    "5.480000",
-    "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:5.320000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:3.360000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXT-X-DISCONTINUITY\\s*\\r?\\n#EXTINF:4.000000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n(?:#EXTINF:[\\d.]+,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n)*?#EXTINF:0.560000,\\s*\\r?\\n.+\\.ts\\s*\\r?\\n#EXT-X-DISCONTINUITY",
-    "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
    ]
   },
   {
@@ -1387,7 +1325,7 @@
    ]
   },
   {
-   "name": "æ´é£",
+   "name": "暴风",
    "hosts": [
     "bfzy",
     "bfbfvip",
@@ -1398,7 +1336,7 @@
    ]
   },
   {
-   "name": "éå­",
+   "name": "量子",
    "hosts": [
     "vip.lz",
     "hd.lz",
@@ -1415,7 +1353,7 @@
    ]
   },
   {
-   "name": "éå¡",
+   "name": "非凡",
    "hosts": [
     "vip.ffzy",
     "hd.ffzy",
@@ -1433,7 +1371,7 @@
    ]
   },
   {
-   "name": "ç´¢å°¼",
+   "name": "索尼",
    "hosts": [
     "suonizy"
    ],
@@ -1444,7 +1382,7 @@
    ]
   },
   {
-   "name": "å¿«ç",
+   "name": "快看",
    "hosts": [
     "kuaikan"
    ],
@@ -1464,7 +1402,7 @@
    ]
   },
   {
-   "name": "çå½±ç½",
+   "name": "看影网",
    "hosts": [
     "fentvoss"
    ],
@@ -1505,7 +1443,7 @@
    ]
   },
   {
-   "name": "é»æ¨è³hmr",
+   "name": "黑木耳hmr",
    "hosts": [
     "hmrvideo"
    ],
@@ -1534,7 +1472,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -1547,31 +1485,31 @@
    ]
   },
   {
-   "name": "ç£åå¹¿å",
+   "name": "磁力广告",
    "hosts": [
     "magnet"
    ],
    "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
+    "更多",
+    "社 區",
     "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
+    "最 新",
+    "更 新",
+    "社 区",
+    "有趣",
+    "有 趣",
+    "英皇体育",
+    "全中文AV在线",
+    "澳门皇冠赌场",
+    "哥哥快来",
+    "美女荷官",
+    "裸聊",
+    "新片首发",
     "UUE29"
    ]
   },
   {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "name": "通用-广告片段过滤",
    "hosts": [
     "*"
    ],
@@ -1583,7 +1521,7 @@
    ]
   },
   {
-   "name": "éç¨-å¹¿åååæ¦æª",
+   "name": "通用-广告域名拦截",
    "hosts": [
     "*"
    ],
@@ -1634,7 +1572,7 @@
    ]
   },
   {
-   "name": "æ´é£",
+   "name": "暴风",
    "hosts": [
     "bfzy",
     "bfbfvip",
@@ -1645,7 +1583,7 @@
    ]
   },
   {
-   "name": "éå­",
+   "name": "量子",
    "hosts": [
     "vip.lz",
     "hd.lz",
@@ -1662,7 +1600,7 @@
    ]
   },
   {
-   "name": "éå¡",
+   "name": "非凡",
    "hosts": [
     "vip.ffzy",
     "hd.ffzy",
@@ -1680,7 +1618,7 @@
    ]
   },
   {
-   "name": "ç´¢å°¼",
+   "name": "索尼",
    "hosts": [
     "suonizy"
    ],
@@ -1691,7 +1629,7 @@
    ]
   },
   {
-   "name": "å¿«ç",
+   "name": "快看",
    "hosts": [
     "kuaikan"
    ],
@@ -1711,7 +1649,7 @@
    ]
   },
   {
-   "name": "çå½±ç½",
+   "name": "看影网",
    "hosts": [
     "fentvoss"
    ],
@@ -1752,7 +1690,7 @@
    ]
   },
   {
-   "name": "é»æ¨è³hmr",
+   "name": "黑木耳hmr",
    "hosts": [
     "hmrvideo"
    ],
@@ -1781,7 +1719,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -1794,31 +1732,31 @@
    ]
   },
   {
-   "name": "ç£åå¹¿å",
+   "name": "磁力广告",
    "hosts": [
     "magnet"
    ],
    "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
+    "更多",
+    "社 區",
     "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
+    "最 新",
+    "更 新",
+    "社 区",
+    "有趣",
+    "有 趣",
+    "英皇体育",
+    "全中文AV在线",
+    "澳门皇冠赌场",
+    "哥哥快来",
+    "美女荷官",
+    "裸聊",
+    "新片首发",
     "UUE29"
    ]
   },
   {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "name": "通用-广告片段过滤",
    "hosts": [
     "*"
    ],
@@ -1830,7 +1768,7 @@
    ]
   },
   {
-   "name": "éç¨-å¹¿åååæ¦æª",
+   "name": "通用-广告域名拦截",
    "hosts": [
     "*"
    ],
@@ -1881,7 +1819,7 @@
    ]
   },
   {
-   "name": "æ´é£",
+   "name": "暴风",
    "hosts": [
     "bfzy",
     "bfbfvip",
@@ -1892,7 +1830,7 @@
    ]
   },
   {
-   "name": "éå­",
+   "name": "量子",
    "hosts": [
     "vip.lz",
     "hd.lz",
@@ -1909,7 +1847,7 @@
    ]
   },
   {
-   "name": "éå¡",
+   "name": "非凡",
    "hosts": [
     "vip.ffzy",
     "hd.ffzy",
@@ -1927,7 +1865,7 @@
    ]
   },
   {
-   "name": "ç´¢å°¼",
+   "name": "索尼",
    "hosts": [
     "suonizy"
    ],
@@ -1938,7 +1876,7 @@
    ]
   },
   {
-   "name": "å¿«ç",
+   "name": "快看",
    "hosts": [
     "kuaikan"
    ],
@@ -1958,7 +1896,7 @@
    ]
   },
   {
-   "name": "çå½±ç½",
+   "name": "看影网",
    "hosts": [
     "fentvoss"
    ],
@@ -1999,7 +1937,7 @@
    ]
   },
   {
-   "name": "é»æ¨è³hmr",
+   "name": "黑木耳hmr",
    "hosts": [
     "hmrvideo"
    ],
@@ -2028,7 +1966,7 @@
    ]
   },
   {
-   "name": "æµ·å¤ç",
+   "name": "海外看",
    "hosts": [
     "haiwaikan"
    ],
@@ -2041,31 +1979,31 @@
    ]
   },
   {
-   "name": "ç£åå¹¿å",
+   "name": "磁力广告",
    "hosts": [
     "magnet"
    ],
    "regex": [
-    "æ´å¤",
-    "ç¤¾ å",
+    "更多",
+    "社 區",
     "x u u",
-    "æ æ°",
-    "æ´ æ°",
-    "ç¤¾ åº",
-    "æè¶£",
-    "æ è¶£",
-    "è±çä½è²",
-    "å¨ä¸­æAVå¨çº¿",
-    "æ¾³é¨çå èµåº",
-    "å¥å¥å¿«æ¥",
-    "ç¾å¥³è·å®",
-    "è£¸è",
-    "æ°çé¦å",
+    "最 新",
+    "更 新",
+    "社 区",
+    "有趣",
+    "有 趣",
+    "英皇体育",
+    "全中文AV在线",
+    "澳门皇冠赌场",
+    "哥哥快来",
+    "美女荷官",
+    "裸聊",
+    "新片首发",
     "UUE29"
    ]
   },
   {
-   "name": "éç¨-å¹¿åçæ®µè¿æ»¤",
+   "name": "通用-广告片段过滤",
    "hosts": [
     "*"
    ],
@@ -2077,7 +2015,7 @@
    ]
   },
   {
-   "name": "éç¨-å¹¿åååæ¦æª",
+   "name": "通用-广告域名拦截",
    "hosts": [
     "*"
    ],
@@ -2109,5 +2047,5 @@
  ],
  "hosts": [],
  "sp": "",
- "//": "四源聚合单仓(安卓4兼容) | 合并7源 | 2026-11-11 12:06:09"
+ "//": "四源聚合单仓(安卓4兼容) | 合并6源 | 2026-11-11 23:31:38"
 }

@@ -1,0 +1,30 @@
+{
+ "home": {
+  "name": "TVBox 四源聚合(安卓5+)",
+  "type": 0,
+  "click": 0
+ },
+ "profiles0_5": [
+  {
+   "url": "http://8.138.7.223/tv.txt",
+   "name": "1"
+  },
+  {
+   "url": "http://47.96.82.41:5188/rose/18/xgg.json",
+   "name": "123"
+  },
+  {
+   "url": "http://150.158.52.248/tgyg/bbm.json",
+   "name": "幸福年年"
+  },
+  {
+   "url": "https://9280.kstore.space/newwex.json",
+   "name": "牛二"
+  },
+  {
+   "url": "http://home.jundie.top:81/top98.json",
+   "name": "俊哥接口"
+  }
+ ],
+ "n": 66
+}

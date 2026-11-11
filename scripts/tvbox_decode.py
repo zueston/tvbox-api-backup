@@ -152,6 +152,17 @@ def decode_body(body, pk: str = None):
     if body is None:
         return None, None
     if isinstance(body, bytes):
+        # 先按 UTF-8 解明文：latin-1 会把中文配置解成乱码且照样能 json.loads（历史 bug）
+        try:
+            su = body.decode("utf-8")
+        except Exception:
+            su = None
+        if su is not None:
+            du = su.lstrip("\ufeff").strip()
+            if du[:1] == "{":
+                d = to_json(du)
+                if d:
+                    return d, "json"
         s = body.decode("latin-1", "replace")
     else:
         s = body

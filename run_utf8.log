@@ -1,0 +1,105 @@
+[upstream] load_lubin776: pool=83
+[upstream] load_lightconer: pool=101
+[upstream] load_tvyuan: pool=287
+[upstream] load_juwan: pool=287
+raw pool: 289, live rows: 107
+after dedup: 160
+alive: 99
+vod split: ad=24 clean=75
+multi: profiles=66
+[merge] �Ϸ�TV(XC����): sites=91 parses=7 lives=1
+[merge] ����: sites=73 parses=1 lives=0
+[merge] ��������js: sites=293 parses=8 lives=2
+[merge] ok: sites=215 parses=16 lives=3
+[merge] vv: sites=116 parses=18 lives=3
+[merge] ��ħ: sites=122 parses=19 lives=1
+[merge] clun: sites=83 parses=8 lives=16
+[merge] �Ҹ�����: sites=24 parses=1 lives=0
+[merge] https://clun.top/fun.json: sites=83 parses=1 lives=39
+[merge] 2: sites=30 parses=14 lives=13
+[merge] ����: sites=0 parses=0 lives=0
+[merge] С��: sites=29 parses=11 lives=5
+[merge] �����: sites=99 parses=0 lives=1
+[merge/a4] �Ϸ�TV(XC����): sites=0 parses=7 lives=1
+[merge/a4] ����: sites=6 parses=1 lives=0
+[merge/a4] ��������js: sites=0 parses=8 lives=2
+[merge/a4] ok: sites=14 parses=16 lives=3
+[merge/a4] vv: sites=14 parses=18 lives=3
+[merge/a4] ��ħ: sites=18 parses=19 lives=1
+[merge/a4] clun: sites=15 parses=8 lives=16
+[merge/a4] �Ҹ�����: sites=0 parses=1 lives=0
+[merge/a4] https://clun.top/fun.json: sites=37 parses=1 lives=39
+[merge/a4] 2: sites=2 parses=14 lives=13
+[merge/a4] ����: sites=0 parses=0 lives=0
+[merge/a4] С��: sites=4 parses=11 lives=5
+[merge/a4] �����: sites=0 parses=0 lives=1
+[merge/a4] ��ӥ: sites=15 parses=0 lives=0
+[merge/a4] ţ��: sites=0 parses=4 lives=1
+[merge/a4] ����С: sites=0 parses=0 lives=0
+[merge/a4] 1: sites=0 parses=0 lives=0
+[merge/a4] ����С: sites=0 parses=0 lives=0
+[merge/a4] PG: sites=0 parses=0 lives=24
+[merge/a4] �����: sites=0 parses=0 lives=0
+[merge/a4] ����: sites=0 parses=0 lives=0
+[merge/a4] �Ϸ�: sites=0 parses=0 lives=0
+[merge/a4] noimank: sites=0 parses=16 lives=1
+[merge/a4] �ӿ�: sites=0 parses=31 lives=4
+[merge/a4] apple: sites=42 parses=0 lives=4
+[merge/a4] 5: sites=15 parses=8 lives=0
+[merge/a4] ţ��: sites=0 parses=0 lives=0
+[merge/a4] ������: sites=1 parses=8 lives=3
+[merge/a4] 1: sites=0 parses=0 lives=2
+[merge/a4] ͦ��: sites=0 parses=0 lives=4
+[merge/a4] ��̫Ӳ: sites=0 parses=0 lives=2
+[merge/a4] https://www.ls660.com/TV/feimao.json: sites=0 parses=1 lives=1
+[merge/a4] �ҵ�: sites=32 parses=6 lives=0
+[merge/a4] �ҵ�: sites=0 parses=2 lives=1
+[merge/a4] tvbox�ŷ�: sites=0 parses=0 lives=0
+[merge/a4] ����: sites=0 parses=16 lives=0
+[merge/a4] 111: sites=6 parses=27 lives=1
+[merge/a4] ��Ƭ: sites=0 parses=0 lives=4
+[merge/a4] ����Ӱ��: sites=6 parses=1 lives=0
+[merge/a4] 1: sites=1 parses=0 lives=2
+[merge/a4] ���º�ӿ�: sites=0 parses=0 lives=0
+[merge/a4] 123: sites=10 parses=0 lives=0
+[merge/a4] tv: sites=1 parses=0 lives=0
+[merge/a4] ����ӿ�: sites=0 parses=6 lives=0
+[merge/a4] ����3��: sites=0 parses=2 lives=1
+[merge/a4] ����: sites=13 parses=1 lives=2
+[merge] ����5��: sites=108 parses=0 lives=1
+[merge] �������ö�: sites=0 parses=0 lives=0
+[merge] ����6��: sites=0 parses=0 lives=0
+[merge] ����С: sites=94 parses=4 lives=2
+[merge] �½ӿ�: sites=51 parses=0 lives=0
+[merge] ����С�ӿ�: sites=0 parses=0 lives=0
+[merge] ����С��ţ��: sites=0 parses=0 lives=0
+[merge] ����С3��: sites=0 parses=0 lives=0
+[merge] xn--6orr3pi6g9uu: sites=45 parses=13 lives=5
+[merge] ���нӿ�: sites=0 parses=0 lives=0
+[merge] hhh: sites=35 parses=0 lives=2
+[merge] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge] ��̫Ӳ2��: sites=0 parses=0 lives=0
+[merge] uuccc: sites=26 parses=1 lives=3
+[merge] Ӱ�Ӳ�: sites=0 parses=0 lives=0
+[merge] https://700sjro44343.vicp.fun/eggp/0615/tv.php: sites=0 parses=0 lives=0
+[merge] ����˿: sites=8 parses=4 lives=0
+[merge/a4] ����5��: sites=0 parses=0 lives=1
+[merge/a4] �������ö�: sites=0 parses=0 lives=0
+[merge/a4] ����6��: sites=0 parses=0 lives=0
+[merge/a4] ����С: sites=0 parses=4 lives=2
+[merge/a4] �½ӿ�: sites=0 parses=0 lives=0
+[merge/a4] ����С�ӿ�: sites=0 parses=0 lives=0
+[merge/a4] ����С��ţ��: sites=0 parses=0 lives=0
+[merge/a4] ����С3��: sites=0 parses=0 lives=0
+[merge/a4] xn--6orr3pi6g9uu: sites=1 parses=13 lives=5
+[merge/a4] ���нӿ�: sites=0 parses=0 lives=0
+[merge/a4] hhh: sites=0 parses=0 lives=2
+[merge/a4] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge/a4] ��̫Ӳ: sites=0 parses=0 lives=0
+[merge/a4] ��̫Ӳ2��: sites=0 parses=0 lives=0
+[merge/a4] uuccc: sites=1 parses=1 lives=3
+[merge/a4] Ӱ�Ӳ�: sites=0 parses=0 lives=0
+[merge/a4] https://700sjro44343.vicp.fun/eggp/0615/tv.php: sites=0 parses=0 lives=0
+[merge/a4] ����˿: sites=1 parses=4 lives=0
+DONE a5: sites=1258 a4: sites=252 ad5: sites=367 ad4: sites=3 lives=79

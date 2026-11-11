@@ -1,0 +1,84 @@
+output/android5/single.json bad=458
+  [lives] 'æ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://sub.ottiptv.cc/douyuyqk.m3u
+  [lives] 'å\x9b½äº§ç³»å\x88\x97' -> '?' https://clun.top/lib/hsck_gc.m3u
+  [lives] 'æ\x97¥é\x9f©ç³»å\x88\x97' -> '?' https://clun.top/lib/hsck_rh.m3u
+  [lives] 'è\x89²æ\x92\xadè\x81\x9aå\x90\x88' -> '?' https://clun.top/lib/sbjh.m3u
+  [lives] 'éº»è±\x86è§\x86é¢\x91' -> '?' https://clun.top/lib/mdsp.m3u
+  [lives] 'å\x8f°æ¹¾æ\x88\x90äºº' -> '?' https://clun.top/lib/rwcr.m3u
+  [lives] 'éº»è±\x86ä¼\xa0åª\x92816' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/éº»è
+  [lives] 'ç²¾ä¸\x9cå½±ä¸\x9a816' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/ç²¾ä
+  [lives] 'è\x8a±æ´»' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/è±æ
+  [lives] '18èµ\x84æº\x90ä¸°å¯\x8c' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/18èµ
+  [lives] 'è\x87³å°\x8a' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/è³å
+  [lives] 'ç¨³å®\x9aå¤®å\x8d«' -> '?' https://gh-proxy.com/https://raw.githubusercontent.com/Kimen
+  [lives] 'æ±\x9fè\x8b\x8fç§»å\x8a¨' -> '?' https://gitee.com/fuleishu/fulei/raw/master/zhiboceshi/ceshi
+  [lives] 'è\x82¥ç¾\x8aæ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://sub.ottiptv.cc/douyuyqk.m3u
+  [sites] 'ð\x9f\x98\x8aPGâ\x94\x83è±\x86ç\x93£' -> '?' csp_PgDouban
+  [sites] 'ð\x9f\x90³é\x9b·é²¸â\x94\x83ç½\x91ç\x9b\x98' -> '?' csp_Leijing
+  [sites] 'ð\x9f\x98\x8dæ¨±è\x8a±â\x94\x83å\x8a¨æ¼«' -> '?' csp_YHDM
+  [sites] 'ð\x9f¤¬äº\x8cå°\x8fâ\x94\x83ç½\x91ç\x9b\x98' -> '?' csp_Wobg
+  [sites] 'ð\x9f¤«è\x87³è\x87»â\x94\x83ç½\x91ç\x9b\x98' -> '?' csp_Wobg
+  [sites] 'â\x98\x81ï¸\x8fäº\x91äº\x91â\x94\x83å½±è§\x86' -> '?' csp_AppGet
+output/android4/single.json bad=263
+  [lives] 'æ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://sub.ottiptv.cc/douyuyqk.m3u
+  [lives] 'å\x9b½äº§ç³»å\x88\x97' -> '?' https://clun.top/lib/hsck_gc.m3u
+  [lives] 'æ\x97¥é\x9f©ç³»å\x88\x97' -> '?' https://clun.top/lib/hsck_rh.m3u
+  [lives] 'è\x89²æ\x92\xadè\x81\x9aå\x90\x88' -> '?' https://clun.top/lib/sbjh.m3u
+  [lives] 'éº»è±\x86è§\x86é¢\x91' -> '?' https://clun.top/lib/mdsp.m3u
+  [lives] 'å\x8f°æ¹¾æ\x88\x90äºº' -> '?' https://clun.top/lib/rwcr.m3u
+  [lives] 'éº»è±\x86ä¼\xa0åª\x92816' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/éº»è
+  [lives] 'ç²¾ä¸\x9cå½±ä¸\x9a816' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/ç²¾ä
+  [lives] 'è\x8a±æ´»' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/è±æ
+  [lives] '18èµ\x84æº\x90ä¸°å¯\x8c' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/18èµ
+  [lives] 'è\x87³å°\x8a' -> '?' https://raw.githubusercontent.com/fish2018/lib/main/txt/è³å
+  [lives] 'ç¨³å®\x9aå¤®å\x8d«' -> '?' https://gh-proxy.com/https://raw.githubusercontent.com/Kimen
+  [lives] 'æ±\x9fè\x8b\x8fç§»å\x8a¨' -> '?' https://gitee.com/fuleishu/fulei/raw/master/zhiboceshi/ceshi
+  [lives] 'è\x82¥ç¾\x8aæ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://sub.ottiptv.cc/douyuyqk.m3u
+  [lives] 'PandaGoæ\x8a\x95å±\x8fç\x9b´æ\x92\xadæ\x8e¥æ\x94¶è®°å½\x95' -> '?' http://127.0.0.1:10079/dlnam3u/tv.m3u
+  [lives] 'FMM.m3u.é\x9f³è´¨å¢\x9eå¼º' -> '?' http://127.0.0.1:10079/mp4/3600/proxy/https://raw.githubuser
+  [lives] 'è\x82¥ç¾\x8aBç«\x99ç\x9b´æ\x92\xad.é\x9f³è´¨å¢\x9eå¼º' -> '?' http://127.0.0.1:10079/mp4/3600/null/http://127.0.0.1:35456/
+  [lives] 'è\x82¥ç¾\x8aè\x99\x8eç\x89\x99ä¸\x80èµ·ç\x9c\x8b.é\x9f³è´¨å¢\x9eå¼º' -> '?' http://127.0.0.1:10079/mp4/3600/null/http://127.0.0.1:35456/
+  [lives] 'è\x82¥ç¾\x8aæ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b.é\x9f³è´¨å¢\x9eå¼º' -> '?' http://127.0.0.1:10079/mp4/3600/null/http://127.0.0.1:35456/
+  [lives] 'å\x86°è\x8c¶' -> '?' https://bc.188766.xyz/?ip=&mima=bingcha1130&json=true
+output/android5/singlead.json bad=125
+  [lives] 'æ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B325
+  [lives] 'å¹³å\x8f°ç\x9b´æ\x92\xad' -> '?' http://118.89.172.248:8025/jar/zb.php
+  [lives] 'æ¸¯æ¾³å\x8f°' -> '?' http://rihou.cc:567/gggg.nzk
+  [sites] 'ð\x9f\x90®ã\x80\x90æ\x9b´æ\x96°æ\x97¥æ\x9c\x9f:20261106ã\x80\x91ð\x9f\x90®' -> '?' csp_NewDouBanGuard
+  [sites] 'ð\x9f\x92\x93è\x8a±å\x8d·â\x94\x834Kð\x9f\x92\x93â\x80\x8d' -> '?' csp_AiNewHuaJuanGuard
+  [sites] 'ð\x9f\x92¥å°\x8fæ\x9e«â\x94\x83ç§\x92æ\x92\xadð\x9f\x92¥' -> '?' csp_WexFengYe4KGuard
+  [sites] 'ð\x9f\x92¥è´±ç\x89\x87â\x94\x83ç§\x92æ\x92\xadð\x9f\x92¥' -> '?' csp_WexAiJianPianGuard
+  [sites] 'ð\x9f\x92¥ç²\x89ç\x8cªâ\x94\x83ç§\x92æ\x92\xadð\x9f\x92¥' -> '?' csp_WexAppV7Guard
+  [sites] 'ð\x9f\x92¥å\x92¸é±¼â\x94\x83ç§\x92æ\x92\xadð\x9f\x92¥' -> '?' csp_WexAppV7Guard
+  [sites] 'ð\x9f\x8e\x87ç\x88±ç\x9c\x8bâ\x94\x83é\x87\x87é\x9b\x86ð\x9f\x8e\x87' -> '?' csp_WexAiIkanBotGuard
+  [sites] 'ð\x9f\x90³æ\x96\x97é±¼â\x94\x83ç\x9b´æ\x92\xadð\x9f\x90³' -> '?' csp_LiveAiDouYuGuard
+  [sites] 'ð\x9f\x85±ï¸\x8få\x93\x94å\x93©â\x94\x83ç\x9b´æ\x92\xadð\x9f\x85±ï¸\x8f' -> '?' csp_LiveAiBiLiGuard
+  [sites] 'ð\x9f\x8d\x89æ¼«ç\x9f\xadâ\x94\x83å°\x8fçº¢ð\x9f\x8d\x89' -> '?' csp_ManJuAiHongGuoGuard
+  [sites] 'ð\x9f\x8d\x89æ¼«å\x89§â\x94\x83å°\x8fé¾\x99ð\x9f\x8d\x89' -> '?' csp_ManJuAiHuoLongGuard
+  [sites] 'ð\x9f\x8d\x89æ¼«å\x89§â\x94\x83å°\x8fç\x8c«ð\x9f\x8d\x89' -> '?' csp_ManJuAiQiMaoGuard
+  [sites] 'ð\x9f\x8d\x89æ¼«ç\x9f\xadâ\x94\x83å°\x8få\x96\x9cð\x9f\x8d\x89' -> '?' csp_ManJuAiXiFanGuard
+  [sites] 'ð\x9f\x8d\x89æ¼«ç\x9f\xadâ\x94\x83å°\x8fé©¬ð\x9f\x8d\x89' -> '?' csp_ManJuAiHeMaGuard
+  [sites] 'ð\x9f\x8d\x89ç\x9f\xadå\x89§â\x94\x83å°\x8fç\x8c«ð\x9f\x8d\x89' -> '?' csp_DuanJuAiQiMiaoGuard
+  [sites] 'ð\x9f\x8d\x89ç\x9f\xadå\x89§â\x94\x83å°\x8fè\x96\x87ð\x9f\x8d\x89' -> '?' csp_DuanJuAiWeiGuanGuard
+  [sites] 'ð\x9f¤¡å\x85±å\x92\x8câ\x94\x83å\x8a¨æ¼«ð\x9f¤¡' -> '?' csp_AnimeAiGongHeGuoGuard
+output/android4/singlead.json bad=36
+  [lives] 'æ\x96\x97é±¼ä¸\x80èµ·ç\x9c\x8b' -> '?' https://file.icve.com.cn/file_doc/254/346/3FB56B2C49DF92B325
+  [lives] 'å¹³å\x8f°ç\x9b´æ\x92\xad' -> '?' http://118.89.172.248:8025/jar/zb.php
+  [lives] 'æ¸¯æ¾³å\x8f°' -> '?' http://rihou.cc:567/gggg.nzk
+  [sites] 'é\x9d\x9eå\x87¡â\x94\x83å½±è§\x86' -> '?' http://cj.ffzyapi.com/api.php/provide/vod
+  [pr] 'å°\x8f' -> '?' 
+  [pr] '-å\x92¸é±¼-' -> '?' 
+  [pr] '-è\x99¾ç±³-' -> '?' 
+  [pr] '-å\x86°è±\x86-' -> '?' 
+  [pr] 'ð\x9f\x8e¬è\x81\x9aå\x90\x88â\x94\x83å½±è§\x86è§£æ\x9e\x90' -> '?' 
+  [pr] 'è\x99¾ç±³' -> '?' 
+  [pr] 'è\x99¾ç±³2' -> '?' 
+  [pr] 'ç\x81«å±±å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'æ\x8a\x96é\x9f³å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'è¾²æ°\x91å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'æ\x96°è§\x86è§\x89å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'ä¸\x83æ\x96°å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'ç\x81«å±±å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'æ\x8a\x96é\x9f³å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'è¾²æ°\x91å\x97\x85æ\x8e¢' -> '?' 
+  [pr] 'æ\x96°è§\x86è§\x89å\x97\x85æ\x8e¢' -> '?' 
