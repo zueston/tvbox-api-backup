@@ -253,26 +253,6 @@
    "ext": "ASH3HkV5cxNhNR9+uQe0sWYxUWHzEywHT3rcYOx+wsK4Jx+sBd0qMO9kFic1Rc1osAMsAsTlMgabd1Ky2kmzQ/Y="
   },
   {
-   "key": "mandian",
-   "name": "ð¢âæ¢ç¹â4K",
-   "type": 3,
-   "api": "csp_ManDian",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AU08qHcswQQ9GUNUYMdLgyq8HzPCy1gUxku0nrQgOwfSJrT0LgwdrXoWPVK+x4n+QQ8KbuVPdzA5/U2YL7fQmH8="
-  },
-  {
-   "key": "ZhiWo",
-   "name": "ðâç¥æâ4K",
-   "type": 3,
-   "api": "csp_ZhiWo",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "AX1Vvf8Pdib7pGaiG52YtJfoH7J54wUt+/pfCo7QJrhIKMK6XXxVbbJG3pw3yHdOUVcBrTyo1EmM8M91pY30AUE="
-  },
-  {
    "key": "xiaozuo",
    "name": "ðâç­é£â4K",
    "type": 3,
@@ -295,6 +275,39 @@
     "site": "https://kanju.ai",
     "playname": "ly"
    }
+  },
+  {
+   "key": "ä½æ¸©",
+   "name": "ð§£âä½æ¸©â4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "AQ97WpArbhKNw60bLglQNeYUtD0UDI1f65KexQmYfUaCO+V3+a8GbSmYodUtb12Q0LQHfv6KdocBICzIhrySNikxI0hWUixd5n/optwTcVcU"
+  },
+  {
+   "key": "å¤ç«",
+   "name": "ð¦âå¤ç«â4K",
+   "type": 3,
+   "api": "csp_App88",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "AR/RtwIvqcmx6ZGW8sbi7eFkPpUl48Y1f1lgZfeNDxJrNKwGVF/fADYHz0psPEF7KvDaccyt60bwK9lzVNUIhPUxyKFOo7u9iPyZxUTbxyAZ"
+  },
+  {
+   "key": "æ¼å¾",
+   "name": "ð§©âæ¼å¾â4K",
+   "type": 3,
+   "api": "csp_NiuLai",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 0,
+   "ext": "Ad2ohQzN3yKRQEHDYDkK1JK8CL3Se9zIBI5Q4VBRKeR6pIWjoaXOktd6l4RWPQi46M/xcnQCEN8R1PIqXGBDZPds5tolkQ4pUoWAaOKxXmPk"
   },
   {
    "key": "åå§",
@@ -2630,33 +2643,23 @@
    "changeable": 1
   },
   {
-   "name": "æåâé¶ä¸",
-   "key": "Dubk",
+   "key": "fanqecms",
+   "name": "çªèâé¶é¶",
    "type": 3,
-   "api": "csp_DubkAmns",
+   "api": "csp_AppleCms",
+   "ext": "https://fanqe.cc",
    "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "Dubk"
+   "quickSearch": 0,
+   "filterable": 0
   },
   {
-   "name": "éçâç§æ­",
-   "key": "JinPai",
-   "type": 3,
-   "api": "csp_JinPaiAmns",
+   "key": "taiee96",
+   "name": "æéâé¶ä¸",
+   "type": 1,
+   "api": "https://ww96.taiee.xyz/api.php/provide/vod/",
    "searchable": 1,
    "quickSearch": 1,
-   "changeable": 1
-  },
-  {
-   "name": "ç§å¤©âç§æ­",
-   "key": "NewGrV2",
-   "type": 3,
-   "api": "csp_NewGrV2Amns",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "NewGrV2"
+   "filterable": 1
   },
   {
    "key": "å¤©å¤©",
@@ -2687,20 +2690,20 @@
   },
   {
    "key": "csp_PianKu8",
-   "name": "å±±æ¥âé¶å­",
+   "name": "å±±æ¥âé¶äº",
    "type": 3,
    "api": "csp_PianKu8"
   },
   {
    "key": "æ°é¦å",
-   "name": "é¦åâé¶å«",
+   "name": "é¦åâé¶å­",
    "type": 3,
    "api": "csp_AppGet",
    "ext": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt|FTgP4Gq8zPiqbt7M|V122|okhttp/3.10.0"
   },
   {
    "key": "æ«å¶å½±è§",
-   "name": "æ«å¶âé¶ä¹",
+   "name": "æ«å¶âé¶ä¸",
    "type": 3,
    "api": "csp_FengYe",
    "searchable": 1,
@@ -2710,7 +2713,7 @@
   },
   {
    "key": "åæ99",
-   "name": "åæâé¶å",
+   "name": "åæâé¶å«",
    "type": 3,
    "api": "csp_App99",
    "ext": {
@@ -2725,14 +2728,14 @@
   },
   {
    "key": "csp_duanju",
-   "name": "çé©¬âåäº",
+   "name": "çé©¬âé¶ä¹",
    "type": 3,
    "timeout": 12,
    "api": "csp_HeMa"
   },
   {
    "key": "csp_XY",
-   "name": "æä¸«âåä¸",
+   "name": "æä¸«âé¶å",
    "type": 3,
    "searchable": 1,
    "timeout": 12,
@@ -2741,7 +2744,7 @@
   },
   {
    "key": "88çç",
-   "name": "ä½è²âåå",
+   "name": "ä½è²âåä¸",
    "type": 3,
    "api": "csp_Kanqiu",
    "style": {
@@ -2757,7 +2760,7 @@
   },
   {
    "key": "çå­",
-   "name": "ä½è²âåäº",
+   "name": "ä½è²âåäº",
    "type": 3,
    "api": "csp_GuaziTY",
    "style": {
@@ -2773,27 +2776,27 @@
   },
   {
    "key": "csp_SaoHuo",
-   "name": "ç«ç«âåå­",
+   "name": "ç«ç«âåä¸",
    "type": 3,
    "api": "csp_SaoHuo"
   },
   {
    "key": "csp_Czsapp",
-   "name": "åé¿âåä¸",
+   "name": "åé¿âåå",
    "type": 3,
    "api": "csp_Czsapp",
    "ext": "https://www.4kcz.com"
   },
   {
    "key": "éº¦ç°",
-   "name": "éº¦ç°âåå«",
+   "name": "éº¦ç°âåäº",
    "type": 3,
    "api": "csp_AppV6",
    "ext": "http://172.247.227.203:25321/mtys.php"
   },
   {
    "key": "feiyu_video",
-   "name": "é£å¨±âåä¹",
+   "name": "é£å¨±âåå­",
    "type": 3,
    "api": "csp_Feiyu",
    "searchable": 1,
@@ -2802,7 +2805,7 @@
   },
   {
    "key": "å§å99",
-   "name": "å§åâäºä¸",
+   "name": "å§åâåä¸",
    "type": 3,
    "api": "csp_App99",
    "ext": {
@@ -2817,7 +2820,7 @@
   },
   {
    "key": "å¤©å ",
-   "name": "å¤©å âäºäº",
+   "name": "å¤©å âåå«",
    "type": 3,
    "api": "csp_AppDrama",
    "searchable": 1,
@@ -2837,29 +2840,8 @@
    }
   },
   {
-   "key": "æ©æ±",
-   "name": "æ©æ±âäºä¸",
-   "type": 3,
-   "api": "csp_AppDrama",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": {
-    "appName": "æ©æ±",
-    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-    "dataKey": "DGVQRUX5R1LWWDLHTGJSUKG1DJRVPQ==",
-    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-    "commonKey": "ed5fdsgucxumegqa",
-    "pkg": "com.lxf.snzlcgtzxyx",
-    "host": "",
-    "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-    "version": "3.0.2.1",
-    "decrypt": "1"
-   }
-  },
-  {
    "key": "èç",
-   "name": "èçâäºå",
+   "name": "èçâäºå",
    "quickSearch": 0,
    "changeable": "0",
    "searchable": 1,
@@ -2874,7 +2856,7 @@
   },
   {
    "key": "csp_APPTe",
-   "name": "å¤©é¹âäºäº",
+   "name": "å¤©é¹âäºä¸",
    "type": 3,
    "timeout": 12,
    "searchable": 1,
@@ -2883,7 +2865,7 @@
   },
   {
    "key": "csp_Jpys",
-   "name": "éçâäºå­",
+   "name": "éçâäºäº",
    "type": 3,
    "timeout": 12,
    "searchable": 1,
@@ -2893,7 +2875,7 @@
   },
   {
    "key": "YunZhenXiang",
-   "name": "ç§æ­âäºä¸",
+   "name": "ç§æ­âäºä¸",
    "type": 3,
    "api": "csp_YunZhenXiang",
    "searchable": 1,
@@ -2906,7 +2888,7 @@
   },
   {
    "key": "Osstexll",
-   "name": "å«æâäºå«",
+   "name": "å«æâäºå",
    "type": 3,
    "api": "csp_Tounimabi",
    "searchable": 1,
@@ -2916,7 +2898,7 @@
   },
   {
    "key": "å¸å¸å½±è§APP",
-   "name": "å¤§é¹âäºä¹",
+   "name": "å¤§é¹âäºäº",
    "type": 3,
    "api": "csp_AppYd",
    "ext": {
@@ -4216,6 +4198,22 @@
    "searchable": 1,
    "filterable": 0,
    "ext": "{\"blockedFroms\":[\"4K\"]}"
+  },
+  {
+   "key": "JinPai",
+   "name": "ðâéçâç§æ­",
+   "type": 3,
+   "api": "csp_JinPai",
+   "searchable": 1,
+   "filterable": 1
+  },
+  {
+   "key": "Dubk",
+   "name": "ðâæåâç§æ­",
+   "type": 3,
+   "api": "csp_Dubk",
+   "searchable": 1,
+   "filterable": 1
   },
   {
    "name": "ðâæ©æ±âå¿«é",
@@ -6514,7 +6512,7 @@
    "player": "ijk"
   }
  ],
- "spider": "https://qiniu.gongxueyun.com/upload/2624916/2026-11-09/training_record/654477805_4_1794197377422.jar;md5;c91563ada7c35b4f33bd81c50c96eab5",
+ "spider": "https://qiniu.gongxueyun.com/upload/8927661/2026-11-10/training_record/721461376_4_1794323426144.jar;md5;8b09e92274a61404af204b4e0cc82583",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并8源 | 2026-11-10 12:56:27"
+ "//": "四源聚合单仓(安卓5+) | 合并8源 | 2026-11-11 12:05:29"
 }

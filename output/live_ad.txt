@@ -1,4 +1,4 @@
-# 直播源·需看广告/验证 9 条
+# 直播源·需看广告/验证 11 条
 乌拉TV直播	https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2	lubin776
 全球	http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg	lubin776
 咪咕TV直播	https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA	lubin776
@@ -8,3 +8,5 @@
 很少	https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt	lubin776
 有效期27年7月	http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512	lubin776
 没4K	https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db	lubin776
+裤佬百战直播	https://baizhan.445569.xyz/live.m3u	lubin776
+裤佬虎牙直播	https://huya.445569.xyz/live.m3u	lubin776

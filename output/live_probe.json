@@ -16,7 +16,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 182247,
+  "bytes": 152139,
   "origin": "lubin776"
  },
  {
@@ -46,7 +46,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 68876,
+  "bytes": 68716,
   "origin": "lubin776"
  },
  {
@@ -116,7 +116,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 24208,
+  "bytes": 21653,
   "origin": "lubin776"
  },
  {
@@ -126,7 +126,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 111658,
+  "bytes": 721,
   "origin": "lubin776"
  },
  {
@@ -246,7 +246,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 132577,
+  "bytes": 135028,
   "origin": "lubin776"
  },
  {
@@ -276,7 +276,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 23003,
+  "bytes": 20212,
   "origin": "lubin776"
  },
  {
@@ -348,7 +348,7 @@
   "reason": "返回网页而非源数据",
   "marks": [],
   "ctype": "text/html; charset=utf-8",
-  "bytes": 128236,
+  "bytes": 336,
   "origin": "lubin776"
  },
  {
@@ -406,7 +406,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 183683,
+  "bytes": 163544,
   "origin": "lubin776"
  },
  {
@@ -448,7 +448,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 175911,
+  "bytes": 174220,
   "origin": "lubin776"
  },
  {
@@ -532,7 +532,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 103937,
+  "bytes": 127680,
   "origin": "lubin776"
  },
  {
@@ -552,7 +552,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 106485,
+  "bytes": 106362,
   "origin": "lubin776"
  },
  {
@@ -672,7 +672,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 142534,
+  "bytes": 143751,
   "origin": "lubin776"
  },
  {
@@ -702,7 +702,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 29175,
+  "bytes": 38131,
   "origin": "lubin776"
  },
  {
@@ -712,7 +712,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 2467,
+  "bytes": 8693,
   "origin": "lubin776"
  },
  {
@@ -732,7 +732,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 109217,
+  "bytes": 108966,
   "origin": "lubin776"
  },
  {
@@ -752,27 +752,27 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 16010,
+  "bytes": 10839,
   "origin": "lubin776"
  },
  {
   "name": "裤佬百战直播",
   "url": "https://baizhan.445569.xyz/live.m3u",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "The read operation timed out",
   "marks": [],
-  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
-  "bytes": 10925,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
   "name": "裤佬虎牙直播",
   "url": "https://huya.445569.xyz/live.m3u",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "<urlopen error [Errno -2] Name or service not known>",
   "marks": [],
-  "ctype": "text/plain; charset=utf-8",
-  "bytes": 200000,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -782,7 +782,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 68828,
+  "bytes": 67196,
   "origin": "lubin776"
  },
  {
@@ -792,7 +792,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl",
-  "bytes": 18188,
+  "bytes": 31683,
   "origin": "lubin776"
  },
  {
