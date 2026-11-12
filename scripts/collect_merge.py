@@ -420,6 +420,70 @@ def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False
     out = {**merged, "//": f"四源聚合单仓({'安卓4兼容' if a4 else '安卓5+'}) | 合并{used}源 | {time.strftime('%F %T')}"}
     return out, src_map
 
+# ---------- 爬虫(spider)可达性修复 ----------
+# 「爬虫加载失败」根因：全局 spider 指向 jihulab.com（GitLab 中国站，多数宽带/移动网络不通），
+# 且带死 md5（上游 jar 一更新 md5 即不符→盒子加载失败）。
+# 修法：①jihulab → 可达镜像；②全局 spider/jar 一律剥离 ;md5; ;size; 校验尾（按内容加载最稳）。
+JAR_MD5_TAIL = re.compile(r";(md5|size);[^;]+$", re.I)
+# 自托管 jar：把 jihulab 的完整 3.5MB Yoursmile.jar 放进本仓库 jar/，
+# 走可达镜像加载（jihulab 在多数宽带不通 + 死 md5 是「爬虫加载失败」真因）。
+SELF_REPO = "zueston/tvbox-api-backup"
+SELF_JAR_PATHS = {
+    "self_fastly": f"https://fastly.jsdelivr.net/gh/{SELF_REPO}@agg-latest/jar/Yoursmile.jar",
+    "self_ghproxy": f"https://gh-proxy.com/https://raw.githubusercontent.com/{SELF_REPO}/main/jar/Yoursmile.jar",
+}
+# 可达镜像优先级（自托管 jar，国内直连）
+SELF_JAR = SELF_JAR_PATHS["self_ghproxy"]
+
+
+def _strip_md5(u):
+    return JAR_MD5_TAIL.sub("", u.strip()) if isinstance(u, str) else u
+
+
+def _fix_spider(u):
+    if not isinstance(u, str) or not u.strip():
+        return u
+    clean = _strip_md5(u)
+    if "jihulab.com" in clean and "Yoursmile.jar" in clean:
+        return SELF_JAR  # 换自托管 + 国内可达镜像，且不带 md5
+    return clean
+
+
+def fix_spider_all():
+    """后处理所有输出配置：全局 spider/jar + 各站点 jar 去 md5、jihulab 换镜像。"""
+    files = ["android5/single.json", "android5/singlead.json", "android4/single.json",
+             "android4/singlead.json", "android5/multi.json", "android5/multiad.json",
+             "android4/multi.json", "android4/multiad.json"]
+    changed = 0
+    for rel in files:
+        p = OUT / rel
+        if not p.exists():
+            continue
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+        hit = False
+        for f in ("spider", "jar"):
+            if cfg.get(f):
+                new = _fix_spider(cfg[f])
+                if new != cfg[f]:
+                    cfg[f] = new
+                    hit = True
+        for s in cfg.get("sites", []) or []:
+            if s.get("jar"):
+                new = _fix_spider(s["jar"])
+                if new != s["jar"]:
+                    s["jar"] = new
+                    hit = True
+            if s.get("spider"):
+                new = _fix_spider(s["spider"])
+                if new != s["spider"]:
+                    s["spider"] = new
+                    hit = True
+        if hit:
+            p.write_text(json.dumps(cfg, ensure_ascii=False, indent=1), encoding="utf-8")
+            changed += 1
+    print(f"[fix_spider] jihulab→镜像 + 去md5，改写 {changed} 个文件")
+
+
 # ---------- 主流程 ----------
 def main():
     pool, lives = [], []
@@ -516,6 +580,7 @@ def main():
         for o in str(e["origin"]).split("+"):
             report["by_origin_alive"][o] = report["by_origin_alive"].get(o, 0) + 1
     (OUT / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+    fix_spider_all()
     print(f"DONE a5: sites={len(s5['sites'])} a4: sites={len(s4['sites'])} "
           f"ad5: sites={len(sa5['sites'])} ad4: sites={len(sa4['sites'])} lives={len(luniq)}")
 
