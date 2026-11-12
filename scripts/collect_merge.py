@@ -410,9 +410,10 @@ def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False
             jar = cfg.get("jar")
             if isinstance(jar, str) and jar and not merged.get("jar") and (keep_gate or not GATE_JAR_PATS.search(jar)):
                 merged["jar"] = abs_url(e["url"], jar)
-            sp = cfg.get("spider")
-            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider") and (keep_gate or not GATE_JAR_PATS.search(sp)):
-                merged["spider"] = abs_url(e["url"], sp)
+            # 全局 spider 统一用自托管 Yoursmile.jar（不随首个源走）——见 fix_spider_all 注释：
+            # 上游源各自 spider 五花八门（jihulab 不通 / 门 jar），统一固定可达 jar 最稳。
+            if not merged.get("spider"):
+                merged["spider"] = SELF_JAR
         src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l,
                         "by_src": [{"key": x.get("key"), "name": x.get("name"), "api": str(x.get("api", ""))[:300], "type": x.get("type")} for x in site_owners.get(e["url"], [])]})
         print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")

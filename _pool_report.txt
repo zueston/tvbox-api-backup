@@ -66,6 +66,6 @@ p7 samples:
   球通体育 | 球通 • 体育 | csp_SportQiutong
   drpy_js_88看球 | 体育 | 88看球[js] | https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js
   drpy_js_抓饭体育 | 体育 | 抓饭体育[js] | https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy.min.js
-p5_keys=61 found_in_subs=61 absent=0 | p6=32 p7=33 (drop=176)
-clean(各订阅 原->净): a5单仓:1263->1032  a5验证:261->169  a4单仓:197->154  a4验证:43->22
+p5_keys=61 found_in_subs=61 absent=0 | p6=28 p7=28 (drop=176)
+clean(各订阅 原->净): a5单仓:1290->1077  a5验证:261->169  a4单仓:205->154  a4验证:43->22
 p5_absent: 

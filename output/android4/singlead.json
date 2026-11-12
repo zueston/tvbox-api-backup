@@ -37,6 +37,15 @@
    "ext": "proxy"
   },
   {
+   "key": "香奶儿资源站",
+   "name": "香奶 | 采集",
+   "type": 0,
+   "api": "https://www.gdlsp.com/api/xml.php",
+   "searchable": 0,
+   "quickSearch": 0,
+   "ext": "proxy"
+  },
+  {
    "key": "松视开通3",
    "name": "松视3 | 采集",
    "type": 1,
@@ -50,6 +59,16 @@
    "name": "奥斯卡 | 采集",
    "type": 1,
    "api": "https://aosikazy.com/api.php/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "proxy"
+  },
+  {
+   "key": "白嫖",
+   "name": "白嫖 | 采集",
+   "type": 0,
+   "api": "https://www.kxgav.com/api/xml.php",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
@@ -138,6 +157,16 @@
    "ext": "proxy"
   },
   {
+   "key": "滴滴",
+   "name": "滴滴 | 采集",
+   "type": 1,
+   "api": "https://api.ddapi.cc/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1,
+   "ext": "proxy"
+  },
+  {
    "key": "探探",
    "name": "探探 | 采集",
    "type": 1,
@@ -177,35 +206,6 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "proxy"
-  },
-  {
-   "key": "滴滴",
-   "name": "滴滴 | 采集",
-   "type": 1,
-   "api": "https://api.ddapi.cc/api.php/provide/vod/",
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1,
-   "ext": "proxy"
-  },
-  {
-   "key": "白嫖",
-   "name": "白嫖 | 采集",
-   "type": 0,
-   "api": "https://www.kxgav.com/api/xml.php",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "proxy"
-  },
-  {
-   "key": "香奶儿资源站",
-   "name": "香奶 | 采集",
-   "type": 0,
-   "api": "https://www.gdlsp.com/api/xml.php",
-   "searchable": 0,
-   "quickSearch": 0,
    "ext": "proxy"
   },
   {
@@ -550,14 +550,6 @@
    "name": "斗鱼一起看",
    "type": 0,
    "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
-   "playerType": 2,
-   "timeout": 10,
-   "ua": "okHttp/Mod-1.5.0.0"
-  },
-  {
-   "name": "YY轮播",
-   "type": 0,
-   "url": "https://sub.ottiptv.cc/yylunbo.m3u",
    "playerType": 2,
    "timeout": 10,
    "ua": "okHttp/Mod-1.5.0.0"
@@ -1156,5 +1148,5 @@
  ],
  "hosts": [],
  "sp": "",
- "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-12 10:41:52 | 已去本地网盘搜索磁力/成人/教育/体育 | 22站"
+ "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-12 20:21:47 | 已去本地网盘搜索磁力/成人/教育/体育 | 22站"
 }
