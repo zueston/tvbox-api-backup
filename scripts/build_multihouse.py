@@ -17,7 +17,9 @@ os.makedirs('output/houses',exist_ok=True)
 for f in os.listdir('output/houses'):
     os.remove('output/houses/'+f)
 MIN_KEEP=5
-store={"storeHouse":[],"name":"四源聚合·多仓(按源分jar)"}
+# FongMi VodConfig.checkJson: if object.has("urls") -> Depot.arrayFrom(urls 数组[{"name","url"}])
+# 顶层必须是 {"urls":[{"name":..,"url":..}, ...]}，不是 {"storeHouse":[...]}
+store={"urls":[],"name":"四源聚合·多仓(按源分jar)"}
 index=[]
 for s in srcs:
     by=[k2site[x['key']] for x in (s.get('by_src') or []) if x['key'] in k2site]
@@ -47,7 +49,7 @@ for s in srcs:
     fn="house_%02d.json"%(len([i for i in index if not i.get('skipped')])+1)
     json.dump(cfg,open('output/houses/'+fn,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
     url="%s/output/houses/%s"%(GH,fn)
-    store["storeHouse"].append({"name":"%s (%d站)"%(name,len(kept)),"url":url})
+    store["urls"].append({"name":"%s (%d站)"%(name,len(kept)),"url":url})
     index.append({"source":name,"file":fn,"total":len(by),"kept":len(kept),"dropped":len(dropped),"jar":jname or "-"})
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
@@ -59,6 +61,6 @@ for it in index:
     tot+=it['total'];tk+=it['kept'];td+=it['dropped']
 live=[i for i in index if not i.get('skipped')]
 print("合计: 总%d 保留%d 剔除%d | 有效子仓%d"%(tot,tk,td,len(live)),file=out)
-print("storeHouse 条目数=",len(store['storeHouse']),file=out)
+print("depot urls 条目数=",len(store['urls']),file=out)
 out.close()
 print('DONE live_houses=',len(live),'kept=',tk,'dropped=',td)
