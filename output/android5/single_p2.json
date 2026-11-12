@@ -1,27 +1,6 @@
 {
  "sites": [
   {
-   "key": "drpy_js_秋霞影视",
-   "name": "影视 | 秋霞影视[js]",
-   "type": 3,
-   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E7%A7%8B%E9%9C%9E%E5%BD%B1%E8%A7%86.js"
-  },
-  {
-   "key": "drpy_js_阿布影院",
-   "name": "影视 | 阿布影院[js]",
-   "type": 3,
-   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E9%98%BF%E5%B8%83%E5%BD%B1%E9%99%A2.js"
-  },
-  {
-   "key": "drpy_js_电影先生",
-   "name": "影视 | 电影先生[js]",
-   "type": 3,
-   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E7%94%B5%E5%BD%B1%E5%85%88%E7%94%9F.js"
-  },
-  {
    "key": "drpy_js_落攻阁影视",
    "name": "影视 | 落攻阁影视[js]",
    "type": 3,
@@ -2239,6 +2218,28 @@
    "filterable": 1,
    "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
    "ext": "https://raw.liucn.cc/box/libs/hccx/%E7%9C%9F%E4%B8%8D%E5%8D%A1%E5%BD%B1%E8%A7%86.json"
+  },
+  {
+   "key": "csp_午舞",
+   "name": "🅱️┃午舞┃影视",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
+   "ext": "https://raw.liucn.cc/box/libs/hccx/%E4%BA%94%E4%BA%94%E5%BD%B1%E8%A7%86.json"
+  },
+  {
+   "key": "csp_视觉",
+   "name": "🅱️┃视觉┃影视",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
+   "ext": "https://raw.liucn.cc/box/libs/hccx/%E6%96%B0%E8%A7%86%E8%A7%89%E5%BD%B1%E8%A7%86.json"
   }
  ],
  "lives": [
@@ -5936,5 +5937,5 @@
  ],
  "spider": "https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 已去本地网盘搜索磁力/成人/教育/体育 | 1036站 | 分段2/4 | 259站(按测速排序)"
+ "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 已去本地网盘搜索磁力/成人/教育/体育 | 1032站 | 分段2/4 | 258站(按测速排序)"
 }

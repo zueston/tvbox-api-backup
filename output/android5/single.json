@@ -1,18 +1,6 @@
 {
  "sites": [
   {
-   "key": "各种豆采集.py",
-   "name": "各种豆采集",
-   "type": 3,
-   "api": "http://150.158.52.248/tgyg/py/%E5%90%84%E7%A7%8D%E8%B1%86%E9%87%87%E9%9B%86.py"
-  },
-  {
-   "key": "九合一版",
-   "name": "九合一版.py",
-   "type": 3,
-   "api": "http://150.158.52.248/tgyg/py/%E4%B9%9D%E5%90%88%E4%B8%80%E7%89%88.py"
-  },
-  {
    "key": "初见影视.py",
    "name": "初见影视.py",
    "type": 3,
@@ -52,13 +40,6 @@
    "type": 3,
    "api": "http://550.3vcn.work/lib/apiv402drpy2.min.js",
    "ext": "http://550.3vcn.work/lib/changmeng.js"
-  },
-  {
-   "key": "4k-av",
-   "name": "💓‍4k-av",
-   "type": 3,
-   "api": "https://pan.szfx.top/down.php/21da377c5e328d67e943a2acc1947ff3.py",
-   "jar": "http://oss4liview.moji.com/thd_file/2026/09/11/21bf5077bc286e074ee40ba1d527e814.jpg;md5;bd387114ab7a7078f8ae8f120c733907"
   },
   {
    "key": "js_短剧天堂",
@@ -960,15 +941,6 @@
    "style": {
     "type": "list"
    }
-  },
-  {
-   "key": "py_4KAV",
-   "name": "4KAV[py]",
-   "type": 3,
-   "api": "https://clun.top/py/4KAV.py",
-   "quickSearch": 1,
-   "searchable": 1,
-   "filterable": 1
   },
   {
    "key": "py_duoduo",
@@ -15439,5 +15411,5 @@
  ],
  "spider": "https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 已去本地网盘搜索磁力/成人/教育/体育 | 1036站"
+ "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 已去本地网盘搜索磁力/成人/教育/体育 | 1032站"
 }

@@ -18,6 +18,11 @@ P5_OUT = "output/android5/single_p5.json"
 P6_OUT = "output/android5/single_p6.json"
 P7_OUT = "output/android5/single_p7.json"
 
+# 强制归属：这些 key 无论 xlsx 是否标注，一律进对应专区（防止每周重跑被覆盖）。
+# 用户指定：九合一版.py / 4KAV(clun) / 4k-av(pan.szfx) 是成人 → p5；各种豆采集.py 是教育 → p6。
+P5_FORCE_KEYS = {"九合一版", "py_4KAV", "4k-av"}
+P6_FORCE_KEYS = {"各种豆采集.py"}
+
 # 教育相关关键词（key/name/api 命中即归 p6）
 EDU = re.compile(
     r"教育|课堂|学习|学堂|课程|公开课|网课|慕课|MOOC|muclass|"
@@ -204,8 +209,21 @@ def main(dry=False):
                 p5_absent.append("%s@%s" % (k, tag))
     p5_sites = uniq(p5_sites)
     p5_found = set(matchkey(s) for s in p5_sites)
+    # 强制归属 p5：从全量站点索引里强制并入（即使未被黄底红字标注）
+    for k in P5_FORCE_KEYS:
+        s = all_index.get(k)
+        if s is not None and matchkey(s) not in p5_found:
+            p5_sites.append(s); p5_found.add(matchkey(s))
+    p5_sites = uniq(p5_sites)
+    p5_found = set(matchkey(s) for s in p5_sites)
 
     p6_sites = [s for k, s in ((matchkey(x), x) for x in all_index.values()) if k in p6S and k not in p5_found]
+    # 强制归属 p6：各种豆采集 等指定教育站
+    p6key_set = set(matchkey(s) for s in p6_sites)
+    for k in P6_FORCE_KEYS:
+        s = all_index.get(k)
+        if s is not None and k not in p5_found and k not in p6key_set:
+            p6_sites.append(s); p6key_set.add(k)
     p7_sites = [s for k, s in ((matchkey(x), x) for x in all_index.values()) if k in p7S and k not in p5_found and k not in p6S]
     p6_sites = uniq(p6_sites); p7_sites = uniq(p7_sites)
 
