@@ -19,6 +19,7 @@
 
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
 点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
@@ -39,11 +40,11 @@
 
 直播源
 ```
-可直连(68条)      https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_direct.txt
+可直连(63条)      https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_direct.txt
 ```
 要验证
 ```
-需广告/验证(11条)   https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_ad.txt
+需广告/验证(17条)   https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_ad.txt
 ```
 
 | 用途 | 安卓5+ | 安卓4 |
@@ -63,9 +64,9 @@
 3. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
 `cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败；`fastly.jsdelivr.net` 边缘缓存对更新**极顽固**（purge 报成功也不刷，实测会陈旧一天以上），故本仓库默认前缀用 `testingcf.jsdelivr.net`（实测推送即新鲜），fastly 仅作兜底。
 
-## 直播源地址（完整 79 条，独立直播订阅）
+## 直播源地址（完整 80 条，独立直播订阅）
 
-**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 11 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 68 条可直连（`output/live_direct.txt`）。
+**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 17 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 63 条可直连（`output/live_direct.txt`）。
 
 ```
 APTV          https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u
@@ -143,6 +144,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 裤佬斗鱼直播        https://douyu.445569.xyz/live.m3u
 裤佬来疯直播        https://laifeng.445569.xyz/live.m3u
 裤佬百战直播        https://baizhan.445569.xyz/live.m3u
+裤佬虎牙直播        https://yahu.445569.xyz/live.m3u
 裤佬虎牙直播        https://huya.445569.xyz/live.m3u
 裤佬酷狗直播        https://kugou.445569.xyz/live.m3u
 韩国Panda直播     https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u
@@ -155,7 +157,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。
 
-以下 11 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 68 条可直连。
+以下 17 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 63 条可直连。
 
 | 名称 | 类型 | 判定 | 完整地址 |
 |---|---|---|---|
@@ -163,8 +165,14 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 | 全球 | HTML | 网页/验证页（SPA空壳） | `http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg` |
 | 咪咕TV直播 | HTML | 网页/验证页 | `https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA` |
 | 尘墨 | HTML | 网页/验证页（授权/注册公告/JS跳转/倒计时） | `https://52xiaobai.cn/ceshi/zb.php` |
-| 裤佬百战直播 | FAIL | 拉取失败 | `https://baizhan.445569.xyz/live.m3u` |
+| Kimentanm4线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u` |
+| yuan | FAIL | 拉取失败 | `http://wangziduoqing.com/yuan/zb.txt` |
+| 咪咕 | FAIL | 拉取失败 | `https://develop202.github.io/migu_video/interface.txt` |
+| 地方台直播 | FAIL | 拉取失败 | `https://sd.shandong.bbroot.com/xk/zb.txt` |
+| 综合直播2线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt` |
+| 范明明 | FAIL | 拉取失败 | `https://live.fanmingming.cn/tv/m3u/ipv6.m3u` |
 | 裤佬虎牙直播 | FAIL | 拉取失败 | `https://huya.445569.xyz/live.m3u` |
+| 裤佬酷狗直播 | FAIL | 拉取失败 | `https://kugou.445569.xyz/live.m3u` |
 | 夜空1 | TXT | 源可直连，网页打开是网盘下载页/网盘域 | `https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt` |
 | 央视频 | M3U | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt` |
 | 很少 | TXT | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt` |
@@ -194,7 +202,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 - 16 线程并发测活：HTTP 200 + 体积 >50B，`.json` 结尾额外校验可解析；聚玩盒子当日已测活的仍照常探内容量（兜底算活）。
 - **盒子反爬适配**（饭太硬类源站）：浏览器 UA 拿到导航页/HTML 时自动用 `okhttp/3.11` 盒子 UA 重试；支持 JPEG+尾部 base64 混淆配置解码（`ew0K` 起解）；中文域名自动 punycode（IDNA）转换后探测。
 - **单仓选源按内容量优先**（站点+解析+直播数降序、同量比响应速度），空源不占 TOP 名额，避免聚合出"快但空"的配置。
-- **速度排序**（`scripts/speed_rank.py`，每日在聚合后自动跑）：多仓线路按整包响应实测耗时降序重排（profiles/urls/storeHouse 三数组同步，自家第一条固定）；单仓站点按 api 直连实测耗时排序，快的放上面；csp 爬虫型站点与不可达 api 无法直接测，按全体中位耗时插入中段保持相对顺序。明细见 `output/speed_report.json`（每条线路/站点的实测毫秒）。
+- **速度排序**（`scripts/speed_rank.py`，每日 13:00 由本机计划任务跑，测试点=长沙移动出口，与盒子实际体验一致）：多仓线路按整包响应实测耗时降序重排（profiles/urls/storeHouse 三数组同步，自家第一条固定）；单仓站点按 api 直连实测耗时排序，快的放上面；csp 爬虫型站点与不可达 api 无法直接测，按全体中位耗时插入中段保持相对顺序。明细见 `output/speed_report.json`（每条线路/站点的实测毫秒）。
 
 ## 手动更新
 
@@ -207,7 +215,7 @@ python collect_merge.py --top 12     # 重抓四上游+测活+重建全部产物
 
 ## 自动更新
 
-GitHub Actions 每日 12:30（北京时间）运行 `scripts/collect_merge.py` 并回推 `output/`，见 `.github/workflows/update.yml`。
+两级流水线：① GitHub Actions 每日 12:30（北京时间）跑 `collect_merge.py` 整合+测活+分池并回推 `output/`（`.github/workflows/update.yml`）；② 本机 Windows 计划任务 `TVBox-RankAndPush` 每日 13:00 跑 `scripts/rank_and_push.ps1`：拉取远端 → 重跑管线 → **本机（长沙移动出口）`speed_rank.py` 测速排序** → commit+push → 移动 `agg-latest` tag。Actions 在美国机房测国内源不准，最终排序以本机为准；tag 由本机移动，订阅 URL 每天 13:05 后即为最新。
 
 ## 免责
 

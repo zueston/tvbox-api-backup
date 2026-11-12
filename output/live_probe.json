@@ -16,7 +16,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 152139,
+  "bytes": 27730,
   "origin": "lubin776"
  },
  {
@@ -46,7 +46,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 68716,
+  "bytes": 68876,
   "origin": "lubin776"
  },
  {
@@ -92,11 +92,11 @@
  {
   "name": "Kimentanm4线",
   "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
   "marks": [],
-  "ctype": "text/plain; charset=utf-8",
-  "bytes": 21971,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -116,7 +116,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 21653,
+  "bytes": 26468,
   "origin": "lubin776"
  },
  {
@@ -126,7 +126,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 721,
+  "bytes": 114112,
   "origin": "lubin776"
  },
  {
@@ -242,11 +242,11 @@
  {
   "name": "yuan",
   "url": "http://wangziduoqing.com/yuan/zb.txt",
-  "kind": "TXT",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
   "marks": [],
-  "ctype": "text/plain",
-  "bytes": 135028,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -334,11 +334,11 @@
  {
   "name": "咪咕",
   "url": "https://develop202.github.io/migu_video/interface.txt",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "Remote end closed connection without response",
   "marks": [],
-  "ctype": "text/plain; charset=utf-8",
-  "bytes": 469,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -348,17 +348,17 @@
   "reason": "返回网页而非源数据",
   "marks": [],
   "ctype": "text/html; charset=utf-8",
-  "bytes": 336,
+  "bytes": 126464,
   "origin": "lubin776"
  },
  {
   "name": "地方台直播",
   "url": "https://sd.shandong.bbroot.com/xk/zb.txt",
-  "kind": "TXT",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
   "marks": [],
-  "ctype": "text/plain",
-  "bytes": 200000,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -448,7 +448,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 174220,
+  "bytes": 173141,
   "origin": "lubin776"
  },
  {
@@ -532,7 +532,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 127680,
+  "bytes": 131303,
   "origin": "lubin776"
  },
  {
@@ -552,7 +552,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 106362,
+  "bytes": 105504,
   "origin": "lubin776"
  },
  {
@@ -578,11 +578,11 @@
  {
   "name": "综合直播2线",
   "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
   "marks": [],
-  "ctype": "text/plain; charset=utf-8",
-  "bytes": 469,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -598,11 +598,11 @@
  {
   "name": "范明明",
   "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
   "marks": [],
-  "ctype": "audio/x-mpegurl",
-  "bytes": 25215,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -672,7 +672,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 143751,
+  "bytes": 128335,
   "origin": "lubin776"
  },
  {
@@ -702,7 +702,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 38131,
+  "bytes": 28556,
   "origin": "lubin776"
  },
  {
@@ -712,7 +712,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 8693,
+  "bytes": 11954,
   "origin": "lubin776"
  },
  {
@@ -732,7 +732,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 108966,
+  "bytes": 117640,
   "origin": "lubin776"
  },
  {
@@ -752,24 +752,34 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 10839,
+  "bytes": 11746,
   "origin": "lubin776"
  },
  {
   "name": "裤佬百战直播",
   "url": "https://baizhan.445569.xyz/live.m3u",
-  "kind": "FAIL",
-  "reason": "The read operation timed out",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
+  "bytes": 8885,
+  "origin": "lubin776"
+ },
+ {
+  "name": "裤佬虎牙直播",
+  "url": "https://yahu.445569.xyz/live.m3u",
+  "kind": "M3U",
+  "reason": "",
+  "marks": [],
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 200000,
   "origin": "lubin776"
  },
  {
   "name": "裤佬虎牙直播",
   "url": "https://huya.445569.xyz/live.m3u",
   "kind": "FAIL",
-  "reason": "<urlopen error [Errno -2] Name or service not known>",
+  "reason": "<urlopen error [Errno 11001] getaddrinfo failed>",
   "marks": [],
   "ctype": "",
   "bytes": 0,
@@ -778,11 +788,11 @@
  {
   "name": "裤佬酷狗直播",
   "url": "https://kugou.445569.xyz/live.m3u",
-  "kind": "M3U",
-  "reason": "",
+  "kind": "FAIL",
+  "reason": "The read operation timed out",
   "marks": [],
-  "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 67196,
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -792,7 +802,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl",
-  "bytes": 31683,
+  "bytes": 8487,
   "origin": "lubin776"
  },
  {

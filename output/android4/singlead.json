@@ -1,10 +1,28 @@
 {
   "sites": [
     {
+      "key": "百度推送",
+      "name": "✊百度┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=baidu"
+    },
+    {
       "key": "夸克推送",
       "name": "👊夸克┃推送",
       "type": 4,
       "api": "https://so.yinpai.xyz/api.php?type=quark"
+    },
+    {
+      "key": "UC推送",
+      "name": "☝️优熙┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=uc"
+    },
+    {
+      "key": "天翼推送",
+      "name": "✋天翼┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=tianyi"
     },
     {
       "key": "移动推送",
@@ -19,42 +37,12 @@
       "api": "https://so.yinpai.xyz/api.php?type=123"
     },
     {
-      "key": "天翼推送",
-      "name": "✋天翼┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=tianyi"
-    },
-    {
-      "key": "百度推送",
-      "name": "✊百度┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=baidu"
-    },
-    {
-      "key": "UC推送",
-      "name": "☝️优熙┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=uc"
-    },
-    {
-      "key": "白嫖",
-      "name": "白嫖 | 采集",
+      "key": "美少女",
+      "name": "美少女",
       "type": 0,
-      "api": "https://www.kxgav.com/api/xml.php",
+      "api": "https://www.msnii.com/api/xml.php",
       "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "proxy"
-    },
-    {
-      "key": "滴滴",
-      "name": "滴滴 | 采集",
-      "type": 1,
-      "api": "https://api.ddapi.cc/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "proxy"
+      "quickSearch": 1
     },
     {
       "key": "精品资源站",
@@ -129,6 +117,15 @@
       "ext": "proxy"
     },
     {
+      "key": "淫水机资源站",
+      "name": "水机 | 采集",
+      "type": 0,
+      "api": "https://www.xrbsp.com/api/xml.php",
+      "searchable": 0,
+      "quickSearch": 0,
+      "ext": "proxy"
+    },
+    {
       "key": "松视开通3",
       "name": "松视3 | 采集",
       "type": 1,
@@ -160,6 +157,17 @@
       "name": "花椒 | 采集",
       "type": 0,
       "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "proxy"
+    },
+    {
+      "key": "大地",
+      "name": "大地 | 采集",
+      "type": 0,
+      "api": "https://dadiapi.com/apple_m3u8.php",
+      "playUrl": "https://play.dadiapi.com/watch?url=",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -318,12 +326,23 @@
       "ext": "proxy"
     },
     {
-      "key": "淫水机资源站",
-      "name": "水机 | 采集",
+      "key": "滴滴",
+      "name": "滴滴 | 采集",
+      "type": 1,
+      "api": "https://api.ddapi.cc/api.php/provide/vod/",
+      "quickSearch": 1,
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "proxy"
+    },
+    {
+      "key": "白嫖",
+      "name": "白嫖 | 采集",
       "type": 0,
-      "api": "https://www.xrbsp.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0,
+      "api": "https://www.kxgav.com/api/xml.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": "proxy"
     },
     {
@@ -334,14 +353,6 @@
       "searchable": 0,
       "quickSearch": 0,
       "ext": "proxy"
-    },
-    {
-      "key": "美少女",
-      "name": "美少女",
-      "type": 0,
-      "api": "https://www.msnii.com/api/xml.php",
-      "searchable": 1,
-      "quickSearch": 1
     },
     {
       "key": "森林专场",
@@ -383,17 +394,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "proxy"
-    },
-    {
-      "key": "大地",
-      "name": "大地 | 采集",
-      "type": 0,
-      "api": "https://dadiapi.com/apple_m3u8.php",
-      "playUrl": "https://play.dadiapi.com/watch?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
       "ext": "proxy"
     }
   ],
@@ -1333,5 +1333,5 @@
   ],
   "hosts": [],
   "sp": "",
-  "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-12 08:16:23"
+  "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-12 10:41:52"
 }

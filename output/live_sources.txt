@@ -1,4 +1,4 @@
-# 直播源清单 2026-11-12 08:16:23  共79
+# 直播源清单 2026-11-12 10:41:52  共80
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
 B站直播1线	https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u	lubin776
@@ -74,6 +74,7 @@ yuan	http://wangziduoqing.com/yuan/zb.txt	lubin776
 裤佬斗鱼直播	https://douyu.445569.xyz/live.m3u	lubin776
 裤佬来疯直播	https://laifeng.445569.xyz/live.m3u	lubin776
 裤佬百战直播	https://baizhan.445569.xyz/live.m3u	lubin776
+裤佬虎牙直播	https://yahu.445569.xyz/live.m3u	lubin776
 裤佬虎牙直播	https://huya.445569.xyz/live.m3u	lubin776
 裤佬酷狗直播	https://kugou.445569.xyz/live.m3u	lubin776
 韩国Panda直播	https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u	lubin776
