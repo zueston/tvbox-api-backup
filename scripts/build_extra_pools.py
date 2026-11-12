@@ -23,6 +23,40 @@ P7_OUT = "output/android5/single_p7.json"
 P5_FORCE_KEYS = {"九合一版", "py_4KAV", "4k-av"}
 P6_FORCE_KEYS = {"各种豆采集.py"}
 
+# 持久化规则文件：记录历史决策的 drop / p5 / p6 / p7 key。
+# 来源数据更新重跑时，规则文件里的 key 优先级最高，保证不会被重新分回 p1-p4。
+POOL_RULES = "scripts/pool_rules.json"
+
+
+def load_pool_rules():
+    try:
+        r = json.load(io.open(POOL_RULES, encoding="utf-8"))
+        return {
+            "drop": [k for k in r.get("drop", []) if k],
+            "p5": [k for k in r.get("p5", []) if k],
+            "p6": [k for k in r.get("p6", []) if k],
+            "p7": [k for k in r.get("p7", []) if k],
+        }
+    except Exception:
+        return {"drop": [], "p5": [], "p6": [], "p7": []}
+
+
+def save_pool_rules(drop, p5, p6, p7):
+    """把本次分类结果写回规则文件（累积）。一个 key 只落一个池，优先级 drop>p5>p6>p7。"""
+    old = load_pool_rules()
+    udrop = list(dict.fromkeys(old["drop"] + list(drop)))
+    seen = set(udrop)
+    out = {"drop": udrop}
+    for pool in ("p5", "p6", "p7"):
+        merged = list(dict.fromkeys(old[pool] + list(p5 if pool == "p5" else p6 if pool == "p6" else p7)))
+        out[pool] = [k for k in merged if not (k in seen) and not seen.add(k)]
+    out["_comment"] = ("站点分类持久化规则。来源数据更新重跑时，按 key 强制归属："
+                       "drop=删除；p5=成人；p6=教育；p7=体育。这些 key 绝不进 p1-p4 干净版。"
+                       "新站仍走 站点清单.xlsx 标注 + 关键词正则。")
+    io.open(POOL_RULES, "w", encoding="utf-8", newline="").write(
+        json.dumps(out, ensure_ascii=False, indent=1))
+    return out
+
 # 教育相关关键词（key/name/api 命中即归 p6）
 EDU = re.compile(
     r"教育|课堂|学习|学堂|课程|公开课|网课|慕课|MOOC|muclass|"
@@ -109,10 +143,13 @@ def uniq(seq):
     return res
 
 
-def main(dry=False):
+def main(dry=False, record=False):
     allrows, drop, p5_flat = read_xlsx()
     # drop 用全订阅合并去重
     drop = list(dict.fromkeys(k for k in drop if k))
+
+    # 加载持久化规则（历史决策优先）
+    rules = load_pool_rules()
 
     # p5 保留「订阅标签」，按订阅分别抽取（xlsx 是四订阅合并视图，p5 必须回到具体订阅文件里取站点对象）
     p5_by_sub = {}
@@ -125,6 +162,19 @@ def main(dry=False):
     p6 = [k for k, n, a in edu]
     sport = _pick(allrows, drop, p5_flat_keys + p6, SPORT)   # p7：避开已归 p5/p6 的
     p7 = [k for k, n, a in sport]
+
+    # 并入持久化规则（强制这些 key 永远留在对应池，不因来源更新被分回干净版）
+    drop = list(dict.fromkeys(drop + rules["drop"]))
+    p5_flat_keys = list(dict.fromkeys(p5_flat_keys + rules["p5"]))
+    p6 = list(dict.fromkeys(p6 + rules["p6"]))
+    p7 = list(dict.fromkeys(p7 + rules["p7"]))
+    # 一个 key 只落一个池：drop > p5 > p6 > p7
+    dset = set(drop)
+    p5_flat_keys = [k for k in p5_flat_keys if k not in dset]
+    p5set = set(p5_flat_keys) | dset
+    p6 = [k for k in p6 if k not in p5set]
+    p6set = set(p6) | p5set
+    p7 = [k for k in p7 if k not in p6set]
 
     io.open("scripts/_drop_keys.txt", "w", encoding="utf-8").write("\n".join(drop))
     io.open("scripts/_p5_keys.txt", "w", encoding="utf-8").write("\n".join(p5_flat_keys))
@@ -250,7 +300,7 @@ def main(dry=False):
         if not cfg:
             continue
         kept = [s for s in cfg.get("sites", [])
-                if matchkey(s) not in dropS and matchkey(s) not in p5_found
+                if matchkey(s) not in dropS and matchkey(s) not in p5_all
                 and matchkey(s) not in p6k and matchkey(s) not in p7k
                 and not is_residue(s)]
         cfg2 = dict(cfg)
@@ -267,7 +317,18 @@ def main(dry=False):
     io.open("_pool_report.txt", "a", encoding="utf-8").write("\n" + msg)
     print(msg)
 
+    # 记录/累积本次决策到持久化规则（--record 或默认都写，便于来源更新后仍按此分池）
+    if record:
+        saved = save_pool_rules(
+            drop,
+            [matchkey(s) for s in p5_sites],
+            [matchkey(s) for s in p6_sites],
+            [matchkey(s) for s in p7_sites],
+        )
+        print("pool_rules updated: drop=%d p5=%d p6=%d p7=%d" % (
+            len(saved["drop"]), len(saved["p5"]), len(saved["p6"]), len(saved["p7"])))
+
 
 if __name__ == "__main__":
     import sys
-    main(dry=("--dry" in sys.argv))
+    main(dry=("--dry" in sys.argv), record=("--no-record" not in sys.argv))

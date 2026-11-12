@@ -1,0 +1,6 @@
+rule counts: drop=176 p5=61 p6=32 p7=33
+parts total=1032 single=1032 same=True
+FORBIDDEN keys leaked into p1-4 (should be 0): 0
+FORBIDDEN keys in single (should be 0): 0
+p5 pool file matches rules p5: True
+p6 matches: True p7 matches: True

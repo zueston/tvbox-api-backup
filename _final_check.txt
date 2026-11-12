@@ -1,0 +1,4 @@
+rules: drop=176 p5=61 p6=32 p7=33
+a5 p1-4=1032 single=1032 same=True
+a5 p1-4 leak=0  single leak=0
+p5 file==rules:True p6:True p7:True
