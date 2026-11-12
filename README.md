@@ -93,6 +93,38 @@
 
 说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
 
+
+## 分源多仓（每源各用各的 jar —— 根治「爬虫加载失败」）
+
+单一配置文件只能带**一个全局 spider jar**，而不同源的站点需要各自不同的 jar 里的类（例如站点 `csp_FirstAid` 必须有含 `FirstAid` 类的 jar 才能加载）。把所有源塞进一个 single.json，缺类的站一定会报 `ClassNotFoundException: ...FirstAid` =「爬虫加载失败」。
+
+**解决方案：按源拆成多仓（storeHouse）**，每个源一个子仓、各用各的 jar；下不到私有 jar 的站（任何现有 jar 都没有对应类的 288 站）直接剔除。
+
+**多仓订阅地址（推荐，一劳永逸不再「爬虫加载失败」）：**
+```
+https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@e025d5c6d0ce76baed1d8a71bfdf8173fd22a38d/output/android5/storehouse.json
+```
+> 用 **fastly.jsdelivr.net 的点 commit 定点地址**（不是 @agg-latest 滚动 tag，也不是 gh-proxy/raw）。
+> 原因：影视仓拉订阅时会跟随子仓 URL 取 house_NN.json，若这些地址走 GitHub API（raw/gh-proxy）会撞 **GitHub 匿名限流 60 次/小时**，返回 `{"message":"API rate limit exceeded"}` 非 JSON → 解析失败 → 点播空白。
+> 子仓内部 `url`（house_NN.json）与 `spider`（jar）已全部改为 **raw.githubusercontent 直连**（家庭宽带走 raw 不撞限流）；顶层 storehouse.json 用 **fastly 点 commit**（走 jsDelivr CDN 不经 GitHub API）。
+
+子仓清单（共 10 个有效子仓，789 站保留 / 288 站因无 jar 覆盖剔除）：
+| 子仓 | 源 | 保留站数 | 剔除(无jar覆盖) | 全局jar |
+|---|---|---|---|---|
+| house_01.json | 高天流云js | 224 | 1 | pg.jar |
+| house_02.json | ok | 176 | 4 | ttkx.jar |
+| house_03.json | vv | 49 | 54 | CbFspeifNxbT.jar |
+| house_04.json | 心魔 | 120 | 0 | XBPQ.jar |
+| house_05.json | 无意云 | 31 | 109 | CbFspeifNxbT.jar |
+| house_06.json | clun | 77 | 0 | XBPQ.jar |
+| house_07.json | 幸福年年 | 9 | 6 | Yoursmile.jar |
+| house_08.json | 2 | 15 | 11 | CbFspeifNxbT.jar |
+| house_09.json | 小马 | 11 | 14 | XBPQ.jar |
+| house_10.json | 金鹰 | 76 | 0 | ttkx.jar |
+
+说明：多仓里每个子仓都是完整配置，切换线路即切换子仓；每个子仓的 spider 已指向自托管 jar，站点随源就近调用自带/最优 jar，不再统一塞一个 jar。
+
+---
 ## 直播源地址（完整 80 条，独立直播订阅）
 
 **不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 17 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 63 条可直连（`output/live_direct.txt`）。

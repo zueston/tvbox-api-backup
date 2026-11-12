@@ -2,7 +2,7 @@
 import io, re
 
 REPO = "zueston/tvbox-api-backup"
-COMMIT = "f9974a9ca2fd900a6761a62a70e2625383c07b49"  # 这里替换为实际最新 commit(推送后由外部回填)
+COMMIT = "e025d5c6d0ce76baed1d8a71bfdf8173fd22a38d"  # 这里替换为实际最新 commit(推送后由外部回填)
 path = 'README.md'
 s = io.open(path, encoding='utf-8').read()
 
