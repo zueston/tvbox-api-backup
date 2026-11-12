@@ -1,6 +1,0 @@
-android5/multi.json 19479B n=65 home=四源聚合·主仓库(推荐) p0=p@agg-latest/output/android5/single.json
-android5/multiad.json 5364B n=19 home=四源聚合·主仓库(需验证) p0=agg-latest/output/android5/singlead.json
-android4/multiad.json 5364B n=19 home=四源聚合·主仓库(需验证) p0=agg-latest/output/android4/singlead.json
-android5/single.json 415833B sites=1223 spider_gate=False
-android5/singlead.json 142361B sites=435 spider_gate=False
-android4/single.json 227187B sites=237 spider_gate=False
