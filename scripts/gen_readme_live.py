@@ -13,7 +13,7 @@ PROBE = "output/live_probe.json"
 VERIFY = "output/live_verify_table.md"
 
 REPO = "zueston/tvbox-api-backup"
-CDN = "https://cdn.jsdelivr.net/gh"
+CDN = "https://testingcf.jsdelivr.net/gh"
 BASE = f"{CDN}/{REPO}@agg-latest/output"
 
 def need_verify(r):
@@ -95,10 +95,10 @@ def main():
 `@agg-latest` 不能省：这是每日更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
 
 **盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
-1. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（实测国内多数运营商可达，推荐）
+1. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
 2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（GitHub 直连被墙时用，大文件略慢）
 3. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
-`cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败，此时上面 1/2 任选其一即可。
+`cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败；`fastly.jsdelivr.net` 边缘缓存对更新**极顽固**（purge 报成功也不刷，实测会陈旧一天以上），故本仓库默认前缀用 `testingcf.jsdelivr.net`（实测推送即新鲜），fastly 仅作兜底。
 """
 
     name_w = max(len(n) for n, _, _ in rows)
