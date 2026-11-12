@@ -98,15 +98,15 @@
 
 单一配置文件只能带**一个全局 spider jar**，而不同源的站点需要各自不同的 jar 里的类（例如站点 `csp_FirstAid` 必须有含 `FirstAid` 类的 jar 才能加载）。把所有源塞进一个 single.json，缺类的站一定会报 `ClassNotFoundException: ...FirstAid` =「爬虫加载失败」。
 
-**解决方案：按源拆成多仓（storeHouse）**，每个源一个子仓、各用各的 jar；下不到私有 jar 的站（任何现有 jar 都没有对应类的 288 站）直接剔除。
+**解决方案：按源拆成多仓（Depot / urls 数组）**，每个源一个子仓、各用各的 jar；下不到私有 jar 的站（任何现有 jar 都没有对应类的 288 站）直接剔除。
 
 **多仓订阅地址（推荐，一劳永逸不再「爬虫加载失败」）：**
 ```
-https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@e025d5c6d0ce76baed1d8a71bfdf8173fd22a38d/output/android5/storehouse.json
+https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@4abf0e1ac393ec264004cdc6a1e133694095ecb6/output/android5/storehouse.json
 ```
-> 用 **fastly.jsdelivr.net 的点 commit 定点地址**（不是 @agg-latest 滚动 tag，也不是 gh-proxy/raw）。
-> 原因：影视仓拉订阅时会跟随子仓 URL 取 house_NN.json，若这些地址走 GitHub API（raw/gh-proxy）会撞 **GitHub 匿名限流 60 次/小时**，返回 `{"message":"API rate limit exceeded"}` 非 JSON → 解析失败 → 点播空白。
-> 子仓内部 `url`（house_NN.json）与 `spider`（jar）已全部改为 **raw.githubusercontent 直连**（家庭宽带走 raw 不撞限流）；顶层 storehouse.json 用 **fastly 点 commit**（走 jsDelivr CDN 不经 GitHub API）。
+> **格式**：FongMi/影视仓的多仓字段是顶层 `{"urls":[{"name":..,"url":..}, ...]}`（类 `com.fongmi.android.tv.bean.Depot`，`VodConfig.checkJson` 认 `urls` 数组），**不是** `{"storeHouse":[...]}`——用错字段名会「Depot urls is empty」/点播空白。加载后自动进第一条线路（house_01 高天流云），其余子仓进配置库可手动切换。
+> **地址必须用 fastly.jsdelivr.net 的点 commit 定点**（不是 @agg-latest 滚动 tag，也不是 gh-proxy/raw）。
+> 原因：影视仓拉订阅后会**跟随 urls 里的每条 house_NN.json 当配置再拉一遍**，若这些地址走 GitHub API（raw/gh-proxy）会撞 **GitHub 匿名限流 60 次/小时**，返回 `{"message":"API rate limit exceeded"}` 非 JSON → 解析失败 → 点播空白。因此 storehouse.json 本身、以及它 urls 里每个 house_NN.json 地址**全部用 fastly 点 commit**（走 jsDelivr CDN 不经 GitHub API）；子仓内部 `spider` jar 仍用 raw 直连（jar 只在播放时按需拉，不计入配置解析的 GitHub API 限流）。
 
 子仓清单（共 10 个有效子仓，789 站保留 / 288 站因无 jar 覆盖剔除）：
 | 子仓 | 源 | 保留站数 | 剔除(无jar覆盖) | 全局jar |
