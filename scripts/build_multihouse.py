@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
 import json,os,re
 REPO="zueston/tvbox-api-backup"
-# 子仓 url 与 spider jar 一律用 raw 直连：家庭宽带出口不撞 GitHub API 匿名限流(60/h)
-# 顶层 storehouse.json 由用户用 fastly.jsdelivr.net 点 commit 获取(走 CDN 不经 GitHub API)
+# 子仓内 spider jar 与 houses 内部 href 用 raw 直连（spider jar 只在播放时按需拉，不进 GitHub API 限流统计）
 GH="https://raw.githubusercontent.com/%s/main" % REPO
+# ★★ 关键：Depot 的 urls 指向的 house_NN.json 会被 FongMi 当作"配置"用 Decoder.getJson 拉取，
+# 走 raw/gh-proxy 会撞 GitHub 匿名 API 限流(60/h, ip 43.x)——必须用 fastly 点 commit(走 CDN 不计 API)。
+# commit hash 由 _patch_urls.py 在提交后回填；这里先用占位 {{COMMIT}}（无则退回 @main）。
+import os
+COMMIT=os.environ.get("MH_COMMIT","{{COMMIT}}")
+FASTLY="https://fastly.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
 lib=json.load(open('scripts/_jar_lib.json',encoding='utf-8'))
 man=json.load(open('scripts/_jar_manifest.json',encoding='utf-8'))
 url2name={v[3]:k for k,v in man.items()}
@@ -48,7 +53,7 @@ for s in srcs:
     if jname: cfg["spider"]="%s/jar/%s"%(GH,jname)
     fn="house_%02d.json"%(len([i for i in index if not i.get('skipped')])+1)
     json.dump(cfg,open('output/houses/'+fn,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
-    url="%s/output/houses/%s"%(GH,fn)
+    url="%s/output/houses/%s"%(FASTLY,fn)
     store["urls"].append({"name":"%s (%d站)"%(name,len(kept)),"url":url})
     index.append({"source":name,"file":fn,"total":len(by),"kept":len(kept),"dropped":len(dropped),"jar":jname or "-"})
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
