@@ -1,0 +1,35 @@
+=== 每源最优 jar 覆盖分析 ===
+[高天流云js] 站=297 无jar csp=71 需类=63 | 最优jar覆盖=59 (jar=pg.jar) | 全jar合并覆盖=61 | 缺(任何jar都没)=2
+[ok] 站=224 无jar csp=159 需类=63 | 最优jar覆盖=42 (jar=ttkx.jar) | 全jar合并覆盖=58 | 缺(任何jar都没)=5
+[vv] 站=127 无jar csp=102 需类=82 | 最优jar覆盖=16 (jar=CbFspeifNxbT.jar) | 全jar合并覆盖=22 | 缺(任何jar都没)=60
+[心魔] 站=122 无jar csp=91 需类=1 | 最优jar覆盖=1 (jar=XBPQ.jar) | 全jar合并覆盖=1 | 缺(任何jar都没)=0
+[无意云] 站=152 无jar csp=140 需类=112 | 最优jar覆盖=16 (jar=CbFspeifNxbT.jar) | 全jar合并覆盖=24 | 缺(任何jar都没)=88
+[clun] 站=84 无jar csp=19 需类=1 | 最优jar覆盖=1 (jar=XBPQ.jar) | 全jar合并覆盖=1 | 缺(任何jar都没)=0
+[幸福年年] 站=25 无jar csp=20 需类=11 | 最优jar覆盖=3 (jar=CbFspeifNxbT.jar) | 全jar合并覆盖=6 | 缺(任何jar都没)=5
+[2] 站=37 无jar csp=22 需类=18 | 最优jar覆盖=7 (jar=CbFspeifNxbT.jar) | 全jar合并覆盖=7 | 缺(任何jar都没)=11
+[潇洒] 站=0 无jar csp=0 -> 无需全局jar
+[小马] 站=30 无jar csp=21 需类=16 | 最优jar覆盖=2 (jar=wp.jar) | 全jar合并覆盖=4 | 缺(任何jar都没)=12
+[摸鱼主用二] 站=25 无jar csp=25 需类=13 | 最优jar覆盖=2 (jar=wp.jar) | 全jar合并覆盖=2 | 缺(任何jar都没)=11
+[摸鱼5线] 站=0 无jar csp=0 -> 无需全局jar
+[摸鱼6线] 站=0 无jar csp=0 -> 无需全局jar
+[摸鱼儿] 站=0 无jar csp=0 -> 无需全局jar
+[金鹰] 站=77 无jar csp=57 需类=12 | 最优jar覆盖=9 (jar=spider.jar) | 全jar合并覆盖=12 | 缺(任何jar都没)=0
+[牛二] 站=90 无jar csp=90 需类=79 | 最优jar覆盖=0 (jar=XBPQ.jar) | 全jar合并覆盖=0 | 缺(任何jar都没)=79
+
+=== 汇总 ===
+  高天流云js       站= 297 csp无jar=  71 最优jar命中=59
+  ok           站= 224 csp无jar= 159 最优jar命中=42
+  vv           站= 127 csp无jar= 102 最优jar命中=16
+  心魔           站= 122 csp无jar=  91 最优jar命中=1
+  无意云          站= 152 csp无jar= 140 最优jar命中=16
+  clun         站=  84 csp无jar=  19 最优jar命中=1
+  幸福年年         站=  25 csp无jar=  20 最优jar命中=3
+  2            站=  37 csp无jar=  22 最优jar命中=7
+  潇洒           站=   0 csp无jar=   0 最优jar命中=0
+  小马           站=  30 csp无jar=  21 最优jar命中=2
+  摸鱼主用二        站=  25 csp无jar=  25 最优jar命中=2
+  摸鱼5线         站=   0 csp无jar=   0 最优jar命中=0
+  摸鱼6线         站=   0 csp无jar=   0 最优jar命中=0
+  摸鱼儿          站=   0 csp无jar=   0 最优jar命中=0
+  金鹰           站=  77 csp无jar=  57 最优jar命中=9
+  牛二           站=  90 csp无jar=  90 最优jar命中=0

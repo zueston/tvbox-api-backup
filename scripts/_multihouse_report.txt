@@ -1,0 +1,15 @@
+=== 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===
+house_01.json    高天流云js         总 225 保留 224 剔  1 jar=pg.jar
+house_02.json    ok             总 180 保留 176 剔  4 jar=ttkx.jar
+house_03.json    vv             总 103 保留  49 剔 54 jar=CbFspeifNxbT.jar
+house_04.json    心魔             总 120 保留 120 剔  0 jar=XBPQ.jar
+house_05.json    无意云            总 140 保留  31 剔109 jar=CbFspeifNxbT.jar
+house_06.json    clun           总  77 保留  77 剔  0 jar=XBPQ.jar
+house_07.json    幸福年年           总  15 保留   9 剔  6 jar=Yoursmile.jar
+house_08.json    2              总  26 保留  15 剔 11 jar=CbFspeifNxbT.jar
+house_09.json    小马             总  25 保留  11 剔 14 jar=XBPQ.jar
+[跳过:保留<5]        摸鱼主用二          总  22 保留   1 剔 21 jar=wp.jar
+house_10.json    金鹰             总  76 保留  76 剔  0 jar=ttkx.jar
+[跳过:保留<5]        牛二             总  68 保留   0 剔 68 jar=XBPQ.jar
+合计: 总1077 保留789 剔除288 | 有效子仓10
+storeHouse 条目数= 10

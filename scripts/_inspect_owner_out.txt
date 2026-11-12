@@ -1,0 +1,10 @@
+����վ��= 1077  վ�ֶ�= ['key', 'name', 'type', 'api', 'searchable', 'quickSearch', 'changeable', 'ext', 'timeout']
+Traceback (most recent call last):
+src entry keys= ['name', 'url', 'origin', 'sites', 'parses', 'lives', 'by_src']
+  by_src sample= [{'key': 'drpy_js_����', 'name': '���� | ����[js]', 'api': 'https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js', 'type': 3}, {'key': 'drpy_js_����������', 'name': '���� | ������[js]', 'api': 'https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js', 'type': 3}]
+src entry keys= ['name', 'url', 'origin', 'sites', 'parses', 'lives', 'by_src']
+  File "F:\�ĵ�\deepseek-harness\default-workspace\tvbox-api-backup\scripts\_inspect_owner.py", line 17, in <module>
+    if 'by_src' in s: print('  by_src sample=',list(s['by_src'].items())[:1] if isinstance(s['by_src'],dict) else s['by_src'][:2])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f315' in position 32: illegal multibyte sequence
+  by_src sample= 
