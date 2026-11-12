@@ -20,6 +20,9 @@ jobs:
         run: python scripts/scrape_juwanhezi.py || echo "juwan scrape failed, keep seed"
       - name: Collect & merge four upstreams (clean/ad split)
         run: python scripts/collect_merge.py --top 12
+      # 依据用户标注（站点清单.xlsx）：去本地/网盘/搜索/磁力P2P + 抽成人(p5)/教育(p6)/体育(p7)
+      - name: Split pools (drop local/pan, p5 adult, p6 edu, p7 sport)
+        run: python scripts/build_extra_pools.py || echo "pools failed, keep single"
       # 测速主链路=本机计划任务 TVBox-RankAndPush（长沙移动出口，精确排序，每周日13:00）；
       # Actions 出口在美国 Azure 测国内源不准，只调山河云单点做粗排兜底；
       # 本机与山河云都失败时，保留 collect_merge 的内容量优先顺序照常出产物。

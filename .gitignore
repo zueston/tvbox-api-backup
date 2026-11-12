@@ -3,3 +3,5 @@ __pycache__/
 output/speed_report_shanhe.json
 scripts/cache_*.html
 scripts/output/
+*.xlsx
+output/sites_by_source.txt

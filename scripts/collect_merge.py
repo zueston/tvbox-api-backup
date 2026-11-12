@@ -329,6 +329,7 @@ def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False
                 {"category": 4, "name": "enable-accurate-seek", "value": "0"},
                 {"category": 4, "name": "mediaseek", "value": "1"}], "player": "ijk"}]
     site_keys, parse_names, live_groups, src_map = set(), set(), set(), []
+    site_owners = {}
     used = fetched = 0
     for e in cands:
         if used >= top or fetched >= MAX_FETCH:
@@ -366,6 +367,7 @@ def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False
             site_keys.add(k)
             merged["sites"].append(s)
             n_s += 1
+            site_owners.setdefault(e["url"], []).append(s)
         for p in cfg.get("parses", []) or []:
             if a4 and p.get("type") == 2:
                 continue
@@ -411,7 +413,8 @@ def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False
             sp = cfg.get("spider")
             if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider") and (keep_gate or not GATE_JAR_PATS.search(sp)):
                 merged["spider"] = abs_url(e["url"], sp)
-        src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l})
+        src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l,
+                        "by_src": [{"key": x.get("key"), "name": x.get("name"), "api": str(x.get("api", ""))[:300], "type": x.get("type")} for x in site_owners.get(e["url"], [])]})
         print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")
     merged["sp"] = ""
     out = {**merged, "//": f"四源聚合单仓({'安卓4兼容' if a4 else '安卓5+'}) | 合并{used}源 | {time.strftime('%F %T')}"}

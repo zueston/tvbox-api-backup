@@ -190,17 +190,6 @@
    "changeable": 1
   },
   {
-   "key": "直播转点播",
-   "name": "📺︎┃电视┃点播",
-   "playerType": 1,
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/tv/zb.min.js",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://raw.liucn.cc/box/libs/tv/zb.json"
-  },
-  {
    "key": "光速资源",
    "name": "光速资源(切)",
    "type": 1,
@@ -232,36 +221,6 @@
    "quickSearch": 1,
    "filterable": 0,
    "changeable": 1
-  },
-  {
-   "key": "虎牙直播js",
-   "name": "🐯┃虎牙┃直播",
-   "playerType": 1,
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "ext": "https://raw.liucn.cc/box/libs/js/%E8%99%8E%E7%89%99%E7%9B%B4%E6%92%AD.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.755
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "csp_XYQBiu_斗鱼",
-   "name": "🐟┃斗鱼┃直播",
-   "playerType": 1,
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "ext": "https://raw.liucn.cc/box/libs/js/%E6%96%97%E9%B1%BC%E7%9B%B4%E6%92%AD.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.755
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
   },
   {
    "key": "云播影视",
@@ -490,67 +449,12 @@
    "ext": "https://raw.liucn.cc/box/libs/js/%E7%99%BE%E5%BF%99%E6%97%A0%E6%9E%9C.js"
   },
   {
-   "key": "js_4KHDR",
-   "name": "🧲世界磁力┃Js",
-   "type": 3,
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 0,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "ext": "https://raw.liucn.cc/box/libs/js/4khdr.js"
-  },
-  {
-   "key": "js_6V",
-   "name": "✡️六维磁力┃Js",
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "https://raw.liucn.cc/box/libs/js/6V.js"
-  },
-  {
-   "key": "js_磁力熊",
-   "name": "🐻‍贝尔磁力┃Js",
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "https://raw.liucn.cc/box/libs/js/bear.js"
-  },
-  {
-   "key": "js_酷吧",
-   "name": "😎酷吧磁力┃Js",
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "ext": "https://raw.liucn.cc/box/lib/dr/kuba.js"
-  },
-  {
    "key": "88js",
    "name": "⚽ 88┃看球",
    "playerType": 1,
    "type": 3,
    "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
    "ext": "https://raw.liucn.cc/box/libs/js/88%E7%9C%8B%E7%90%83.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "csp_qiumi",
-   "name": "⚽ Jrs┃球迷",
-   "playerType": 1,
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "ext": "https://raw.liucn.cc/box/libs/js/jrk.js",
    "style": {
     "type": "rect",
     "ratio": 1
@@ -590,17 +494,6 @@
    "changeable": 0
   },
   {
-   "key": "js_武享吧",
-   "name": "🥎┃格斗┃直播",
-   "playerType": 1,
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": "https://raw.liucn.cc/box/libs/js/%E6%AD%A6%E4%BA%AB%E5%90%A7.js"
-  },
-  {
    "key": "js_a8音乐",
    "name": "🎸┃奥迪┃音乐",
    "playerType": 1,
@@ -632,20 +525,6 @@
    "ext": "https://raw.liucn.cc/box/libs/js/%E7%AB%A5%E8%B6%A3.js"
   },
   {
-   "key": "dr_兔小贝",
-   "name": "📚儿童┃启蒙",
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "ext": "https://raw.liucn.cc/box/libs/js/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
    "key": "js_B站精简",
    "name": "🅱️┃哔哩┃精简",
    "type": 3,
@@ -654,16 +533,6 @@
    "quickSearch": 0,
    "filterable": 1,
    "ext": "https://raw.liucn.cc/box/libs/js/B%E7%AB%99%E7%B2%BE%E7%AE%80.js"
-  },
-  {
-   "key": "js_哔哩直播",
-   "name": "🅱️┃哔哩┃直播",
-   "type": 3,
-   "api": "https://raw.liucn.cc/box/libs/js/drpy2.min.js",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://raw.liucn.cc/box/libs/%E5%93%94%E5%93%A9%E7%9B%B4%E6%92%AD.js"
   },
   {
    "key": "csp_xml_光速",
@@ -1179,15 +1048,6 @@
    "playerType": 2
   },
   {
-   "key": "py_农牧",
-   "name": "农牧影视[py]",
-   "type": 3,
-   "api": "https://clun.top/py/%E5%86%9C%E6%B0%91%E5%BD%B1%E8%A7%86.py",
-   "quickSearch": 1,
-   "filterable": 1,
-   "playerType": 2
-  },
-  {
    "key": "py_mifun",
    "name": "MiFun｜动漫",
    "type": 3,
@@ -1686,13 +1546,6 @@
    "ext": ""
   },
   {
-   "key": "黑木耳",
-   "name": "黑木耳 | 采集",
-   "type": 1,
-   "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
-   "quickSearch": 1
-  },
-  {
    "key": "py_juzong",
    "name": "剧踪[py]",
    "type": 3,
@@ -1864,49 +1717,6 @@
    "header": {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
    }
-  },
-  {
-   "key": "Tg豆瓣",
-   "name": "🔍Tg豆瓣┃本接口免费-🈲贩卖",
-   "type": 3,
-   "api": "csp_TgYunDouBanPan",
-   "searchable": 1,
-   "changeable": 0,
-   "ext": {
-    "siteUrl": "http://127.0.0.1:9999",
-    "count": 4,
-    "channelUsername": "Tgsearchers6,peccxinpd,yunpan139,yggpan,yunpanuc,shareAliyun,yunpan189,BaiduCloudDisk,Channel_Shares_115,gimy115,ydypzyfx,dianying4K,sbsbsnsqq,Q_dongman,ysmffx,XiangxiuNBB,yoyokuakeduanju,yeqingjie_GJG666,TG654TG,PanjClub,guoman4K,alyp_1,kuake_yppan,Baidu_Netdisk,bdwpzhpd,baidu_yppan,zyfb123,xx123pan,zyzhpd123,yp123pan,cloudtianyi,txtyzy,tianyirigeng,tyypzhpd,zaihuayun,ali_yppan",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "filter": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/douban.json"
-   }
-  },
-  {
-   "key": "弹幕",
-   "name": "Ⓜ️嗷呜弹幕设置",
-   "type": 3,
-   "api": "csp_AAConfigAmns",
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
-   "key": "ConfigCenter",
-   "name": "🅿网盘配置中心",
-   "type": 3,
-   "api": "csp_ConfigCenter",
-   "searchable": 0,
-   "changeable": 0,
-   "ext": {
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json"
-   }
-  },
-  {
-   "key": "csp_LocalFile",
-   "name": "🏣本地文件",
-   "type": 3,
-   "api": "csp_LocalFile",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 1,
-   "type_flag": 0
   },
   {
    "name": "🍉瓜子",
@@ -2328,16 +2138,6 @@
    "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
   },
   {
-   "name": "🐱快快动漫",
-   "key": "DMlmm",
-   "type": 3,
-   "api": "csp_DMlmmAmns",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
    "name": "🐱冬瓜动漫",
    "key": "DMxigua",
    "type": 3,
@@ -2467,48 +2267,6 @@
    "quickSearch": 1,
    "changeable": 1,
    "genre": "shortdrama",
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
-   "name": "🏆瓜子体育",
-   "key": "GuaziLive",
-   "type": 3,
-   "api": "csp_GuaziLiveAmns",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 1,
-   "ext": "GuaziLive",
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
-   "name": "🏆飞球体育",
-   "key": "FeiqLive",
-   "type": 3,
-   "api": "csp_FeiqLiveAmns",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
-   "name": "🏆88体育",
-   "key": "BbkqLive",
-   "type": 3,
-   "api": "csp_BbkqLiveAmns",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "BbkqLive",
-   "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
-  },
-  {
-   "name": "🏆咖啡体育",
-   "key": "KafLive",
-   "type": 3,
-   "api": "csp_KafLiveAmns",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 1,
    "jar": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png"
   },
   {
@@ -2792,19 +2550,6 @@
    }
   },
   {
-   "key": "网盘集合",
-   "name": "🅿网盘集合",
-   "type": 3,
-   "api": "csp_网盘集合",
-   "searchable": 1,
-   "filterable": 0,
-   "switchable": 0,
-   "ext": {
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "share": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/网盘集合.json"
-   }
-  },
-  {
    "key": "Youtube",
    "name": "⚡Youtube",
    "type": 3,
@@ -2818,20 +2563,6 @@
    "ext": {
     "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
     "json": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/youtube.json"
-   }
-  },
-  {
-   "key": "TgYunPan|本地",
-   "name": "🅿TgYunPan|本地",
-   "type": 3,
-   "api": "csp_TgYunPanLocal",
-   "searchable": 1,
-   "filterable": 0,
-   "switchable": 0,
-   "ext": {
-    "count": 4,
-    "channelUsername": "Tgsearchers6,peccxinpd,yunpan139,yggpan,yunpanuc,shareAliyun,yunpan189,BaiduCloudDisk,Channel_Shares_115,gimy115,ydypzyfx,dianying4K,sbsbsnsqq,Q_dongman,ysmffx,XiangxiuNBB,yoyokuakeduanju,yeqingjie_GJG666,TG654TG,PanjClub,guoman4K,alyp_1,kuake_yppan,Baidu_Netdisk,bdwpzhpd,baidu_yppan,zyfb123,xx123pan,zyzhpd123,yp123pan,cloudtianyi,txtyzy,tianyirigeng,tyypzhpd,zaihuayun,ali_yppan",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json"
    }
   },
   {
@@ -2962,99 +2693,6 @@
    }
   },
   {
-   "key": "少儿",
-   "name": "🅱️少儿",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 1,
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   },
-   "ext": {
-    "json": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/少儿教育.json",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "cookie": ""
-   }
-  },
-  {
-   "key": "小学",
-   "name": "🅱️小学",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 1,
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   },
-   "ext": {
-    "json": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/小学课堂.json",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "cookie": ""
-   }
-  },
-  {
-   "key": "初中",
-   "name": "🅱️初中",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 1,
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   },
-   "ext": {
-    "json": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/初中课堂.json",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "cookie": ""
-   }
-  },
-  {
-   "key": "高中",
-   "name": "🅱️高中",
-   "type": 3,
-   "api": "csp_Bili",
-   "searchable": 0,
-   "quickSearch": 0,
-   "filterable": 1,
-   "style": {
-    "type": "rect",
-    "ratio": 1.433
-   },
-   "ext": {
-    "json": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/高中课堂.json",
-    "commonConfig": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json",
-    "cookie": ""
-   }
-  },
-  {
-   "key": "drpy_js_豆瓣",
-   "name": "搜索 | 豆瓣[js]",
-   "type": 3,
-   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/drpy.js",
-   "searchable": 1,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "drpy_js_磁力熊搜索",
-   "name": "搜索 | 磁力熊[js]",
-   "type": 3,
-   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
-   "indexs": 1,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/cilixiong.js",
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 1
-  },
-  {
    "key": "drpy_js_荐片",
    "name": "影视 | 荐片[js]",
    "type": 3,
@@ -3064,24 +2702,6 @@
    "changeable": 1,
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E8%8D%90%E7%89%87.js",
    "timeout": 30
-  },
-  {
-   "key": "豆瓣",
-   "name": "搜索 | 豆瓣[jar]",
-   "type": 3,
-   "api": "csp_Douban",
-   "indexs": 1,
-   "searchable": 0,
-   "changeable": 1,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/json/douban.json"
-  },
-  {
-   "key": "TGYunPanLocal",
-   "name": "搜索 | TG[jar]",
-   "type": 3,
-   "api": "csp_TGYunPanLocal",
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/t.me/$$$hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe$$$socks5:/127.0.0.1:10172$$$1"
   },
   {
    "key": "FirstAid",
@@ -3095,19 +2715,6 @@
     "type": "rect",
     "ratio": 3.8
    }
-  },
-  {
-   "key": "配置中心",
-   "name": "配置 | 中心[jar]",
-   "type": 3,
-   "api": "csp_Config",
-   "searchable": 0,
-   "changeable": 0,
-   "style": {
-    "type": "rect",
-    "ratio": 1.5
-   },
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
   },
   {
    "key": "酷狗",
@@ -3203,18 +2810,6 @@
    }
   },
   {
-   "key": "PikPakShare",
-   "name": "弹幕 | PikPak分享[jar]",
-   "type": 3,
-   "api": "csp_PikPakShare",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 0,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$./json/pikpakclass.json$$$./json/pikpakclass.json.db.gz"
-  },
-  {
    "key": "AliShare",
    "name": "弹幕 | 影视分享[jar]",
    "type": 3,
@@ -3225,46 +2820,6 @@
    "filterable": 0,
    "timeout": 60,
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$./json/alishare.txt$$$db$$$1"
-  },
-  {
-   "key": "ThunderShare",
-   "name": "弹幕 | 迅雷分享[jar]",
-   "type": 3,
-   "api": "csp_ThunderShare",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 0,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$./json/thundershare.txt"
-  },
-  {
-   "key": "QuarkShare",
-   "name": "弹幕 | 夸克分享[jar]",
-   "type": 3,
-   "api": "csp_QuarkShare",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 0,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$./json/quarkshare.txt"
-  },
-  {
-   "key": "115Share",
-   "name": "弹幕 | 115分享[jar]",
-   "type": 3,
-   "api": "csp_P115Share",
-   "searchable": 1,
-   "quickSearch": 0,
-   "changeable": 0,
-   "filterable": 0,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$./json/115share.txt$$$db$$$1",
-   "style": {
-    "type": "list",
-    "ratio": 1.1
-   }
   },
   {
    "key": "UCShare",
@@ -3326,50 +2881,6 @@
    "filterable": 1,
    "timeout": 60,
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/tv.yydsys.top/$$$null$$$1$$$./wogg.json"
-  },
-  {
-   "key": "蜡笔网盘",
-   "name": "弹幕 | 蜡笔[jar]",
-   "type": 3,
-   "api": "csp_Wobg",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/duopan.fun/$$$noproxy$$$1$$$./json/wogg.json$$$LABI"
-  },
-  {
-   "key": "Mogg",
-   "name": "网盘 | 木偶哥哥[jar]",
-   "type": 3,
-   "api": "csp_Wobg",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$http:/mogg.top/$$$noproxy$$$1$$$./lib/wogg.json$$$MOGG"
-  },
-  {
-   "key": "土豆",
-   "name": "网盘 | 土豆[jar]",
-   "type": 3,
-   "api": "csp_Wobg",
-   "searchable": 1,
-   "filterable": 0,
-   "changeable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/tudou.lvdoui.top/$$$proxy$$$1$$$./lib/wog.json$$$TUDOU"
-  },
-  {
-   "key": "小米网盘",
-   "name": "网盘 | 小米[jar]",
-   "type": 3,
-   "api": "csp_Wobg",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/mihdr.top/$$$noproxy$$$1$$$./lib/wogg.json$$$XIAOMI"
   },
   {
    "key": "Xinshijue",
@@ -3489,25 +3000,6 @@
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/hdhive.online$$$noproxy$$$1$$$http:/127.0.0.1:9978/file/TV/hdhive.txt"
   },
   {
-   "key": "Panta",
-   "name": "弹幕 | 盘Ta[jar]",
-   "type": 3,
-   "api": "csp_Panta",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/www.91panta.cn/$$$null$$$1"
-  },
-  {
-   "key": "YunPan",
-   "name": "弹幕 | 云盘[jar]",
-   "type": 3,
-   "api": "csp_YunPan",
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$null$$$proxy$$$1"
-  },
-  {
    "key": "Wo4k",
    "name": "弹幕 | 玩偶4k[jar]",
    "type": 3,
@@ -3517,17 +3009,6 @@
    "filterable": 1,
    "timeout": 60,
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/www.wo4k.com/$$$proxy$$$1$$$./wogg.json"
-  },
-  {
-   "key": "Xpanpan",
-   "name": "弹幕 | 小盘盘[jar]",
-   "type": 3,
-   "api": "csp_Xpanpan",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/xpanpan.site$$$null$$$1"
   },
   {
    "key": "Gaoqing",
@@ -3550,222 +3031,6 @@
    "filterable": 1,
    "timeout": 60,
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/www.yinfans.me/$$$proxy$$$1"
-  },
-  {
-   "key": "TGYunPan",
-   "name": "网盘 | TG搜索[jar]",
-   "type": 3,
-   "api": "csp_TGYunPan",
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$http:/144.126.217.226:8000/$$$hao115,Aliyundrive_Share_Channel,kuakeyun$$$noproxy$$$1"
-  },
-  {
-   "key": "YingSo",
-   "name": "磁力 | 影搜[jar]",
-   "type": 3,
-   "api": "csp_YingSo",
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$1"
-  },
-  {
-   "key": "盘友圈",
-   "name": "网盘 | 盘友圈",
-   "type": 3,
-   "api": "csp_Panyq",
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
-  },
-  {
-   "key": "88Pan",
-   "name": "网盘 | 88网盘[jar]",
-   "type": 3,
-   "api": "csp_EightEight",
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/662688.xyz"
-  },
-  {
-   "key": "PikaSo",
-   "name": "网盘 | 皮卡搜[jar]",
-   "type": 3,
-   "api": "csp_PikaSo",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/www.pikaso.top/$$$null"
-  },
-  {
-   "key": "csp_HunHePan",
-   "name": "网盘 | 混合盘[jar]",
-   "type": 3,
-   "api": "csp_HunHePan",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 0,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$null$$$1"
-  },
-  {
-   "key": "秒搜",
-   "name": "网盘 | 秒搜[jar]",
-   "type": 3,
-   "api": "csp_MiaoSou",
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
-  },
-  {
-   "key": "Libvio",
-   "name": "网盘 | LIBVIO[jar]",
-   "type": 3,
-   "api": "csp_Libvio",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/www.libvio.fun$$$null"
-  },
-  {
-   "key": "DaPanSo",
-   "name": "网盘 | 大盘搜[jar]",
-   "type": 3,
-   "api": "csp_DaPanSo",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/dapanso.com$$$null"
-  },
-  {
-   "key": "Qianfan",
-   "name": "网盘 | 千帆[jar]",
-   "type": 3,
-   "api": "csp_Qianfan",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json$$$https:/pan.qianfan.app$$$null$$$QianFanID="
-  },
-  {
-   "key": "YunSo",
-   "name": "网盘 | 小云[jar]",
-   "type": 3,
-   "api": "csp_YunSo",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
-  },
-  {
-   "key": "YunPanOne",
-   "name": "网盘 | 云盘[jar]",
-   "type": 3,
-   "api": "csp_YunPanOne",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
-  },
-  {
-   "key": "Gitcafe",
-   "name": "阿里 | 纸条[jar]",
-   "type": 3,
-   "api": "csp_Gitcafe",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "小紙條",
-   "name": "阿里 | 小紙條[jar]",
-   "type": 3,
-   "api": "csp_XiaoZhiTiao",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "七夜",
-   "name": "阿里 | 七夜[jar]",
-   "type": 3,
-   "api": "csp_Dovx",
-   "searchable": 1,
-   "changeable": 0,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "盤搜索",
-   "name": "阿里 | 盤搜索[jar]",
-   "type": 3,
-   "api": "csp_PanSearch",
-   "searchable": 1,
-   "changeable": 0,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "找資源",
-   "name": "阿里 | 找資源[jar]",
-   "type": 3,
-   "api": "csp_Zhaozy",
-   "searchable": 1,
-   "changeable": 0,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "易搜",
-   "name": "阿里 | 易搜[jar]",
-   "type": 3,
-   "api": "csp_YiSo",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "盘搜",
-   "name": "阿里 | 盘搜[jar]",
-   "type": 3,
-   "api": "csp_PanSou",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "UP云搜",
-   "name": "阿里 | up云搜[jar]",
-   "type": 3,
-   "api": "csp_UpYun",
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json",
-   "timeout": 30
-  },
-  {
-   "key": "Funletu",
-   "name": "夸克  | 趣盘搜[jar]",
-   "type": 3,
-   "api": "csp_Funletu",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
-  },
-  {
-   "key": "QuarkPanso",
-   "name": "夸克 | 盘搜[jar]",
-   "type": 3,
-   "api": "csp_QuarkPanso",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/token.json"
   },
   {
    "key": "drpy_js_酷云77",
@@ -3857,6 +3122,69 @@
    "type": 3,
    "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
    "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E5%9C%A8%E7%BA%BF%E4%B9%8B%E5%AE%B6.js"
+  },
+  {
+   "key": "drpy_js_量子资源",
+   "name": "影视 | 量子资源[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E9%87%8F%E5%AD%90%E8%B5%84%E6%BA%90.js"
+  },
+  {
+   "key": "drpy_js_369影视",
+   "name": "影视 | 369影视[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/369%E5%BD%B1%E8%A7%86.js"
+  },
+  {
+   "key": "drpy_js_热播库",
+   "name": "影视 | 热播库[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E7%83%AD%E6%92%AD%E5%BA%93.js"
+  },
+  {
+   "key": "drpy_js_蛋蛋剧",
+   "name": "影视 | 蛋蛋剧[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E8%9B%8B%E8%9B%8B%E5%89%A7.js"
+  },
+  {
+   "key": "drpy_js_B站影视",
+   "name": "影视 | B站影视[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/B%E7%AB%99%E5%BD%B1%E8%A7%86.js"
+  },
+  {
+   "key": "drpy_js_凌云影视",
+   "name": "影视 | 凌云影视[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E5%87%8C%E4%BA%91%E5%BD%B1%E8%A7%86.js"
+  },
+  {
+   "key": "drpy_js_孜然影视",
+   "name": "影视 | 孜然影视[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E5%AD%9C%E7%84%B6%E5%BD%B1%E8%A7%86.js"
+  },
+  {
+   "key": "drpy_js_我爱跟剧",
+   "name": "影视 | 我爱跟剧[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E6%88%91%E7%88%B1%E8%B7%9F%E5%89%A7.js"
+  },
+  {
+   "key": "drpy_js_干饭影视",
+   "name": "影视 | 干饭影视[js]",
+   "type": 3,
+   "api": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
+   "ext": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js/%E5%B9%B2%E9%A5%AD%E5%BD%B1%E8%A7%86.js"
   }
  ],
  "lives": [
@@ -7554,5 +6882,5 @@
  ],
  "spider": "https://jihulab.com/yoursmile77/TVBox/-/raw/master/Yoursmile.jar;md5;2fe20a9210f68dec7863a0b31a2b85d4",
  "sp": "",
- "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 分段1/4 | 316站(按测速排序)"
+ "//": "四源聚合单仓(安卓5+) | 合并12源 | 2026-11-12 10:40:07 | 已去本地网盘搜索磁力/成人/教育/体育 | 1036站 | 分段1/4 | 259站(按测速排序)"
 }

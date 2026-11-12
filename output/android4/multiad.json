@@ -1,112 +1,100 @@
 {
-  "storeHouse": [
-    {
-      "sourceName": "四源聚合·主仓库(需验证)",
-      "sourceUrl": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json"
-    },
-    {
-      "sourceName": "my interface",
-      "sourceUrl": "http://124.223.214.31:8/api.json"
-    },
-    {
-      "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
-      "sourceUrl": "http://124.223.214.31:16/8888"
-    },
-    {
-      "sourceName": "游魂多仓",
-      "sourceUrl": "https://www.iyouhun.com/tv/dc"
-    },
-    {
-      "sourceName": "宝盒",
-      "sourceUrl": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json"
-    },
-    {
-      "sourceName": "hhh",
-      "sourceUrl": "https://www.iyouhun.com/tv/fty"
-    },
-    {
-      "sourceName": "新接口",
-      "sourceUrl": "https://www.iyouhun.com/tv/wex"
-    },
-    {
-      "sourceName": "https://clun.top/fun.json",
-      "sourceUrl": "https://clun.top/fun.json"
-    }
-  ],
-  "profiles": [
-    {
-      "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json",
-      "name": "四源聚合·主仓库(需验证)"
-    },
-    {
-      "url": "http://124.223.214.31:8/api.json",
-      "name": "my interface"
-    },
-    {
-      "url": "http://124.223.214.31:16/8888",
-      "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/dc",
-      "name": "游魂多仓"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
-      "name": "宝盒"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/fty",
-      "name": "hhh"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/wex",
-      "name": "新接口"
-    },
-    {
-      "url": "https://clun.top/fun.json",
-      "name": "https://clun.top/fun.json"
-    }
-  ],
-  "urls": [
-    {
-      "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json",
-      "name": "四源聚合·主仓库(需验证)"
-    },
-    {
-      "url": "http://124.223.214.31:8/api.json",
-      "name": "my interface"
-    },
-    {
-      "url": "http://124.223.214.31:16/8888",
-      "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/dc",
-      "name": "游魂多仓"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
-      "name": "宝盒"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/fty",
-      "name": "hhh"
-    },
-    {
-      "url": "https://www.iyouhun.com/tv/wex",
-      "name": "新接口"
-    },
-    {
-      "url": "https://clun.top/fun.json",
-      "name": "https://clun.top/fun.json"
-    }
-  ],
-  "sp": "",
-  "logo": "",
-  "warning": "",
-  "home": {
-    "name": "四源聚合·主仓库(需验证)",
-    "type": 0,
-    "click": 0
+ "storeHouse": [
+  {
+   "sourceName": "四源聚合·主仓库(需验证)",
+   "sourceUrl": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json"
+  },
+  {
+   "sourceName": "my interface",
+   "sourceUrl": "http://124.223.214.31:8/api.json"
+  },
+  {
+   "sourceName": "宝盒",
+   "sourceUrl": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json"
+  },
+  {
+   "sourceName": "游魂多仓",
+   "sourceUrl": "https://www.iyouhun.com/tv/dc"
+  },
+  {
+   "sourceName": "新接口",
+   "sourceUrl": "https://www.iyouhun.com/tv/wex"
+  },
+  {
+   "sourceName": "hhh",
+   "sourceUrl": "https://www.iyouhun.com/tv/fty"
+  },
+  {
+   "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
+   "sourceUrl": "http://124.223.214.31:16/8888"
   }
+ ],
+ "profiles": [
+  {
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json",
+   "name": "四源聚合·主仓库(需验证)"
+  },
+  {
+   "url": "http://124.223.214.31:8/api.json",
+   "name": "my interface"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+   "name": "宝盒"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/dc",
+   "name": "游魂多仓"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/wex",
+   "name": "新接口"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/fty",
+   "name": "hhh"
+  },
+  {
+   "url": "http://124.223.214.31:16/8888",
+   "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json",
+   "name": "四源聚合·主仓库(需验证)"
+  },
+  {
+   "url": "http://124.223.214.31:8/api.json",
+   "name": "my interface"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+   "name": "宝盒"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/dc",
+   "name": "游魂多仓"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/wex",
+   "name": "新接口"
+  },
+  {
+   "url": "https://www.iyouhun.com/tv/fty",
+   "name": "hhh"
+  },
+  {
+   "url": "http://124.223.214.31:16/8888",
+   "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
+  }
+ ],
+ "sp": "",
+ "logo": "",
+ "warning": "",
+ "home": {
+  "name": "四源聚合·主仓库(需验证)",
+  "type": 0,
+  "click": 0
+ }
 }
