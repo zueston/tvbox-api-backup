@@ -20,8 +20,8 @@ jobs:
         run: python scripts/scrape_juwanhezi.py || echo "juwan scrape failed, keep seed"
       - name: Collect & merge four upstreams (clean/ad split)
         run: python scripts/collect_merge.py --top 12
-      - name: Speed-rank profiles and sites (fast first)
-        run: python scripts/speed_rank.py || echo "speed rank failed, keep order"
+      # 测速排序已移到本机计划任务 TVBox-RankAndPush（每日13:00，长沙移动出口，
+      # 见 scripts/rank_and_push.ps1）——Actions 在美国 Azure 机房测国内源不准，故不再跑
       - name: Classify live sources
         run: python scripts/classify_live.py || echo "classify failed, keep table"
       - name: Regenerate README sections + live lists
