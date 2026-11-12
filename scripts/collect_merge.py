@@ -232,9 +232,10 @@ def probe(e):
 
 # ---------- 多仓配置 ----------
 REPO = "zueston/tvbox-api-backup"
-TAG = "agg-latest"  # 滚动 tag：jsDelivr 对 @tag 是不可变缓存，push 即新鲜；@main 边缘缓存会陈旧数小时。update.yml 每次产物提交后移动此 tag。
+TAG = "agg-latest"  # 滚动 tag（保留备用）。主推改 gh-proxy 直链：jsDelivr 对 @agg-latest 边缘缓存不可靠+不支持 .jar，见 main_house。
 def main_house(path):
-    return f"https://fastly.jsdelivr.net/gh/{REPO}@{TAG}/output/{path}"
+    # 多仓版 profiles[0] 的自指单仓 URL：用 gh-proxy 直链（推即新鲜、jar 可达），避免激活后二次取到旧配置。
+    return f"https://gh-proxy.com/https://raw.githubusercontent.com/{REPO}/main/output/{path}"
 
 def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_path="android5/single.json", keep_gate=False):
     items = sorted(alive_items, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))

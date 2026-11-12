@@ -27,46 +27,47 @@
 
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
 点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
 ```
-安卓5+ 多仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multi.json
-安卓5+ 单仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single.json
-安卓4  多仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/multi.json
-安卓4  单仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json
+安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multi.json
+安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single.json
+安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multi.json
+安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/single.json
 ```
 
 安卓5+ 单仓·分段版（站点太多嫌卡就订这些：干净全量按测速排序切成4段，只订1-2段最轻）
 ```
-第1段·最快   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p1.json
-第2段       https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p2.json
-第3段       https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p3.json
-第4段·长尾   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p4.json
+第1段·最快   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p1.json
+第2段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p2.json
+第3段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p3.json
+第4段·长尾   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p4.json
 ```
 
 分区订阅（从干净版里单独抽出来的专区，按需订）
 ```
-成人专区(隔离)        https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p5.json
-教育/少儿专区         https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p6.json
-体育专区               https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single_p7.json
+成人专区(隔离)        https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p5.json
+教育/少儿专区         https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p6.json
+体育专区               https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p7.json
 ```
 
 点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
 ```
-安卓5+ 多仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multiad.json
-安卓5+ 单仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/singlead.json
-安卓4  多仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/multiad.json
-安卓4  单仓   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/singlead.json
+安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multiad.json
+安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/singlead.json
+安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multiad.json
+安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/singlead.json
 ```
 
 直播源
 ```
-可直连(63条)      https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_direct.txt
+可直连(63条)      https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_direct.txt
 ```
 要验证
 ```
-需广告/验证(17条)   https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/live_ad.txt
+需广告/验证(17条)   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_ad.txt
 ```
 
 | 用途 | 安卓5+ | 安卓4 |
@@ -82,14 +83,15 @@
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@agg-latest` 不能省：这是每周更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
+上面地址默认走 **gh-proxy 加速直链**（`gh-proxy.com` 转发 GitHub raw），**推送即新鲜、且能托管 `Yoursmile.jar`（爬虫 jar）**——订阅里全局 `spider` 就指向本仓库的 `jar/Yoursmile.jar`，jsDelivr 不托管 `.jar`（会 403），所以请用这套直链，别换 jsDelivr。
 
-**盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
-1. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
-2. `https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
-3. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（GitHub 直连被墙时用，大文件略慢）
-4. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
-`cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败。本仓库默认前缀用 `fastly.jsdelivr.net`；各边缘节点刷新节奏不同步，若某节点拿到旧版（表现为配置获取失败/乱码/门），按上面顺序换前缀即可，raw 原址始终最新。
+**若 gh-proxy 抽风/慢，按顺序换前缀**（同路径替换即可，文件内容完全一致）：
+1. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需能连 GitHub；最稳、永远最新，但国内直连常被墙）
+2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（默认，GitHub 直连被墙时用）
+3. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（CDN 快但滚动 tag 各边缘刷新不同步，偶尔拿到旧版）
+4. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
+
+说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
 
 ## 直播源地址（完整 80 条，独立直播订阅）
 

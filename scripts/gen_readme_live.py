@@ -14,7 +14,9 @@ VERIFY = "output/live_verify_table.md"
 
 REPO = "zueston/tvbox-api-backup"
 CDN = "https://fastly.jsdelivr.net/gh"
-BASE = f"{CDN}/{REPO}@agg-latest/output"
+GHBASE = f"https://gh-proxy.com/https://raw.githubusercontent.com/{REPO}/main/output"
+# 主推 gh-proxy/raw 直链（永远最新、jar 也能托管）；jsDelivr 因滚动 tag 边缘缓存不可靠 + 不支持 .jar，仅作备用。
+BASE = GHBASE
 
 def need_verify(r):
     return r["kind"] in ("HTML", "FAIL", "ODD") or (r["kind"] in ("M3U", "TXT") and r["marks"])
@@ -111,14 +113,15 @@ def main():
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@agg-latest` 不能省：这是每周更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
+上面地址默认走 **gh-proxy 加速直链**（`gh-proxy.com` 转发 GitHub raw），**推送即新鲜、且能托管 `Yoursmile.jar`（爬虫 jar）**——订阅里全局 `spider` 就指向本仓库的 `jar/Yoursmile.jar`，jsDelivr 不托管 `.jar`（会 403），所以请用这套直链，别换 jsDelivr。
 
-**盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
-1. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
-2. `https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
-3. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（GitHub 直连被墙时用，大文件略慢）
-4. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需科学环境）
-`cdn.jsdelivr.net` 主域在部分运营商线路被 DNS 污染解析失败。本仓库默认前缀用 `fastly.jsdelivr.net`；各边缘节点刷新节奏不同步，若某节点拿到旧版（表现为配置获取失败/乱码/门），按上面顺序换前缀即可，raw 原址始终最新。
+**若 gh-proxy 抽风/慢，按顺序换前缀**（同路径替换即可，文件内容完全一致）：
+1. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需能连 GitHub；最稳、永远最新，但国内直连常被墙）
+2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（默认，GitHub 直连被墙时用）
+3. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（CDN 快但滚动 tag 各边缘刷新不同步，偶尔拿到旧版）
+4. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
+
+说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
 """
 
     name_w = max(len(n) for n, _, _ in rows)
