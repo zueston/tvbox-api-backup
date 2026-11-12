@@ -1,0 +1,22 @@
+name: whereami (egress probe)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show egress IP and geolocation
+        run: |
+          echo "=== ipinfo.io ==="
+          curl -s --max-time 15 https://ipinfo.io/json || true
+          echo ""
+          echo "=== ip-api.com ==="
+          curl -s --max-time 15 "http://ip-api.com/json/?fields=status,country,regionName,city,isp,as" || true
+          echo ""
+          echo "=== latency to sample CN sources from this egress ==="
+          for u in "http://150.158.52.248" "http://124.223.214.31:8" "https://raw.githubusercontent.com" "https://www.juwanhezi.com"; do
+            t=$(curl -s -o /dev/null -w "%{http_code} %{time_total}s" --max-time 12 "$u" || echo "fail")
+            echo "$u -> $t"
+          done
