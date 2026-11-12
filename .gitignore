@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+output/speed_report_shanhe.json
+scripts/cache_*.html
+scripts/output/

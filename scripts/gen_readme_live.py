@@ -92,7 +92,7 @@ def main():
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@agg-latest` 不能省：这是每日更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
+`@agg-latest` 不能省：这是每周更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
 
 **盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
 1. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
@@ -109,7 +109,7 @@ def main():
         "旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。"
         "其中 %d 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 %d 条可直连（`output/live_direct.txt`）。\n\n"
         "```\n%s```\n\n"
-        "同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每日 Actions 自动重测活更新。\n"
+        "同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每周日 Actions 自动重测活更新。\n"
     ) % (len(rows), len(ad), len(direct), list_block + "\n")
 
     verify_section = ""
@@ -121,7 +121,7 @@ def main():
                 "## 需看广告/验证的线路（单独列出）\n\n"
                 "下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，"
                 "需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。\n\n%s\n\n"
-                "判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每日随 Actions 更新。\n"
+                "判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每周随 Actions 更新。\n"
             ) % vtxt
     except IOError:
         pass

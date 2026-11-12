@@ -20,6 +20,7 @@
 
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
 点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
@@ -56,7 +57,7 @@
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
-`@agg-latest` 不能省：这是每日更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
+`@agg-latest` 不能省：这是每周更新自动移动的滚动 tag，jsDelivr 对 tag 缓存**不可变、推送即新鲜**（`@main` 分支缓存会陈旧数小时，导致盒子拿到旧配置——乱码/验证门都是这么来的）。
 
 **盒子提示「配置获取失败」时按顺序换前缀**（同路径替换即可，文件内容完全一致）：
 1. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
@@ -151,7 +152,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 音乐所           https://szyyds.cn/tv/live/yy.txt
 ```
 
-同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每日 Actions 自动重测活更新。
+同步文件：`output/live_sources.txt`（格式 `名称<TAB>URL<TAB>来源`），每周日 Actions 自动重测活更新。
 
 ## 需看广告/验证的线路（单独列出）
 
@@ -179,7 +180,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 | 有效期27年7月 | M3U | 源可直连，网页打开是带token参数 | `http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512` |
 | 没4K | TXT | 源可直连，网页打开是图床哈希页 | `https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db` |
 
-判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每日随 Actions 更新。
+判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每周随 Actions 更新。
 
 ## 哪些软件支持多仓、哪些支持单仓
 
@@ -202,7 +203,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 - 16 线程并发测活：HTTP 200 + 体积 >50B，`.json` 结尾额外校验可解析；聚玩盒子当日已测活的仍照常探内容量（兜底算活）。
 - **盒子反爬适配**（饭太硬类源站）：浏览器 UA 拿到导航页/HTML 时自动用 `okhttp/3.11` 盒子 UA 重试；支持 JPEG+尾部 base64 混淆配置解码（`ew0K` 起解）；中文域名自动 punycode（IDNA）转换后探测。
 - **单仓选源按内容量优先**（站点+解析+直播数降序、同量比响应速度），空源不占 TOP 名额，避免聚合出"快但空"的配置。
-- **速度排序**（`scripts/speed_rank.py`，每日 13:00 由本机计划任务跑，测试点=长沙移动出口，与盒子实际体验一致）：多仓线路按整包响应实测耗时降序重排（profiles/urls/storeHouse 三数组同步，自家第一条固定）；单仓站点按 api 直连实测耗时排序，快的放上面；csp 爬虫型站点与不可达 api 无法直接测，按全体中位耗时插入中段保持相对顺序。明细见 `output/speed_report.json`（每条线路/站点的实测毫秒）。
+- **速度排序**（`scripts/speed_rank.py`，每周日 13:00 由本机计划任务跑，测试点=长沙移动出口，与盒子实际体验一致；Actions 周日 12:30 先用山河云单点粗排兜底，本机跑完后以精确结果覆盖）：多仓线路按整包响应实测耗时降序重排（profiles/urls/storeHouse 三数组同步，自家第一条固定）；单仓站点按 api 直连实测耗时排序，快的放上面；csp 爬虫型站点与不可达 api 无法直接测，按全体中位耗时插入中段保持相对顺序。明细见 `output/speed_report.json`（每条线路/站点的实测毫秒）。
 
 ## 手动更新
 
@@ -215,7 +216,9 @@ python collect_merge.py --top 12     # 重抓四上游+测活+重建全部产物
 
 ## 自动更新
 
-两级流水线：① GitHub Actions 每日 12:30（北京时间）跑 `collect_merge.py` 整合+测活+分池并回推 `output/`（`.github/workflows/update.yml`）；② 本机 Windows 计划任务 `TVBox-RankAndPush` 每日 13:00 跑 `scripts/rank_and_push.ps1`：拉取远端 → 重跑管线 → **本机（长沙移动出口）`speed_rank.py` 测速排序** → commit+push → 移动 `agg-latest` tag。Actions 在美国机房测国内源不准，最终排序以本机为准；tag 由本机移动，订阅 URL 每天 13:05 后即为最新。
+两级流水线，**每周日**跑一轮（日常改动靠 Actions 当日 commit 即可，排序每周由本机校准一次）：
+① GitHub Actions 每周日 12:30（北京时间）跑 `collect_merge.py` 整合+测活+分池+**山河云单点粗排**（兜底，本机不在时保基本排序），回推 `output/`（`.github/workflows/update.yml`）；
+② 本机 Windows 计划任务 `TVBox-RankAndPush` 每周日 13:00 跑 `scripts/rank_and_push.ps1`：拉取远端 → 重跑管线 → **本机（长沙移动出口）`speed_rank.py` 精确测速排序** → commit+push → 移动 `agg-latest` tag。Actions 在美国机房测国内源不准，最终排序以本机为准；本机与山河云都失败时，保留 `collect_merge` 的内容量优先顺序照常出产物。
 
 ## 免责
 

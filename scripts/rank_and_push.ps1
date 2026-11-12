@@ -1,5 +1,6 @@
-# rank_and_push.ps1 — 本机（长沙移动出口）每日聚合+测速+推送+移动 agg-latest tag
-# 由 Windows 计划任务 TVBox-RankAndPush 每日 13:00 调用（排在 Actions 12:30 之后，本机排序为最终结果）
+﻿# rank_and_push.ps1 — 本机（长沙移动出口）每周聚合+精确测速+推送+移动 agg-latest tag
+# 由 Windows 计划任务 TVBox-RankAndPush 每周日 13:00 调用（排在 Actions 周日 12:30 之后，本机排序为最终结果）
+# 测速失败不阻断：speed_rank 报错时保留 collect_merge 的内容量优先顺序照常提交
 # 手动执行：powershell -ExecutionPolicy Bypass -File scripts\rank_and_push.ps1
 
 $Repo   = "F:\文档\deepseek-harness\default-workspace\tvbox-api-backup"
