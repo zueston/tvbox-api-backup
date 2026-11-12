@@ -221,6 +221,8 @@ def probe(e):
                 e["cfg_sites"] = len(cfg.get("sites") or [])
                 e["cfg_lives"] = len(cfg.get("lives") or [])
                 e["cfg_parses"] = len(cfg.get("parses") or [])
+                if gate_cfg(cfg):
+                    e["gate"] = True          # 配置自带验证门 jar（弹"接口验证/小程序"）
             if cfg is None and not looks_html(body):
                 ok = False        # 非 JSON 又非 HTML 的垃圾响应判死
         e["alive"], e["probe_ms"] = (ok or trusted), ms
@@ -234,13 +236,13 @@ TAG = "agg-latest"  # 滚动 tag：jsDelivr 对 @tag 是不可变缓存，push �
 def main_house(path):
     return f"https://fastly.jsdelivr.net/gh/{REPO}@{TAG}/output/{path}"
 
-def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_path="android5/single.json"):
+def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_path="android5/single.json", keep_gate=False):
     items = sorted(alive_items, key=lambda x: (x.get("probe_ms") or x.get("speed") or 99999,))
     profiles = [{"url": main_house(main_path), "name": main_name, "desc": "self"}]
     seen_name = {main_name}
     for r in items:
         nm = r["name"]
-        if gate_repo(r["url"]):
+        if not keep_gate and gate_repo(r["url"]):
             continue
         if nm in seen_name:
             continue
@@ -261,7 +263,8 @@ def build_multi(alive_items, main_name="四源聚合·主仓库(推荐)", main_p
 def build_multi_a4(alive_items, ad=False):
     return build_multi(alive_items,
                        "四源聚合·主仓库(需验证)" if ad else "四源聚合·主仓库(推荐)",
-                       f"android4/{'singlead' if ad else 'single'}.json")
+                       f"android4/{'singlead' if ad else 'single'}.json",
+                       keep_gate=ad)
 
 # ---------- 单仓合并 ----------
 def abs_url(base, ref):
@@ -280,6 +283,14 @@ GATE_HOST_PATS = re.compile(r"124\.223\.214\.31|iyouhun|bhh\.indevs\.in|guot55",
 def gate_repo(url):
     return bool(GATE_HOST_PATS.search(str(url)))
 
+def gate_cfg(cfg):
+    """配置内容自带验证门 jar：全局 spider/jar 或任一站点的 jar/spider 命中门黑名单。
+    只查 jar/spider/api 字段——ext 引用 guot55 json/filters 不构成门（那是数据文件）。"""
+    blob = str(cfg.get("jar", "")) + str(cfg.get("spider", ""))
+    for s in cfg.get("sites") or []:
+        blob += str(s.get("jar", "")) + str(s.get("spider", "")) + str(s.get("api", ""))
+    return bool(GATE_JAR_PATS.search(blob))
+
 def a4_site_ok(s):
     api = str(s.get("api", ""))
     if s.get("type") == 3 or api.startswith(("csp:", "assets:", "jar:")) or "csp_" in api:
@@ -289,8 +300,9 @@ def a4_site_ok(s):
         return False
     return True
 
-def merge_single(alive_items, a4: bool, top: int = None):
-    """按速度取前 top 个有效单仓源合并；空源(0站点0解析0直播)不占名额，总抓取上限60"""
+def merge_single(alive_items, a4: bool, top: int = None, keep_gate: bool = False):
+    """按速度取前 top 个有效单仓源合并；空源(0站点0解析0直播)不占名额，总抓取上限60
+    keep_gate=True（要验证版）：保留验证门站点与 jar——那一档就是给愿意过门的人用的。"""
     top = top or TOP_SINGLE
     cands = [e for e in alive_items if norm_url(e["url"]).endswith((".json", ".webp", ".txt")) or "json" in e["url"] or e.get("box_ua")]
     def _content(e):
@@ -339,8 +351,8 @@ def merge_single(alive_items, a4: bool, top: int = None):
                 continue
             if not s.get("api"):          # 无 api 的分隔伪行，盒子解析易炸
                 continue
-            if GATE_JAR_PATS.search(str(s.get("jar", "")) + str(s.get("spider", "")) + str(s.get("api", ""))):
-                continue                  # 验证门 jar 站点整站剔除
+            if not keep_gate and GATE_JAR_PATS.search(str(s.get("jar", "")) + str(s.get("spider", "")) + str(s.get("api", ""))):
+                continue                  # 验证门 jar 站点整站剔除（干净版）
             if a4 and not a4_site_ok(s):
                 continue
             s = dict(s)
@@ -394,10 +406,10 @@ def merge_single(alive_items, a4: bool, top: int = None):
                 merged["flags"].append(f)
         if not a4:
             jar = cfg.get("jar")
-            if isinstance(jar, str) and jar and not merged.get("jar") and not GATE_JAR_PATS.search(jar):
+            if isinstance(jar, str) and jar and not merged.get("jar") and (keep_gate or not GATE_JAR_PATS.search(jar)):
                 merged["jar"] = abs_url(e["url"], jar)
             sp = cfg.get("spider")
-            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider") and not GATE_JAR_PATS.search(sp):
+            if isinstance(sp, str) and sp.startswith(("http", "./", "../")) and not merged.get("spider") and (keep_gate or not GATE_JAR_PATS.search(sp)):
                 merged["spider"] = abs_url(e["url"], sp)
         src_map.append({"name": e["name"], "url": e["url"], "origin": e["origin"], "sites": n_s, "parses": n_p, "lives": n_l})
         print(f"[merge{'/a4' if a4 else ''}] {e['name']}: sites={n_s} parses={n_p} lives={n_l}")
@@ -446,14 +458,16 @@ def main():
             pass  # 保留，4.4 大多可 TLS1.2；仅优先排序
         a4_items.append(ee)
 
-    # 点播源分池：要验证/广告版 = 盒子UA反爬(浏览器打开是导航页)、base64混淆配置、网盘/图床/token落地页URL
+    # 点播源分池（新规则 m02866）：只有**带接口验证门弹窗**的源进要验证版；
+    # 普通广告/反爬导航页/混淆配置源留干净版——盒子端有 AI 规则可自动去广告，不必单列。
+    # 门判定 = 仓库主机命中 GATE_HOST_PATS，或配置内容自带门 jar（probe 里 gate_cfg 置位）。
     for e in alive + a4_items:
-        e["ad"] = bool(e.get("box_ua") or e.get("obf") or url_ad_marks(e["url"]))
+        e["ad"] = bool(e.get("gate")) or gate_repo(e["url"])
     v5 = [e for e in alive if e["ad"]]
     v4 = [e for e in a4_items if e["ad"]]
     clean5 = [e for e in alive if not e["ad"]]
     clean4 = [e for e in a4_items if not e["ad"]]
-    print(f"vod split: ad={len(v5)} clean={len(clean5)}")
+    print(f"vod split: gate={len(v5)} clean={len(clean5)}")
 
     m5 = build_multi(clean5)
     m4 = build_multi_a4(clean4)
@@ -461,7 +475,7 @@ def main():
     (OUT / "android4" / "multi.json").write_text(json.dumps(m4, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"multi: storeHouse={len(m5['storeHouse'])}")
 
-    ma5 = build_multi(v5, "四源聚合·主仓库(需验证)", "android5/singlead.json")
+    ma5 = build_multi(v5, "四源聚合·主仓库(需验证)", "android5/singlead.json", keep_gate=True)
     ma4 = build_multi_a4(v4, ad=True)
     (OUT / "android5" / "multiad.json").write_text(json.dumps(ma5, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "android4" / "multiad.json").write_text(json.dumps(ma4, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -470,9 +484,9 @@ def main():
     (OUT / "android5" / "single.json").write_text(json.dumps(s5, ensure_ascii=False, indent=1), encoding="utf-8")
     s4, rep4 = merge_single(clean4, a4=True, top=max(TOP_SINGLE * 3, 30))
     (OUT / "android4" / "single.json").write_text(json.dumps(s4, ensure_ascii=False, indent=1), encoding="utf-8")
-    sa5, repa5 = merge_single(v5, a4=False)
+    sa5, repa5 = merge_single(v5, a4=False, keep_gate=True)
     (OUT / "android5" / "singlead.json").write_text(json.dumps(sa5, ensure_ascii=False, indent=1), encoding="utf-8")
-    sa4, repa4 = merge_single(v4, a4=True, top=max(TOP_SINGLE * 3, 30))
+    sa4, repa4 = merge_single(v4, a4=True, top=max(TOP_SINGLE * 3, 30), keep_gate=True)
     (OUT / "android4" / "singlead.json").write_text(json.dumps(sa4, ensure_ascii=False, indent=1), encoding="utf-8")
 
     lines = [f"# 直播源清单 {time.strftime('%F %T')}  共{len(luniq)}"]

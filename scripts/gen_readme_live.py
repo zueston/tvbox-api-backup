@@ -58,7 +58,7 @@ def main():
 
     sub_block = f"""## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
-点播·干净版（无广告验证线路）
+点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
 ```
 安卓5+ 多仓   {BASE}/android5/multi.json
 安卓5+ 单仓   {BASE}/android5/single.json
@@ -66,7 +66,7 @@ def main():
 安卓4  单仓   {BASE}/android4/single.json
 ```
 
-点播·要验证版（源站反爬/导航页/落地页线路，独立一档）
+点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
 ```
 安卓5+ 多仓   {BASE}/android5/multiad.json
 安卓5+ 单仓   {BASE}/android5/singlead.json

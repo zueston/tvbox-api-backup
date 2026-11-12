@@ -5,76 +5,32 @@
    "sourceUrl": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/singlead.json"
   },
   {
-   "sourceName": "uuccc",
-   "sourceUrl": "http://xn--5mqx81b535a.com/"
+   "sourceName": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】",
+   "sourceUrl": "http://124.223.214.31:16/8888"
   },
   {
-   "sourceName": "影视仓",
-   "sourceUrl": "http://影视仓.com/"
+   "sourceName": "my interface",
+   "sourceUrl": "http://124.223.214.31:8/api.json"
   },
   {
-   "sourceName": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-   "sourceUrl": "https://700sjro44343.vicp.fun/eggp/0615/tv.php"
+   "sourceName": "hhh",
+   "sourceUrl": "https://www.iyouhun.com/tv/fty"
   },
   {
-   "sourceName": "http://www.xn--sss604efuw.net/tv",
-   "sourceUrl": "http://www.xn--sss604efuw.net/tv"
+   "sourceName": "宝盒",
+   "sourceUrl": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json"
   },
   {
-   "sourceName": "摸鱼5线",
-   "sourceUrl": "http://www.y456y.com"
+   "sourceName": "新接口",
+   "sourceUrl": "https://www.iyouhun.com/tv/wex"
   },
   {
-   "sourceName": "无意云",
-   "sourceUrl": "https://yc.wya6.cn/wykj.php"
+   "sourceName": "游魂多仓",
+   "sourceUrl": "https://www.iyouhun.com/tv/dc"
   },
   {
-   "sourceName": "饭太硬",
-   "sourceUrl": "http://www.饭太硬.net/tv"
-  },
-  {
-   "sourceName": "饭太硬2线",
-   "sourceUrl": "http://www.饭太硬.cc/tv"
-  },
-  {
-   "sourceName": "王二小",
-   "sourceUrl": "http://new.王二小放牛娃.top"
-  },
-  {
-   "sourceName": "宝盒接口",
-   "sourceUrl": "http://宝盒接口.top"
-  },
-  {
-   "sourceName": "xn--6orr3pi6g9uu",
-   "sourceUrl": "http://xn--6orr3pi6g9uu.top/"
-  },
-  {
-   "sourceName": "王二小3线",
-   "sourceUrl": "http://tvbox.王二小放牛娃.top"
-  },
-  {
-   "sourceName": "摸鱼6线",
-   "sourceUrl": "http://fish.y456y.com"
-  },
-  {
-   "sourceName": "摸鱼主用二",
-   "sourceUrl": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc"
-  },
-  {
-   "sourceName": "直播",
-   "sourceUrl": "https://mpimg.cn/text.php?hash=aeada10283cf466c508e6b05b5a11719"
-  },
-  {
-   "sourceName": "王二小接口",
-   "sourceUrl": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/"
-  },
-  {
-   "sourceName": "菜妮丝",
-   "sourceUrl": "https://tv.xn--yhqu5zs87a.top"
-  },
-  {
-   "sourceName": "王二小放牛娃",
-   "sourceUrl": "http://tv.999888987.xyz"
+   "sourceName": "https://clun.top/fun.json",
+   "sourceUrl": "https://clun.top/fun.json"
   }
  ],
  "profiles": [
@@ -83,76 +39,32 @@
    "name": "四源聚合·主仓库(需验证)"
   },
   {
-   "url": "http://xn--5mqx81b535a.com/",
-   "name": "uuccc"
+   "url": "http://124.223.214.31:16/8888",
+   "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
   },
   {
-   "url": "http://影视仓.com/",
-   "name": "影视仓"
+   "url": "http://124.223.214.31:8/api.json",
+   "name": "my interface"
   },
   {
-   "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-   "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php"
+   "url": "https://www.iyouhun.com/tv/fty",
+   "name": "hhh"
   },
   {
-   "url": "http://www.xn--sss604efuw.net/tv",
-   "name": "http://www.xn--sss604efuw.net/tv"
+   "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+   "name": "宝盒"
   },
   {
-   "url": "http://www.y456y.com",
-   "name": "摸鱼5线"
+   "url": "https://www.iyouhun.com/tv/wex",
+   "name": "新接口"
   },
   {
-   "url": "https://yc.wya6.cn/wykj.php",
-   "name": "无意云"
+   "url": "https://www.iyouhun.com/tv/dc",
+   "name": "游魂多仓"
   },
   {
-   "url": "http://www.饭太硬.net/tv",
-   "name": "饭太硬"
-  },
-  {
-   "url": "http://www.饭太硬.cc/tv",
-   "name": "饭太硬2线"
-  },
-  {
-   "url": "http://new.王二小放牛娃.top",
-   "name": "王二小"
-  },
-  {
-   "url": "http://宝盒接口.top",
-   "name": "宝盒接口"
-  },
-  {
-   "url": "http://xn--6orr3pi6g9uu.top/",
-   "name": "xn--6orr3pi6g9uu"
-  },
-  {
-   "url": "http://tvbox.王二小放牛娃.top",
-   "name": "王二小3线"
-  },
-  {
-   "url": "http://fish.y456y.com",
-   "name": "摸鱼6线"
-  },
-  {
-   "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
-   "name": "摸鱼主用二"
-  },
-  {
-   "url": "https://mpimg.cn/text.php?hash=aeada10283cf466c508e6b05b5a11719",
-   "name": "直播"
-  },
-  {
-   "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-   "name": "王二小接口"
-  },
-  {
-   "url": "https://tv.xn--yhqu5zs87a.top",
-   "name": "菜妮丝"
-  },
-  {
-   "url": "http://tv.999888987.xyz",
-   "name": "王二小放牛娃"
+   "url": "https://clun.top/fun.json",
+   "name": "https://clun.top/fun.json"
   }
  ],
  "urls": [
@@ -161,76 +73,32 @@
    "name": "四源聚合·主仓库(需验证)"
   },
   {
-   "url": "http://xn--5mqx81b535a.com/",
-   "name": "uuccc"
+   "url": "http://124.223.214.31:16/8888",
+   "name": "【8月8日】最新【影视仓】高清【1080P】高速接口地址【支持弹幕】"
   },
   {
-   "url": "http://影视仓.com/",
-   "name": "影视仓"
+   "url": "http://124.223.214.31:8/api.json",
+   "name": "my interface"
   },
   {
-   "url": "https://700sjro44343.vicp.fun/eggp/0615/tv.php",
-   "name": "https://700sjro44343.vicp.fun/eggp/0615/tv.php"
+   "url": "https://www.iyouhun.com/tv/fty",
+   "name": "hhh"
   },
   {
-   "url": "http://www.xn--sss604efuw.net/tv",
-   "name": "http://www.xn--sss604efuw.net/tv"
+   "url": "https://raw.githubusercontent.com/guot55/yg/main/pg/bh.json",
+   "name": "宝盒"
   },
   {
-   "url": "http://www.y456y.com",
-   "name": "摸鱼5线"
+   "url": "https://www.iyouhun.com/tv/wex",
+   "name": "新接口"
   },
   {
-   "url": "https://yc.wya6.cn/wykj.php",
-   "name": "无意云"
+   "url": "https://www.iyouhun.com/tv/dc",
+   "name": "游魂多仓"
   },
   {
-   "url": "http://www.饭太硬.net/tv",
-   "name": "饭太硬"
-  },
-  {
-   "url": "http://www.饭太硬.cc/tv",
-   "name": "饭太硬2线"
-  },
-  {
-   "url": "http://new.王二小放牛娃.top",
-   "name": "王二小"
-  },
-  {
-   "url": "http://宝盒接口.top",
-   "name": "宝盒接口"
-  },
-  {
-   "url": "http://xn--6orr3pi6g9uu.top/",
-   "name": "xn--6orr3pi6g9uu"
-  },
-  {
-   "url": "http://tvbox.王二小放牛娃.top",
-   "name": "王二小3线"
-  },
-  {
-   "url": "http://fish.y456y.com",
-   "name": "摸鱼6线"
-  },
-  {
-   "url": "https://xn--ihqu10cn4c.xn--v4q818bf34b.cc",
-   "name": "摸鱼主用二"
-  },
-  {
-   "url": "https://mpimg.cn/text.php?hash=aeada10283cf466c508e6b05b5a11719",
-   "name": "直播"
-  },
-  {
-   "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-   "name": "王二小接口"
-  },
-  {
-   "url": "https://tv.xn--yhqu5zs87a.top",
-   "name": "菜妮丝"
-  },
-  {
-   "url": "http://tv.999888987.xyz",
-   "name": "王二小放牛娃"
+   "url": "https://clun.top/fun.json",
+   "name": "https://clun.top/fun.json"
   }
  ],
  "sp": "",

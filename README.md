@@ -17,9 +17,10 @@
 
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
-点播·干净版（无广告验证线路）
+点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
 ```
 安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multi.json
 安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/single.json
@@ -27,7 +28,7 @@
 安卓4  单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android4/single.json
 ```
 
-点播·要验证版（源站反爬/导航页/落地页线路，独立一档）
+点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
 ```
 安卓5+ 多仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/multiad.json
 安卓5+ 单仓   https://cdn.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/android5/singlead.json
@@ -183,7 +184,8 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 - **安卓5+ single**：保留全部站点（含 `csp:` Jar 爬虫）、解析 type2、全局 jar/spider/ijk 配置。
 - **安卓4 single**：剔除 `type==3`、`api/spider` 以 `csp:`/`assets:`/`jar:` 开头的站点（旧内核跑不了 Jar 爬虫）、剔除 `type==2` 解析、剔除无 url 直播行、不写全局 jar/spider；选源名额扩大到 3 倍并用"空源不占名额"策略补足有效站点。
-- **multi**：两套同为去重测活后的全量存活源清单（70 条），仅名称标注不同。
+- **点播分池规则**：只有**带「接口验证」门弹窗**的源（仓库主机或配置 jar/spider 命中 guot55 宝盒系 / bhh.indevs.in / iyouhun / 124.223.214.31 黑名单）才进要验证版；普通广告源、反爬导航页、base64 混淆配置**都留在干净版**——广告由盒子端 AI 规则自动过滤，不需要用户手动过。要验证版内保留门站点与门 jar（那一档就是给愿意领验证码的人准备的）。
+- **multi**：干净版=全量存活非门源（80 条），要验证版=自家门仓单仓+门源（8 条）；两套 profiles[0] 都是自家聚合单仓且 home 指向它（影视仓自动激活第一条，保证打开就有内容）。
 
 ## 去重与测活
 

@@ -1,4 +1,4 @@
-# 直播源清单 2026-11-12 01:08:32  共79
+# 直播源清单 2026-11-12 08:16:23  共79
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
 B站直播1线	https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u	lubin776
