@@ -2,43 +2,43 @@
  "storeHouse": [
   {
    "name": "高天流云js (224站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_01.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_01.json"
   },
   {
    "name": "ok (176站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_02.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_02.json"
   },
   {
    "name": "vv (49站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_03.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_03.json"
   },
   {
    "name": "心魔 (120站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_04.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_04.json"
   },
   {
    "name": "无意云 (31站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_05.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_05.json"
   },
   {
    "name": "clun (77站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_06.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_06.json"
   },
   {
    "name": "幸福年年 (9站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_07.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_07.json"
   },
   {
    "name": "2 (15站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_08.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_08.json"
   },
   {
    "name": "小马 (11站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_09.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_09.json"
   },
   {
    "name": "金鹰 (76站)",
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_10.json"
+   "url": "https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/houses/house_10.json"
   }
  ],
  "name": "四源聚合·多仓(按源分jar)"

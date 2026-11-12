@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import json,os,re
 REPO="zueston/tvbox-api-backup"
-GH="https://gh-proxy.com/https://raw.githubusercontent.com/%s/main" % REPO
+# 子仓 url 与 spider jar 一律用 raw 直连：家庭宽带出口不撞 GitHub API 匿名限流(60/h)
+# 顶层 storehouse.json 由用户用 fastly.jsdelivr.net 点 commit 获取(走 CDN 不经 GitHub API)
+GH="https://raw.githubusercontent.com/%s/main" % REPO
 lib=json.load(open('scripts/_jar_lib.json',encoding='utf-8'))
 man=json.load(open('scripts/_jar_manifest.json',encoding='utf-8'))
 url2name={v[3]:k for k,v in man.items()}
