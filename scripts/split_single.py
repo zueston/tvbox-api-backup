@@ -23,6 +23,8 @@ import os
 import sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 分段文件只占用 single_p1..single_p{该值}；p5/p6/p7 是专区(成人/教育/体育)，不参与分段清理
+RESERVED_PART_MAX = 4
 SOURCES = [
     os.path.join(BASE, "output", "android5", "single.json"),
     os.path.join(BASE, "output", "android4", "single.json"),
@@ -37,10 +39,14 @@ def split_one(path: str, size: int, max_parts: int):
     d0 = os.path.dirname(path)
 
     def clean_stale(parts):
+        # 只清理「分段」编号 (<= RESERVED_PART_MAX)，绝不碰 p5/p6/p7 等专区文件
         for fn in sorted(os.listdir(d0)):
             if fn.startswith("single_p") and fn.endswith(".json"):
-                idx = int(fn[len("single_p"):-len(".json")])
-                if idx > parts:
+                tail = fn[len("single_p"):-len(".json")]
+                if not tail.isdigit():
+                    continue
+                idx = int(tail)
+                if idx > parts and idx <= RESERVED_PART_MAX:
                     os.remove(os.path.join(d0, fn))
 
     if total <= size:  # light enough, no split
