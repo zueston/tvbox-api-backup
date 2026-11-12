@@ -25,6 +25,8 @@ jobs:
       # 本机与山河云都失败时，保留 collect_merge 的内容量优先顺序照常出产物。
       - name: Coarse speed-rank via shanhe API (fallback; local task re-ranks precisely)
         run: python scripts/speed_rank_shanhe.py || echo "shanhe failed, keep unranked order"
+      - name: Split ranked single into 4 chunks (light subscriptions)
+        run: python scripts/split_single.py 300 4
       - name: Classify live sources
         run: python scripts/classify_live.py || echo "classify failed, keep table"
       - name: Regenerate README sections + live lists

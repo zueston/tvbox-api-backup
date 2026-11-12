@@ -24,6 +24,7 @@ foreach ($cmd in @(
     "python scripts/scrape_juwanhezi.py",
     "python scripts/collect_merge.py --top 12",
     "python scripts/speed_rank.py",
+    "python scripts/split_single.py 300 4",
     "python scripts/classify_live.py",
     "python scripts/gen_readme_live.py"
 )) {

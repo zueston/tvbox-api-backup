@@ -66,6 +66,14 @@ def main():
 安卓4  单仓   {BASE}/android4/single.json
 ```
 
+安卓5+ 单仓·分段版（站点太多嫌卡就订这些：全量1263站按测速排序切成4段，各约316站，只订1-2段最轻）
+```
+第1段·最快   {BASE}/android5/single_p1.json
+第2段       {BASE}/android5/single_p2.json
+第3段       {BASE}/android5/single_p3.json
+第4段·长尾   {BASE}/android5/single_p4.json
+```
+
 点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
 ```
 安卓5+ 多仓   {BASE}/android5/multiad.json
@@ -89,6 +97,7 @@ def main():
 | 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
 | 多仓·要验证版 | `output/android5/multiad.json` | `output/android4/multiad.json` |
 | 单仓·要验证版 | `output/android5/singlead.json` | `output/android4/singlead.json` |
+| 单仓·分段1-4（嫌卡选订） | `output/android5/single_p1..p4.json` | 无需（197站不切） |
 | 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
 | 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
 
