@@ -1,3 +1,6 @@
+REJECT 宝盒线路2026(紫) -> https://3043.kstore.space/bhvip/bh/bh2.json (not-json-head:'2')
+REJECT 分享者(紫) -> http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json (bad-json:JSONDecodeError)
+REJECT 少儿频道(紫) -> https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer (not-json-head:'P')
 === 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===
 house_01.json    高天流云js         总 225 保留 224 剔  1 jar=pg.jar
 house_02.json    ok             总 180 保留 176 剔  4 jar=ttkx.jar
@@ -12,4 +15,8 @@ house_09.json    小马             总  25 保留  11 剔 14 jar=XBPQ.jar
 house_10.json    金鹰             总  76 保留  76 剔  0 jar=ttkx.jar
 [跳过:保留<5]        牛二             总  68 保留   0 剔 68 jar=XBPQ.jar
 合计: 总1077 保留789 剔除288 | 有效子仓10
-depot urls 条目数= 43
+外部/PURPLE 剔除 3 条:
+  [剔] 宝盒线路2026(紫) https://3043.kstore.space/bhvip/bh/bh2.json (not-json-head:'2')
+  [剔] 分享者(紫) http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json (bad-json:JSONDecodeError)
+  [剔] 少儿频道(紫) https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer (not-json-head:'P')
+depot urls 条目数= 40

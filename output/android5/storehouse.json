@@ -2,43 +2,43 @@
  "urls": [
   {
    "name": "高天流云js (224站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_01.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_01.json"
   },
   {
    "name": "ok (176站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_02.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_02.json"
   },
   {
    "name": "vv (49站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_03.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_03.json"
   },
   {
    "name": "心魔 (120站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_04.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_04.json"
   },
   {
    "name": "无意云 (31站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_05.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_05.json"
   },
   {
    "name": "clun (77站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_06.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_06.json"
   },
   {
    "name": "幸福年年 (9站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_07.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_07.json"
   },
   {
    "name": "2 (15站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_08.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_08.json"
   },
   {
    "name": "小马 (11站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_09.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_09.json"
   },
   {
    "name": "金鹰 (76站)",
-   "url": "https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@eac6de4dc964df15d2bfacea59f5370f11a93f34/output/houses/house_10.json"
+   "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_10.json"
   },
   {
    "name": "王二小 (100站)",
@@ -141,10 +141,6 @@
    "url": "https://szyyds.cn/tv/x.json"
   },
   {
-   "name": "宝盒线路2026(紫)",
-   "url": "https://3043.kstore.space/bhvip/bh/bh2.json"
-  },
-  {
    "name": "牛二线路(紫)",
    "url": "https://9280.kstore.space/wex.json"
   },
@@ -153,16 +149,8 @@
    "url": "https://9280.kstore.vip/aiwex.json"
   },
   {
-   "name": "分享者(紫)",
-   "url": "http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json"
-  },
-  {
    "name": "拾光趣乐屋(紫)",
    "url": "https://jiekou.netlify.app/svip.json"
-  },
-  {
-   "name": "少儿频道(紫)",
-   "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer"
   },
   {
    "name": "挺好分享·紫(46站)",

@@ -34,6 +34,8 @@ jobs:
         run: python scripts/classify_live.py || echo "classify failed, keep table"
       - name: Regenerate README sections + live lists
         run: python scripts/gen_readme_live.py
+      - name: Build multi-house storehouse (Depot, drop bad sub-houses)
+        run: python scripts/build_multihouse.py || echo "multihouse failed, keep storehouse"
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"

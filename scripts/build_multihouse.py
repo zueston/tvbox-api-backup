@@ -1,14 +1,56 @@
 # -*- coding: utf-8 -*-
-import json,os,re
+import json,os,re,ssl,urllib.request
 REPO="zueston/tvbox-api-backup"
+
+# ── 外部子仓内容校验：Depot 会自动 load 每个 url，坏源(加密密文/超时/非JSON)会导致整体"配置取得失败"。
+# 这里对每条外部 url 预探活：能拿到、能解析为含 sites 的合法 TVBox 配置才放行；否则剔除。
+_CTX=ssl.create_default_context(); _CTX.check_hostname=False; _CTX.verify_mode=ssl.CERT_NONE
+def _fetch(u,timeout=15):
+    req=urllib.request.Request(u,headers={"User-Agent":"okhttp/3.11"})
+    return urllib.request.urlopen(req,timeout=timeout,context=_CTX).read()
+def house_ok(u):
+    """返回 (ok:bool, reason:str)。ok=True 表示该 url 可作为 Depot 子仓被 FongMi 正常解析。
+    采用与 TVBox 一致的宽容判定：剥 // 注释行、去 BOM、strict=False 允许字符串内裸控制字符；
+    仅对真正的坏源（AES 加密 hex / 返回非 JSON 如 PNG / 超时 / 非 TVBox 结构）判坏。"""
+    try:
+        raw=_fetch(u,timeout=30)
+    except Exception as e:
+        return (False,"fetch:%s"%e.__class__.__name__)
+    txt=raw.decode("utf-8-sig","ignore").strip()
+    # 非文本二进制（如返回 PNG 图片）首字节非 { [ → 直接判坏
+    head=txt[:1]
+    if head not in ("{","["):
+        # 再给一次机会：可能是前导空白/注释被 strip 后仍非括号
+        return (False,"not-json-head:%r"%head)
+    # AES 加密源特征：整串是 hex（只含0-9a-f）
+    if re.fullmatch(r"[0-9a-fA-F\s]+",txt or "x"):
+        return (False,"encrypted-hex")
+    # 去 // 注释行（TVBox 宽容解析）
+    lines=[ln for ln in txt.splitlines() if not ln.lstrip().startswith("//")]
+    body="\n".join(lines).strip()
+    obj=None
+    for strict in (False,True):   # 先宽容再严格
+        try:
+            obj=json.loads(body,strict=strict); break
+        except Exception as e:
+            last=e
+    if obj is None:
+        return (False,"bad-json:%s"%last.__class__.__name__)
+    if not isinstance(obj,dict):
+        return (False,"not-object")
+    if not (obj.get("sites") or obj.get("urls")):
+        return (False,"no-sites")
+    return (True,"ok")
 # 子仓内 spider jar 与 houses 内部 href 用 raw 直连（spider jar 只在播放时按需拉，不进 GitHub API 限流统计）
 GH="https://raw.githubusercontent.com/%s/main" % REPO
 # ★★ 关键：Depot 的 urls 指向的 house_NN.json 会被 FongMi 当作"配置"用 Decoder.getJson 拉取，
 # 走 raw/gh-proxy 会撞 GitHub 匿名 API 限流(60/h, ip 43.x)——必须用 fastly 点 commit(走 CDN 不计 API)。
 # commit hash 由 _patch_urls.py 在提交后回填；这里先用占位 {{COMMIT}}（无则退回 @main）。
 import os
-COMMIT=os.environ.get("MH_COMMIT","{{COMMIT}}")
-FASTLY="https://fastly.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
+# 用滚动 tag agg-latest（jsDelivr @tag 缓存不可变、推送即新鲜），避免两阶段回填 commit hash。
+# 注：storehouse 的 house 子仓 URL 指向 @agg-latest；tag 在提交后再移动，子仓内容与本提交一致。
+COMMIT=os.environ.get("MH_COMMIT","agg-latest")
+FASTLY="https://testingcf.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
 lib=json.load(open('scripts/_jar_lib.json',encoding='utf-8'))
 man=json.load(open('scripts/_jar_manifest.json',encoding='utf-8'))
 url2name={v[3]:k for k,v in man.items()}
@@ -77,8 +119,17 @@ EXTRA_HOUSES=[
     ("饭太硬6线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"),
     ("潇洒 (116站)",     _LB+"%E6%BD%87%E6%B4%92.json"),
 ]
+_rejected=[]
+out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
+def _add_external(nm,u):
+    ok,why=house_ok(u)
+    if ok:
+        store["urls"].append({"name":nm,"url":u})
+    else:
+        _rejected.append((nm,u,why))
+        print("REJECT %s -> %s (%s)"%(nm,u,why),file=out)
 for nm,u in EXTRA_HOUSES:
-    store["urls"].append({"name":nm,"url":u})
+    _add_external(nm,u)
 # ── 聚玩盒子 jsonlist 紫色(极速)源：外部单仓，直接作为 depot url 项追加 ──
 PURPLE=[
     ("刺桐娱乐(紫)",   "https://www.cttv.vip/ys/json/ctys.json"),
@@ -100,9 +151,8 @@ PURPLE=[
     ("小盒子4K(紫)",   "http://xhztv.top/4k.json"),
 ]
 for nm,u in PURPLE:
-    store["urls"].append({"name":nm,"url":u})
+    _add_external(nm,u)
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
-out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
 print('=== 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===',file=out)
 tot=tk=td=0
 for it in index:
@@ -111,6 +161,9 @@ for it in index:
     tot+=it['total'];tk+=it['kept'];td+=it['dropped']
 live=[i for i in index if not i.get('skipped')]
 print("合计: 总%d 保留%d 剔除%d | 有效子仓%d"%(tot,tk,td,len(live)),file=out)
+print("外部/PURPLE 剔除 %d 条:"%len(_rejected),file=out)
+for nm,u,why in _rejected:
+    print("  [剔] %s %s (%s)"%(nm,u,why),file=out)
 print("depot urls 条目数=",len(store['urls']),file=out)
 out.close()
-print('DONE live_houses=',len(live),'kept=',tk,'dropped=',td)
+print('DONE live_houses=',len(live),'kept=',tk,'dropped=',td,'rejected=',len(_rejected))
