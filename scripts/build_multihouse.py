@@ -58,10 +58,24 @@ for s in srcs:
     index.append({"source":name,"file":fn,"total":len(by),"kept":len(kept),"dropped":len(dropped),"jar":jname or "-"})
 # ── 追加外部子仓：王二小(lubin776 tvbox 自带独立 spider jar，直接引用其原 json) ──
 # 这些子仓内容自带 spider/sites，作为 Depot.urls 一项即可被 FongMi 识别并加载。
+_LB="https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/"
 EXTRA_HOUSES=[
-    ("王二小 (100站)",   "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"),
-    ("王二小2线 (100站)","https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"),
-    ("王二小3线 (63站)", "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F3%E7%BA%BF.json"),
+    ("王二小 (100站)",   _LB+"%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"),
+    ("王二小2线 (100站)", _LB+"%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"),
+    ("王二小3线 (63站)", _LB+"%E7%8E%8B%E4%BA%8C%E5%B0%8F3%E7%BA%BF.json"),
+    ("小米 (44站)",      _LB+"%E5%B0%8F%E7%B1%B3.json"),
+    ("南风 (91站)",      _LB+"%E5%8D%97%E9%A3%8E.json"),
+    ("南风2线 (91站)",   _LB+"%E5%8D%97%E9%A3%8E2%E7%BA%BF.json"),
+    ("摸鱼 (111站)",     _LB+"%E6%91%B8%E9%B1%BC.json"),
+    ("摸鱼3线 (111站)",  _LB+"%E6%91%B8%E9%B1%BC3%E7%BA%BF.json"),
+    ("摸鱼5线 (111站)",  _LB+"%E6%91%B8%E9%B1%BC5%E7%BA%BF.json"),
+    ("摸鱼6线 (111站)",  _LB+"%E6%91%B8%E9%B1%BC6%E7%BA%BF.json"),
+    ("饭太硬 (48站)",    _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC.json"),
+    ("饭太硬2线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC2%E7%BA%BF.json"),
+    ("饭太硬3线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC3%E7%BA%BF.json"),
+    ("饭太硬5线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC5%E7%BA%BF.json"),
+    ("饭太硬6线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"),
+    ("潇洒 (116站)",     _LB+"%E6%BD%87%E6%B4%92.json"),
 ]
 for nm,u in EXTRA_HOUSES:
     store["urls"].append({"name":nm,"url":u})

@@ -12,4 +12,4 @@ house_09.json    小马             总  25 保留  11 剔 14 jar=XBPQ.jar
 house_10.json    金鹰             总  76 保留  76 剔  0 jar=ttkx.jar
 [跳过:保留<5]        牛二             总  68 保留   0 剔 68 jar=XBPQ.jar
 合计: 总1077 保留789 剔除288 | 有效子仓10
-depot urls 条目数= 13
+depot urls 条目数= 26
