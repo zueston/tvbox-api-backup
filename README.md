@@ -100,15 +100,21 @@
 
 **解决方案：按源拆成多仓（Depot / urls 数组）**，每个源一个子仓、各用各的 jar；下不到私有 jar 的站（任何现有 jar 都没有对应类的 288 站）直接剔除。
 
-**多仓订阅地址（推荐，一劳永逸不再「爬虫加载失败」）：**
+**多仓订阅地址（推荐，一条地址吃全网源）：**
+```
+https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@b4222e6/output/android5/depot.json
+```
+
+> **格式实测确认**：FongMi/影视仓 5.8.7 的多仓字段是顶层 `{"urls":[{"name":..,"url":..}, ...]}`（类 `com.fongmi.android.tv.bean.Depot`，`VodConfig.checkJson` 认 `urls` 数组），**不是** `{"storeHouse":[...]}`——用错字段名会「Depot urls is empty」/点播空白。
+> **地址必须用 fastly.jsdelivr.net 的点 commit 定点**（不是 @agg-latest 滚动 tag，也不是 gh-proxy/raw）。原因：影视仓拉订阅后会**跟随 urls 里每条子仓 JSON 当配置再拉一遍**，走 GitHub API（raw/gh-proxy）会撞 **匿名限流 60 次/小时** → 返回 `{"message":"API rate limit exceeded"}` 非 JSON → 解析失败 → 点播空白。fastly 走 jsDelivr CDN 不经 GitHub API，稳。
+> **真机实测**：MuMu 安卓模拟器 + 影视仓 5.8.7 实测通过——46 个子仓全部正确解析进入配置库、首子仓自动激活（顶栏显示首站名）、切换子仓（如高天流云 298 站）后站点全部注册、点海报进详情/剧集列表/播放全链路打通（518KB/s）。
+
+**这个 depot.json 内含 46 个子仓**：第 1 个是「四源聚合(自家单仓)」（本仓库 android5/single.json 的 1223 站聚合），其后再接 45 个来源（lubin776/tvbox-api-backup 的 tvbox/ 全量子仓，含 clun 101 站、东篱 93 站、高天流云js 298 站、高天流云_XYQ 49 站等，合计约 3000+ 站）。**装一次，全网点播源尽在其中**，影视仓自动进第一个（自家聚合），设置里点播/直播各行可切任意子仓。
+
+另附**自拆分 10 子仓版**（每个子仓只放能跑到 jar 的站，789 保留 / 288 站因无 jar 覆盖剔除，最干净）：
 ```
 https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@4abf0e1ac393ec264004cdc6a1e133694095ecb6/output/android5/storehouse.json
 ```
-> **格式**：FongMi/影视仓的多仓字段是顶层 `{"urls":[{"name":..,"url":..}, ...]}`（类 `com.fongmi.android.tv.bean.Depot`，`VodConfig.checkJson` 认 `urls` 数组），**不是** `{"storeHouse":[...]}`——用错字段名会「Depot urls is empty」/点播空白。加载后自动进第一条线路（house_01 高天流云），其余子仓进配置库可手动切换。
-> **地址必须用 fastly.jsdelivr.net 的点 commit 定点**（不是 @agg-latest 滚动 tag，也不是 gh-proxy/raw）。
-> 原因：影视仓拉订阅后会**跟随 urls 里的每条 house_NN.json 当配置再拉一遍**，若这些地址走 GitHub API（raw/gh-proxy）会撞 **GitHub 匿名限流 60 次/小时**，返回 `{"message":"API rate limit exceeded"}` 非 JSON → 解析失败 → 点播空白。因此 storehouse.json 本身、以及它 urls 里每个 house_NN.json 地址**全部用 fastly 点 commit**（走 jsDelivr CDN 不经 GitHub API）；子仓内部 `spider` jar 仍用 raw 直连（jar 只在播放时按需拉，不计入配置解析的 GitHub API 限流）。
-
-子仓清单（共 10 个有效子仓，789 站保留 / 288 站因无 jar 覆盖剔除）：
 | 子仓 | 源 | 保留站数 | 剔除(无jar覆盖) | 全局jar |
 |---|---|---|---|---|
 | house_01.json | 高天流云js | 224 | 1 | pg.jar |
@@ -122,7 +128,7 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@4abf0e1ac393ec264004cdc6
 | house_09.json | 小马 | 11 | 14 | XBPQ.jar |
 | house_10.json | 金鹰 | 76 | 0 | ttkx.jar |
 
-说明：多仓里每个子仓都是完整配置，切换线路即切换子仓；每个子仓的 spider 已指向自托管 jar，站点随源就近调用自带/最优 jar，不再统一塞一个 jar。
+说明：多仓里每个子仓都是完整配置，切换线路即切换子仓；子仓 spider 各指向自托管/最优 jar，站点随源就近调用，不再统一塞一个 jar。
 
 ---
 ## 直播源地址（完整 80 条，独立直播订阅）
