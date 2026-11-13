@@ -79,6 +79,28 @@ EXTRA_HOUSES=[
 ]
 for nm,u in EXTRA_HOUSES:
     store["urls"].append({"name":nm,"url":u})
+# ── 聚玩盒子 jsonlist 紫色(极速)源：外部单仓，直接作为 depot url 项追加 ──
+PURPLE=[
+    ("刺桐娱乐(紫)",   "https://www.cttv.vip/ys/json/ctys.json"),
+    ("软件小哥(紫)",   "http://47.96.82.41:5188/svip/svip.json"),
+    ("幸福年年·紫(123站)","http://150.158.52.248/tgyg/bbm.json"),
+    ("短剧频道(紫)",   "http://box.ufuzi.com/tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json"),
+    ("嗷呜2线·紫(80站)","https://9763.kstore.vip/aowu.json"),
+    ("机缘巧盒凯弟1(紫)","https://jihulab.com/jyqhkd/kd/-/raw/main/kai.json"),
+    ("俊佬在线(紫)",   "http://home.jundie.top:81/top98.json"),
+    ("动漫专属(紫)",   "https://www.yingm.cc/dm/dm.json"),
+    ("小马线路·紫(62站)","https://szyyds.cn/tv/x.json"),
+    ("宝盒线路2026(紫)","https://3043.kstore.space/bhvip/bh/bh2.json"),
+    ("牛二线路(紫)",   "https://9280.kstore.space/wex.json"),
+    ("王二小备用·紫(100站)","https://9280.kstore.vip/aiwex.json"),
+    ("分享者(紫)",     "http://hucongrong.web3v.work/%E9%A3%8E%E6%B0%B4/fxz/fxz.json"),
+    ("拾光趣乐屋(紫)", "https://jiekou.netlify.app/svip.json"),
+    ("少儿频道(紫)",   "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer"),
+    ("挺好分享·紫(46站)","https://ztha.top/TVBox/thdjk.json"),
+    ("小盒子4K(紫)",   "http://xhztv.top/4k.json"),
+]
+for nm,u in PURPLE:
+    store["urls"].append({"name":nm,"url":u})
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
 print('=== 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===',file=out)
