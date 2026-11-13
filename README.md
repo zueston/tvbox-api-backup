@@ -111,10 +111,18 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@b4222e6/output/android5/
 
 **这个 depot.json 内含 46 个子仓**：第 1 个是「四源聚合(自家单仓)」（本仓库 android5/single.json 的 1223 站聚合），其后再接 45 个来源（lubin776/tvbox-api-backup 的 tvbox/ 全量子仓，含 clun 101 站、东篱 93 站、高天流云js 298 站、高天流云_XYQ 49 站等，合计约 3000+ 站）。**装一次，全网点播源尽在其中**，影视仓自动进第一个（自家聚合），设置里点播/直播各行可切任意子仓。
 
-另附**自拆分 10 子仓版**（每个子仓只放能跑到 jar 的站，789 保留 / 288 站因无 jar 覆盖剔除，最干净）：
+另附**自拆分 43 子仓版（含你自己的四源 + 王二小/小米/南风/摸鱼/饭太硬/潇洒 + 聚玩盒子 jsonlist 紫色极速源 17 个）**——每个子仓只放能跑到 jar 的站，最干净：
 ```
-https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@4abf0e1ac393ec264004cdc6a1e133694095ecb6/output/android5/storehouse.json
+https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@33b227e/output/android5/storehouse.json
 ```
+43 子仓 = 1-10 自家四源拆分（house_01..10）+ 11-26 外部扩充源（王二小/2/3线、小米、南风/2线、摸鱼/3/5/6线、饭太硬/2/3/5/6线、潇洒）+ 27-43 聚玩盒子紫色极速源 17 个（名带 `(紫)`）。
+
+> **⚠️ 关于紫色极速源的重要说明**：聚玩盒子 jsonlist 页面的**紫色=极速**源，实测 17 个源共 606 站中 **589 站（97%）是 type=3 的 QuickJS JS 引擎站**（靠 `drpy` 类 JS 爬虫脚本取数），仅有 16 个是 type=1 采集站、6 个源是加密/obf。**JS 型站要求播放器壳内置 `assets://js/lib/cheerio.min.js`**：
+> - **真实电视/手机上的完整版影视仓**（官方完整安装包）内置该库，紫色 JS 源可正常跑。
+> - **MuMu 等精简模拟器壳**缺这个库，会报 `Module load failed: assets://js/lib/cheerio.min.js`，紫色 JS 源在该环境跑不出内容（这是壳环境问题，不是配置/源本身问题）。
+> - 我们从紫色源里抽出的 **纯 type=1 采集站片段**（小马 15 站 + 软件小哥 1 站，共 16 个采集接口站：电影天堂/天涯/量子/非凡/极速资源/等）在模拟器也经**真机实测出片**（海报墙正常）。
+
+前 10 个子仓（自家四源拆分）明细：
 | 子仓 | 源 | 保留站数 | 剔除(无jar覆盖) | 全局jar |
 |---|---|---|---|---|
 | house_01.json | 高天流云js | 224 | 1 | pg.jar |
