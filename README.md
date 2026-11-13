@@ -28,6 +28,21 @@
 
 
 
+## ⭐ 推荐版：稳定底座 + 网盘/登录隐藏（老人小孩直接可用）
+
+自拼源的各种裸 IP jar 经常挂掉，这一版改用 **lubin776/tvbox-api-backup 的聚合底座**——所有站点共用一个**全局 spider jar**（`https://mpimg.cn/down.php/d479d37ee36fa366b646f77d17b76fb1.jar`），jar 只维护一处、他每天 Actions 自动更新，稳定性远超自拼源。
+
+同时把 **8 个必须登录/网盘/磁力类站点隐藏**（`"hide":1`，列表里彻底不显示、不参与搜索），家里老人小孩打开只看到干净的影视站：
+- 隐藏清单：百度、👖网盘、👖磁力、UC盘、哔哩×4（哔哩4K / 我的哔哩 / 📺哔哩点播 / 🌇哔哩直播）
+
+| 版本 | 站点 | 订阅地址 |
+|---|---|---|
+| 安卓5+ | 199 站（共 207，隐藏 8）+ 116 直播 | `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/lb/android5_single.json` |
+| 安卓4 | 71 站（type3 JS 站已剔，老盒能跑）+ 116 直播 | `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/lb/android4_single.json` |
+
+> 安卓4 版剔除全部 type3（QuickJS JS 引擎站），只留 type1/type0 直采站，老盒子无 QuickJS 也能播。
+> 若你的影视仓是国内完整版（内置 Python 模块），40 多个 `[py]` 站也能正常跑，都保留在安卓5+ 版里。
+
 ## 订阅地址（gh-proxy 加速直链，推送即新鲜、支持爬虫 jar）
 
 点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
