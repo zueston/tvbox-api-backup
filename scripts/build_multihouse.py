@@ -56,6 +56,15 @@ for s in srcs:
     url="%s/output/houses/%s"%(FASTLY,fn)
     store["urls"].append({"name":"%s (%d站)"%(name,len(kept)),"url":url})
     index.append({"source":name,"file":fn,"total":len(by),"kept":len(kept),"dropped":len(dropped),"jar":jname or "-"})
+# ── 追加外部子仓：王二小(lubin776 tvbox 自带独立 spider jar，直接引用其原 json) ──
+# 这些子仓内容自带 spider/sites，作为 Depot.urls 一项即可被 FongMi 识别并加载。
+EXTRA_HOUSES=[
+    ("王二小 (100站)",   "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"),
+    ("王二小2线 (100站)","https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"),
+    ("王二小3线 (63站)", "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F3%E7%BA%BF.json"),
+]
+for nm,u in EXTRA_HOUSES:
+    store["urls"].append({"name":nm,"url":u})
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
 print('=== 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===',file=out)
