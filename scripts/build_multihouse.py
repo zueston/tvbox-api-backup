@@ -118,6 +118,8 @@ EXTRA_HOUSES=[
     ("饭太硬5线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC5%E7%BA%BF.json"),
     ("饭太硬6线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"),
     ("潇洒 (116站)",     _LB+"%E6%BD%87%E6%B4%92.json"),
+    ("肥猫 (41站)",      _LB+"%E8%82%A5%E7%8C%AB.json"),
+    ("香雅情 (48站)",    "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"),
 ]
 _rejected=[]
 out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
@@ -152,6 +154,14 @@ PURPLE=[
 ]
 for nm,u in PURPLE:
     _add_external(nm,u)
+# ── 置顶排序：把用户指定的线路组排到最前（饭太硬/肥猫/小米/王二小/香雅情/南风）──
+_TOP_PREFIX = ("饭太硬", "肥猫", "小米", "王二小", "香雅情", "南风")
+def _top_rank(name):
+    for i, p in enumerate(_TOP_PREFIX):
+        if name.startswith(p):
+            return i
+    return len(_TOP_PREFIX)
+store["urls"].sort(key=lambda it: (_top_rank(it.get("name","")),))
 json.dump(store,open('output/android5/storehouse.json','w',encoding='utf-8'),ensure_ascii=False,indent=1)
 print('=== 多仓子仓清单(带jar站恒保留, 废子仓<5站剔除) ===',file=out)
 tot=tk=td=0

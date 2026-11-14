@@ -1,6 +1,62 @@
 {
  "urls": [
   {
+   "name": "饭太硬 (48站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC.json"
+  },
+  {
+   "name": "饭太硬2线 (48站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC2%E7%BA%BF.json"
+  },
+  {
+   "name": "饭太硬3线 (48站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC3%E7%BA%BF.json"
+  },
+  {
+   "name": "饭太硬5线 (48站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC5%E7%BA%BF.json"
+  },
+  {
+   "name": "饭太硬6线 (48站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"
+  },
+  {
+   "name": "肥猫 (41站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E8%82%A5%E7%8C%AB.json"
+  },
+  {
+   "name": "小米 (44站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%B0%8F%E7%B1%B3.json"
+  },
+  {
+   "name": "王二小 (100站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"
+  },
+  {
+   "name": "王二小2线 (100站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"
+  },
+  {
+   "name": "王二小3线 (63站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F3%E7%BA%BF.json"
+  },
+  {
+   "name": "王二小备用·紫(100站)",
+   "url": "https://9280.kstore.vip/aiwex.json"
+  },
+  {
+   "name": "香雅情 (48站)",
+   "url": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"
+  },
+  {
+   "name": "南风 (91站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%8D%97%E9%A3%8E.json"
+  },
+  {
+   "name": "南风2线 (91站)",
+   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%8D%97%E9%A3%8E2%E7%BA%BF.json"
+  },
+  {
    "name": "高天流云js (224站)",
    "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_01.json"
   },
@@ -41,30 +97,6 @@
    "url": "https://testingcf.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/houses/house_10.json"
   },
   {
-   "name": "王二小 (100站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"
-  },
-  {
-   "name": "王二小2线 (100站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"
-  },
-  {
-   "name": "王二小3线 (63站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E7%8E%8B%E4%BA%8C%E5%B0%8F3%E7%BA%BF.json"
-  },
-  {
-   "name": "小米 (44站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%B0%8F%E7%B1%B3.json"
-  },
-  {
-   "name": "南风 (91站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%8D%97%E9%A3%8E.json"
-  },
-  {
-   "name": "南风2线 (91站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E5%8D%97%E9%A3%8E2%E7%BA%BF.json"
-  },
-  {
    "name": "摸鱼 (111站)",
    "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E6%91%B8%E9%B1%BC.json"
   },
@@ -79,26 +111,6 @@
   {
    "name": "摸鱼6线 (111站)",
    "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E6%91%B8%E9%B1%BC6%E7%BA%BF.json"
-  },
-  {
-   "name": "饭太硬 (48站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC.json"
-  },
-  {
-   "name": "饭太硬2线 (48站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC2%E7%BA%BF.json"
-  },
-  {
-   "name": "饭太硬3线 (48站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC3%E7%BA%BF.json"
-  },
-  {
-   "name": "饭太硬5线 (48站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC5%E7%BA%BF.json"
-  },
-  {
-   "name": "饭太硬6线 (48站)",
-   "url": "https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"
   },
   {
    "name": "潇洒 (116站)",
@@ -143,10 +155,6 @@
   {
    "name": "牛二线路(紫)",
    "url": "https://9280.kstore.space/wex.json"
-  },
-  {
-   "name": "王二小备用·紫(100站)",
-   "url": "https://9280.kstore.vip/aiwex.json"
   },
   {
    "name": "拾光趣乐屋(紫)",
