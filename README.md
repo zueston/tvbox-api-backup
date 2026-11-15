@@ -43,71 +43,6 @@
 > 安卓4 版剔除全部 type3（QuickJS JS 引擎站），只留 type1/type0 直采站，老盒子无 QuickJS 也能播。
 > 若你的影视仓是国内完整版（内置 Python 模块），40 多个 `[py]` 站也能正常跑，都保留在安卓5+ 版里。
 
-## 订阅地址（gh-proxy 加速直链，推送即新鲜、支持爬虫 jar）
-
-点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
-```
-安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multi.json
-安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single.json
-安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multi.json
-安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/single.json
-```
-
-安卓5+ 单仓·分段版（站点太多嫌卡就订这些：干净全量按测速排序切成4段，只订1-2段最轻）
-```
-第1段·最快   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p1.json
-第2段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p2.json
-第3段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p3.json
-第4段·长尾   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p4.json
-```
-
-分区订阅（从干净版里单独抽出来的专区，按需订）
-```
-成人专区(隔离)        https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p5.json
-教育/少儿专区         https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p6.json
-体育专区               https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p7.json
-```
-
-点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
-```
-安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multiad.json
-安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/singlead.json
-安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multiad.json
-安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/singlead.json
-```
-
-直播源
-```
-可直连(63条)      https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_direct.txt
-```
-要验证
-```
-需广告/验证(17条)   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_ad.txt
-```
-
-| 用途 | 安卓5+ | 安卓4 |
-|---|---|---|
-| 多仓订阅（影视仓类填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
-| 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
-| 多仓·要验证版 | `output/android5/multiad.json` | `output/android4/multiad.json` |
-| 单仓·要验证版 | `output/android5/singlead.json` | `output/android4/singlead.json` |
-| 单仓·分段1-4（嫌卡选订） | `output/android5/single_p1..p4.json` | 无需（不切） |
-| 成人专区（隔离） | `output/android5/single_p5.json` | 同左（不分版本） |
-| 教育/少儿专区 | `output/android5/single_p6.json` | 同左（不分版本） |
-| 体育专区 | `output/android5/single_p7.json` | 同左（不分版本） |
-| 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
-| 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
-
-上面地址默认走 **gh-proxy 加速直链**（`gh-proxy.com` 转发 GitHub raw），**推送即新鲜、且能托管 `Yoursmile.jar`（爬虫 jar）**——订阅里全局 `spider` 就指向本仓库的 `jar/Yoursmile.jar`，jsDelivr 不托管 `.jar`（会 403），所以请用这套直链，别换 jsDelivr。
-
-**若 gh-proxy 抽风/慢，按顺序换前缀**（同路径替换即可，文件内容完全一致）：
-1. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需能连 GitHub；最稳、永远最新，但国内直连常被墙）
-2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（默认，GitHub 直连被墙时用）
-3. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（CDN 快但滚动 tag 各边缘刷新不同步，偶尔拿到旧版）
-4. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
-
-说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
-
 
 ## 分源多仓（每源各用各的 jar —— 根治「爬虫加载失败」）
 
@@ -154,9 +89,76 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@33b227e/output/android5/
 说明：多仓里每个子仓都是完整配置，切换线路即切换子仓；子仓 spider 各指向自托管/最优 jar，站点随源就近调用，不再统一塞一个 jar。
 
 ---
+
+
+## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
+
+点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
+```
+安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multi.json
+安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single.json
+安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multi.json
+安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/single.json
+```
+
+安卓5+ 单仓·分段版（站点太多嫌卡就订这些：干净全量按测速排序切成4段，只订1-2段最轻）
+```
+第1段·最快   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p1.json
+第2段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p2.json
+第3段       https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p3.json
+第4段·长尾   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p4.json
+```
+
+分区订阅（从干净版里单独抽出来的专区，按需订）
+```
+成人专区(隔离)        https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p5.json
+教育/少儿专区         https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p6.json
+体育专区               https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/single_p7.json
+```
+
+点播·要验证版（仅带「接口验证」门弹窗的线路，需手动领验证码，独立一档）
+```
+安卓5+ 多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/multiad.json
+安卓5+ 单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android5/singlead.json
+安卓4  多仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/multiad.json
+安卓4  单仓   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/android4/singlead.json
+```
+
+直播源
+```
+可直连(64条)      https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_direct.txt
+```
+要验证
+```
+需广告/验证(16条)   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_ad.txt
+```
+
+| 用途 | 安卓5+ | 安卓4 |
+|---|---|---|
+| 多仓订阅（影视仓类填这个） | `output/android5/multi.json` | `output/android4/multi.json` |
+| 聚合单仓（所有软件通用） | `output/android5/single.json` | `output/android4/single.json` |
+| 多仓·要验证版 | `output/android5/multiad.json` | `output/android4/multiad.json` |
+| 单仓·要验证版 | `output/android5/singlead.json` | `output/android4/singlead.json` |
+| 单仓·分段1-4（嫌卡选订） | `output/android5/single_p1..p4.json` | 无需（不切） |
+| 成人专区（隔离） | `output/android5/single_p5.json` | 同左（不分版本） |
+| 教育/少儿专区 | `output/android5/single_p6.json` | 同左（不分版本） |
+| 体育专区 | `output/android5/single_p7.json` | 同左（不分版本） |
+| 直播·可直连 | `output/live_direct.txt` | 同左（不分版本） |
+| 直播·需验证 | `output/live_ad.txt` | 同左（不分版本） |
+
+上面地址默认走 **gh-proxy 加速直链**（`gh-proxy.com` 转发 GitHub raw），**推送即新鲜、且能托管 `Yoursmile.jar`（爬虫 jar）**——订阅里全局 `spider` 就指向本仓库的 `jar/Yoursmile.jar`，jsDelivr 不托管 `.jar`（会 403），所以请用这套直链，别换 jsDelivr。
+
+**若 gh-proxy 抽风/慢，按顺序换前缀**（同路径替换即可，文件内容完全一致）：
+1. 原始地址 `https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（需能连 GitHub；最稳、永远最新，但国内直连常被墙）
+2. `https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/...`（默认，GitHub 直连被墙时用）
+3. `https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`（CDN 快但滚动 tag 各边缘刷新不同步，偶尔拿到旧版）
+4. `https://gcore.jsdelivr.net/gh/zueston/tvbox-api-backup@agg-latest/output/...`
+
+说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
+
 ## 直播源地址（完整 80 条，独立直播订阅）
 
-**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 17 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 63 条可直连（`output/live_direct.txt`）。
+**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 16 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 64 条可直连（`output/live_direct.txt`）。
 
 ```
 APTV          https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u
@@ -247,7 +249,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。
 
-以下 17 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 63 条可直连。
+以下 16 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 64 条可直连。
 
 | 名称 | 类型 | 判定 | 完整地址 |
 |---|---|---|---|
@@ -256,13 +258,12 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 | 咪咕TV直播 | HTML | 网页/验证页 | `https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA` |
 | 尘墨 | HTML | 网页/验证页（授权/注册公告/JS跳转/倒计时） | `https://52xiaobai.cn/ceshi/zb.php` |
 | Kimentanm4线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u` |
+| YY轮播 | FAIL | 拉取失败 | `https://sub.ottiptv.cc/yylunbo.m3u` |
 | yuan | FAIL | 拉取失败 | `http://wangziduoqing.com/yuan/zb.txt` |
-| 咪咕 | FAIL | 拉取失败 | `https://develop202.github.io/migu_video/interface.txt` |
-| 地方台直播 | FAIL | 拉取失败 | `https://sd.shandong.bbroot.com/xk/zb.txt` |
 | 综合直播2线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt` |
 | 范明明 | FAIL | 拉取失败 | `https://live.fanmingming.cn/tv/m3u/ipv6.m3u` |
+| 裤佬百战直播 | FAIL | 拉取失败 | `https://baizhan.445569.xyz/live.m3u` |
 | 裤佬虎牙直播 | FAIL | 拉取失败 | `https://huya.445569.xyz/live.m3u` |
-| 裤佬酷狗直播 | FAIL | 拉取失败 | `https://kugou.445569.xyz/live.m3u` |
 | 夜空1 | TXT | 源可直连，网页打开是网盘下载页/网盘域 | `https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt` |
 | 央视频 | M3U | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt` |
 | 很少 | TXT | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt` |
