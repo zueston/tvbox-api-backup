@@ -480,6 +480,27 @@ def fix_spider_all():
                 if new != s["spider"]:
                     s["spider"] = new
                     hit = True
+        # 首页推荐源重排：把有推荐能力的采集型站（type==0 且非搜索/网盘/磁力/直播）稳定前移，
+        # 保证单仓首站/多仓首子仓进入首页时推荐区有内容（JS 单站如爱奇艺首页常无推荐→空白）。
+        sites = cfg.get("sites") or []
+        if len(sites) > 3:
+            def _recap(s):
+                api = str(s.get("api") or "")
+                if str(s.get("type")) not in ("0", "None") and s.get("type") not in (0, None):
+                    return False
+                if any(k in api for k in ("so.yinpai", "search", "type=123", "type=xunlei",
+                                          "/down.php/", "magnet", "PanSou", "pansou")):
+                    return False
+                nm = str(s.get("name") or "")
+                if any(k in nm for k in ("搜索", "网盘", "磁力", "直播", "推送")):
+                    return False
+                return bool(s.get("key")) and bool(api)
+            recap = [s for s in sites if _recap(s)][:3]
+            if recap:
+                recap_ids = {id(s) for s in recap}
+                rest = [s for s in sites if id(s) not in recap_ids]
+                cfg["sites"] = recap + rest
+                hit = True
         if hit:
             p.write_text(json.dumps(cfg, ensure_ascii=False, indent=1), encoding="utf-8")
             changed += 1

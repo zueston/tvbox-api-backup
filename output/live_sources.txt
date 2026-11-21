@@ -1,5 +1,6 @@
-# 直播源清单 2026-11-15 12:09:45  共80
+# 直播源清单 2026-11-21 12:14:25  共82
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
+BMCH	https://play.iptv365.org/香雅情/lives/BMCH.txt	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
 B站直播1线	https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u	lubin776
 B站直播2线	https://ztha.top/TVBox/lib/bililive.m3u	lubin776
@@ -8,9 +9,9 @@ FMMIPV6	https://m3u.ibert.me/txt/fmml_ipv6.txt	lubin776
 Guovin	https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u	lubin776
 Kimentanm	https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u	lubin776
 Kimentanm3线	https://ztha.top/TVBox/lib/iptv.m3u	lubin776
-Kimentanm4线	https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u	lubin776
 MV	https://ztha.top/TVBox/tv/MV.txt	lubin776
 PPV体育赛事直播	https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php	lubin776
+Tianmu	https://play.iptv365.org/香雅情/lives/Tianmu.txt	lubin776
 YY轮播	https://sub.ottiptv.cc/yylunbo.m3u	lubin776
 YY轮播1线	https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u	lubin776
 YY轮播2线	https://ztha.top/TVBox/lib/yylunbo.m3u	lubin776
@@ -54,6 +55,7 @@ yuan	http://wangziduoqing.com/yuan/zb.txt	lubin776
 移动	https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动	lubin776
 线路	http://www.52top.com.cn:678/downloads/migu.txt	lubin776
 经典电视剧	https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt	lubin776
+综合直播	https://ds65.tv1288.xyz	lubin776
 综合直播1线	http://193.123.86.190:14888/TV/iptv.php	lubin776
 综合直播2线	https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt	lubin776
 联通	https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通	lubin776
