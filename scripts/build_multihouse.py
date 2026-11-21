@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import json,os,re,ssl,urllib.request
 REPO="zueston/tvbox-api-backup"
 
@@ -50,7 +50,7 @@ import os
 # 用滚动 tag agg-latest（jsDelivr @tag 缓存不可变、推送即新鲜），避免两阶段回填 commit hash。
 # 注：storehouse 的 house 子仓 URL 指向 @agg-latest；tag 在提交后再移动，子仓内容与本提交一致。
 COMMIT=os.environ.get("MH_COMMIT","agg-latest")
-FASTLY="https://testingcf.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
+FASTLY="https://fastly.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
 lib=json.load(open('scripts/_jar_lib.json',encoding='utf-8'))
 man=json.load(open('scripts/_jar_manifest.json',encoding='utf-8'))
 url2name={v[3]:k for k,v in man.items()}
