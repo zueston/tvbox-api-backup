@@ -50,7 +50,7 @@ import os
 # 用滚动 tag agg-latest（jsDelivr @tag 缓存不可变、推送即新鲜），避免两阶段回填 commit hash。
 # 注：storehouse 的 house 子仓 URL 指向 @agg-latest；tag 在提交后再移动，子仓内容与本提交一致。
 COMMIT=os.environ.get("MH_COMMIT","agg-latest")
-FASTLY="https://fastly.jsdelivr.net/gh/%s@%s" % (REPO, COMMIT)
+FASTLY="https://gh-proxy.com/https://raw.githubusercontent.com/%s/%s" % (REPO, COMMIT)
 lib=json.load(open('scripts/_jar_lib.json',encoding='utf-8'))
 man=json.load(open('scripts/_jar_manifest.json',encoding='utf-8'))
 url2name={v[3]:k for k,v in man.items()}
@@ -100,7 +100,7 @@ for s in srcs:
     index.append({"source":name,"file":fn,"total":len(by),"kept":len(kept),"dropped":len(dropped),"jar":jname or "-"})
 # ── 追加外部子仓：王二小(lubin776 tvbox 自带独立 spider jar，直接引用其原 json) ──
 # 这些子仓内容自带 spider/sites，作为 Depot.urls 一项即可被 FongMi 识别并加载。
-_LB="https://fastly.jsdelivr.net/gh/lubin776/tvbox-api-backup@main/tvbox/"
+_LB="https://gh-proxy.com/https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/tvbox/"
 EXTRA_HOUSES=[
     ("王二小 (100站)",   _LB+"%E7%8E%8B%E4%BA%8C%E5%B0%8F.json"),
     ("王二小2线 (100站)", _LB+"%E7%8E%8B%E4%BA%8C%E5%B0%8F2%E7%BA%BF.json"),
@@ -119,7 +119,7 @@ EXTRA_HOUSES=[
     ("饭太硬6线 (48站)", _LB+"%E9%A5%AD%E5%A4%AA%E7%A1%AC6%E7%BA%BF.json"),
     ("潇洒 (116站)",     _LB+"%E6%BD%87%E6%B4%92.json"),
     ("肥猫 (41站)",      _LB+"%E8%82%A5%E7%8C%AB.json"),
-    ("香雅情 (48站)",    "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"),
+    ("香雅情 (48站)",    "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"),
 ]
 _rejected=[]
 out=open('scripts/_multihouse_report.txt','w',encoding='utf-8')
