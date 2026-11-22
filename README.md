@@ -92,6 +92,7 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@33b227e/output/android5/
 
 
 
+
 ## 订阅地址（jsDelivr CDN 优先，`@agg-latest` 必带）
 
 点播·干净版（无验证门；普通广告源在此档，盒子 AI 规则可自动去广告）
@@ -127,11 +128,11 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@33b227e/output/android5/
 
 直播源
 ```
-可直连(69条)      https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_direct.txt
+可直连(61条)      https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_direct.txt
 ```
 要验证
 ```
-需广告/验证(11条)   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_ad.txt
+需广告/验证(23条)   https://gh-proxy.com/https://raw.githubusercontent.com/zueston/tvbox-api-backup/main/output/live_ad.txt
 ```
 
 | 用途 | 安卓5+ | 安卓4 |
@@ -157,12 +158,13 @@ https://fastly.jsdelivr.net/gh/zueston/tvbox-api-backup@33b227e/output/android5/
 
 说明：jsDelivr（fastly/gcore/testingcf）对滚动 tag `@agg-latest` 的边缘缓存不可靠——某节点可能长时间不刷新而返回旧配置（表现为「配置获取失败/乱码/验证门」），且 jsDelivr **不支持 .jar**。所以本仓库主推 gh-proxy 直链，raw 原址始终是最新的；jsDelivr 只作加载快的备选。若要用 jsDelivr，请用 **commit 定点**（如 `@05fdd0e`）而非 `@agg-latest`，commit 缓存不可变、推送即新鲜。
 
-## 直播源地址（完整 80 条，独立直播订阅）
+## 直播源地址（完整 84 条，独立直播订阅）
 
-**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 11 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 69 条可直连（`output/live_direct.txt`）。
+**不分安卓4 / 安卓5+**：以下均为 m3u/txt 的 HTTP 订阅地址，走普通网络请求，旧内核同样可拉。填 IPTV 播放器、TVBox/影视仓的直播地址，或 `single.json` 的 `lives` 都从这里取。其中 23 条需过广告/验证（见下表与 `output/live_ad.txt`），其余 61 条可直连（`output/live_direct.txt`）。
 
 ```
 APTV          https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u
+BMCH          https://play.iptv365.org/香雅情/lives/BMCH.txt
 B站直播          https://sub.ottiptv.cc/bililive.m3u
 B站直播1线        https://file.icve.com.cn/file_doc/220/1003/370FAE41BD301F89BA1FCD6FDB8D5BD6.m3u
 B站直播2线        https://ztha.top/TVBox/lib/bililive.m3u
@@ -171,9 +173,9 @@ FMMIPV6       https://m3u.ibert.me/txt/fmml_ipv6.txt
 Guovin        https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
 Kimentanm     https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
 Kimentanm3线   https://ztha.top/TVBox/lib/iptv.m3u
-Kimentanm4线   https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
 MV            https://ztha.top/TVBox/tv/MV.txt
 PPV体育赛事直播     https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php
+Tianmu        https://play.iptv365.org/香雅情/lives/Tianmu.txt
 YY轮播          https://sub.ottiptv.cc/yylunbo.m3u
 YY轮播1线        https://file.icve.com.cn/file_doc/178/700/2C9AF1F98DBC1523826C0CD4DA8D8947.m3u
 YY轮播2线        https://ztha.top/TVBox/lib/yylunbo.m3u
@@ -192,12 +194,14 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 优选            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt
 全球            http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg
 全球TV直播        https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u
+划了            https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt
 初秋语           https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt
 华视TV直播        https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv
 南风直播源         https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt
 咪咕            https://develop202.github.io/migu_video/interface.txt
 咪咕TV直播        https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA
 地方台直播         https://sd.shandong.bbroot.com/xk/zb.txt
+夜空            https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt
 夜空1           https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt
 央视频           https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt
 尘墨            https://52xiaobai.cn/ceshi/zb.php
@@ -217,6 +221,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 移动            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动
 线路            http://www.52top.com.cn:678/downloads/migu.txt
 经典电视剧         https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt
+综合直播          https://ds65.tv1288.xyz
 综合直播1线        http://193.123.86.190:14888/TV/iptv.php
 综合直播2线        https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt
 联通            https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通
@@ -250,7 +255,7 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 
 下列直播线路直接打开是**广告中间页、授权注册公告、网盘/图床落地页或已失效**，需在浏览器/微信里过一道验证才能拿到真实源；其余线路可直接当订阅用。
 
-以下 11 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 69 条可直连。
+以下 23 条**不能直接当订阅地址填**（或浏览器打开需先过中间页），其余 61 条可直连。
 
 | 名称 | 类型 | 判定 | 完整地址 |
 |---|---|---|---|
@@ -258,13 +263,25 @@ yuan          http://wangziduoqing.com/yuan/zb.txt
 | 全球 | HTML | 网页/验证页（SPA空壳） | `http://xingioe.top/down.php/82d0754d79de3be03e9b63e4d2d96818.jpg` |
 | 咪咕TV直播 | HTML | 网页/验证页 | `https://eastscreen.tv/iptvlist.php?token=N1pcBwAGHwkCAx8OTFhABgEFAA` |
 | 尘墨 | HTML | 网页/验证页（授权/注册公告/JS跳转/倒计时） | `https://52xiaobai.cn/ceshi/zb.php` |
-| 地方台直播 | FAIL | 拉取失败 | `https://sd.shandong.bbroot.com/xk/zb.txt` |
+| yuan | FAIL | 拉取失败 | `http://wangziduoqing.com/yuan/zb.txt` |
+| 优选 | FAIL | 拉取失败 | `https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt` |
+| 初秋语 | FAIL | 拉取失败 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt` |
+| 南风直播源 | FAIL | 拉取失败 | `https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt` |
+| 移动 | FAIL | 拉取失败 | `https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动` |
+| 综合直播2线 | FAIL | 拉取失败 | `https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt` |
+| 联通 | FAIL | 拉取失败 | `https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通` |
+| 范明明 | FAIL | 拉取失败 | `https://live.fanmingming.cn/tv/m3u/ipv6.m3u` |
+| 裤佬YY直播 | FAIL | 拉取失败 | `https://yy.445569.xyz/live.m3u` |
 | 裤佬虎牙直播 | FAIL | 拉取失败 | `https://huya.445569.xyz/live.m3u` |
+| 裤佬酷狗直播 | FAIL | 拉取失败 | `https://kugou.445569.xyz/live.m3u` |
+| 划了 | ODD | 网页/验证页（网盘下载页/网盘域） | `https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt` |
+| 夜空 | ODD | 网页/验证页（网盘下载页/网盘域） | `https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt` |
 | 夜空1 | TXT | 源可直连，网页打开是网盘下载页/网盘域 | `https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt` |
 | 央视频 | M3U | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/caac7a6dae8f835257a11e7a11291bf2.txt` |
 | 很少 | TXT | 源可直连，网页打开是网盘下载页 | `https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt` |
 | 有效期27年7月 | M3U | 源可直连，网页打开是带token参数 | `http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512` |
 | 没4K | TXT | 源可直连，网页打开是图床哈希页 | `https://mpimg.cn/text.php?hash=7265d70b6834cefbddb61bcc2d9c99db` |
+| 游魂 | ODD | 无法识别 | `https://www.iyouhun.com/tv/zb` |
 
 判定脚本：`scripts/classify_live.py`（产物 `output/live_probe.json`），每周随 Actions 更新。
 
