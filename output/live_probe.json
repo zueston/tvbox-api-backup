@@ -26,7 +26,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 56558,
+  "bytes": 177124,
   "origin": "lubin776"
  },
  {
@@ -56,7 +56,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 67767,
+  "bytes": 67664,
   "origin": "lubin776"
  },
  {
@@ -116,7 +116,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 19929,
+  "bytes": 20681,
   "origin": "lubin776"
  },
  {
@@ -136,7 +136,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 110692,
+  "bytes": 112417,
   "origin": "lubin776"
  },
  {
@@ -252,11 +252,11 @@
  {
   "name": "yuan",
   "url": "http://wangziduoqing.com/yuan/zb.txt",
-  "kind": "FAIL",
-  "reason": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain",
+  "bytes": 137041,
   "origin": "lubin776"
  },
  {
@@ -282,11 +282,11 @@
  {
   "name": "优选",
   "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt",
-  "kind": "FAIL",
-  "reason": "HTTP Error 403: Forbidden",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 22480,
   "origin": "lubin776"
  },
  {
@@ -314,24 +314,21 @@
  {
   "name": "划了",
   "url": "https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt",
-  "kind": "ODD",
-  "reason": "首包无法识别",
-  "marks": [
-   "网盘下载页",
-   "网盘域"
-  ],
-  "ctype": "text/plain",
-  "bytes": 34120,
+  "kind": "FAIL",
+  "reason": "<urlopen error [Errno 111] Connection refused>",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
   "name": "初秋语",
   "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt",
-  "kind": "FAIL",
-  "reason": "HTTP Error 403: Forbidden",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 16038,
   "origin": "lubin776"
  },
  {
@@ -347,11 +344,11 @@
  {
   "name": "南风直播源",
   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
-  "kind": "FAIL",
-  "reason": "HTTP Error 403: Forbidden",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 115633,
   "origin": "lubin776"
  },
  {
@@ -371,7 +368,7 @@
   "reason": "返回网页而非源数据",
   "marks": [],
   "ctype": "text/html; charset=utf-8",
-  "bytes": 190798,
+  "bytes": 189411,
   "origin": "lubin776"
  },
  {
@@ -387,14 +384,11 @@
  {
   "name": "夜空",
   "url": "https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt",
-  "kind": "ODD",
-  "reason": "首包无法识别",
-  "marks": [
-   "网盘下载页",
-   "网盘域"
-  ],
-  "ctype": "text/plain",
-  "bytes": 200000,
+  "kind": "FAIL",
+  "reason": "<urlopen error [Errno 111] Connection refused>",
+  "marks": [],
+  "ctype": "",
+  "bytes": 0,
   "origin": "lubin776"
  },
  {
@@ -442,7 +436,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 170380,
+  "bytes": 176070,
   "origin": "lubin776"
  },
  {
@@ -484,7 +478,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 174367,
+  "bytes": 176252,
   "origin": "lubin776"
  },
  {
@@ -554,11 +548,11 @@
  {
   "name": "游魂",
   "url": "https://www.iyouhun.com/tv/zb",
-  "kind": "ODD",
-  "reason": "首包无法识别",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
   "ctype": "text/plain;charset=utf-8",
-  "bytes": 65,
+  "bytes": 200000,
   "origin": "lubin776"
  },
  {
@@ -568,17 +562,17 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain; charset=utf-8",
-  "bytes": 113963,
+  "bytes": 112764,
   "origin": "lubin776"
  },
  {
   "name": "移动",
   "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动",
-  "kind": "FAIL",
-  "reason": "HTTP Error 403: Forbidden",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 22892,
   "origin": "lubin776"
  },
  {
@@ -588,7 +582,7 @@
   "reason": "",
   "marks": [],
   "ctype": "text/plain",
-  "bytes": 104527,
+  "bytes": 105522,
   "origin": "lubin776"
  },
  {
@@ -624,31 +618,31 @@
  {
   "name": "综合直播2线",
   "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-  "kind": "FAIL",
-  "reason": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 469,
   "origin": "lubin776"
  },
  {
   "name": "联通",
   "url": "https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通",
-  "kind": "FAIL",
-  "reason": "HTTP Error 403: Forbidden",
+  "kind": "TXT",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "text/plain; charset=utf-8",
+  "bytes": 15567,
   "origin": "lubin776"
  },
  {
   "name": "范明明",
   "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
-  "kind": "FAIL",
-  "reason": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "audio/x-mpegurl",
+  "bytes": 25215,
   "origin": "lubin776"
  },
  {
@@ -718,7 +712,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 117362,
+  "bytes": 136212,
   "origin": "lubin776"
  },
  {
@@ -728,14 +722,14 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 197708,
+  "bytes": 200000,
   "origin": "lubin776"
  },
  {
   "name": "裤佬YY直播",
   "url": "https://yy.445569.xyz/live.m3u",
   "kind": "FAIL",
-  "reason": "<urlopen error [Errno 11001] getaddrinfo failed>",
+  "reason": "<urlopen error [Errno -2] Name or service not known>",
   "marks": [],
   "ctype": "",
   "bytes": 0,
@@ -748,7 +742,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 44373,
+  "bytes": 54280,
   "origin": "lubin776"
  },
  {
@@ -758,7 +752,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/x-mpegurl; charset=utf-8",
-  "bytes": 14188,
+  "bytes": 34317,
   "origin": "lubin776"
  },
  {
@@ -778,7 +772,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 116065,
+  "bytes": 101226,
   "origin": "lubin776"
  },
  {
@@ -798,7 +792,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl; charset=utf-8",
-  "bytes": 8297,
+  "bytes": 13823,
   "origin": "lubin776"
  },
  {
@@ -808,7 +802,7 @@
   "reason": "",
   "marks": [],
   "ctype": "application/vnd.apple.mpegurl; charset=utf-8",
-  "bytes": 8934,
+  "bytes": 11255,
   "origin": "lubin776"
  },
  {
@@ -825,7 +819,7 @@
   "name": "裤佬虎牙直播",
   "url": "https://huya.445569.xyz/live.m3u",
   "kind": "FAIL",
-  "reason": "<urlopen error [Errno 11001] getaddrinfo failed>",
+  "reason": "<urlopen error [Errno -2] Name or service not known>",
   "marks": [],
   "ctype": "",
   "bytes": 0,
@@ -834,11 +828,11 @@
  {
   "name": "裤佬酷狗直播",
   "url": "https://kugou.445569.xyz/live.m3u",
-  "kind": "FAIL",
-  "reason": "The read operation timed out",
+  "kind": "M3U",
+  "reason": "",
   "marks": [],
-  "ctype": "",
-  "bytes": 0,
+  "ctype": "application/x-mpegurl; charset=utf-8",
+  "bytes": 68784,
   "origin": "lubin776"
  },
  {
@@ -848,7 +842,7 @@
   "reason": "",
   "marks": [],
   "ctype": "audio/x-mpegurl",
-  "bytes": 11843,
+  "bytes": 18970,
   "origin": "lubin776"
  },
  {

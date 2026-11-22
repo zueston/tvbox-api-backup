@@ -1,4 +1,4 @@
-# 直播源·可直接订阅 61 条
+# 直播源·可直接订阅 71 条
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
 BMCH	https://play.iptv365.org/香雅情/lives/BMCH.txt	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
@@ -24,9 +24,13 @@ gambiarras	https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/ma
 live1线	http://xhztv.top/xhz/live.txt	lubin776
 mlzlzj	https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u	lubin776
 suxuang	https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u	lubin776
+yuan	http://wangziduoqing.com/yuan/zb.txt	lubin776
 世界杯	https://ztha.top/TVBox/lib/fwc.m3u	lubin776
+优选	https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/live.txt	lubin776
 全球TV直播	https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u	lubin776
+初秋语	https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt	lubin776
 华视TV直播	https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv	lubin776
+南风直播源	https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt	lubin776
 咪咕	https://develop202.github.io/migu_video/interface.txt	lubin776
 地方台直播	https://sd.shandong.bbroot.com/xk/zb.txt	lubin776
 应该能看	https://gh-proxy.org/raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt	lubin776
@@ -37,11 +41,16 @@ suxuang	https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u	lubin776
 斗鱼一起看2线	https://ztha.top/TVBox/lib/douyuyqk.m3u	lubin776
 易发TV直播	https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt	lubin776
 歌手直播	https://mgtv.ottiptv.cc/mglist.m3u	lubin776
+游魂	https://www.iyouhun.com/tv/zb	lubin776
 电视直播	http://gh-proxy.org/raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt	lubin776
+移动	https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/移动	lubin776
 线路	http://www.52top.com.cn:678/downloads/migu.txt	lubin776
 经典电视剧	https://wp.kayyw.com/f/XOpgIZ/%E7%BB%8F%E5%85%B8%E7%94%B5%E8%A7%86%E5%89%A7.txt	lubin776
 综合直播	https://ds65.tv1288.xyz	lubin776
 综合直播1线	http://193.123.86.190:14888/TV/iptv.php	lubin776
+综合直播2线	https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt	lubin776
+联通	https://gh-proxy.com/raw.githubusercontent.com/zhoujck/config/main/ext/联通	lubin776
+范明明	https://live.fanmingming.cn/tv/m3u/ipv6.m3u	lubin776
 范明明需开启V6网络	https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u	lubin776
 范明明需开启V6网络1线	https://ztha.top/TVBox/lib/3d75a78a0fc7ede372c03598d6d10367.m3u	lubin776
 虎牙一起看	https://sub.ottiptv.cc/huyayqk.m3u	lubin776
@@ -58,5 +67,6 @@ suxuang	https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u	lubin776
 裤佬来疯直播	https://laifeng.445569.xyz/live.m3u	lubin776
 裤佬百战直播	https://baizhan.445569.xyz/live.m3u	lubin776
 裤佬虎牙直播	https://yahu.445569.xyz/live.m3u	lubin776
+裤佬酷狗直播	https://kugou.445569.xyz/live.m3u	lubin776
 韩国Panda直播	https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u	lubin776
 音乐所	https://szyyds.cn/tv/live/yy.txt	lubin776

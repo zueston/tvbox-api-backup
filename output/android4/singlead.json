@@ -1,12 +1,30 @@
 {
   "sites": [
     {
-      "key": "香奶儿资源站",
-      "name": "香奶 | 采集",
+      "key": "天翼推送",
+      "name": "✋天翼┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=tianyi"
+    },
+    {
+      "key": "移动推送",
+      "name": "👍移动┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=mobile"
+    },
+    {
+      "key": "123推送",
+      "name": "✌️123┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=123"
+    },
+    {
+      "key": "小湿妹",
+      "name": "湿妹 | 采集",
       "type": 0,
-      "api": "https://www.gdlsp.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0,
+      "api": "http://www.afasu.com/api/xml.php",
+      "searchable": 1,
+      "quickSearch": 1,
       "ext": "proxy"
     },
     {
@@ -16,6 +34,15 @@
       "api": "https://www.msnii.com/api/xml.php",
       "searchable": 1,
       "quickSearch": 1
+    },
+    {
+      "key": "淫水机资源站",
+      "name": "水机 | 采集",
+      "type": 0,
+      "api": "https://www.xrbsp.com/api/xml.php",
+      "searchable": 0,
+      "quickSearch": 0,
+      "ext": "proxy"
     },
     {
       "key": "白嫖",
@@ -28,25 +55,25 @@
       "ext": "proxy"
     },
     {
-      "key": "移动推送",
-      "name": "👍移动┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=mobile"
-    },
-    {
-      "key": "淫水机资源站",
-      "name": "水机 | 采集",
+      "key": "香奶儿资源站",
+      "name": "香奶 | 采集",
       "type": 0,
-      "api": "https://www.xrbsp.com/api/xml.php",
+      "api": "https://www.gdlsp.com/api/xml.php",
       "searchable": 0,
       "quickSearch": 0,
       "ext": "proxy"
     },
     {
-      "key": "123推送",
-      "name": "✌️123┃推送",
+      "key": "夸克推送",
+      "name": "👊夸克┃推送",
       "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=123"
+      "api": "https://so.yinpai.xyz/api.php?type=quark"
+    },
+    {
+      "key": "UC推送",
+      "name": "☝️优熙┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=uc"
     },
     {
       "key": "滴滴",
@@ -64,12 +91,6 @@
       "type": 0,
       "api": "http://lbapiby.com/api.php/provide/vod/at/xml",
       "ext": "proxy"
-    },
-    {
-      "key": "百度推送",
-      "name": "✊百度┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=baidu"
     },
     {
       "key": "精品资源站",
@@ -99,25 +120,6 @@
         "ratio": 1.33
       },
       "changeable": 1
-    },
-    {
-      "key": "大奶子",
-      "name": "大奶子 | 采集",
-      "type": 1,
-      "api": "https://apidanaizi.com/api.php/provide/vod",
-      "searchable": 1,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1
-    },
-    {
-      "key": "色猫",
-      "name": "色猫 | 采集",
-      "type": 1,
-      "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
-      "ext": "proxy"
     },
     {
       "key": "沙鱼",
@@ -225,15 +227,6 @@
       "ext": "proxy"
     },
     {
-      "key": "小湿妹",
-      "name": "湿妹 | 采集",
-      "type": 0,
-      "api": "http://www.afasu.com/api/xml.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "proxy"
-    },
-    {
       "key": "奶茶",
       "name": "奶茶 | 采集",
       "type": 0,
@@ -265,30 +258,10 @@
       "ext": "proxy"
     },
     {
-      "key": "155资源站",
-      "name": "155 | 采集",
-      "type": 1,
-      "api": "https://155api.com/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "proxy"
-    },
-    {
       "key": "鸡坤",
       "name": "鸡坤 | 采集",
       "type": 1,
       "api": "https://jkunzyapi.com/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "proxy"
-    },
-    {
-      "key": "乐播",
-      "name": "乐播 | 采集",
-      "type": 1,
-      "api": "https://lbapi9.com/api.php/provide/vod/",
       "quickSearch": 1,
       "searchable": 1,
       "changeable": 1,
@@ -301,28 +274,6 @@
       "api": "https://apittzy.com/api.php/provide/vod/",
       "searchable": 0,
       "quickSearch": 0,
-      "ext": "proxy"
-    },
-    {
-      "key": "玉兔",
-      "name": "玉兔 | 采集",
-      "type": 1,
-      "api": "https://apiyutu.com/api.php/provide/vod/",
-      "playUrl": "https://yutujx.com/?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "proxy"
-    },
-    {
-      "key": "森林专场",
-      "name": "森林 | 采集",
-      "type": 1,
-      "api": "https://slapibf.com/api.php/provide/vod/",
-      "playUrl": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
       "ext": "proxy"
     },
     {
@@ -348,25 +299,21 @@
       "ext": "proxy"
     },
     {
-      "key": "黄AV资源站",
-      "name": "AV | 采集",
-      "type": 0,
-      "api": "https://www.pgxdy.com/api/xml.php",
-      "searchable": 1,
+      "key": "155资源站",
+      "name": "155 | 采集",
+      "type": 1,
+      "api": "https://155api.com/api.php/provide/vod/",
       "quickSearch": 1,
+      "searchable": 1,
+      "changeable": 1,
       "ext": "proxy"
     },
     {
-      "key": "UC推送",
-      "name": "☝️优熙┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=uc"
-    },
-    {
-      "key": "天翼推送",
-      "name": "✋天翼┃推送",
-      "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=tianyi"
+      "key": "色猫",
+      "name": "色猫 | 采集",
+      "type": 1,
+      "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
+      "ext": "proxy"
     },
     {
       "key": "火速",
@@ -380,16 +327,69 @@
       "ext": "proxy"
     },
     {
-      "key": "夸克推送",
-      "name": "👊夸克┃推送",
+      "key": "大奶子",
+      "name": "大奶子 | 采集",
+      "type": 1,
+      "api": "https://apidanaizi.com/api.php/provide/vod",
+      "searchable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.33
+      },
+      "changeable": 1
+    },
+    {
+      "key": "百度推送",
+      "name": "✊百度┃推送",
       "type": 4,
-      "api": "https://so.yinpai.xyz/api.php?type=quark"
+      "api": "https://so.yinpai.xyz/api.php?type=baidu"
+    },
+    {
+      "key": "乐播",
+      "name": "乐播 | 采集",
+      "type": 1,
+      "api": "https://lbapi9.com/api.php/provide/vod/",
+      "quickSearch": 1,
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "proxy"
     },
     {
       "key": "嘿嘿场",
       "name": "嘿嘿 | 采集",
       "type": 1,
       "api": "https://api.heiapi.cc/api.php/provide/vod/",
+      "playUrl": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
+      "key": "玉兔",
+      "name": "玉兔 | 采集",
+      "type": 1,
+      "api": "https://apiyutu.com/api.php/provide/vod/",
+      "playUrl": "https://yutujx.com/?url=",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
+      "key": "黄AV资源站",
+      "name": "AV | 采集",
+      "type": 0,
+      "api": "https://www.pgxdy.com/api/xml.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "proxy"
+    },
+    {
+      "key": "森林专场",
+      "name": "森林 | 采集",
+      "type": 1,
+      "api": "https://slapibf.com/api.php/provide/vod/",
       "playUrl": "",
       "searchable": 1,
       "quickSearch": 1,
@@ -1328,5 +1328,5 @@
   ],
   "hosts": [],
   "sp": "",
-  "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-22 13:04:15"
+  "//": "四源聚合单仓(安卓4兼容) | 合并5源 | 2026-11-22 12:48:48"
 }

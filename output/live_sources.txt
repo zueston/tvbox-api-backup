@@ -1,4 +1,4 @@
-# 直播源清单 2026-11-22 13:04:15  共84
+# 直播源清单 2026-11-22 12:48:48  共84
 APTV	https://wget.la/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u	lubin776
 BMCH	https://play.iptv365.org/香雅情/lives/BMCH.txt	lubin776
 B站直播	https://sub.ottiptv.cc/bililive.m3u	lubin776
